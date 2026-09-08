@@ -1,9 +1,9 @@
 # Correction-term obstructions for alternating knots
 
 This directory accompanies **Computation of Unknotting Numbers: Which Knot Breaks the
-Bernhard–Jablan Conjecture?s**. It implements the definite surgery obstruction reviewed in
+Bernhard–Jablan Conjecture?**. It implements the definite surgery obstruction reviewed in
 Section 2.4 and applied in Section 3. The signed Jones-polynomial test
-also uses Section 2.5. These programs compute necessary conditions for an
+also uses Section 2.6. These programs compute necessary conditions for an
 unknotting sequence; finding an admissible surgery form does not construct one.
 
 The principal source is Brendan Owens, [*Unknotting information from Heegaard
@@ -84,7 +84,11 @@ in rank four. Reduction under the full integral general linear group is not
 enough for the required meridians. The programs therefore lift every element of
 `GL(3,F_2)` or `GL(4,F_2)`—168 and 20,160 elements—to recover the admissible bases
 modulo `Gamma(2)`. This subgroup preserves diagonal residues modulo four.
-Signed permutations identify equivalent plumbing components. Positivity checks
+The diagonal-product bounds follow from the classical Minkowski-reduction
+bounds; see Barnes and Trenerry, [*The minimum determinant of Minkowski-reduced
+quinary quadratic forms*](https://doi.org/10.1017/S1446788700024964),
+Eqs. (1.2)–(1.4), where the rank-three and rank-four constants are 2 and 4.
+Signed permutations identify equivalent surgery components. Positivity checks
 use exact principal minors, rather than numerical eigenvalue thresholds.
 
 `linkform.py` supplies a necessary preliminary filter: the primary cyclic factors

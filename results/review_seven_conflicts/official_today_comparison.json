@@ -1,0 +1,149 @@
+{
+  "conflicting_exact_paper_values": 6,
+  "conflicting_knots": 7,
+  "conflicting_nonexact_paper_intervals": 1,
+  "conflicts": {
+    "12a_107": {
+      "baseline": [
+        3,
+        4
+      ],
+      "exact_paper_value": true,
+      "official_today": [
+        3,
+        3
+      ],
+      "paper": [
+        4,
+        4
+      ]
+    },
+    "13a_15": {
+      "baseline": [
+        2,
+        3
+      ],
+      "exact_paper_value": true,
+      "official_today": [
+        2,
+        2
+      ],
+      "paper": [
+        3,
+        3
+      ]
+    },
+    "13a_422": {
+      "baseline": [
+        2,
+        3
+      ],
+      "exact_paper_value": true,
+      "official_today": [
+        2,
+        2
+      ],
+      "paper": [
+        3,
+        3
+      ]
+    },
+    "13a_55": {
+      "baseline": [
+        2,
+        3
+      ],
+      "exact_paper_value": true,
+      "official_today": [
+        2,
+        2
+      ],
+      "paper": [
+        3,
+        3
+      ]
+    },
+    "13a_568": {
+      "baseline": [
+        2,
+        3
+      ],
+      "exact_paper_value": true,
+      "official_today": [
+        2,
+        2
+      ],
+      "paper": [
+        3,
+        3
+      ]
+    },
+    "13a_650": {
+      "baseline": [
+        2,
+        4
+      ],
+      "exact_paper_value": false,
+      "official_today": [
+        2,
+        2
+      ],
+      "paper": [
+        3,
+        4
+      ]
+    },
+    "13a_660": {
+      "baseline": [
+        3,
+        4
+      ],
+      "exact_paper_value": true,
+      "official_today": [
+        3,
+        3
+      ],
+      "paper": [
+        4,
+        4
+      ]
+    }
+  },
+  "different_ranges_from_package_2026_9_1": 0,
+  "exact_partition": {
+    "different_exact_value": 6,
+    "official_today_unresolved": 1027,
+    "same_exact_value": 194
+  },
+  "exact_results_total": 1227,
+  "frozen_file": "knotinfo_official_2026-09-08.json.gz",
+  "frozen_sha256": "fe65812b9621bddbc2f57383472759d9d5dbaf381495a829da068c354f97e512",
+  "interpretation": "The official download retrieved today still contains all seven incompatible values. Six correspond to exact values proved in the paper and one (13a_650) to the interval [3,4]. Equality with the September package is an observed comparison of all 12965 ranges, not an assumption that a package is the live website. Tabulated values are not independent mathematical certificates.",
+  "manuscript_result_source": "consolidate_results.reconstruct(), run 2026-09-08",
+  "paper_changed_results": 1403,
+  "range_differences": {},
+  "schema_version": 1,
+  "source": {
+    "asset_commit": "08265335f9f5463796c36fe7e5457af1f489179e",
+    "asset_commit_datetime": "2026-09-02T11:22:11Z",
+    "extracted_fields": [
+      "name",
+      "unknotting_number",
+      "unknotting_number_anon"
+    ],
+    "http_etag": "15047b6abbd43b66360d27edde516357fdecd8fe90f64e470b1203c0f4605c2e",
+    "live_bytes_equal_commit_pinned_bytes": true,
+    "live_download_url": "https://raw.githubusercontent.com/knotinfo-org/assets/main/knotinfo_data_complete.xls.zip",
+    "official_download_page": "https://knotinfo.org/homelinks/database_download.php",
+    "parser": "xlrd 2.0.2",
+    "pinned_download_url": "https://raw.githubusercontent.com/knotinfo-org/assets/08265335f9f5463796c36fe7e5457af1f489179e/knotinfo_data_complete.xls.zip",
+    "record_created_utc": "2026-09-08T10:17:39.485564+00:00",
+    "retrieval_http_date": "2026-09-08T10:13:55Z",
+    "scope": "12965 prime knots through 13 crossings from the archived study population",
+    "xls_member": "knotinfo_data_complete.xls",
+    "xls_sha256": "578be92fc1d37b1351c8273c3beab00654913ea009ca751a71e99bac2209751f",
+    "xls_sheet": "sample_dat",
+    "zip_sha256": "6b97fae54e8e2e3f1e134a569f80176946f7b0b49920f2161b6049335f8ac275"
+  },
+  "study_population": 12965
+}

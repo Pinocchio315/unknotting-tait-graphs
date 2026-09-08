@@ -1,13 +1,13 @@
 """Owens-type obstruction to u(K) = 3 for alternating knots with |sigma| = 6 (signature-sharp case).
 
 If u(K) = 3 and |sigma(K)| = 6, all three crossing changes have the same sign, so the Montesinos trick gives
-Sigma_2(K) as half-integer surgery on a 3-component link and Sigma_2(K) bounds a positive-definite plumbing
+Sigma_2(K) as half-integer surgery on a 3-component link and Sigma_2(K) bounds a positive-definite 2-handlebody
 X with intersection form
-    Qt = plumbing of three chains (m_i, 2), i = 1,2,3, with linking numbers a_ij between the m_i-vertices,
+    Qt = integral surgery form of three chains (m_i, 2), i = 1,2,3, with linking numbers a_ij between the m_i-vertices,
     m_i even, det Qt = det [[2m1-1, 2a12, 2a13], [2a12, 2m2-1, 2a23], [2a13, 2a23, 2m3-1]] = det K.
 Exactly as in Owens' Theorem 1 for two changes, the d-invariants of Sigma_2(K) (sharp Goeritz form for
 alternating K) must satisfy m_Qt(g) >= m_G(phi g), == mod 2, for some group isomorphism phi.
-The rank-3 forms Q' = 2M - I are enumerated up to the equivalences that preserve the plumbing structure
+The rank-3 forms Q' = 2M - I are enumerated up to the equivalences that preserve the half-integral surgery structure
 (GL(3,Z) matrices congruent to I mod 2, permutations, sign changes): every GL(3,Z)-class of positive-definite
 ternary forms of determinant D has a Minkowski-reduced representative with a d f <= 2 D, and the
 Gamma(2)-classes inside a GL(3,Z)-class are reached through lifts of the 168 elements of GL(3, F_2).
@@ -57,7 +57,7 @@ def gl3f2_lifts():
 
 
 def plumbing(m, A):
-    """6x6 plumbing form for chains (m_i, 2) with linking numbers A[i][j]"""
+    """6x6 integral surgery form for chains (m_i, 2) with linking numbers A[i][j]"""
     Q = np.zeros((6, 6), dtype=np.int64)
     for i in range(3):
         Q[2 * i, 2 * i] = m[i]; Q[2 * i, 2 * i + 1] = Q[2 * i + 1, 2 * i] = 1; Q[2 * i + 1, 2 * i + 1] = 2
@@ -74,7 +74,7 @@ def candidate_plumbings(D, n_even=3):
     modulo Gamma(2). Lifting all GL(3,F_2) elements accounts for those bases.
     The parity of each diagonal modulo four is unchanged by Gamma(2), so it
     suffices to test one integral lift per residue class. Signed permutations
-    only identify equivalent plumbing components; they remove no obstruction.
+    only identify equivalent surgery components; they remove no obstruction.
     """
     if D <= 0 or D % 2 == 0 or not 0 <= n_even <= 3:
         raise ValueError('require positive odd determinant and 0 <= n_even <= 3')
@@ -127,7 +127,7 @@ def obstruct_u3(pd, sigma, det_k, verbose=False):
     G, mG, cmG = chosen
     cands = candidate_plumbings(det_k, n_even=3)
     if verbose:
-        print(f'  {len(cands)} candidate plumbing forms', file=sys.stderr)
+        print(f'  {len(cands)} candidate integral surgery forms', file=sys.stderr)
     if not cands:
         return {'verdict': 'OBSTRUCTED', 'candidates': 0}
     # A surviving form is only a failure to obstruct. To certify OBSTRUCTED,

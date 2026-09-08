@@ -1,0 +1,92 @@
+{
+  "all_seven_match_official_download": true,
+  "conflicting_knots": 7,
+  "description": "Read-only GET requests submitted to the currently observed official single-knot form; every live web result was compared with the official download retrieved today.",
+  "knots": {
+    "12a_107": {
+      "html_sha256": "c591114713e6b3795904cbe52c5b90f2d5b83de25893a3851fc550ad6d3e7a2c",
+      "http_date": "Tue, 08 Sep 2026 10:24:42 GMT",
+      "matches_official_download": true,
+      "range": [
+        3,
+        3
+      ],
+      "retrieved_html_file": "live_web_12a_107.html.gz",
+      "url": "https://knotinfo.org/results.php?searchmode=singleknot&singleknot=12a_107&submittype=singleknot",
+      "value": "3"
+    },
+    "13a_15": {
+      "html_sha256": "e1faf381fb56a10dc009fc7f7c4ffdd953d38e36b9017177a8c0f6bbbc268259",
+      "http_date": "Tue, 08 Sep 2026 10:25:05 GMT",
+      "matches_official_download": true,
+      "range": [
+        2,
+        2
+      ],
+      "retrieved_html_file": "live_web_13a_15.html.gz",
+      "url": "https://knotinfo.org/results.php?searchmode=singleknot&singleknot=13a_15&submittype=singleknot",
+      "value": "2"
+    },
+    "13a_422": {
+      "html_sha256": "ee423e0a8a627769daa03cb0e0cd73797c43d34139884f7e82d10d8180dc4099",
+      "http_date": "Tue, 08 Sep 2026 10:25:07 GMT",
+      "matches_official_download": true,
+      "range": [
+        2,
+        2
+      ],
+      "retrieved_html_file": "live_web_13a_422.html.gz",
+      "url": "https://knotinfo.org/results.php?searchmode=singleknot&singleknot=13a_422&submittype=singleknot",
+      "value": "2"
+    },
+    "13a_55": {
+      "html_sha256": "bf4c82405229e25f16382d9a07f68937eaf5639597c3b4707e085b6e190a1362",
+      "http_date": "Tue, 08 Sep 2026 10:25:06 GMT",
+      "matches_official_download": true,
+      "range": [
+        2,
+        2
+      ],
+      "retrieved_html_file": "live_web_13a_55.html.gz",
+      "url": "https://knotinfo.org/results.php?searchmode=singleknot&singleknot=13a_55&submittype=singleknot",
+      "value": "2"
+    },
+    "13a_568": {
+      "html_sha256": "2d3f92fa532d86cf5aa360f32d23298c8e347deeaad5784bd748b32c5856bc78",
+      "http_date": "Tue, 08 Sep 2026 10:25:06 GMT",
+      "matches_official_download": true,
+      "range": [
+        2,
+        2
+      ],
+      "retrieved_html_file": "live_web_13a_568.html.gz",
+      "url": "https://knotinfo.org/results.php?searchmode=singleknot&singleknot=13a_568&submittype=singleknot",
+      "value": "2"
+    },
+    "13a_650": {
+      "html_sha256": "fde5bf259f1121d328c8ee7e8ac938cca33ef9a93577527185b39c1972744b7d",
+      "http_date": "Tue, 08 Sep 2026 10:25:06 GMT",
+      "matches_official_download": true,
+      "range": [
+        2,
+        2
+      ],
+      "retrieved_html_file": "live_web_13a_650.html.gz",
+      "url": "https://knotinfo.org/results.php?searchmode=singleknot&singleknot=13a_650&submittype=singleknot",
+      "value": "2"
+    },
+    "13a_660": {
+      "html_sha256": "928e1eed298481053bdeb20277ed25500113c989df1235bf43221a168a49f7a9",
+      "http_date": "Tue, 08 Sep 2026 10:25:06 GMT",
+      "matches_official_download": true,
+      "range": [
+        3,
+        3
+      ],
+      "retrieved_html_file": "live_web_13a_660.html.gz",
+      "url": "https://knotinfo.org/results.php?searchmode=singleknot&singleknot=13a_660&submittype=singleknot",
+      "value": "3"
+    }
+  },
+  "schema_version": 1
+}
