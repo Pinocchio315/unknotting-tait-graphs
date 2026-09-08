@@ -33,6 +33,7 @@ Deposited records are in `../../results/bernhard_jablan/`.
 | `build_greene_targets.py` | freezes the sweep input (`data/greene_targets.json`): diagram, determinant, signature, range, mod-2 Khovanov vector |
 | `greene_sweep.py` | the sweep: one subprocess per knot, resume-safe JSONL output, per-knot time limit |
 | `slurm_greene.sh` | the array launcher, sixteen tasks by default |
+| `make_server_package.py` | collects everything the sweep needs into `greene_server/` and a tar archive |
 
 ## The sweep
 
@@ -48,10 +49,15 @@ the Ni–Wu test for `u = 1`, and a range `[n, b]` with `|σ| = 2n` gives the ra
 A control has a known unknotting number equal to `n`, so the obstruction must not fire on it; the sweep
 reports an obstructed control as an implementation error and exits nonzero.
 
-Copy this directory to the server and submit one job:
+Build the server package and copy it across.  `make_server_package.py` collects the modules of this
+directory, the form enumerations of `../owens`, and the frozen input file into one flat directory, so
+the server needs only `numpy`, `sympy` and the standard library.  The KnotInfo database, SnapPy and the
+rest of the repository are not required.
 
 ```sh
-sbatch slurm_greene.sh
+python make_server_package.py
+scp greene_server.tar.gz SERVER:~/
+ssh SERVER "tar xzf greene_server.tar.gz && cd greene_server && sbatch slurm_greene.sh"
 ```
 
 Sixteen array tasks each take one sixteenth of the work.  A task sweeps its share of the controls first
@@ -68,10 +74,9 @@ sbatch --export=ALL,TEST=rank4,ARRAY_SIZE=4 --array=0-3 slurm_greene.sh
 ```
 
 `bash slurm_greene.sh --dry-run` prints the resolved commands without running them.  Each task writes
-`runs/<set>/results_<set>_<task>_<size>.jsonl`, one line per knot.  The interpreter needs
-`numpy`, `sympy` and the standard library; the frozen input file removes the need for `database_knotinfo`
-on the server.  Typical cost is a few seconds per knot for the `u1` and `rank2` tests; the rank-four
-enumeration is much slower and has its own submission line above.
+`runs/<set>/results_<set>_<task>_<size>.jsonl`, one line per knot.  Typical cost is a few seconds per
+knot for the `u1`, `rank2` and `rank3` tests; the rank-four enumeration is much slower and has its own
+submission line above.
 
 Verdicts: `OBSTRUCTED` raises the lower bound, and `PASS`, `UNDECIDED`, `TIMEOUT` and `ERROR` supply no
 bound.  A time limit is not a negative mathematical result.

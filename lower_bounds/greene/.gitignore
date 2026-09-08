@@ -1,3 +1,5 @@
 runs/
 results_*.jsonl
 __pycache__/
+greene_server/
+greene_server.tar.gz

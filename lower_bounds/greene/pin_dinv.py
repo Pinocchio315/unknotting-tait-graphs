@@ -22,7 +22,6 @@ import sys
 from fractions import Fraction
 from pathlib import Path
 
-import database_knotinfo as dk
 from greene_dinv import Diagram, surgery_test
 
 
@@ -227,7 +226,8 @@ def main():
     args = parser.parse_args()
     if args.out and len(args.knots) != 1:
         parser.error('--out requires exactly one knot')
-    rows = {row['name']: row for row in dk.link_list()}
+    import database_knotinfo as dk          # only the command line needs the database; the frozen
+    rows = {row['name']: row for row in dk.link_list()}     # input file carries everything else
     frozen = json.loads(args.inputs.read_text())
     provenance = dict(frozen['source'],
                       input_file=args.inputs.name,

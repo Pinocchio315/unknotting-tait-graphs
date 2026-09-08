@@ -19,7 +19,15 @@ from fractions import Fraction
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-sys.path.insert(0, str(HERE.parent / 'owens'))
+# The forms come from ../owens in the repository.  A server copy may be flat, or may carry owens/ as a
+# subdirectory, so every layout is offered to the import machinery before the modules are loaded.
+for _candidate in (HERE.parent / 'owens', HERE / 'owens', HERE):
+    if (_candidate / 'owens_obstruction.py').is_file():
+        sys.path.insert(0, str(_candidate))
+        break
+else:
+    raise ImportError('owens_obstruction.py not found: copy the owens modules next to this file, '
+                      'into an owens/ subdirectory, or run from the repository')
 from owens_obstruction import candidates, qtilde, m_Q, det_int, definite_goeritz_candidates  # noqa: E402
 
 

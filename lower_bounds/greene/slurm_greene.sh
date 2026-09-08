@@ -55,6 +55,13 @@ if [ -z "${PKG:-}" ] || [ ! -f "$PKG/greene_sweep.py" ]; then
     exit 1
 fi
 
+if [ ! -f "${TARGETS:-$PKG/data/greene_targets.json}" ]; then
+    echo "missing input file: ${TARGETS:-$PKG/data/greene_targets.json}" >&2
+    echo "copy data/greene_targets.json next to this script (it is part of the package built by" >&2
+    echo "make_server_package.py), or point TARGETS=/path/to/greene_targets.json at it" >&2
+    exit 1
+fi
+
 SET="${SET:-all}"
 TARGETS="${TARGETS:-$PKG/data/greene_targets.json}"
 ARRAY_SIZE="${ARRAY_SIZE:-16}"
