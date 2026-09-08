@@ -103,6 +103,9 @@ def main():
     ap.add_argument('--controls', action='store_true', help='sweep the control set instead of the targets')
     ap.add_argument('--test', help='restrict to one test kind: u1, rank2, rank3, rank4')
     ap.add_argument('--skip-test', help='comma-separated test kinds to leave out, e.g. rank4')
+    ap.add_argument('--names', type=Path,
+                    help='restrict to the knots in this file (a JSON list, or one name per line); '
+                         'useful for finishing a run whose shards were split across machines')
     ap.add_argument('--shard', default='0/1', help='i/n split of the list for this task')
     ap.add_argument('--workers', type=int, default=1, help='concurrent knots in this task')
     ap.add_argument('--out', type=Path, help='JSONL result file (default results_<set><shard>.jsonl)')
@@ -137,6 +140,13 @@ def main():
     if args.skip_test:
         left_out = {t.strip() for t in args.skip_test.split(',') if t.strip()}
         order = [n for n in order if entries[n]['test'] not in left_out]
+    if args.names:
+        text = args.names.read_text().strip()
+        wanted = set(json.loads(text)) if text.startswith('[') else {l.strip() for l in text.splitlines() if l.strip()}
+        unknown = wanted - set(entries)
+        if unknown:
+            sys.exit(f'{len(unknown)} names are not in the {which} list, e.g. {sorted(unknown)[:5]}')
+        order = [n for n in order if n in wanted]
     if args.max_det:
         order = [n for n in order if entries[n]['determinant'] <= args.max_det]
     i, total_shards = (int(x) for x in args.shard.split('/'))

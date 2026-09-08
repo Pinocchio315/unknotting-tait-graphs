@@ -21,5 +21,7 @@ lower_bounds/owens/results_u4_local_*.jsonl
 # large JSON aggregates and local verification output remain disposable.
 generated/*
 !generated/paper_v1_2/
+!generated/paper_v1_3/
+!generated/paper_v1_2/
 generated/paper_v1_2/*
 !generated/paper_v1_2/*.tex

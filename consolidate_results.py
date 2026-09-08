@@ -40,7 +40,7 @@ def read_json(path):
 def verify_manifest(results=RESULTS):
     """Reject missing or altered deposited inputs rather than silently recounting."""
     results = Path(results)
-    manifest = read_json(results / 'paper_v1_1_manifest.json')
+    manifest = read_json(results / 'paper_v1_3_manifest.json')
     for name, expected in manifest['sha256'].items():
         if hashlib.sha256((results / name).read_bytes()).hexdigest() != expected:
             raise ValueError(f'Deposited input differs from the v1.1 manifest: {name}')
@@ -197,6 +197,43 @@ def collect_bounds(results=RESULTS):
             raise ValueError(f'Inconsistent completed Greene verdict: {name}')
         if obstructed: add(name, 2, 'G', source)
 
+    # The sweep applies the same two theorems to every knot of the frozen list whose reduced Khovanov
+    # homology over F_2 has rank equal to its determinant, which is the L-space premise recorded there.
+    # A record contributes only when it is a completed obstruction whose excluded length matches the
+    # comparison range and the signature, so a timeout or an inconclusive comparison supplies nothing.
+    source = 'greene/sweep_2026-09-08.jsonl.gz'
+    frozen = data('greene/greene_targets_2026-09-08.json')
+    controls_ok = 0
+    with gzip.open(results / source, 'rt') as handle:
+        for number, line in enumerate(handle, 1):
+            if not line.strip(): continue
+            try: row = json.loads(line)
+            except json.JSONDecodeError as exc:
+                raise ValueError(f'Malformed JSON in {source}:{number}') from exc
+            name = row['name']
+            entry = frozen['controls'].get(name) or frozen['targets'].get(name)
+            if entry is None:
+                raise ValueError(f'{source}:{number} reports a knot outside the frozen list: {name}')
+            if row['verdict'] != 'OBSTRUCTED':
+                # A timeout or an inconclusive comparison carries no detail fields and no bound.
+                continue
+            if (entry['determinant'] != row['det'] or entry['khovanov_rank'] != entry['determinant']
+                    or entry['signature'] != row['sigma'] or entry['test'] != row['test']):
+                raise ValueError(f'{source}:{number} disagrees with the frozen premise for {name}')
+            length = row['excluded_length']
+            if (length != max(entry['range'][0], 1) or row.get('lower_bound') != length + 1
+                    or row['admitting_vectors'] != 0 or row['candidate_vectors'] < 1
+                    or (length > 1 and abs(entry['signature']) != 2 * length)):
+                raise ValueError(f'{source}:{number} is not a completed obstruction: {name}')
+            if name in frozen['controls']:
+                # A control has a known unknotting number equal to the excluded length, so an
+                # obstruction there would contradict a recorded value rather than establish one.
+                raise ValueError(f'{source}:{number} obstructs the control {name}')
+            add(name, length + 1, 'G', source)
+        controls_ok = len(frozen['controls'])
+    if controls_ok != len(frozen['controls']):
+        raise ValueError('The control set was not read')
+
     # The archived comparison has upper bound three for 13n_3370. Its sharper
     # upper bound is already in Brittenham--Hermiller, Theorem 1.3(a), and is
     # supplied separately rather than relabelled as a new diagram construction.
@@ -313,6 +350,17 @@ def manuscript_counts(consolidated, table, results=RESULTS):
     sig4 = read_json(results/'owens_rank2/owens_verdicts_sigma4_alternating_2026-09-07.json')
     with gzip.open(results/'crossing_changes/dataset_v2.json.gz', 'rt') as stream:
         data_knots = {r['knot'] for r in json.load(stream)}
+    frozen = read_json(results/'greene/greene_targets_2026-09-08.json')
+    sweep = Counter()
+    settled = {'OBSTRUCTED', 'PASS', 'UNDECIDED', 'NOT_APPLICABLE'}
+    with gzip.open(results/'greene/sweep_2026-09-08.jsonl.gz', 'rt') as stream:
+        for line in stream:
+            if not line.strip(): continue
+            row = json.loads(line)
+            role = 'control' if row['name'] in frozen['controls'] else 'target'
+            sweep[role, 'settled' if row['verdict'] in settled else 'unsettled'] += 1
+            if row['verdict'] == 'OBSTRUCTED': sweep[role, row['test']] += 1
+    greene_exact = sum(count for (value, tag), count in by_value_method.items() if tag == 'G')
     return {
         'nChildren': len(scan['children']),
         'nCyclicNew': sum(cyclic_degrees.values()),
@@ -334,6 +382,16 @@ def manuscript_counts(consolidated, table, results=RESULTS):
         'nUthreeOwens': sum(by_value_method[3, tag] for tag in ('O2', 'a', 'OT', 'g')),
         'nUfour': totals['exact_by_u']['4'], 'nUfive': totals['exact_by_u']['5'],
         'nWithCandidates': len(scan['knots_with_candidates']) - len(scan.get('moved_to_tierB_after_resolution', [])),
+        'nSweepTargets': len(frozen['targets']), 'nSweepControls': len(frozen['controls']),
+        'nSweepTargetsSettled': sweep['target', 'settled'],
+        'nSweepControlsSettled': sweep['control', 'settled'],
+        'nSweepObstructed': sum(count for (role, key), count in sweep.items()
+                                if role == 'target' and key.startswith(('u1', 'rank'))),
+        'nSweepUone': sweep['target', 'u1'], 'nSweepRankTwo': sweep['target', 'rank2'],
+        'nSweepRankThree': sweep['target', 'rank3'], 'nSweepRankFour': sweep['target', 'rank4'],
+        'nSweepExact': greene_exact, 'nSweepImproved': improved_methods.get('G', 0),
+        'nSweepUoneTargets': sum(1 for e in frozen['targets'].values() if e['test'] == 'u1'),
+        'nSweepRankTargets': sum(1 for e in frozen['targets'].values() if e['test'] != 'u1'),
     }
 
 
@@ -368,7 +426,7 @@ def appendix_tag(record):
                    'O4': '', 'w': 'w'}
     else:
         symbols = {'L': '', 't': 't', 'g': 'g', 'c': 'c', 'M': 'm',
-                   'O2': 'o', 'O3': 'h', 'K': 'k', 'b': 'b'}
+                   'O2': 'o', 'O3': 'h', 'K': 'k', 'b': 'b', 'G': 'G'}
     if tag not in symbols:
         raise ValueError(f'No appendix notation for method {tag}')
     return symbols[tag]
@@ -502,7 +560,7 @@ def main():
     for name, value in [('consolidated.json', consolidated), ('u_table.json', table),
                         ('counts.json', consolidated['counts'])]:
         (args.outdir / name).write_text(json.dumps(value, sort_keys=True, indent=2) + '\n')
-    paper_dir = args.outdir / 'paper_v1_2'
+    paper_dir = args.outdir / 'paper_v1_3'
     paper_dir.mkdir(parents=True, exist_ok=True)
     for name, source in tex.items():
         (paper_dir / name).write_text(source)
