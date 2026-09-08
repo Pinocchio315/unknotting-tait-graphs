@@ -1,0 +1,65 @@
+{
+ "date": "2026-09-07",
+ "dataset": {
+  "knots": 5542,
+  "rows": 69580,
+  "labels": {
+   "neutral": 32243,
+   "good": 29859,
+   "bad": 4039,
+   "None": 3439
+  },
+  "knots_by_u": {
+   "1": 710,
+   "2": 4010,
+   "3": 601,
+   "4": 221
+  },
+  "identification": {
+   "code": 38896,
+   "trivial": 849,
+   "isometry": 26284,
+   "sum-jones": 691,
+   "sum-blocks": 2600,
+   "None": 260
+  }
+ },
+ "signature_criterion": {
+  "statement": "Reduced alternating diagram D (KnotInfo PD, xtait colour class, all Tait signs +1), crossing c with oriented sign eps(c) and effective resistance R(c) of its edge in the Tait graph (unit resistances): sigma(K_c) - sigma(K) = +2 iff eps=+1 and R<1/2; = -2 iff eps=-1 and R>1/2; = 0 otherwise (KnotInfo signature convention). Also det(K_c) = det(K)*|1-2R(c)| and R_black(c)+R_white(c)=1.",
+  "crosstab (sign, R>1/2, sigma_c-sigma) -> count": {
+   "(-1, 0, 0)": 17071,
+   "(1, 0, 2)": 19714,
+   "(1, 1, 0)": 19213,
+   "(-1, 1, -2)": 13582
+  },
+  "exceptions": 0,
+  "det_relation_violations": 0
+ },
+ "predictor": {
+  "global_gbm_grouped_cv_auc": 0.956,
+  "hit_at_1": {
+   "gbm": "5399/5542",
+   "min_det_ratio": "4155/5542",
+   "min_reduced_crossings": "4286/5542",
+   "sigdrop_then_min_det_ratio": "4648/5542",
+   "first_crossing": "2743/5542"
+  },
+  "local_features_only": {
+   "auc": 0.906,
+   "hit_at_1": "5036/5542"
+  },
+  "sharp_knots_sigma_dropping": {
+   "auc": 0.966,
+   "hit_at_1_gbm": "1483/1506",
+   "hit_at_1_min_reduced_crossings": "1410/1506",
+   "local_only_auc": 0.928,
+   "local_only_hit_at_1": "1452/1506"
+  }
+ },
+ "bj_diagram_check": "all 5542 KnotInfo diagrams contain at least one crossing whose change lowers u (no diagram-level Bernhard-Jablan failure among alternating knots with known u<=4)",
+ "caveats": [
+  "labels require exact u(K_c); 3439 rows unknown (mostly non-alternating [1,2]/[2,3] results) and are excluded, which biases good-rates upward",
+  "603 composite labels rest on a Jones+det identification of the summands (sum-jones); 2059 composite labels are rigorous (block decomposition)",
+  "one diagram per knot (KnotInfo PD), no flype orbit"
+ ]
+}

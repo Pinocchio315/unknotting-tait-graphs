@@ -1,0 +1,245 @@
+{
+ "13a_1069": {
+  "reference_range": [
+   1,
+   4
+  ],
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "u >= 2 (McCoy)"
+ },
+ "13a_12": {
+  "reference_range": [
+   1,
+   3
+  ],
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "u >= 2 (McCoy)"
+ },
+ "13a_120": {
+  "reference_range": [
+   1,
+   3
+  ],
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "u >= 2 (McCoy)"
+ },
+ "13a_121": {
+  "reference_range": [
+   1,
+   3
+  ],
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "u >= 2 (McCoy)"
+ },
+ "13a_133": {
+  "reference_range": [
+   1,
+   4
+  ],
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "u >= 2 (McCoy)"
+ },
+ "13a_1549": {
+  "reference_range": [
+   1,
+   3
+  ],
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "u >= 2 (McCoy)"
+ },
+ "13a_1656": {
+  "reference_range": [
+   1,
+   3
+  ],
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "u >= 2 (McCoy)"
+ },
+ "13a_1698": {
+  "reference_range": [
+   1,
+   4
+  ],
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "u >= 2 (McCoy)"
+ },
+ "13a_1712": {
+  "reference_range": [
+   1,
+   3
+  ],
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "u >= 2 (McCoy)"
+ },
+ "13a_19": {
+  "reference_range": [
+   1,
+   3
+  ],
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "u >= 2 (McCoy)"
+ },
+ "13a_195": {
+  "reference_range": [
+   1,
+   4
+  ],
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "u >= 2 (McCoy)"
+ },
+ "13a_236": {
+  "reference_range": [
+   1,
+   4
+  ],
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "u >= 2 (McCoy)"
+ },
+ "13a_271": {
+  "reference_range": [
+   1,
+   4
+  ],
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "u >= 2 (McCoy)"
+ },
+ "13a_275": {
+  "reference_range": [
+   1,
+   4
+  ],
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "u >= 2 (McCoy)"
+ },
+ "13a_3044": {
+  "reference_range": [
+   1,
+   4
+  ],
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "u >= 2 (McCoy)"
+ },
+ "13a_314": {
+  "reference_range": [
+   1,
+   4
+  ],
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "u >= 2 (McCoy)"
+ },
+ "13a_3147": {
+  "reference_range": [
+   1,
+   3
+  ],
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "u >= 2 (McCoy)"
+ },
+ "13a_3149": {
+  "reference_range": [
+   1,
+   3
+  ],
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "u >= 2 (McCoy)"
+ },
+ "13a_3177": {
+  "reference_range": [
+   1,
+   3
+  ],
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "u >= 2 (McCoy)"
+ },
+ "13a_3184": {
+  "reference_range": [
+   1,
+   3
+  ],
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "u >= 2 (McCoy)"
+ },
+ "13a_3236": {
+  "reference_range": [
+   1,
+   3
+  ],
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "u >= 2 (McCoy)"
+ },
+ "13a_3268": {
+  "reference_range": [
+   1,
+   3
+  ],
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "u >= 2 (McCoy)"
+ },
+ "13a_339": {
+  "reference_range": [
+   1,
+   4
+  ],
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "u >= 2 (McCoy)"
+ },
+ "13a_523": {
+  "reference_range": [
+   1,
+   3
+  ],
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "u >= 2 (McCoy)"
+ },
+ "13a_579": {
+  "reference_range": [
+   1,
+   3
+  ],
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "u >= 2 (McCoy)"
+ },
+ "13a_656": {
+  "reference_range": [
+   1,
+   3
+  ],
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "u >= 2 (McCoy)"
+ },
+ "13a_863": {
+  "reference_range": [
+   1,
+   3
+  ],
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "u >= 2 (McCoy)"
+ }
+}

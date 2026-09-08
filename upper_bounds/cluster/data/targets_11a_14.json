@@ -1,0 +1,83 @@
+[
+ {
+  "name": "11a_14",
+  "range": [
+   2,
+   3
+  ],
+  "k": 2,
+  "crossings": 11,
+  "det": 133,
+  "alternating": "Y",
+  "new_23": false,
+  "pd": [
+   [
+    4,
+    2,
+    5,
+    1
+   ],
+   [
+    8,
+    4,
+    9,
+    3
+   ],
+   [
+    14,
+    9,
+    15,
+    10
+   ],
+   [
+    12,
+    5,
+    13,
+    6
+   ],
+   [
+    6,
+    13,
+    7,
+    14
+   ],
+   [
+    18,
+    11,
+    19,
+    12
+   ],
+   [
+    22,
+    20,
+    1,
+    19
+   ],
+   [
+    20,
+    16,
+    21,
+    15
+   ],
+   [
+    16,
+    22,
+    17,
+    21
+   ],
+   [
+    10,
+    17,
+    11,
+    18
+   ],
+   [
+    2,
+    8,
+    3,
+    7
+   ]
+  ],
+  "note": "KnotInfo 2026.8.1 lists u = 2; the upper bound rests on an unpublished RL witness (dtubbenhauer/unknot). Re-check target."
+ }
+]

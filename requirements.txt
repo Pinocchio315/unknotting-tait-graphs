@@ -1,0 +1,18 @@
+# Core knot-theoretic machinery
+snappy
+spherogram
+snappy_manifolds
+knot_floer_homology
+database_knotinfo==2026.8.1  # Computational input snapshot; reporting uses results/paper_v1_1_snapshot.json
+regina                  # triangulated double covers (regina_linking_check.py) and diagram signatures
+
+# Numerics / symbolic algebra / graphs
+numpy
+sympy
+networkx
+
+# Figures only
+matplotlib
+
+# Only if the Python build lacks the stdlib _sqlite3 module (some cluster installs)
+# pysqlite3-binary

@@ -1,0 +1,38 @@
+[
+ {
+  "name": "13a_1786",
+  "interval": "[2,3]",
+  "sigma": 0,
+  "det": 297,
+  "H1": "Z/3+Z/3+Z/33",
+  "dim3": 3,
+  "conclusion": "u = 3 (exact, NEW; sigma=0 so no other tool applies)"
+ },
+ {
+  "name": "13a_2720",
+  "interval": "[2,3]",
+  "sigma": -2,
+  "det": 243,
+  "H1": "Z/3+Z/3+Z/27",
+  "dim3": 3,
+  "conclusion": "u = 3 (exact, NEW; also caught by the sigma=2 pipeline d3-branch)"
+ },
+ {
+  "name": "13a_2727",
+  "interval": "[2,3]",
+  "sigma": -2,
+  "det": 243,
+  "H1": "Z/3+Z/3+Z/27",
+  "dim3": 3,
+  "conclusion": "u = 3 (exact, NEW; ditto)"
+ },
+ {
+  "name": "13a_4877",
+  "interval": "[2,5]",
+  "sigma": -4,
+  "det": 189,
+  "H1": "Z/3+Z/3+Z/21",
+  "dim3": 3,
+  "conclusion": "[2,5] -> [3,5] (interval improvement)"
+ }
+]

@@ -1,0 +1,7 @@
+{"name": "13a_4858", "u": "[4,5]", "sigma": -8, "det": 189, "verdict": "OBSTRUCTED", "candidates": 578, "seconds": 293.7, "role": "target"}
+{"name": "13a_4763", "u": "[4,5]", "sigma": -8, "det": 213, "verdict": "OBSTRUCTED", "candidates": 2382, "seconds": 892.1, "role": "target"}
+{"name": "13a_4849", "u": "[4,5]", "sigma": -8, "det": 245, "verdict": "OBSTRUCTED", "candidates": 529, "seconds": 1647.3, "role": "target"}
+{"name": "13a_4864", "u": "[4,5]", "sigma": -8, "det": 189, "verdict": "OBSTRUCTED", "candidates": 3685, "seconds": 4754.6, "role": "target"}
+{"name": "13a_4830", "u": "[4,5]", "sigma": -8, "det": 177, "verdict": "OBSTRUCTED", "candidates": 5128, "seconds": 10097.2, "role": "target"}
+{"name": "13a_3712", "u": "[4,5]", "sigma": -8, "det": 205, "verdict": "OBSTRUCTED", "candidates": 2914, "seconds": 19008.5, "role": "target"}
+{"name": "13a_4832", "u": "[4,5]", "sigma": -8, "det": 213, "verdict": "OBSTRUCTED", "candidates": 5355, "seconds": 26221.3, "role": "target"}

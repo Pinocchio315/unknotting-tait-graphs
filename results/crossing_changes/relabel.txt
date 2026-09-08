@@ -1,0 +1,16 @@
+composite handling: {'sum-blocks:exact': 2059, 'sum-blocks:range': 541, 'sum-jones:exact': 603, 'unresolved': 242, 'sum-jones:range': 88, 'sum-ambiguous': 18}
+labels now: Counter({'neutral': 32515, 'good': 29918, 'bad': 4067, None: 3132})
+
+per-knot (u, has good crossing, has unknown crossing):
+   (1, True, False) 578
+   (1, True, True) 132
+   (2, True, False) 2726
+   (2, True, True) 1284
+   (3, True, False) 429
+   (3, True, True) 176
+   (4, True, False) 161
+   (4, True, True) 60
+
+KnotInfo diagrams with NO good crossing and NO unknown crossing (diagram-level BJ failure): 0
+
+KnotInfo diagrams with NO good crossing but some unknown results: 0

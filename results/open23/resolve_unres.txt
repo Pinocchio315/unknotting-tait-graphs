@@ -1,0 +1,5 @@
+resolution: {'composite(jones)': 14}
+prime identifications: []
+knots moved to tier B after resolution (all their candidates were composites): 7
+knots with newly identified prime [1,2] children: {}
+knots keeping unresolved candidates: {}

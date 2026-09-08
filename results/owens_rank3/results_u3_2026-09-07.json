@@ -1,0 +1,9288 @@
+{
+ "method": "rank-3 Owens-type obstruction (owens_u3.py): alternating, |sigma| = 6, u = 3 excluded",
+ "validation": {
+  "knots": 348,
+  "pass": 346,
+  "obstructed_dkt_derived_values": [
+   "12a_107",
+   "13a_660"
+  ],
+  "false_obstructions_non_dkt": 0
+ },
+ "application": {
+  "knots": 164,
+  "obstructed": 139,
+  "exact_u4": [
+   "11a_291",
+   "11a_298",
+   "11a_319",
+   "11a_336",
+   "11a_340",
+   "11a_353",
+   "11a_356",
+   "11a_357",
+   "12a_1004",
+   "12a_102",
+   "12a_1035",
+   "12a_1112",
+   "12a_144",
+   "12a_145",
+   "12a_319",
+   "12a_368",
+   "12a_391",
+   "12a_431",
+   "12a_586",
+   "12a_659",
+   "12a_814",
+   "12a_828",
+   "12a_877",
+   "12a_900",
+   "12a_94",
+   "12a_973",
+   "12a_995",
+   "13a_1061",
+   "13a_1270",
+   "13a_1306",
+   "13a_1353",
+   "13a_1354",
+   "13a_1356",
+   "13a_1467",
+   "13a_1471",
+   "13a_1893",
+   "13a_1911",
+   "13a_1941",
+   "13a_2076",
+   "13a_2128",
+   "13a_2149",
+   "13a_2289",
+   "13a_2333",
+   "13a_2342",
+   "13a_248",
+   "13a_2620",
+   "13a_2725",
+   "13a_2759",
+   "13a_2760",
+   "13a_2773",
+   "13a_2857",
+   "13a_2867",
+   "13a_2871",
+   "13a_2955",
+   "13a_2957",
+   "13a_2977",
+   "13a_3060",
+   "13a_3095",
+   "13a_3098",
+   "13a_3103",
+   "13a_3117",
+   "13a_3120",
+   "13a_3130",
+   "13a_357",
+   "13a_3594",
+   "13a_3686",
+   "13a_3687",
+   "13a_3713",
+   "13a_3715",
+   "13a_3962",
+   "13a_3971",
+   "13a_4054",
+   "13a_4069",
+   "13a_4086",
+   "13a_4087",
+   "13a_4095",
+   "13a_4099",
+   "13a_4105",
+   "13a_4190",
+   "13a_4195",
+   "13a_4213",
+   "13a_4215",
+   "13a_4217",
+   "13a_4303",
+   "13a_4332",
+   "13a_4366",
+   "13a_4369",
+   "13a_4380",
+   "13a_4382",
+   "13a_4383",
+   "13a_4388",
+   "13a_4395",
+   "13a_4453",
+   "13a_4459",
+   "13a_4464",
+   "13a_4492",
+   "13a_4551",
+   "13a_4552",
+   "13a_4553",
+   "13a_4563",
+   "13a_4564",
+   "13a_4567",
+   "13a_4569",
+   "13a_4764",
+   "13a_4772",
+   "13a_4774",
+   "13a_4788",
+   "13a_4789",
+   "13a_4800",
+   "13a_4802",
+   "13a_4805",
+   "13a_4825",
+   "13a_4827",
+   "13a_4831",
+   "13a_4833",
+   "13a_4850",
+   "13a_4852",
+   "13a_4854",
+   "13a_4867",
+   "13a_4868",
+   "13a_507",
+   "13a_517",
+   "13a_526",
+   "13a_543",
+   "13a_647",
+   "13a_648",
+   "13a_665"
+  ],
+  "improved_to_4_x": [
+   [
+    "13a_4757",
+    "[3,5]"
+   ],
+   [
+    "13a_4771",
+    "[3,5]"
+   ],
+   [
+    "13a_4780",
+    "[3,5]"
+   ],
+   [
+    "13a_4812",
+    "[3,5]"
+   ],
+   [
+    "13a_4821",
+    "[3,5]"
+   ],
+   [
+    "13a_4839",
+    "[3,5]"
+   ],
+   [
+    "13a_4841",
+    "[3,5]"
+   ],
+   [
+    "13a_4859",
+    "[3,5]"
+   ],
+   [
+    "13a_4860",
+    "[3,5]"
+   ],
+   [
+    "13a_4865",
+    "[3,5]"
+   ],
+   [
+    "13a_4870",
+    "[3,5]"
+   ],
+   [
+    "13a_4876",
+    "[3,5]"
+   ]
+  ],
+  "pass": [
+   "12a_1114",
+   "12a_146",
+   "12a_762",
+   "12a_794",
+   "12a_801",
+   "13a_1245",
+   "13a_1396",
+   "13a_1464",
+   "13a_1545",
+   "13a_1582",
+   "13a_169",
+   "13a_171",
+   "13a_1718",
+   "13a_2036",
+   "13a_2268",
+   "13a_3688",
+   "13a_3783",
+   "13a_425",
+   "13a_4622",
+   "13a_4623",
+   "13a_4765",
+   "13a_575",
+   "13a_621",
+   "13a_643",
+   "13a_932"
+  ]
+ },
+ "records": {
+  "validate": {
+   "7_1": {
+    "name": "7_1",
+    "u": "3",
+    "sigma": -6,
+    "det": 7,
+    "verdict": "PASS",
+    "candidates": 4,
+    "witness_form": [
+     [
+      2,
+      2,
+      2
+     ],
+     [
+      -1,
+      -1,
+      1
+     ]
+    ],
+    "seconds": 0.8
+   },
+   "9_3": {
+    "name": "9_3",
+    "u": "3",
+    "sigma": -6,
+    "det": 19,
+    "verdict": "PASS",
+    "candidates": 6,
+    "witness_form": [
+     [
+      4,
+      4,
+      4
+     ],
+     [
+      -3,
+      -3,
+      3
+     ]
+    ],
+    "seconds": 0.1
+   },
+   "9_6": {
+    "name": "9_6",
+    "u": "3",
+    "sigma": -6,
+    "det": 27,
+    "verdict": "PASS",
+    "candidates": 13,
+    "witness_form": [
+     [
+      2,
+      2,
+      4
+     ],
+     [
+      -1,
+      -1,
+      1
+     ]
+    ],
+    "seconds": 0.2
+   },
+   "9_9": {
+    "name": "9_9",
+    "u": "3",
+    "sigma": -6,
+    "det": 31,
+    "verdict": "PASS",
+    "candidates": 8,
+    "witness_form": [
+     [
+      2,
+      4,
+      4
+     ],
+     [
+      -1,
+      -1,
+      3
+     ]
+    ],
+    "seconds": 0.1
+   },
+   "9_16": {
+    "name": "9_16",
+    "u": "3",
+    "sigma": -6,
+    "det": 39,
+    "verdict": "PASS",
+    "candidates": 8,
+    "witness_form": [
+     [
+      2,
+      2,
+      4
+     ],
+     [
+      0,
+      -1,
+      -1
+     ]
+    ],
+    "seconds": 0.2
+   },
+   "10_2": {
+    "name": "10_2",
+    "u": "3",
+    "sigma": -6,
+    "det": 23,
+    "verdict": "PASS",
+    "candidates": 5,
+    "witness_form": [
+     [
+      2,
+      2,
+      4
+     ],
+     [
+      -1,
+      -1,
+      0
+     ]
+    ],
+    "seconds": 0.1
+   },
+   "10_46": {
+    "name": "10_46",
+    "u": "3",
+    "sigma": -6,
+    "det": 31,
+    "verdict": "PASS",
+    "candidates": 8,
+    "witness_form": [
+     [
+      6,
+      6,
+      6
+     ],
+     [
+      -5,
+      -5,
+      5
+     ]
+    ],
+    "seconds": 0.1
+   },
+   "10_49": {
+    "name": "10_49",
+    "u": "3",
+    "sigma": -6,
+    "det": 59,
+    "verdict": "PASS",
+    "candidates": 11,
+    "witness_form": [
+     [
+      4,
+      4,
+      4
+     ],
+     [
+      -3,
+      -2,
+      2
+     ]
+    ],
+    "seconds": 0.3
+   },
+   "10_66": {
+    "name": "10_66",
+    "u": "3",
+    "sigma": -6,
+    "det": 75,
+    "verdict": "PASS",
+    "candidates": 23,
+    "witness_form": [
+     [
+      2,
+      4,
+      4
+     ],
+     [
+      -1,
+      -1,
+      2
+     ]
+    ],
+    "seconds": 1.3
+   },
+   "10_80": {
+    "name": "10_80",
+    "u": "3",
+    "sigma": -6,
+    "det": 71,
+    "verdict": "PASS",
+    "candidates": 9,
+    "witness_form": [
+     [
+      2,
+      4,
+      8
+     ],
+     [
+      -1,
+      -1,
+      -3
+     ]
+    ],
+    "seconds": 0.2
+   },
+   "11a_43": {
+    "name": "11a_43",
+    "u": "3",
+    "sigma": -6,
+    "det": 135,
+    "verdict": "PASS",
+    "candidates": 32,
+    "witness_form": [
+     [
+      4,
+      4,
+      4
+     ],
+     [
+      -2,
+      -2,
+      2
+     ]
+    ],
+    "seconds": 3.3
+   },
+   "11a_62": {
+    "name": "11a_62",
+    "u": "3",
+    "sigma": 6,
+    "det": 55,
+    "verdict": "PASS",
+    "candidates": 12,
+    "witness_form": [
+     [
+      10,
+      10,
+      10
+     ],
+     [
+      -9,
+      -9,
+      9
+     ]
+    ],
+    "seconds": 0.2
+   },
+   "11a_94": {
+    "name": "11a_94",
+    "u": "3",
+    "sigma": -6,
+    "det": 107,
+    "verdict": "PASS",
+    "candidates": 11,
+    "witness_form": [
+     [
+      2,
+      4,
+      4
+     ],
+     [
+      -1,
+      0,
+      -1
+     ]
+    ],
+    "seconds": 1.5
+   },
+   "11a_124": {
+    "name": "11a_124",
+    "u": "3",
+    "sigma": -6,
+    "det": 155,
+    "verdict": "PASS",
+    "candidates": 23,
+    "witness_form": [
+     [
+      4,
+      4,
+      4
+     ],
+     [
+      -2,
+      -2,
+      1
+     ]
+    ],
+    "seconds": 5.4
+   },
+   "11a_142": {
+    "name": "11a_142",
+    "u": "3",
+    "sigma": 6,
+    "det": 59,
+    "verdict": "PASS",
+    "candidates": 11,
+    "witness_form": [
+     [
+      4,
+      4,
+      4
+     ],
+     [
+      -3,
+      -2,
+      2
+     ]
+    ],
+    "seconds": 0.4
+   },
+   "11a_186": {
+    "name": "11a_186",
+    "u": "3",
+    "sigma": -6,
+    "det": 95,
+    "verdict": "PASS",
+    "candidates": 11,
+    "witness_form": [
+     [
+      2,
+      4,
+      4
+     ],
+     [
+      -1,
+      -1,
+      1
+     ]
+    ],
+    "seconds": 0.5
+   },
+   "11a_191": {
+    "name": "11a_191",
+    "u": "3",
+    "sigma": -6,
+    "det": 83,
+    "verdict": "PASS",
+    "candidates": 11,
+    "witness_form": [
+     [
+      4,
+      4,
+      4
+     ],
+     [
+      -3,
+      -1,
+      1
+     ]
+    ],
+    "seconds": 0.9
+   },
+   "11a_203": {
+    "name": "11a_203",
+    "u": "3",
+    "sigma": -6,
+    "det": 63,
+    "verdict": "PASS",
+    "candidates": 19,
+    "witness_form": [
+     [
+      2,
+      2,
+      8
+     ],
+     [
+      -1,
+      -1,
+      0
+     ]
+    ],
+    "seconds": 0.5
+   },
+   "11a_206": {
+    "name": "11a_206",
+    "u": "3",
+    "sigma": 6,
+    "det": 47,
+    "verdict": "PASS",
+    "candidates": 11,
+    "witness_form": [
+     [
+      4,
+      4,
+      4
+     ],
+     [
+      -3,
+      -2,
+      1
+     ]
+    ],
+    "seconds": 0.2
+   },
+   "11a_223": {
+    "name": "11a_223",
+    "u": "3",
+    "sigma": -6,
+    "det": 75,
+    "verdict": "PASS",
+    "candidates": 23,
+    "witness_form": [
+     [
+      4,
+      6,
+      6
+     ],
+     [
+      -3,
+      -3,
+      5
+     ]
+    ],
+    "seconds": 1.3
+   },
+   "11a_227": {
+    "name": "11a_227",
+    "u": "3",
+    "sigma": -6,
+    "det": 143,
+    "verdict": "PASS",
+    "candidates": 22,
+    "witness_form": [
+     [
+      4,
+      4,
+      10
+     ],
+     [
+      -1,
+      -5,
+      3
+     ]
+    ],
+    "seconds": 1.3
+   },
+   "11a_235": {
+    "name": "11a_235",
+    "u": "3",
+    "sigma": -6,
+    "det": 71,
+    "verdict": "PASS",
+    "candidates": 9,
+    "witness_form": [
+     [
+      4,
+      4,
+      6
+     ],
+     [
+      -3,
+      -3,
+      3
+     ]
+    ],
+    "seconds": 0.1
+   },
+   "11a_236": {
+    "name": "11a_236",
+    "u": "3",
+    "sigma": -6,
+    "det": 99,
+    "verdict": "PASS",
+    "candidates": 23,
+    "witness_form": [
+     [
+      2,
+      4,
+      6
+     ],
+     [
+      -1,
+      -1,
+      3
+     ]
+    ],
+    "seconds": 1.6
+   },
+   "11a_241": {
+    "name": "11a_241",
+    "u": "3",
+    "sigma": -6,
+    "det": 95,
+    "verdict": "PASS",
+    "candidates": 11,
+    "witness_form": [
+     [
+      2,
+      4,
+      6
+     ],
+     [
+      0,
+      -1,
+      -3
+     ]
+    ],
+    "seconds": 0.4
+   },
+   "11a_242": {
+    "name": "11a_242",
+    "u": "3",
+    "sigma": -6,
+    "det": 47,
+    "verdict": "PASS",
+    "candidates": 11,
+    "witness_form": [
+     [
+      2,
+      2,
+      6
+     ],
+     [
+      -1,
+      -1,
+      1
+     ]
+    ],
+    "seconds": 0.1
+   },
+   "11a_244": {
+    "name": "11a_244",
+    "u": "3",
+    "sigma": -6,
+    "det": 147,
+    "verdict": "PASS",
+    "candidates": 42,
+    "witness_form": [
+     [
+      4,
+      4,
+      8
+     ],
+     [
+      -2,
+      -4,
+      1
+     ]
+    ],
+    "seconds": 7.4
+   },
+   "11a_245": {
+    "name": "11a_245",
+    "u": "3",
+    "sigma": -6,
+    "det": 75,
+    "verdict": "PASS",
+    "candidates": 23,
+    "witness_form": [
+     [
+      2,
+      2,
+      6
+     ],
+     [
+      0,
+      -1,
+      -1
+     ]
+    ],
+    "seconds": 1.3
+   },
+   "11a_259": {
+    "name": "11a_259",
+    "u": "3",
+    "sigma": -6,
+    "det": 79,
+    "verdict": "PASS",
+    "candidates": 12,
+    "witness_form": [
+     [
+      2,
+      8,
+      8
+     ],
+     [
+      -1,
+      -1,
+      7
+     ]
+    ],
+    "seconds": 0.5
+   },
+   "11a_308": {
+    "name": "11a_308",
+    "u": "3",
+    "sigma": -6,
+    "det": 71,
+    "verdict": "PASS",
+    "candidates": 9,
+    "witness_form": [
+     [
+      4,
+      4,
+      6
+     ],
+     [
+      -3,
+      -3,
+      3
+     ]
+    ],
+    "seconds": 0.2
+   },
+   "11a_318": {
+    "name": "11a_318",
+    "u": "3",
+    "sigma": -6,
+    "det": 135,
+    "verdict": "PASS",
+    "candidates": 32,
+    "witness_form": [
+     [
+      4,
+      4,
+      6
+     ],
+     [
+      -1,
+      -3,
+      3
+     ]
+    ],
+    "seconds": 2.7
+   },
+   "11a_335": {
+    "name": "11a_335",
+    "u": "3",
+    "sigma": -6,
+    "det": 75,
+    "verdict": "PASS",
+    "candidates": 23,
+    "witness_form": [
+     [
+      4,
+      6,
+      6
+     ],
+     [
+      -3,
+      -3,
+      5
+     ]
+    ],
+    "seconds": 1.2
+   },
+   "11a_339": {
+    "name": "11a_339",
+    "u": "3",
+    "sigma": -6,
+    "det": 55,
+    "verdict": "PASS",
+    "candidates": 12,
+    "witness_form": [
+     [
+      2,
+      6,
+      6
+     ],
+     [
+      -1,
+      -1,
+      5
+     ]
+    ],
+    "seconds": 0.4
+   },
+   "11a_358": {
+    "name": "11a_358",
+    "u": "3",
+    "sigma": -6,
+    "det": 31,
+    "verdict": "PASS",
+    "candidates": 8,
+    "witness_form": [
+     [
+      6,
+      6,
+      6
+     ],
+     [
+      -5,
+      -5,
+      5
+     ]
+    ],
+    "seconds": 0.1
+   },
+   "12a_34": {
+    "name": "12a_34",
+    "u": "3",
+    "sigma": -6,
+    "det": 115,
+    "verdict": "PASS",
+    "candidates": 22,
+    "witness_form": [
+     [
+      4,
+      4,
+      6
+     ],
+     [
+      -3,
+      -1,
+      0
+     ]
+    ],
+    "seconds": 3.3
+   },
+   "12a_36": {
+    "name": "12a_36",
+    "u": "3",
+    "sigma": -6,
+    "det": 159,
+    "verdict": "PASS",
+    "candidates": 26,
+    "witness_form": [
+     [
+      4,
+      4,
+      6
+     ],
+     [
+      -2,
+      -2,
+      -1
+     ]
+    ],
+    "seconds": 3.4
+   },
+   "12a_43": {
+    "name": "12a_43",
+    "u": "3",
+    "sigma": -6,
+    "det": 203,
+    "verdict": "PASS",
+    "candidates": 28,
+    "witness_form": [
+     [
+      4,
+      4,
+      4
+     ],
+     [
+      -2,
+      -1,
+      0
+     ]
+    ],
+    "seconds": 10.6
+   },
+   "12a_53": {
+    "name": "12a_53",
+    "u": "3",
+    "sigma": -6,
+    "det": 175,
+    "verdict": "PASS",
+    "candidates": 34,
+    "witness_form": [
+     [
+      4,
+      4,
+      8
+     ],
+     [
+      0,
+      -4,
+      -2
+     ]
+    ],
+    "seconds": 5.4
+   },
+   "12a_55": {
+    "name": "12a_55",
+    "u": "3",
+    "sigma": -6,
+    "det": 155,
+    "verdict": "PASS",
+    "candidates": 23,
+    "witness_form": [
+     [
+      2,
+      4,
+      6
+     ],
+     [
+      0,
+      -1,
+      -2
+     ]
+    ],
+    "seconds": 5.2
+   },
+   "12a_82": {
+    "name": "12a_82",
+    "u": "3",
+    "sigma": -6,
+    "det": 191,
+    "verdict": "PASS",
+    "candidates": 23,
+    "witness_form": [
+     [
+      4,
+      4,
+      6
+     ],
+     [
+      -2,
+      -3,
+      2
+     ]
+    ],
+    "seconds": 1.6
+   },
+   "12a_96": {
+    "name": "12a_96",
+    "u": "3",
+    "sigma": -6,
+    "det": 115,
+    "verdict": "PASS",
+    "candidates": 22,
+    "witness_form": [
+     [
+      4,
+      6,
+      6
+     ],
+     [
+      -2,
+      -2,
+      5
+     ]
+    ],
+    "seconds": 3.2
+   },
+   "12a_105": {
+    "name": "12a_105",
+    "u": "3",
+    "sigma": -6,
+    "det": 131,
+    "verdict": "PASS",
+    "candidates": 16,
+    "witness_form": [
+     [
+      4,
+      8,
+      8
+     ],
+     [
+      -3,
+      -3,
+      7
+     ]
+    ],
+    "seconds": 3.9
+   },
+   "12a_107": {
+    "name": "12a_107",
+    "u": "3",
+    "sigma": -6,
+    "det": 239,
+    "verdict": "OBSTRUCTED",
+    "candidates": 22,
+    "seconds": 2.5
+   },
+   "12a_158": {
+    "name": "12a_158",
+    "u": "3",
+    "sigma": -6,
+    "det": 119,
+    "verdict": "PASS",
+    "candidates": 21,
+    "witness_form": [
+     [
+      4,
+      4,
+      8
+     ],
+     [
+      -3,
+      -3,
+      2
+     ]
+    ],
+    "seconds": 0.4
+   },
+   "12a_205": {
+    "name": "12a_205",
+    "u": "3",
+    "sigma": -6,
+    "det": 139,
+    "verdict": "PASS",
+    "candidates": 20,
+    "witness_form": [
+     [
+      4,
+      6,
+      6
+     ],
+     [
+      -1,
+      -1,
+      5
+     ]
+    ],
+    "seconds": 5.6
+   },
+   "12a_236": {
+    "name": "12a_236",
+    "u": "3",
+    "sigma": -6,
+    "det": 99,
+    "verdict": "PASS",
+    "candidates": 23,
+    "witness_form": [
+     [
+      6,
+      8,
+      8
+     ],
+     [
+      -5,
+      -4,
+      7
+     ]
+    ],
+    "seconds": 1.5
+   },
+   "12a_252": {
+    "name": "12a_252",
+    "u": "3",
+    "sigma": -6,
+    "det": 131,
+    "verdict": "PASS",
+    "candidates": 16,
+    "witness_form": [
+     [
+      2,
+      4,
+      6
+     ],
+     [
+      -1,
+      -1,
+      -1
+     ]
+    ],
+    "seconds": 3.9
+   },
+   "12a_277": {
+    "name": "12a_277",
+    "u": "3",
+    "sigma": -6,
+    "det": 143,
+    "verdict": "PASS",
+    "candidates": 22,
+    "witness_form": [
+     [
+      2,
+      4,
+      6
+     ],
+     [
+      -1,
+      -1,
+      2
+     ]
+    ],
+    "seconds": 1.1
+   },
+   "12a_293": {
+    "name": "12a_293",
+    "u": "3",
+    "sigma": -6,
+    "det": 227,
+    "verdict": "PASS",
+    "candidates": 29,
+    "witness_form": [
+     [
+      4,
+      4,
+      6
+     ],
+     [
+      -1,
+      -3,
+      2
+     ]
+    ],
+    "seconds": 22.9
+   },
+   "12a_295": {
+    "name": "12a_295",
+    "u": "3",
+    "sigma": -6,
+    "det": 207,
+    "verdict": "PASS",
+    "candidates": 38,
+    "witness_form": [
+     [
+      4,
+      4,
+      4
+     ],
+     [
+      -2,
+      -1,
+      1
+     ]
+    ],
+    "seconds": 16.1
+   },
+   "12a_321": {
+    "name": "12a_321",
+    "u": "3",
+    "sigma": -6,
+    "det": 171,
+    "verdict": "PASS",
+    "candidates": 39,
+    "witness_form": [
+     [
+      4,
+      8,
+      8
+     ],
+     [
+      -2,
+      -2,
+      7
+     ]
+    ],
+    "seconds": 7.2
+   },
+   "12a_344": {
+    "name": "12a_344",
+    "u": "3",
+    "sigma": -6,
+    "det": 139,
+    "verdict": "PASS",
+    "candidates": 20,
+    "witness_form": [
+     [
+      2,
+      4,
+      10
+     ],
+     [
+      -1,
+      -1,
+      -3
+     ]
+    ],
+    "seconds": 5.8
+   },
+   "12a_355": {
+    "name": "12a_355",
+    "u": "3",
+    "sigma": -6,
+    "det": 127,
+    "verdict": "PASS",
+    "candidates": 21,
+    "witness_form": [
+     [
+      2,
+      6,
+      10
+     ],
+     [
+      -1,
+      -1,
+      -5
+     ]
+    ],
+    "seconds": 2.7
+   },
+   "12a_369": {
+    "name": "12a_369",
+    "u": "3",
+    "sigma": 6,
+    "det": 67,
+    "verdict": "PASS",
+    "candidates": 16,
+    "witness_form": [
+     [
+      12,
+      12,
+      12
+     ],
+     [
+      -11,
+      -11,
+      11
+     ]
+    ],
+    "seconds": 0.5
+   },
+   "12a_373": {
+    "name": "12a_373",
+    "u": "3",
+    "sigma": -6,
+    "det": 147,
+    "verdict": "PASS",
+    "candidates": 42,
+    "witness_form": [
+     [
+      2,
+      4,
+      8
+     ],
+     [
+      -1,
+      -1,
+      -2
+     ]
+    ],
+    "seconds": 7.2
+   },
+   "12a_409": {
+    "name": "12a_409",
+    "u": "3",
+    "sigma": -6,
+    "det": 147,
+    "verdict": "PASS",
+    "candidates": 42,
+    "witness_form": [
+     [
+      2,
+      2,
+      16
+     ],
+     [
+      -1,
+      -1,
+      1
+     ]
+    ],
+    "seconds": 6.1
+   },
+   "12a_420": {
+    "name": "12a_420",
+    "u": "3",
+    "sigma": -6,
+    "det": 111,
+    "verdict": "PASS",
+    "candidates": 25,
+    "witness_form": [
+     [
+      4,
+      4,
+      6
+     ],
+     [
+      -3,
+      -2,
+      2
+     ]
+    ],
+    "seconds": 1.8
+   },
+   "12a_432": {
+    "name": "12a_432",
+    "u": "3",
+    "sigma": -6,
+    "det": 211,
+    "verdict": "PASS",
+    "candidates": 26,
+    "witness_form": [
+     [
+      4,
+      6,
+      6
+     ],
+     [
+      -3,
+      -2,
+      4
+     ]
+    ],
+    "seconds": 13.6
+   },
+   "12a_442": {
+    "name": "12a_442",
+    "u": "3",
+    "sigma": -6,
+    "det": 103,
+    "verdict": "PASS",
+    "candidates": 23,
+    "witness_form": [
+     [
+      6,
+      6,
+      6
+     ],
+     [
+      -5,
+      -4,
+      4
+     ]
+    ],
+    "seconds": 2.4
+   },
+   "12a_490": {
+    "name": "12a_490",
+    "u": "3",
+    "sigma": -6,
+    "det": 207,
+    "verdict": "PASS",
+    "candidates": 38,
+    "witness_form": [
+     [
+      4,
+      4,
+      6
+     ],
+     [
+      -1,
+      -2,
+      -2
+     ]
+    ],
+    "seconds": 14.2
+   },
+   "12a_502": {
+    "name": "12a_502",
+    "u": "3",
+    "sigma": -6,
+    "det": 91,
+    "verdict": "PASS",
+    "candidates": 19,
+    "witness_form": [
+     [
+      16,
+      16,
+      16
+     ],
+     [
+      -15,
+      -15,
+      15
+     ]
+    ],
+    "seconds": 1.1
+   },
+   "12a_507": {
+    "name": "12a_507",
+    "u": "3",
+    "sigma": -6,
+    "det": 115,
+    "verdict": "PASS",
+    "candidates": 22,
+    "witness_form": [
+     [
+      6,
+      6,
+      8
+     ],
+     [
+      -5,
+      -5,
+      5
+     ]
+    ],
+    "seconds": 3.0
+   },
+   "12a_519": {
+    "name": "12a_519",
+    "u": "3",
+    "sigma": -6,
+    "det": 111,
+    "verdict": "PASS",
+    "candidates": 25,
+    "witness_form": [
+     [
+      2,
+      10,
+      10
+     ],
+     [
+      0,
+      0,
+      -9
+     ]
+    ],
+    "seconds": 1.6
+   },
+   "12a_538": {
+    "name": "12a_538",
+    "u": "3",
+    "sigma": -6,
+    "det": 83,
+    "verdict": "PASS",
+    "candidates": 11,
+    "witness_form": [
+     [
+      2,
+      2,
+      10
+     ],
+     [
+      -1,
+      -1,
+      0
+     ]
+    ],
+    "seconds": 0.9
+   },
+   "12a_575": {
+    "name": "12a_575",
+    "u": "3",
+    "sigma": -6,
+    "det": 183,
+    "verdict": "PASS",
+    "candidates": 27,
+    "witness_form": [
+     [
+      4,
+      6,
+      6
+     ],
+     [
+      -3,
+      -3,
+      4
+     ]
+    ],
+    "seconds": 5.9
+   },
+   "12a_576": {
+    "name": "12a_576",
+    "u": "3",
+    "sigma": 6,
+    "det": 63,
+    "verdict": "PASS",
+    "candidates": 19,
+    "witness_form": [
+     [
+      12,
+      12,
+      12
+     ],
+     [
+      -11,
+      -11,
+      10
+     ]
+    ],
+    "seconds": 0.4
+   },
+   "12a_587": {
+    "name": "12a_587",
+    "u": "3",
+    "sigma": -6,
+    "det": 175,
+    "verdict": "PASS",
+    "candidates": 34,
+    "witness_form": [
+     [
+      2,
+      16,
+      16
+     ],
+     [
+      -1,
+      -1,
+      15
+     ]
+    ],
+    "seconds": 2.6
+   },
+   "12a_590": {
+    "name": "12a_590",
+    "u": "3",
+    "sigma": -6,
+    "det": 151,
+    "verdict": "PASS",
+    "candidates": 21,
+    "witness_form": [
+     [
+      2,
+      6,
+      8
+     ],
+     [
+      0,
+      -1,
+      -5
+     ]
+    ],
+    "seconds": 2.6
+   },
+   "12a_615": {
+    "name": "12a_615",
+    "u": "3",
+    "sigma": -6,
+    "det": 243,
+    "verdict": "PASS",
+    "candidates": 64,
+    "witness_form": [
+     [
+      4,
+      4,
+      4
+     ],
+     [
+      -1,
+      -1,
+      -1
+     ]
+    ],
+    "seconds": 39.9
+   },
+   "12a_648": {
+    "name": "12a_648",
+    "u": "3",
+    "sigma": -6,
+    "det": 147,
+    "verdict": "PASS",
+    "candidates": 42,
+    "witness_form": [
+     [
+      2,
+      6,
+      6
+     ],
+     [
+      -1,
+      -1,
+      4
+     ]
+    ],
+    "seconds": 7.2
+   },
+   "12a_660": {
+    "name": "12a_660",
+    "u": "3",
+    "sigma": -6,
+    "det": 163,
+    "verdict": "PASS",
+    "candidates": 28,
+    "witness_form": [
+     [
+      8,
+      10,
+      10
+     ],
+     [
+      -7,
+      -7,
+      9
+     ]
+    ],
+    "seconds": 6.5
+   },
+   "12a_694": {
+    "name": "12a_694",
+    "u": "3",
+    "sigma": -6,
+    "det": 159,
+    "verdict": "PASS",
+    "candidates": 26,
+    "witness_form": [
+     [
+      4,
+      4,
+      6
+     ],
+     [
+      -2,
+      -2,
+      -1
+     ]
+    ],
+    "seconds": 3.4
+   },
+   "12a_716": {
+    "name": "12a_716",
+    "u": "3",
+    "sigma": 6,
+    "det": 43,
+    "verdict": "PASS",
+    "candidates": 11,
+    "witness_form": [
+     [
+      2,
+      2,
+      6
+     ],
+     [
+      -1,
+      -1,
+      0
+     ]
+    ],
+    "seconds": 0.4
+   },
+   "12a_723": {
+    "name": "12a_723",
+    "u": "3",
+    "sigma": -6,
+    "det": 63,
+    "verdict": "PASS",
+    "candidates": 19,
+    "witness_form": [
+     [
+      4,
+      4,
+      4
+     ],
+     [
+      -3,
+      -1,
+      0
+     ]
+    ],
+    "seconds": 0.6
+   },
+   "12a_724": {
+    "name": "12a_724",
+    "u": "3",
+    "sigma": -6,
+    "det": 107,
+    "verdict": "PASS",
+    "candidates": 11,
+    "witness_form": [
+     [
+      2,
+      2,
+      12
+     ],
+     [
+      -1,
+      -1,
+      1
+     ]
+    ],
+    "seconds": 1.2
+   },
+   "12a_726": {
+    "name": "12a_726",
+    "u": "3",
+    "sigma": -6,
+    "det": 103,
+    "verdict": "PASS",
+    "candidates": 23,
+    "witness_form": [
+     [
+      2,
+      10,
+      10
+     ],
+     [
+      -1,
+      -1,
+      9
+     ]
+    ],
+    "seconds": 1.7
+   },
+   "12a_739": {
+    "name": "12a_739",
+    "u": "3",
+    "sigma": -6,
+    "det": 147,
+    "verdict": "PASS",
+    "candidates": 42,
+    "witness_form": [
+     [
+      2,
+      2,
+      10
+     ],
+     [
+      0,
+      -1,
+      -1
+     ]
+    ],
+    "seconds": 6.9
+   },
+   "12a_822": {
+    "name": "12a_822",
+    "u": "3",
+    "sigma": -6,
+    "det": 119,
+    "verdict": "PASS",
+    "candidates": 21,
+    "witness_form": [
+     [
+      6,
+      8,
+      8
+     ],
+     [
+      -5,
+      -5,
+      7
+     ]
+    ],
+    "seconds": 0.3
+   },
+   "12a_829": {
+    "name": "12a_829",
+    "u": "3",
+    "sigma": -6,
+    "det": 191,
+    "verdict": "PASS",
+    "candidates": 23,
+    "witness_form": [
+     [
+      2,
+      8,
+      10
+     ],
+     [
+      -1,
+      -1,
+      -6
+     ]
+    ],
+    "seconds": 1.4
+   },
+   "12a_832": {
+    "name": "12a_832",
+    "u": "3",
+    "sigma": -6,
+    "det": 191,
+    "verdict": "PASS",
+    "candidates": 23,
+    "witness_form": [
+     [
+      2,
+      8,
+      10
+     ],
+     [
+      -1,
+      -1,
+      -6
+     ]
+    ],
+    "seconds": 1.4
+   },
+   "12a_839": {
+    "name": "12a_839",
+    "u": "3",
+    "sigma": -6,
+    "det": 83,
+    "verdict": "PASS",
+    "candidates": 11,
+    "witness_form": [
+     [
+      2,
+      2,
+      10
+     ],
+     [
+      -1,
+      -1,
+      0
+     ]
+    ],
+    "seconds": 0.9
+   },
+   "12a_840": {
+    "name": "12a_840",
+    "u": "3",
+    "sigma": -6,
+    "det": 127,
+    "verdict": "PASS",
+    "candidates": 21,
+    "witness_form": [
+     [
+      2,
+      12,
+      12
+     ],
+     [
+      -1,
+      -1,
+      11
+     ]
+    ],
+    "seconds": 1.9
+   },
+   "12a_859": {
+    "name": "12a_859",
+    "u": "3",
+    "sigma": 6,
+    "det": 79,
+    "verdict": "PASS",
+    "candidates": 12,
+    "witness_form": [
+     [
+      2,
+      4,
+      6
+     ],
+     [
+      -1,
+      -1,
+      -2
+     ]
+    ],
+    "seconds": 0.7
+   },
+   "12a_923": {
+    "name": "12a_923",
+    "u": "3",
+    "sigma": -6,
+    "det": 135,
+    "verdict": "PASS",
+    "candidates": 32,
+    "witness_form": [
+     [
+      8,
+      8,
+      8
+     ],
+     [
+      -7,
+      -6,
+      5
+     ]
+    ],
+    "seconds": 2.4
+   },
+   "12a_930": {
+    "name": "12a_930",
+    "u": "3",
+    "sigma": -6,
+    "det": 147,
+    "verdict": "PASS",
+    "candidates": 42,
+    "witness_form": [
+     [
+      8,
+      8,
+      8
+     ],
+     [
+      -7,
+      -6,
+      6
+     ]
+    ],
+    "seconds": 6.5
+   },
+   "12a_937": {
+    "name": "12a_937",
+    "u": "3",
+    "sigma": -6,
+    "det": 79,
+    "verdict": "PASS",
+    "candidates": 12,
+    "witness_form": [
+     [
+      14,
+      14,
+      14
+     ],
+     [
+      -13,
+      -13,
+      13
+     ]
+    ],
+    "seconds": 0.3
+   },
+   "12a_946": {
+    "name": "12a_946",
+    "u": "3",
+    "sigma": -6,
+    "det": 151,
+    "verdict": "PASS",
+    "candidates": 21,
+    "witness_form": [
+     [
+      2,
+      14,
+      14
+     ],
+     [
+      -1,
+      -1,
+      13
+     ]
+    ],
+    "seconds": 2.1
+   },
+   "12a_952": {
+    "name": "12a_952",
+    "u": "3",
+    "sigma": -6,
+    "det": 123,
+    "verdict": "PASS",
+    "candidates": 21,
+    "witness_form": [
+     [
+      2,
+      2,
+      14
+     ],
+     [
+      -1,
+      -1,
+      0
+     ]
+    ],
+    "seconds": 2.8
+   },
+   "12a_977": {
+    "name": "12a_977",
+    "u": "3",
+    "sigma": -6,
+    "det": 175,
+    "verdict": "PASS",
+    "candidates": 34,
+    "witness_form": [
+     [
+      2,
+      4,
+      6
+     ],
+     [
+      -1,
+      0,
+      -1
+     ]
+    ],
+    "seconds": 5.3
+   },
+   "12a_984": {
+    "name": "12a_984",
+    "u": "3",
+    "sigma": 6,
+    "det": 103,
+    "verdict": "PASS",
+    "candidates": 23,
+    "witness_form": [
+     [
+      2,
+      10,
+      10
+     ],
+     [
+      -1,
+      -1,
+      9
+     ]
+    ],
+    "seconds": 1.8
+   },
+   "12a_1036": {
+    "name": "12a_1036",
+    "u": "3",
+    "sigma": -6,
+    "det": 159,
+    "verdict": "PASS",
+    "candidates": 26,
+    "witness_form": [
+     [
+      8,
+      8,
+      10
+     ],
+     [
+      -7,
+      -7,
+      7
+     ]
+    ],
+    "seconds": 2.2
+   },
+   "12a_1059": {
+    "name": "12a_1059",
+    "u": "3",
+    "sigma": -6,
+    "det": 183,
+    "verdict": "PASS",
+    "candidates": 27,
+    "witness_form": [
+     [
+      2,
+      2,
+      12
+     ],
+     [
+      0,
+      -1,
+      -1
+     ]
+    ],
+    "seconds": 5.4
+   },
+   "12a_1157": {
+    "name": "12a_1157",
+    "u": "3",
+    "sigma": -6,
+    "det": 39,
+    "verdict": "PASS",
+    "candidates": 8,
+    "witness_form": [
+     [
+      8,
+      8,
+      8
+     ],
+     [
+      -7,
+      -7,
+      6
+     ]
+    ],
+    "seconds": 0.4
+   },
+   "12a_1220": {
+    "name": "12a_1220",
+    "u": "3",
+    "sigma": 6,
+    "det": 91,
+    "verdict": "PASS",
+    "candidates": 19,
+    "witness_form": [
+     [
+      6,
+      6,
+      6
+     ],
+     [
+      -5,
+      -4,
+      3
+     ]
+    ],
+    "seconds": 1.6
+   },
+   "12a_1242": {
+    "name": "12a_1242",
+    "u": "3",
+    "sigma": -6,
+    "det": 47,
+    "verdict": "PASS",
+    "candidates": 11,
+    "witness_form": [
+     [
+      2,
+      2,
+      6
+     ],
+     [
+      -1,
+      -1,
+      1
+     ]
+    ],
+    "seconds": 0.4
+   },
+   "13a_8": {
+    "name": "13a_8",
+    "u": "3",
+    "sigma": -6,
+    "det": 287,
+    "verdict": "PASS",
+    "candidates": 36,
+    "witness_form": [
+     [
+      2,
+      12,
+      12
+     ],
+     [
+      -1,
+      -1,
+      -9
+     ]
+    ],
+    "seconds": 6.1
+   },
+   "13a_14": {
+    "name": "13a_14",
+    "u": "3",
+    "sigma": -6,
+    "det": 243,
+    "verdict": "PASS",
+    "candidates": 64,
+    "witness_form": [
+     [
+      12,
+      12,
+      14
+     ],
+     [
+      -11,
+      -11,
+      10
+     ]
+    ],
+    "seconds": 30.1
+   },
+   "13a_29": {
+    "name": "13a_29",
+    "u": "3",
+    "sigma": -6,
+    "det": 287,
+    "verdict": "PASS",
+    "candidates": 36,
+    "witness_form": [
+     [
+      2,
+      12,
+      12
+     ],
+     [
+      -1,
+      -1,
+      -9
+     ]
+    ],
+    "seconds": 6.1
+   },
+   "13a_47": {
+    "name": "13a_47",
+    "u": "3",
+    "sigma": -6,
+    "det": 307,
+    "verdict": "PASS",
+    "candidates": 45,
+    "witness_form": [
+     [
+      4,
+      6,
+      6
+     ],
+     [
+      -2,
+      -1,
+      4
+     ]
+    ],
+    "seconds": 47.0
+   },
+   "13a_85": {
+    "name": "13a_85",
+    "u": "3",
+    "sigma": -6,
+    "det": 87,
+    "verdict": "PASS",
+    "candidates": 16,
+    "witness_form": [
+     [
+      2,
+      2,
+      10
+     ],
+     [
+      -1,
+      -1,
+      1
+     ]
+    ],
+    "seconds": 1.0
+   },
+   "13a_125": {
+    "name": "13a_125",
+    "u": "3",
+    "sigma": -6,
+    "det": 279,
+    "verdict": "PASS",
+    "candidates": 65,
+    "witness_form": [
+     [
+      4,
+      6,
+      10
+     ],
+     [
+      0,
+      -2,
+      -6
+     ]
+    ],
+    "seconds": 16.2
+   },
+   "13a_132": {
+    "name": "13a_132",
+    "u": "3",
+    "sigma": -6,
+    "det": 315,
+    "verdict": "PASS",
+    "candidates": 56,
+    "witness_form": [
+     [
+      4,
+      4,
+      6
+     ],
+     [
+      0,
+      -2,
+      -2
+     ]
+    ],
+    "seconds": 50.3
+   },
+   "13a_145": {
+    "name": "13a_145",
+    "u": "3",
+    "sigma": -6,
+    "det": 251,
+    "verdict": "PASS",
+    "candidates": 31,
+    "witness_form": [
+     [
+      12,
+      14,
+      14
+     ],
+     [
+      -11,
+      -11,
+      13
+     ]
+    ],
+    "seconds": 20.5
+   },
+   "13a_176": {
+    "name": "13a_176",
+    "u": "3",
+    "sigma": -6,
+    "det": 151,
+    "verdict": "PASS",
+    "candidates": 21,
+    "witness_form": [
+     [
+      26,
+      26,
+      26
+     ],
+     [
+      -25,
+      -25,
+      25
+     ]
+    ],
+    "seconds": 0.9
+   },
+   "13a_191": {
+    "name": "13a_191",
+    "u": "3",
+    "sigma": -6,
+    "det": 315,
+    "verdict": "PASS",
+    "candidates": 56,
+    "witness_form": [
+     [
+      4,
+      4,
+      6
+     ],
+     [
+      0,
+      -2,
+      -2
+     ]
+    ],
+    "seconds": 50.6
+   },
+   "13a_193": {
+    "name": "13a_193",
+    "u": "3",
+    "sigma": -6,
+    "det": 279,
+    "verdict": "PASS",
+    "candidates": 65,
+    "witness_form": [
+     [
+      4,
+      6,
+      10
+     ],
+     [
+      0,
+      -2,
+      -6
+     ]
+    ],
+    "seconds": 16.3
+   },
+   "13a_249": {
+    "name": "13a_249",
+    "u": "3",
+    "sigma": -6,
+    "det": 243,
+    "verdict": "PASS",
+    "candidates": 64,
+    "witness_form": [
+     [
+      4,
+      12,
+      12
+     ],
+     [
+      -3,
+      -3,
+      11
+     ]
+    ],
+    "seconds": 31.0
+   },
+   "13a_279": {
+    "name": "13a_279",
+    "u": "3",
+    "sigma": -6,
+    "det": 239,
+    "verdict": "PASS",
+    "candidates": 22,
+    "witness_form": [
+     [
+      2,
+      10,
+      14
+     ],
+     [
+      -1,
+      -1,
+      -9
+     ]
+    ],
+    "seconds": 1.5
+   },
+   "13a_286": {
+    "name": "13a_286",
+    "u": "3",
+    "sigma": -6,
+    "det": 263,
+    "verdict": "PASS",
+    "candidates": 27,
+    "witness_form": [
+     [
+      2,
+      10,
+      12
+     ],
+     [
+      0,
+      -1,
+      -9
+     ]
+    ],
+    "seconds": 4.7
+   },
+   "13a_330": {
+    "name": "13a_330",
+    "u": "3",
+    "sigma": -6,
+    "det": 163,
+    "verdict": "PASS",
+    "candidates": 28,
+    "witness_form": [
+     [
+      2,
+      2,
+      18
+     ],
+     [
+      -1,
+      -1,
+      0
+     ]
+    ],
+    "seconds": 6.1
+   },
+   "13a_355": {
+    "name": "13a_355",
+    "u": "3",
+    "sigma": -6,
+    "det": 267,
+    "verdict": "PASS",
+    "candidates": 44,
+    "witness_form": [
+     [
+      4,
+      4,
+      6
+     ],
+     [
+      -2,
+      -2,
+      2
+     ]
+    ],
+    "seconds": 38.1
+   },
+   "13a_363": {
+    "name": "13a_363",
+    "u": "3",
+    "sigma": -6,
+    "det": 315,
+    "verdict": "PASS",
+    "candidates": 56,
+    "witness_form": [
+     [
+      2,
+      10,
+      12
+     ],
+     [
+      -1,
+      -1,
+      9
+     ]
+    ],
+    "seconds": 47.2
+   },
+   "13a_368": {
+    "name": "13a_368",
+    "u": "3",
+    "sigma": -6,
+    "det": 303,
+    "verdict": "PASS",
+    "candidates": 34,
+    "witness_form": [
+     [
+      4,
+      6,
+      6
+     ],
+     [
+      -2,
+      -2,
+      4
+     ]
+    ],
+    "seconds": 17.6
+   },
+   "13a_402": {
+    "name": "13a_402",
+    "u": "3",
+    "sigma": -6,
+    "det": 267,
+    "verdict": "PASS",
+    "candidates": 44,
+    "witness_form": [
+     [
+      4,
+      4,
+      6
+     ],
+     [
+      -2,
+      -2,
+      2
+     ]
+    ],
+    "seconds": 37.5
+   },
+   "13a_416": {
+    "name": "13a_416",
+    "u": "3",
+    "sigma": 6,
+    "det": 263,
+    "verdict": "PASS",
+    "candidates": 27,
+    "witness_form": [
+     [
+      2,
+      10,
+      12
+     ],
+     [
+      0,
+      -1,
+      -9
+     ]
+    ],
+    "seconds": 4.6
+   },
+   "13a_451": {
+    "name": "13a_451",
+    "u": "3",
+    "sigma": -6,
+    "det": 203,
+    "verdict": "PASS",
+    "candidates": 28,
+    "witness_form": [
+     [
+      2,
+      2,
+      22
+     ],
+     [
+      -1,
+      -1,
+      0
+     ]
+    ],
+    "seconds": 6.9
+   },
+   "13a_501": {
+    "name": "13a_501",
+    "u": "3",
+    "sigma": -6,
+    "det": 127,
+    "verdict": "PASS",
+    "candidates": 21,
+    "witness_form": [
+     [
+      2,
+      2,
+      14
+     ],
+     [
+      -1,
+      -1,
+      1
+     ]
+    ],
+    "seconds": 2.4
+   },
+   "13a_548": {
+    "name": "13a_548",
+    "u": "3",
+    "sigma": -6,
+    "det": 243,
+    "verdict": "PASS",
+    "candidates": 64,
+    "witness_form": [
+     [
+      4,
+      4,
+      8
+     ],
+     [
+      -2,
+      -3,
+      0
+     ]
+    ],
+    "seconds": 35.0
+   },
+   "13a_560": {
+    "name": "13a_560",
+    "u": "3",
+    "sigma": 6,
+    "det": 203,
+    "verdict": "PASS",
+    "candidates": 28,
+    "witness_form": [
+     [
+      10,
+      10,
+      12
+     ],
+     [
+      -9,
+      -9,
+      9
+     ]
+    ],
+    "seconds": 9.2
+   },
+   "13a_567": {
+    "name": "13a_567",
+    "u": "3",
+    "sigma": 6,
+    "det": 207,
+    "verdict": "PASS",
+    "candidates": 38,
+    "witness_form": [
+     [
+      10,
+      12,
+      12
+     ],
+     [
+      -9,
+      -9,
+      11
+     ]
+    ],
+    "seconds": 12.0
+   },
+   "13a_616": {
+    "name": "13a_616",
+    "u": "3",
+    "sigma": 6,
+    "det": 135,
+    "verdict": "PASS",
+    "candidates": 32,
+    "witness_form": [
+     [
+      4,
+      10,
+      10
+     ],
+     [
+      -3,
+      -2,
+      9
+     ]
+    ],
+    "seconds": 2.3
+   },
+   "13a_622": {
+    "name": "13a_622",
+    "u": "3",
+    "sigma": -6,
+    "det": 327,
+    "verdict": "PASS",
+    "candidates": 56,
+    "witness_form": [
+     [
+      2,
+      2,
+      20
+     ],
+     [
+      0,
+      -1,
+      -1
+     ]
+    ],
+    "seconds": 68.3
+   },
+   "13a_809": {
+    "name": "13a_809",
+    "u": "3",
+    "sigma": -6,
+    "det": 287,
+    "verdict": "PASS",
+    "candidates": 36,
+    "witness_form": [
+     [
+      4,
+      4,
+      4
+     ],
+     [
+      -1,
+      -1,
+      0
+     ]
+    ],
+    "seconds": 10.8
+   },
+   "13a_866": {
+    "name": "13a_866",
+    "u": "3",
+    "sigma": -6,
+    "det": 259,
+    "verdict": "PASS",
+    "candidates": 34,
+    "witness_form": [
+     [
+      4,
+      4,
+      6
+     ],
+     [
+      0,
+      -3,
+      -1
+     ]
+    ],
+    "seconds": 43.0
+   },
+   "13a_990": {
+    "name": "13a_990",
+    "u": "3",
+    "sigma": -6,
+    "det": 291,
+    "verdict": "PASS",
+    "candidates": 46,
+    "witness_form": [
+     [
+      6,
+      8,
+      8
+     ],
+     [
+      -5,
+      -3,
+      6
+     ]
+    ],
+    "seconds": 49.1
+   },
+   "13a_1064": {
+    "name": "13a_1064",
+    "u": "3",
+    "sigma": -6,
+    "det": 287,
+    "verdict": "PASS",
+    "candidates": 36,
+    "witness_form": [
+     [
+      4,
+      4,
+      6
+     ],
+     [
+      -2,
+      -2,
+      1
+     ]
+    ],
+    "seconds": 10.7
+   },
+   "13a_1120": {
+    "name": "13a_1120",
+    "u": "3",
+    "sigma": -6,
+    "det": 335,
+    "verdict": "PASS",
+    "candidates": 45,
+    "witness_form": [
+     [
+      4,
+      4,
+      6
+     ],
+     [
+      -1,
+      -2,
+      2
+     ]
+    ],
+    "seconds": 20.9
+   },
+   "13a_1254": {
+    "name": "13a_1254",
+    "u": "3",
+    "sigma": 6,
+    "det": 171,
+    "verdict": "PASS",
+    "candidates": 39,
+    "witness_form": [
+     [
+      4,
+      4,
+      10
+     ],
+     [
+      -3,
+      -3,
+      2
+     ]
+    ],
+    "seconds": 9.6
+   },
+   "13a_1305": {
+    "name": "13a_1305",
+    "u": "3",
+    "sigma": -6,
+    "det": 363,
+    "verdict": "PASS",
+    "candidates": 70,
+    "witness_form": [
+     [
+      2,
+      2,
+      22
+     ],
+     [
+      0,
+      -1,
+      -1
+     ]
+    ],
+    "seconds": 202.7
+   },
+   "13a_1436": {
+    "name": "13a_1436",
+    "u": "3",
+    "sigma": -6,
+    "det": 243,
+    "verdict": "PASS",
+    "candidates": 64,
+    "witness_form": [
+     [
+      6,
+      6,
+      6
+     ],
+     [
+      -4,
+      -4,
+      4
+     ]
+    ],
+    "seconds": 44.5
+   },
+   "13a_1614": {
+    "name": "13a_1614",
+    "u": "3",
+    "sigma": 6,
+    "det": 299,
+    "verdict": "PASS",
+    "candidates": 34,
+    "witness_form": [
+     [
+      4,
+      6,
+      8
+     ],
+     [
+      -2,
+      -3,
+      5
+     ]
+    ],
+    "seconds": 36.9
+   },
+   "13a_1827": {
+    "name": "13a_1827",
+    "u": "3",
+    "sigma": -6,
+    "det": 267,
+    "verdict": "PASS",
+    "candidates": 44,
+    "witness_form": [
+     [
+      8,
+      10,
+      10
+     ],
+     [
+      -6,
+      -6,
+      9
+     ]
+    ],
+    "seconds": 45.1
+   },
+   "13a_1919": {
+    "name": "13a_1919",
+    "u": "3",
+    "sigma": -6,
+    "det": 227,
+    "verdict": "PASS",
+    "candidates": 29,
+    "witness_form": [
+     [
+      4,
+      10,
+      10
+     ],
+     [
+      -2,
+      -2,
+      9
+     ]
+    ],
+    "seconds": 27.5
+   },
+   "13a_2056": {
+    "name": "13a_2056",
+    "u": "3",
+    "sigma": 6,
+    "det": 159,
+    "verdict": "PASS",
+    "candidates": 26,
+    "witness_form": [
+     [
+      28,
+      28,
+      28
+     ],
+     [
+      -27,
+      -27,
+      26
+     ]
+    ],
+    "seconds": 1.2
+   },
+   "13a_2118": {
+    "name": "13a_2118",
+    "u": "3",
+    "sigma": -6,
+    "det": 227,
+    "verdict": "PASS",
+    "candidates": 29,
+    "witness_form": [
+     [
+      2,
+      2,
+      24
+     ],
+     [
+      -1,
+      -1,
+      1
+     ]
+    ],
+    "seconds": 24.5
+   },
+   "13a_2154": {
+    "name": "13a_2154",
+    "u": "3",
+    "sigma": -6,
+    "det": 223,
+    "verdict": "PASS",
+    "candidates": 41,
+    "witness_form": [
+     [
+      2,
+      2,
+      24
+     ],
+     [
+      -1,
+      -1,
+      0
+     ]
+    ],
+    "seconds": 14.5
+   },
+   "13a_2216": {
+    "name": "13a_2216",
+    "u": "3",
+    "sigma": -6,
+    "det": 311,
+    "verdict": "PASS",
+    "candidates": 41,
+    "witness_form": [
+     [
+      4,
+      6,
+      6
+     ],
+     [
+      -3,
+      -2,
+      3
+     ]
+    ],
+    "seconds": 5.9
+   },
+   "13a_2287": {
+    "name": "13a_2287",
+    "u": "3",
+    "sigma": 6,
+    "det": 215,
+    "verdict": "PASS",
+    "candidates": 35,
+    "witness_form": [
+     [
+      4,
+      6,
+      10
+     ],
+     [
+      -2,
+      -4,
+      6
+     ]
+    ],
+    "seconds": 4.3
+   },
+   "13a_2358": {
+    "name": "13a_2358",
+    "u": "3",
+    "sigma": 6,
+    "det": 227,
+    "verdict": "PASS",
+    "candidates": 29,
+    "witness_form": [
+     [
+      4,
+      4,
+      12
+     ],
+     [
+      -3,
+      -3,
+      3
+     ]
+    ],
+    "seconds": 27.5
+   },
+   "13a_2474": {
+    "name": "13a_2474",
+    "u": "3",
+    "sigma": -6,
+    "det": 111,
+    "verdict": "PASS",
+    "candidates": 25,
+    "witness_form": [
+     [
+      6,
+      6,
+      8
+     ],
+     [
+      -5,
+      -5,
+      4
+     ]
+    ],
+    "seconds": 2.8
+   },
+   "13a_2548": {
+    "name": "13a_2548",
+    "u": "3",
+    "sigma": 6,
+    "det": 175,
+    "verdict": "PASS",
+    "candidates": 34,
+    "witness_form": [
+     [
+      2,
+      16,
+      16
+     ],
+     [
+      -1,
+      -1,
+      15
+     ]
+    ],
+    "seconds": 3.4
+   },
+   "13a_2696": {
+    "name": "13a_2696",
+    "u": "3",
+    "sigma": 6,
+    "det": 99,
+    "verdict": "PASS",
+    "candidates": 23,
+    "witness_form": [
+     [
+      4,
+      4,
+      6
+     ],
+     [
+      -3,
+      -2,
+      1
+     ]
+    ],
+    "seconds": 2.1
+   },
+   "13a_2783": {
+    "name": "13a_2783",
+    "u": "3",
+    "sigma": 6,
+    "det": 139,
+    "verdict": "PASS",
+    "candidates": 20,
+    "witness_form": [
+     [
+      24,
+      24,
+      24
+     ],
+     [
+      -23,
+      -23,
+      23
+     ]
+    ],
+    "seconds": 5.6
+   },
+   "13a_2824": {
+    "name": "13a_2824",
+    "u": "3",
+    "sigma": -6,
+    "det": 167,
+    "verdict": "PASS",
+    "candidates": 23,
+    "witness_form": [
+     [
+      2,
+      2,
+      18
+     ],
+     [
+      -1,
+      -1,
+      1
+     ]
+    ],
+    "seconds": 0.9
+   },
+   "13a_2833": {
+    "name": "13a_2833",
+    "u": "3",
+    "sigma": 6,
+    "det": 167,
+    "verdict": "PASS",
+    "candidates": 23,
+    "witness_form": [
+     [
+      4,
+      4,
+      8
+     ],
+     [
+      -3,
+      -1,
+      0
+     ]
+    ],
+    "seconds": 3.7
+   },
+   "13a_2858": {
+    "name": "13a_2858",
+    "u": "3",
+    "sigma": -6,
+    "det": 135,
+    "verdict": "PASS",
+    "candidates": 32,
+    "witness_form": [
+     [
+      4,
+      4,
+      6
+     ],
+     [
+      -3,
+      -1,
+      1
+     ]
+    ],
+    "seconds": 3.1
+   },
+   "13a_2880": {
+    "name": "13a_2880",
+    "u": "3",
+    "sigma": -6,
+    "det": 323,
+    "verdict": "PASS",
+    "candidates": 42,
+    "witness_form": [
+     [
+      4,
+      4,
+      6
+     ],
+     [
+      -1,
+      -2,
+      -1
+     ]
+    ],
+    "seconds": 56.0
+   },
+   "13a_2934": {
+    "name": "13a_2934",
+    "u": "3",
+    "sigma": -6,
+    "det": 131,
+    "verdict": "PASS",
+    "candidates": 16,
+    "witness_form": [
+     [
+      2,
+      4,
+      6
+     ],
+     [
+      -1,
+      -1,
+      -1
+     ]
+    ],
+    "seconds": 5.0
+   },
+   "13a_2961": {
+    "name": "13a_2961",
+    "u": "3",
+    "sigma": -6,
+    "det": 291,
+    "verdict": "PASS",
+    "candidates": 46,
+    "witness_form": [
+     [
+      2,
+      2,
+      18
+     ],
+     [
+      0,
+      -1,
+      -1
+     ]
+    ],
+    "seconds": 44.9
+   },
+   "13a_2983": {
+    "name": "13a_2983",
+    "u": "3",
+    "sigma": -6,
+    "det": 279,
+    "verdict": "PASS",
+    "candidates": 65,
+    "witness_form": [
+     [
+      4,
+      6,
+      12
+     ],
+     [
+      -1,
+      -5,
+      5
+     ]
+    ],
+    "seconds": 20.9
+   },
+   "13a_3018": {
+    "name": "13a_3018",
+    "u": "3",
+    "sigma": -6,
+    "det": 159,
+    "verdict": "PASS",
+    "candidates": 26,
+    "witness_form": [
+     [
+      6,
+      6,
+      6
+     ],
+     [
+      -5,
+      -3,
+      3
+     ]
+    ],
+    "seconds": 3.5
+   },
+   "13a_3099": {
+    "name": "13a_3099",
+    "u": "3",
+    "sigma": -6,
+    "det": 115,
+    "verdict": "PASS",
+    "candidates": 22,
+    "witness_form": [
+     [
+      6,
+      6,
+      8
+     ],
+     [
+      -5,
+      -5,
+      5
+     ]
+    ],
+    "seconds": 3.8
+   },
+   "13a_3123": {
+    "name": "13a_3123",
+    "u": "3",
+    "sigma": -6,
+    "det": 151,
+    "verdict": "PASS",
+    "candidates": 21,
+    "witness_form": [
+     [
+      2,
+      6,
+      8
+     ],
+     [
+      0,
+      -1,
+      -5
+     ]
+    ],
+    "seconds": 3.3
+   },
+   "13a_3134": {
+    "name": "13a_3134",
+    "u": "3",
+    "sigma": -6,
+    "det": 231,
+    "verdict": "PASS",
+    "candidates": 32,
+    "witness_form": [
+     [
+      4,
+      4,
+      8
+     ],
+     [
+      0,
+      -3,
+      -3
+     ]
+    ],
+    "seconds": 15.3
+   },
+   "13a_3141": {
+    "name": "13a_3141",
+    "u": "3",
+    "sigma": -6,
+    "det": 111,
+    "verdict": "PASS",
+    "candidates": 25,
+    "witness_form": [
+     [
+      2,
+      2,
+      8
+     ],
+     [
+      0,
+      -1,
+      -1
+     ]
+    ],
+    "seconds": 2.5
+   },
+   "13a_3230": {
+    "name": "13a_3230",
+    "u": "3",
+    "sigma": -6,
+    "det": 303,
+    "verdict": "PASS",
+    "candidates": 34,
+    "witness_form": [
+     [
+      2,
+      2,
+      18
+     ],
+     [
+      0,
+      -1,
+      0
+     ]
+    ],
+    "seconds": 18.9
+   },
+   "13a_3283": {
+    "name": "13a_3283",
+    "u": "3",
+    "sigma": -6,
+    "det": 303,
+    "verdict": "PASS",
+    "candidates": 34,
+    "witness_form": [
+     [
+      2,
+      2,
+      18
+     ],
+     [
+      0,
+      -1,
+      0
+     ]
+    ],
+    "seconds": 18.9
+   },
+   "13a_3330": {
+    "name": "13a_3330",
+    "u": "3",
+    "sigma": -6,
+    "det": 259,
+    "verdict": "PASS",
+    "candidates": 34,
+    "witness_form": [
+     [
+      4,
+      10,
+      10
+     ],
+     [
+      0,
+      0,
+      -9
+     ]
+    ],
+    "seconds": 39.5
+   },
+   "13a_3366": {
+    "name": "13a_3366",
+    "u": "3",
+    "sigma": 6,
+    "det": 243,
+    "verdict": "PASS",
+    "candidates": 64,
+    "witness_form": [
+     [
+      6,
+      6,
+      8
+     ],
+     [
+      -5,
+      -3,
+      3
+     ]
+    ],
+    "seconds": 39.4
+   },
+   "13a_3579": {
+    "name": "13a_3579",
+    "u": "3",
+    "sigma": -6,
+    "det": 343,
+    "verdict": "PASS",
+    "candidates": 56,
+    "witness_form": [
+     [
+      2,
+      6,
+      8
+     ],
+     [
+      0,
+      -1,
+      -3
+     ]
+    ],
+    "seconds": 75.6
+   },
+   "13a_3603": {
+    "name": "13a_3603",
+    "u": "3",
+    "sigma": -6,
+    "det": 267,
+    "verdict": "PASS",
+    "candidates": 44,
+    "witness_form": [
+     [
+      2,
+      2,
+      16
+     ],
+     [
+      0,
+      -1,
+      0
+     ]
+    ],
+    "seconds": 43.4
+   },
+   "13a_3735": {
+    "name": "13a_3735",
+    "u": "3",
+    "sigma": 6,
+    "det": 291,
+    "verdict": "PASS",
+    "candidates": 46,
+    "witness_form": [
+     [
+      14,
+      14,
+      16
+     ],
+     [
+      -13,
+      -13,
+      13
+     ]
+    ],
+    "seconds": 36.6
+   },
+   "13a_3827": {
+    "name": "13a_3827",
+    "u": "3",
+    "sigma": -6,
+    "det": 247,
+    "verdict": "PASS",
+    "candidates": 41,
+    "witness_form": [
+     [
+      6,
+      8,
+      8
+     ],
+     [
+      -3,
+      -3,
+      7
+     ]
+    ],
+    "seconds": 20.4
+   },
+   "13a_3896": {
+    "name": "13a_3896",
+    "u": "3",
+    "sigma": -6,
+    "det": 111,
+    "verdict": "PASS",
+    "candidates": 25,
+    "witness_form": [
+     [
+      6,
+      6,
+      8
+     ],
+     [
+      -5,
+      -5,
+      4
+     ]
+    ],
+    "seconds": 2.5
+   },
+   "13a_3961": {
+    "name": "13a_3961",
+    "u": "3",
+    "sigma": -6,
+    "det": 311,
+    "verdict": "PASS",
+    "candidates": 41,
+    "witness_form": [
+     [
+      6,
+      8,
+      8
+     ],
+     [
+      -1,
+      -1,
+      7
+     ]
+    ],
+    "seconds": 3.6
+   },
+   "13a_3979": {
+    "name": "13a_3979",
+    "u": "3",
+    "sigma": 6,
+    "det": 335,
+    "verdict": "PASS",
+    "candidates": 45,
+    "witness_form": [
+     [
+      4,
+      8,
+      8
+     ],
+     [
+      -3,
+      -1,
+      -4
+     ]
+    ],
+    "seconds": 15.9
+   },
+   "13a_4171": {
+    "name": "13a_4171",
+    "u": "3",
+    "sigma": -6,
+    "det": 243,
+    "verdict": "PASS",
+    "candidates": 64,
+    "witness_form": [
+     [
+      2,
+      2,
+      26
+     ],
+     [
+      -1,
+      -1,
+      0
+     ]
+    ],
+    "seconds": 31.2
+   },
+   "13a_4273": {
+    "name": "13a_4273",
+    "u": "3",
+    "sigma": 6,
+    "det": 111,
+    "verdict": "PASS",
+    "candidates": 25,
+    "witness_form": [
+     [
+      2,
+      10,
+      10
+     ],
+     [
+      0,
+      0,
+      -9
+     ]
+    ],
+    "seconds": 1.8
+   },
+   "13a_4313": {
+    "name": "13a_4313",
+    "u": "3",
+    "sigma": -6,
+    "det": 175,
+    "verdict": "PASS",
+    "candidates": 34,
+    "witness_form": [
+     [
+      2,
+      16,
+      16
+     ],
+     [
+      -1,
+      -1,
+      15
+     ]
+    ],
+    "seconds": 2.9
+   },
+   "13a_4321": {
+    "name": "13a_4321",
+    "u": "3",
+    "sigma": -6,
+    "det": 259,
+    "verdict": "PASS",
+    "candidates": 34,
+    "witness_form": [
+     [
+      6,
+      6,
+      10
+     ],
+     [
+      -5,
+      -4,
+      3
+     ]
+    ],
+    "seconds": 36.4
+   },
+   "13a_4365": {
+    "name": "13a_4365",
+    "u": "3",
+    "sigma": -6,
+    "det": 351,
+    "verdict": "PASS",
+    "candidates": 68,
+    "witness_form": [
+     [
+      4,
+      6,
+      12
+     ],
+     [
+      -1,
+      -4,
+      6
+     ]
+    ],
+    "seconds": 51.5
+   },
+   "13a_4434": {
+    "name": "13a_4434",
+    "u": "3",
+    "sigma": -6,
+    "det": 311,
+    "verdict": "PASS",
+    "candidates": 41,
+    "witness_form": [
+     [
+      2,
+      4,
+      10
+     ],
+     [
+      -1,
+      0,
+      -1
+     ]
+    ],
+    "seconds": 3.9
+   },
+   "13a_4538": {
+    "name": "13a_4538",
+    "u": "3",
+    "sigma": 6,
+    "det": 87,
+    "verdict": "PASS",
+    "candidates": 16,
+    "witness_form": [
+     [
+      16,
+      16,
+      16
+     ],
+     [
+      -15,
+      -15,
+      14
+     ]
+    ],
+    "seconds": 0.3
+   },
+   "13a_4574": {
+    "name": "13a_4574",
+    "u": "3",
+    "sigma": -6,
+    "det": 203,
+    "verdict": "PASS",
+    "candidates": 28,
+    "witness_form": [
+     [
+      2,
+      2,
+      22
+     ],
+     [
+      -1,
+      -1,
+      0
+     ]
+    ],
+    "seconds": 7.4
+   },
+   "13a_4643": {
+    "name": "13a_4643",
+    "u": "3",
+    "sigma": -6,
+    "det": 151,
+    "verdict": "PASS",
+    "candidates": 21,
+    "witness_form": [
+     [
+      2,
+      14,
+      14
+     ],
+     [
+      -1,
+      -1,
+      13
+     ]
+    ],
+    "seconds": 2.8
+   },
+   "13a_4709": {
+    "name": "13a_4709",
+    "u": "3",
+    "sigma": -6,
+    "det": 259,
+    "verdict": "PASS",
+    "candidates": 34,
+    "witness_form": [
+     [
+      6,
+      6,
+      10
+     ],
+     [
+      -5,
+      -4,
+      3
+     ]
+    ],
+    "seconds": 35.8
+   },
+   "13a_4750": {
+    "name": "13a_4750",
+    "u": "3",
+    "sigma": -6,
+    "det": 275,
+    "verdict": "PASS",
+    "candidates": 48,
+    "witness_form": [
+     [
+      6,
+      10,
+      10
+     ],
+     [
+      -6,
+      -4,
+      8
+     ]
+    ],
+    "seconds": 36.4
+   },
+   "13a_4809": {
+    "name": "13a_4809",
+    "u": "3",
+    "sigma": 6,
+    "det": 319,
+    "verdict": "PASS",
+    "candidates": 45,
+    "witness_form": [
+     [
+      2,
+      6,
+      6
+     ],
+     [
+      -1,
+      0,
+      0
+     ]
+    ],
+    "seconds": 54.5
+   },
+   "13a_660": {
+    "name": "13a_660",
+    "u": "3",
+    "sigma": 6,
+    "det": 155,
+    "verdict": "OBSTRUCTED",
+    "candidates": 23,
+    "seconds": 6.9
+   },
+   "13a_812": {
+    "name": "13a_812",
+    "u": "3",
+    "sigma": -6,
+    "det": 243,
+    "verdict": "PASS",
+    "candidates": 64,
+    "witness_form": [
+     [
+      2,
+      8,
+      10
+     ],
+     [
+      -1,
+      -1,
+      7
+     ]
+    ],
+    "seconds": 37.7
+   },
+   "13a_868": {
+    "name": "13a_868",
+    "u": "3",
+    "sigma": -6,
+    "det": 191,
+    "verdict": "PASS",
+    "candidates": 23,
+    "witness_form": [
+     [
+      2,
+      4,
+      6
+     ],
+     [
+      0,
+      -1,
+      -1
+     ]
+    ],
+    "seconds": 1.9
+   },
+   "13a_1031": {
+    "name": "13a_1031",
+    "u": "3",
+    "sigma": -6,
+    "det": 315,
+    "verdict": "PASS",
+    "candidates": 56,
+    "witness_form": [
+     [
+      2,
+      10,
+      12
+     ],
+     [
+      -1,
+      -1,
+      9
+     ]
+    ],
+    "seconds": 61.1
+   },
+   "13a_1074": {
+    "name": "13a_1074",
+    "u": "3",
+    "sigma": -6,
+    "det": 307,
+    "verdict": "PASS",
+    "candidates": 45,
+    "witness_form": [
+     [
+      4,
+      6,
+      6
+     ],
+     [
+      -2,
+      -1,
+      4
+     ]
+    ],
+    "seconds": 61.1
+   },
+   "13a_1204": {
+    "name": "13a_1204",
+    "u": "3",
+    "sigma": -6,
+    "det": 283,
+    "verdict": "PASS",
+    "candidates": 40,
+    "witness_form": [
+     [
+      2,
+      4,
+      12
+     ],
+     [
+      -1,
+      -1,
+      -2
+     ]
+    ],
+    "seconds": 47.8
+   },
+   "13a_1271": {
+    "name": "13a_1271",
+    "u": "3",
+    "sigma": -6,
+    "det": 363,
+    "verdict": "PASS",
+    "candidates": 70,
+    "witness_form": [
+     [
+      2,
+      8,
+      10
+     ],
+     [
+      0,
+      -1,
+      -6
+     ]
+    ],
+    "seconds": 208.4
+   },
+   "13a_1319": {
+    "name": "13a_1319",
+    "u": "3",
+    "sigma": -6,
+    "det": 323,
+    "verdict": "PASS",
+    "candidates": 42,
+    "witness_form": [
+     [
+      2,
+      4,
+      10
+     ],
+     [
+      0,
+      -1,
+      -2
+     ]
+    ],
+    "seconds": 54.4
+   },
+   "13a_1468": {
+    "name": "13a_1468",
+    "u": "3",
+    "sigma": 6,
+    "det": 135,
+    "verdict": "PASS",
+    "candidates": 32,
+    "witness_form": [
+     [
+      8,
+      8,
+      8
+     ],
+     [
+      -7,
+      -6,
+      5
+     ]
+    ],
+    "seconds": 3.0
+   },
+   "13a_1697": {
+    "name": "13a_1697",
+    "u": "3",
+    "sigma": 6,
+    "det": 195,
+    "verdict": "PASS",
+    "candidates": 31,
+    "witness_form": [
+     [
+      4,
+      8,
+      8
+     ],
+     [
+      -1,
+      -1,
+      7
+     ]
+    ],
+    "seconds": 19.3
+   },
+   "13a_1864": {
+    "name": "13a_1864",
+    "u": "3",
+    "sigma": -6,
+    "det": 187,
+    "verdict": "PASS",
+    "candidates": 31,
+    "witness_form": [
+     [
+      2,
+      2,
+      20
+     ],
+     [
+      -1,
+      -1,
+      1
+     ]
+    ],
+    "seconds": 18.0
+   },
+   "13a_1929": {
+    "name": "13a_1929",
+    "u": "3",
+    "sigma": -6,
+    "det": 239,
+    "verdict": "PASS",
+    "candidates": 22,
+    "witness_form": [
+     [
+      2,
+      4,
+      8
+     ],
+     [
+      0,
+      -1,
+      -2
+     ]
+    ],
+    "seconds": 2.5
+   },
+   "13a_2064": {
+    "name": "13a_2064",
+    "u": "3",
+    "sigma": -6,
+    "det": 287,
+    "verdict": "PASS",
+    "candidates": 36,
+    "witness_form": [
+     [
+      2,
+      12,
+      12
+     ],
+     [
+      -1,
+      -1,
+      -9
+     ]
+    ],
+    "seconds": 7.7
+   },
+   "13a_2120": {
+    "name": "13a_2120",
+    "u": "3",
+    "sigma": -6,
+    "det": 215,
+    "verdict": "PASS",
+    "candidates": 35,
+    "witness_form": [
+     [
+      4,
+      4,
+      10
+     ],
+     [
+      -3,
+      -2,
+      2
+     ]
+    ],
+    "seconds": 2.5
+   },
+   "13a_2157": {
+    "name": "13a_2157",
+    "u": "3",
+    "sigma": 6,
+    "det": 167,
+    "verdict": "PASS",
+    "candidates": 23,
+    "witness_form": [
+     [
+      2,
+      2,
+      18
+     ],
+     [
+      -1,
+      -1,
+      1
+     ]
+    ],
+    "seconds": 1.1
+   },
+   "13a_2256": {
+    "name": "13a_2256",
+    "u": "3",
+    "sigma": -6,
+    "det": 295,
+    "verdict": "PASS",
+    "candidates": 39,
+    "witness_form": [
+     [
+      6,
+      6,
+      6
+     ],
+     [
+      -4,
+      -4,
+      3
+     ]
+    ],
+    "seconds": 24.8
+   },
+   "13a_2298": {
+    "name": "13a_2298",
+    "u": "3",
+    "sigma": 6,
+    "det": 247,
+    "verdict": "PASS",
+    "candidates": 41,
+    "witness_form": [
+     [
+      2,
+      22,
+      22
+     ],
+     [
+      -1,
+      -1,
+      21
+     ]
+    ],
+    "seconds": 13.6
+   },
+   "13a_2375": {
+    "name": "13a_2375",
+    "u": "3",
+    "sigma": -6,
+    "det": 299,
+    "verdict": "PASS",
+    "candidates": 34,
+    "witness_form": [
+     [
+      4,
+      14,
+      14
+     ],
+     [
+      -3,
+      -3,
+      13
+     ]
+    ],
+    "seconds": 33.5
+   },
+   "13a_2516": {
+    "name": "13a_2516",
+    "u": "3",
+    "sigma": -6,
+    "det": 275,
+    "verdict": "PASS",
+    "candidates": 48,
+    "witness_form": [
+     [
+      2,
+      4,
+      14
+     ],
+     [
+      -1,
+      -1,
+      -3
+     ]
+    ],
+    "seconds": 34.9
+   },
+   "13a_2647": {
+    "name": "13a_2647",
+    "u": "3",
+    "sigma": 6,
+    "det": 303,
+    "verdict": "PASS",
+    "candidates": 34,
+    "witness_form": [
+     [
+      4,
+      6,
+      8
+     ],
+     [
+      -1,
+      -3,
+      -3
+     ]
+    ],
+    "seconds": 22.5
+   },
+   "13a_2706": {
+    "name": "13a_2706",
+    "u": "3",
+    "sigma": -6,
+    "det": 235,
+    "verdict": "PASS",
+    "candidates": 39,
+    "witness_form": [
+     [
+      4,
+      6,
+      8
+     ],
+     [
+      -3,
+      -4,
+      3
+     ]
+    ],
+    "seconds": 43.1
+   },
+   "13a_2803": {
+    "name": "13a_2803",
+    "u": "3",
+    "sigma": -6,
+    "det": 335,
+    "verdict": "PASS",
+    "candidates": 45,
+    "witness_form": [
+     [
+      2,
+      4,
+      12
+     ],
+     [
+      -1,
+      -1,
+      -1
+     ]
+    ],
+    "seconds": 15.7
+   },
+   "13a_2825": {
+    "name": "13a_2825",
+    "u": "3",
+    "sigma": -6,
+    "det": 243,
+    "verdict": "PASS",
+    "candidates": 64,
+    "witness_form": [
+     [
+      2,
+      8,
+      10
+     ],
+     [
+      -1,
+      -1,
+      7
+     ]
+    ],
+    "seconds": 41.0
+   },
+   "13a_2845": {
+    "name": "13a_2845",
+    "u": "3",
+    "sigma": -6,
+    "det": 251,
+    "verdict": "PASS",
+    "candidates": 31,
+    "witness_form": [
+     [
+      2,
+      6,
+      10
+     ],
+     [
+      -1,
+      -1,
+      -4
+     ]
+    ],
+    "seconds": 27.5
+   },
+   "13a_2864": {
+    "name": "13a_2864",
+    "u": "3",
+    "sigma": 6,
+    "det": 243,
+    "verdict": "PASS",
+    "candidates": 64,
+    "witness_form": [
+     [
+      4,
+      4,
+      8
+     ],
+     [
+      -2,
+      -3,
+      0
+     ]
+    ],
+    "seconds": 45.5
+   },
+   "13a_2884": {
+    "name": "13a_2884",
+    "u": "3",
+    "sigma": -6,
+    "det": 279,
+    "verdict": "PASS",
+    "candidates": 65,
+    "witness_form": [
+     [
+      6,
+      10,
+      10
+     ],
+     [
+      -4,
+      -4,
+      9
+     ]
+    ],
+    "seconds": 16.6
+   },
+   "13a_2944": {
+    "name": "13a_2944",
+    "u": "3",
+    "sigma": -6,
+    "det": 191,
+    "verdict": "PASS",
+    "candidates": 23,
+    "witness_form": [
+     [
+      6,
+      8,
+      8
+     ],
+     [
+      -4,
+      -4,
+      7
+     ]
+    ],
+    "seconds": 1.6
+   },
+   "13a_2975": {
+    "name": "13a_2975",
+    "u": "3",
+    "sigma": -6,
+    "det": 379,
+    "verdict": "PASS",
+    "candidates": 51,
+    "witness_form": [
+     [
+      2,
+      6,
+      10
+     ],
+     [
+      -1,
+      -1,
+      4
+     ]
+    ],
+    "seconds": 171.2
+   },
+   "13a_3006": {
+    "name": "13a_3006",
+    "u": "3",
+    "sigma": -6,
+    "det": 211,
+    "verdict": "PASS",
+    "candidates": 26,
+    "witness_form": [
+     [
+      2,
+      6,
+      14
+     ],
+     [
+      -1,
+      -1,
+      -6
+     ]
+    ],
+    "seconds": 16.1
+   },
+   "13a_3023": {
+    "name": "13a_3023",
+    "u": "3",
+    "sigma": -6,
+    "det": 275,
+    "verdict": "PASS",
+    "candidates": 48,
+    "witness_form": [
+     [
+      4,
+      4,
+      6
+     ],
+     [
+      -2,
+      -1,
+      -1
+     ]
+    ],
+    "seconds": 32.8
+   },
+   "13a_3102": {
+    "name": "13a_3102",
+    "u": "3",
+    "sigma": -6,
+    "det": 171,
+    "verdict": "PASS",
+    "candidates": 39,
+    "witness_form": [
+     [
+      2,
+      6,
+      8
+     ],
+     [
+      -1,
+      -1,
+      5
+     ]
+    ],
+    "seconds": 8.6
+   },
+   "13a_3127": {
+    "name": "13a_3127",
+    "u": "3",
+    "sigma": -6,
+    "det": 255,
+    "verdict": "PASS",
+    "candidates": 43,
+    "witness_form": [
+     [
+      6,
+      6,
+      10
+     ],
+     [
+      -4,
+      -6,
+      3
+     ]
+    ],
+    "seconds": 16.8
+   },
+   "13a_3136": {
+    "name": "13a_3136",
+    "u": "3",
+    "sigma": -6,
+    "det": 179,
+    "verdict": "PASS",
+    "candidates": 22,
+    "witness_form": [
+     [
+      2,
+      4,
+      8
+     ],
+     [
+      0,
+      -1,
+      -3
+     ]
+    ],
+    "seconds": 6.1
+   },
+   "13a_3164": {
+    "name": "13a_3164",
+    "u": "3",
+    "sigma": -6,
+    "det": 127,
+    "verdict": "PASS",
+    "candidates": 21,
+    "witness_form": [
+     [
+      22,
+      22,
+      22
+     ],
+     [
+      -21,
+      -21,
+      21
+     ]
+    ],
+    "seconds": 1.2
+   },
+   "13a_3234": {
+    "name": "13a_3234",
+    "u": "3",
+    "sigma": -6,
+    "det": 271,
+    "verdict": "PASS",
+    "candidates": 37,
+    "witness_form": [
+     [
+      2,
+      24,
+      24
+     ],
+     [
+      -1,
+      -1,
+      23
+     ]
+    ],
+    "seconds": 11.6
+   },
+   "13a_3309": {
+    "name": "13a_3309",
+    "u": "3",
+    "sigma": -6,
+    "det": 199,
+    "verdict": "PASS",
+    "candidates": 30,
+    "witness_form": [
+     [
+      2,
+      18,
+      18
+     ],
+     [
+      -1,
+      -1,
+      17
+     ]
+    ],
+    "seconds": 9.8
+   },
+   "13a_3337": {
+    "name": "13a_3337",
+    "u": "3",
+    "sigma": -6,
+    "det": 175,
+    "verdict": "PASS",
+    "candidates": 34,
+    "witness_form": [
+     [
+      2,
+      16,
+      16
+     ],
+     [
+      -1,
+      -1,
+      15
+     ]
+    ],
+    "seconds": 2.9
+   },
+   "13a_3457": {
+    "name": "13a_3457",
+    "u": "3",
+    "sigma": 6,
+    "det": 211,
+    "verdict": "PASS",
+    "candidates": 26,
+    "witness_form": [
+     [
+      6,
+      8,
+      8
+     ],
+     [
+      -3,
+      -2,
+      7
+     ]
+    ],
+    "seconds": 14.8
+   },
+   "13a_3587": {
+    "name": "13a_3587",
+    "u": "3",
+    "sigma": -6,
+    "det": 291,
+    "verdict": "PASS",
+    "candidates": 46,
+    "witness_form": [
+     [
+      2,
+      10,
+      10
+     ],
+     [
+      -1,
+      -1,
+      8
+     ]
+    ],
+    "seconds": 41.2
+   },
+   "13a_3617": {
+    "name": "13a_3617",
+    "u": "3",
+    "sigma": -6,
+    "det": 359,
+    "verdict": "PASS",
+    "candidates": 34,
+    "witness_form": [
+     [
+      4,
+      10,
+      10
+     ],
+     [
+      -3,
+      -1,
+      8
+     ]
+    ],
+    "seconds": 6.1
+   },
+   "13a_3754": {
+    "name": "13a_3754",
+    "u": "3",
+    "sigma": 6,
+    "det": 295,
+    "verdict": "PASS",
+    "candidates": 39,
+    "witness_form": [
+     [
+      2,
+      26,
+      26
+     ],
+     [
+      -1,
+      -1,
+      25
+     ]
+    ],
+    "seconds": 13.5
+   },
+   "13a_3852": {
+    "name": "13a_3852",
+    "u": "3",
+    "sigma": 6,
+    "det": 103,
+    "verdict": "PASS",
+    "candidates": 23,
+    "witness_form": [
+     [
+      18,
+      18,
+      18
+     ],
+     [
+      -17,
+      -17,
+      17
+     ]
+    ],
+    "seconds": 0.6
+   },
+   "13a_3900": {
+    "name": "13a_3900",
+    "u": "3",
+    "sigma": 6,
+    "det": 191,
+    "verdict": "PASS",
+    "candidates": 23,
+    "witness_form": [
+     [
+      2,
+      8,
+      10
+     ],
+     [
+      -1,
+      -1,
+      -6
+     ]
+    ],
+    "seconds": 1.6
+   },
+   "13a_3964": {
+    "name": "13a_3964",
+    "u": "3",
+    "sigma": -6,
+    "det": 331,
+    "verdict": "PASS",
+    "candidates": 46,
+    "witness_form": [
+     [
+      2,
+      6,
+      8
+     ],
+     [
+      -1,
+      -1,
+      3
+     ]
+    ],
+    "seconds": 71.2
+   },
+   "13a_4041": {
+    "name": "13a_4041",
+    "u": "3",
+    "sigma": -6,
+    "det": 263,
+    "verdict": "PASS",
+    "candidates": 27,
+    "witness_form": [
+     [
+      2,
+      2,
+      28
+     ],
+     [
+      -1,
+      -1,
+      0
+     ]
+    ],
+    "seconds": 1.3
+   },
+   "13a_4201": {
+    "name": "13a_4201",
+    "u": "3",
+    "sigma": 6,
+    "det": 135,
+    "verdict": "PASS",
+    "candidates": 32,
+    "witness_form": [
+     [
+      8,
+      8,
+      8
+     ],
+     [
+      -7,
+      -6,
+      5
+     ]
+    ],
+    "seconds": 3.2
+   },
+   "13a_4292": {
+    "name": "13a_4292",
+    "u": "3",
+    "sigma": -6,
+    "det": 171,
+    "verdict": "PASS",
+    "candidates": 39,
+    "witness_form": [
+     [
+      4,
+      4,
+      10
+     ],
+     [
+      -3,
+      -3,
+      2
+     ]
+    ],
+    "seconds": 7.8
+   },
+   "13a_4314": {
+    "name": "13a_4314",
+    "u": "3",
+    "sigma": -6,
+    "det": 143,
+    "verdict": "PASS",
+    "candidates": 22,
+    "witness_form": [
+     [
+      2,
+      2,
+      16
+     ],
+     [
+      -1,
+      -1,
+      0
+     ]
+    ],
+    "seconds": 0.4
+   },
+   "13a_4323": {
+    "name": "13a_4323",
+    "u": "3",
+    "sigma": -6,
+    "det": 231,
+    "verdict": "PASS",
+    "candidates": 32,
+    "witness_form": [
+     [
+      4,
+      4,
+      8
+     ],
+     [
+      0,
+      -3,
+      -3
+     ]
+    ],
+    "seconds": 13.7
+   },
+   "13a_4384": {
+    "name": "13a_4384",
+    "u": "3",
+    "sigma": 6,
+    "det": 187,
+    "verdict": "PASS",
+    "candidates": 31,
+    "witness_form": [
+     [
+      6,
+      6,
+      6
+     ],
+     [
+      -5,
+      -1,
+      0
+     ]
+    ],
+    "seconds": 18.6
+   },
+   "13a_4488": {
+    "name": "13a_4488",
+    "u": "3",
+    "sigma": 6,
+    "det": 127,
+    "verdict": "PASS",
+    "candidates": 21,
+    "witness_form": [
+     [
+      2,
+      12,
+      12
+     ],
+     [
+      -1,
+      -1,
+      11
+     ]
+    ],
+    "seconds": 2.5
+   },
+   "13a_4555": {
+    "name": "13a_4555",
+    "u": "3",
+    "sigma": -6,
+    "det": 119,
+    "verdict": "PASS",
+    "candidates": 21,
+    "witness_form": [
+     [
+      6,
+      8,
+      8
+     ],
+     [
+      -5,
+      -5,
+      7
+     ]
+    ],
+    "seconds": 0.2
+   },
+   "13a_4576": {
+    "name": "13a_4576",
+    "u": "3",
+    "sigma": -6,
+    "det": 279,
+    "verdict": "PASS",
+    "candidates": 65,
+    "witness_form": [
+     [
+      2,
+      2,
+      16
+     ],
+     [
+      0,
+      0,
+      0
+     ]
+    ],
+    "seconds": 20.7
+   },
+   "13a_4658": {
+    "name": "13a_4658",
+    "u": "3",
+    "sigma": -6,
+    "det": 215,
+    "verdict": "PASS",
+    "candidates": 35,
+    "witness_form": [
+     [
+      2,
+      4,
+      10
+     ],
+     [
+      -1,
+      -1,
+      -2
+     ]
+    ],
+    "seconds": 3.4
+   },
+   "13a_4737": {
+    "name": "13a_4737",
+    "u": "3",
+    "sigma": -6,
+    "det": 295,
+    "verdict": "PASS",
+    "candidates": 39,
+    "witness_form": [
+     [
+      2,
+      26,
+      26
+     ],
+     [
+      -1,
+      -1,
+      25
+     ]
+    ],
+    "seconds": 12.5
+   },
+   "13a_4767": {
+    "name": "13a_4767",
+    "u": "3",
+    "sigma": 6,
+    "det": 255,
+    "verdict": "PASS",
+    "candidates": 43,
+    "witness_form": [
+     [
+      2,
+      22,
+      22
+     ],
+     [
+      0,
+      0,
+      -21
+     ]
+    ],
+    "seconds": 9.9
+   },
+   "13a_4819": {
+    "name": "13a_4819",
+    "u": "3",
+    "sigma": 6,
+    "det": 283,
+    "verdict": "PASS",
+    "candidates": 40,
+    "witness_form": [
+     [
+      8,
+      12,
+      12
+     ],
+     [
+      -7,
+      -7,
+      11
+     ]
+    ],
+    "seconds": 36.0
+   },
+   "13a_708": {
+    "name": "13a_708",
+    "u": "3",
+    "sigma": -6,
+    "det": 107,
+    "verdict": "PASS",
+    "candidates": 11,
+    "witness_form": [
+     [
+      2,
+      2,
+      12
+     ],
+     [
+      -1,
+      -1,
+      1
+     ]
+    ],
+    "seconds": 2.6
+   },
+   "13a_825": {
+    "name": "13a_825",
+    "u": "3",
+    "sigma": -6,
+    "det": 171,
+    "verdict": "PASS",
+    "candidates": 39,
+    "witness_form": [
+     [
+      2,
+      6,
+      8
+     ],
+     [
+      -1,
+      -1,
+      5
+     ]
+    ],
+    "seconds": 8.8
+   },
+   "13a_888": {
+    "name": "13a_888",
+    "u": "3",
+    "sigma": -6,
+    "det": 299,
+    "verdict": "PASS",
+    "candidates": 34,
+    "witness_form": [
+     [
+      2,
+      8,
+      8
+     ],
+     [
+      -1,
+      -1,
+      -4
+     ]
+    ],
+    "seconds": 32.7
+   },
+   "13a_1037": {
+    "name": "13a_1037",
+    "u": "3",
+    "sigma": -6,
+    "det": 275,
+    "verdict": "PASS",
+    "candidates": 48,
+    "witness_form": [
+     [
+      2,
+      4,
+      14
+     ],
+     [
+      -1,
+      -1,
+      -3
+     ]
+    ],
+    "seconds": 33.8
+   },
+   "13a_1101": {
+    "name": "13a_1101",
+    "u": "3",
+    "sigma": -6,
+    "det": 243,
+    "verdict": "PASS",
+    "candidates": 64,
+    "witness_form": [
+     [
+      12,
+      12,
+      14
+     ],
+     [
+      -11,
+      -11,
+      10
+     ]
+    ],
+    "seconds": 37.9
+   },
+   "13a_1218": {
+    "name": "13a_1218",
+    "u": "3",
+    "sigma": -6,
+    "det": 251,
+    "verdict": "PASS",
+    "candidates": 31,
+    "witness_form": [
+     [
+      8,
+      8,
+      10
+     ],
+     [
+      -7,
+      -6,
+      5
+     ]
+    ],
+    "seconds": 26.8
+   },
+   "13a_1288": {
+    "name": "13a_1288",
+    "u": "3",
+    "sigma": 6,
+    "det": 259,
+    "verdict": "PASS",
+    "candidates": 34,
+    "witness_form": [
+     [
+      6,
+      6,
+      6
+     ],
+     [
+      -4,
+      -4,
+      2
+     ]
+    ],
+    "seconds": 43.0
+   },
+   "13a_1368": {
+    "name": "13a_1368",
+    "u": "3",
+    "sigma": -6,
+    "det": 219,
+    "verdict": "PASS",
+    "candidates": 32,
+    "witness_form": [
+     [
+      2,
+      2,
+      14
+     ],
+     [
+      0,
+      -1,
+      -1
+     ]
+    ],
+    "seconds": 36.7
+   },
+   "13a_1494": {
+    "name": "13a_1494",
+    "u": "3",
+    "sigma": 6,
+    "det": 243,
+    "verdict": "PASS",
+    "candidates": 64,
+    "witness_form": [
+     [
+      4,
+      12,
+      12
+     ],
+     [
+      -3,
+      -3,
+      11
+     ]
+    ],
+    "seconds": 39.7
+   },
+   "13a_1740": {
+    "name": "13a_1740",
+    "u": "3",
+    "sigma": -6,
+    "det": 103,
+    "verdict": "PASS",
+    "candidates": 23,
+    "witness_form": [
+     [
+      4,
+      6,
+      6
+     ],
+     [
+      -1,
+      0,
+      -5
+     ]
+    ],
+    "seconds": 3.7
+   },
+   "13a_1892": {
+    "name": "13a_1892",
+    "u": "3",
+    "sigma": -6,
+    "det": 263,
+    "verdict": "PASS",
+    "candidates": 27,
+    "witness_form": [
+     [
+      4,
+      4,
+      6
+     ],
+     [
+      -1,
+      -3,
+      1
+     ]
+    ],
+    "seconds": 7.8
+   },
+   "13a_1942": {
+    "name": "13a_1942",
+    "u": "3",
+    "sigma": -6,
+    "det": 139,
+    "verdict": "PASS",
+    "candidates": 20,
+    "witness_form": [
+     [
+      4,
+      6,
+      6
+     ],
+     [
+      -1,
+      -1,
+      5
+     ]
+    ],
+    "seconds": 7.2
+   },
+   "13a_2067": {
+    "name": "13a_2067",
+    "u": "3",
+    "sigma": -6,
+    "det": 227,
+    "verdict": "PASS",
+    "candidates": 29,
+    "witness_form": [
+     [
+      4,
+      10,
+      10
+     ],
+     [
+      -2,
+      -2,
+      9
+     ]
+    ],
+    "seconds": 28.3
+   },
+   "13a_2124": {
+    "name": "13a_2124",
+    "u": "3",
+    "sigma": 6,
+    "det": 199,
+    "verdict": "PASS",
+    "candidates": 30,
+    "witness_form": [
+     [
+      6,
+      6,
+      10
+     ],
+     [
+      -5,
+      -5,
+      5
+     ]
+    ],
+    "seconds": 13.9
+   },
+   "13a_2175": {
+    "name": "13a_2175",
+    "u": "3",
+    "sigma": 6,
+    "det": 199,
+    "verdict": "PASS",
+    "candidates": 30,
+    "witness_form": [
+     [
+      2,
+      18,
+      18
+     ],
+     [
+      -1,
+      -1,
+      17
+     ]
+    ],
+    "seconds": 11.2
+   },
+   "13a_2280": {
+    "name": "13a_2280",
+    "u": "3",
+    "sigma": -6,
+    "det": 99,
+    "verdict": "PASS",
+    "candidates": 23,
+    "witness_form": [
+     [
+      6,
+      8,
+      8
+     ],
+     [
+      -5,
+      -4,
+      7
+     ]
+    ],
+    "seconds": 2.5
+   },
+   "13a_2309": {
+    "name": "13a_2309",
+    "u": "3",
+    "sigma": -6,
+    "det": 251,
+    "verdict": "PASS",
+    "candidates": 31,
+    "witness_form": [
+     [
+      12,
+      14,
+      14
+     ],
+     [
+      -11,
+      -11,
+      13
+     ]
+    ],
+    "seconds": 26.0
+   },
+   "13a_2390": {
+    "name": "13a_2390",
+    "u": "3",
+    "sigma": -6,
+    "det": 247,
+    "verdict": "PASS",
+    "candidates": 41,
+    "witness_form": [
+     [
+      4,
+      4,
+      10
+     ],
+     [
+      -3,
+      0,
+      0
+     ]
+    ],
+    "seconds": 22.2
+   },
+   "13a_2536": {
+    "name": "13a_2536",
+    "u": "3",
+    "sigma": -6,
+    "det": 323,
+    "verdict": "PASS",
+    "candidates": 42,
+    "witness_form": [
+     [
+      4,
+      4,
+      6
+     ],
+     [
+      -1,
+      -2,
+      -1
+     ]
+    ],
+    "seconds": 55.8
+   },
+   "13a_2685": {
+    "name": "13a_2685",
+    "u": "3",
+    "sigma": -6,
+    "det": 139,
+    "verdict": "PASS",
+    "candidates": 20,
+    "witness_form": [
+     [
+      2,
+      4,
+      10
+     ],
+     [
+      -1,
+      -1,
+      -3
+     ]
+    ],
+    "seconds": 7.5
+   },
+   "13a_2751": {
+    "name": "13a_2751",
+    "u": "3",
+    "sigma": -6,
+    "det": 203,
+    "verdict": "PASS",
+    "candidates": 28,
+    "witness_form": [
+     [
+      4,
+      4,
+      10
+     ],
+     [
+      -3,
+      -2,
+      1
+     ]
+    ],
+    "seconds": 12.9
+   },
+   "13a_2804": {
+    "name": "13a_2804",
+    "u": "3",
+    "sigma": -6,
+    "det": 159,
+    "verdict": "PASS",
+    "candidates": 26,
+    "witness_form": [
+     [
+      6,
+      6,
+      6
+     ],
+     [
+      -5,
+      -3,
+      3
+     ]
+    ],
+    "seconds": 3.4
+   },
+   "13a_2830": {
+    "name": "13a_2830",
+    "u": "3",
+    "sigma": 6,
+    "det": 127,
+    "verdict": "PASS",
+    "candidates": 21,
+    "witness_form": [
+     [
+      22,
+      22,
+      22
+     ],
+     [
+      -21,
+      -21,
+      21
+     ]
+    ],
+    "seconds": 0.8
+   },
+   "13a_2848": {
+    "name": "13a_2848",
+    "u": "3",
+    "sigma": -6,
+    "det": 275,
+    "verdict": "PASS",
+    "candidates": 48,
+    "witness_form": [
+     [
+      4,
+      4,
+      14
+     ],
+     [
+      -3,
+      -3,
+      2
+     ]
+    ],
+    "seconds": 31.8
+   },
+   "13a_2870": {
+    "name": "13a_2870",
+    "u": "3",
+    "sigma": -6,
+    "det": 383,
+    "verdict": "PASS",
+    "candidates": 47,
+    "witness_form": [
+     [
+      2,
+      8,
+      10
+     ],
+     [
+      -1,
+      -1,
+      6
+     ]
+    ],
+    "seconds": 30.9
+   },
+   "13a_2912": {
+    "name": "13a_2912",
+    "u": "3",
+    "sigma": -6,
+    "det": 347,
+    "verdict": "PASS",
+    "candidates": 40,
+    "witness_form": [
+     [
+      2,
+      4,
+      12
+     ],
+     [
+      0,
+      -1,
+      -3
+     ]
+    ],
+    "seconds": 47.7
+   },
+   "13a_2945": {
+    "name": "13a_2945",
+    "u": "3",
+    "sigma": -6,
+    "det": 143,
+    "verdict": "PASS",
+    "candidates": 22,
+    "witness_form": [
+     [
+      2,
+      2,
+      16
+     ],
+     [
+      -1,
+      -1,
+      0
+     ]
+    ],
+    "seconds": 0.5
+   },
+   "13a_2980": {
+    "name": "13a_2980",
+    "u": "3",
+    "sigma": -6,
+    "det": 275,
+    "verdict": "PASS",
+    "candidates": 48,
+    "witness_form": [
+     [
+      6,
+      10,
+      10
+     ],
+     [
+      -6,
+      -4,
+      8
+     ]
+    ],
+    "seconds": 41.2
+   },
+   "13a_3007": {
+    "name": "13a_3007",
+    "u": "3",
+    "sigma": 6,
+    "det": 155,
+    "verdict": "PASS",
+    "candidates": 23,
+    "witness_form": [
+     [
+      8,
+      8,
+      10
+     ],
+     [
+      -7,
+      -7,
+      6
+     ]
+    ],
+    "seconds": 6.6
+   },
+   "13a_3042": {
+    "name": "13a_3042",
+    "u": "3",
+    "sigma": 6,
+    "det": 195,
+    "verdict": "PASS",
+    "candidates": 31,
+    "witness_form": [
+     [
+      4,
+      8,
+      8
+     ],
+     [
+      -1,
+      -1,
+      7
+     ]
+    ],
+    "seconds": 18.9
+   },
+   "13a_3114": {
+    "name": "13a_3114",
+    "u": "3",
+    "sigma": -6,
+    "det": 123,
+    "verdict": "PASS",
+    "candidates": 21,
+    "witness_form": [
+     [
+      4,
+      4,
+      8
+     ],
+     [
+      -3,
+      -3,
+      3
+     ]
+    ],
+    "seconds": 4.1
+   },
+   "13a_3128": {
+    "name": "13a_3128",
+    "u": "3",
+    "sigma": -6,
+    "det": 315,
+    "verdict": "PASS",
+    "candidates": 56,
+    "witness_form": [
+     [
+      4,
+      4,
+      10
+     ],
+     [
+      -1,
+      -4,
+      -1
+     ]
+    ],
+    "seconds": 71.4
+   },
+   "13a_3137": {
+    "name": "13a_3137",
+    "u": "3",
+    "sigma": -6,
+    "det": 67,
+    "verdict": "PASS",
+    "candidates": 16,
+    "witness_form": [
+     [
+      2,
+      2,
+      8
+     ],
+     [
+      -1,
+      -1,
+      1
+     ]
+    ],
+    "seconds": 0.8
+   },
+   "13a_3206": {
+    "name": "13a_3206",
+    "u": "3",
+    "sigma": -6,
+    "det": 135,
+    "verdict": "PASS",
+    "candidates": 32,
+    "witness_form": [
+     [
+      4,
+      4,
+      6
+     ],
+     [
+      -3,
+      -1,
+      1
+     ]
+    ],
+    "seconds": 3.7
+   },
+   "13a_3244": {
+    "name": "13a_3244",
+    "u": "3",
+    "sigma": -6,
+    "det": 119,
+    "verdict": "PASS",
+    "candidates": 21,
+    "witness_form": [
+     [
+      6,
+      8,
+      8
+     ],
+     [
+      -5,
+      -5,
+      7
+     ]
+    ],
+    "seconds": 1.0
+   },
+   "13a_3327": {
+    "name": "13a_3327",
+    "u": "3",
+    "sigma": -6,
+    "det": 195,
+    "verdict": "PASS",
+    "candidates": 31,
+    "witness_form": [
+     [
+      4,
+      8,
+      8
+     ],
+     [
+      -1,
+      -1,
+      7
+     ]
+    ],
+    "seconds": 18.6
+   },
+   "13a_3340": {
+    "name": "13a_3340",
+    "u": "3",
+    "sigma": -6,
+    "det": 311,
+    "verdict": "PASS",
+    "candidates": 41,
+    "witness_form": [
+     [
+      2,
+      6,
+      8
+     ],
+     [
+      -1,
+      -1,
+      -2
+     ]
+    ],
+    "seconds": 4.8
+   },
+   "13a_3461": {
+    "name": "13a_3461",
+    "u": "3",
+    "sigma": 6,
+    "det": 199,
+    "verdict": "PASS",
+    "candidates": 30,
+    "witness_form": [
+     [
+      4,
+      6,
+      6
+     ],
+     [
+      -3,
+      -1,
+      -2
+     ]
+    ],
+    "seconds": 14.5
+   },
+   "13a_3589": {
+    "name": "13a_3589",
+    "u": "3",
+    "sigma": -6,
+    "det": 279,
+    "verdict": "PASS",
+    "candidates": 65,
+    "witness_form": [
+     [
+      8,
+      8,
+      8
+     ],
+     [
+      -7,
+      -4,
+      3
+     ]
+    ],
+    "seconds": 17.7
+   },
+   "13a_3697": {
+    "name": "13a_3697",
+    "u": "3",
+    "sigma": -6,
+    "det": 247,
+    "verdict": "PASS",
+    "candidates": 41,
+    "witness_form": [
+     [
+      2,
+      22,
+      22
+     ],
+     [
+      -1,
+      -1,
+      21
+     ]
+    ],
+    "seconds": 13.4
+   },
+   "13a_3771": {
+    "name": "13a_3771",
+    "u": "3",
+    "sigma": -6,
+    "det": 331,
+    "verdict": "PASS",
+    "candidates": 46,
+    "witness_form": [
+     [
+      6,
+      6,
+      8
+     ],
+     [
+      -4,
+      -5,
+      4
+     ]
+    ],
+    "seconds": 83.0
+   },
+   "13a_3888": {
+    "name": "13a_3888",
+    "u": "3",
+    "sigma": 6,
+    "det": 235,
+    "verdict": "PASS",
+    "candidates": 39,
+    "witness_form": [
+     [
+      12,
+      12,
+      12
+     ],
+     [
+      -11,
+      -10,
+      10
+     ]
+    ],
+    "seconds": 36.7
+   },
+   "13a_3901": {
+    "name": "13a_3901",
+    "u": "3",
+    "sigma": 6,
+    "det": 159,
+    "verdict": "PASS",
+    "candidates": 26,
+    "witness_form": [
+     [
+      6,
+      6,
+      6
+     ],
+     [
+      -5,
+      -3,
+      3
+     ]
+    ],
+    "seconds": 3.2
+   },
+   "13a_3965": {
+    "name": "13a_3965",
+    "u": "3",
+    "sigma": -6,
+    "det": 299,
+    "verdict": "PASS",
+    "candidates": 34,
+    "witness_form": [
+     [
+      4,
+      4,
+      12
+     ],
+     [
+      -3,
+      0,
+      0
+     ]
+    ],
+    "seconds": 32.1
+   },
+   "13a_4084": {
+    "name": "13a_4084",
+    "u": "3",
+    "sigma": -6,
+    "det": 239,
+    "verdict": "PASS",
+    "candidates": 22,
+    "witness_form": [
+     [
+      4,
+      6,
+      8
+     ],
+     [
+      -1,
+      -3,
+      5
+     ]
+    ],
+    "seconds": 2.5
+   },
+   "13a_4206": {
+    "name": "13a_4206",
+    "u": "3",
+    "sigma": 6,
+    "det": 195,
+    "verdict": "PASS",
+    "candidates": 31,
+    "witness_form": [
+     [
+      6,
+      6,
+      10
+     ],
+     [
+      -5,
+      -5,
+      4
+     ]
+    ],
+    "seconds": 17.7
+   },
+   "13a_4297": {
+    "name": "13a_4297",
+    "u": "3",
+    "sigma": 6,
+    "det": 163,
+    "verdict": "PASS",
+    "candidates": 28,
+    "witness_form": [
+     [
+      2,
+      2,
+      18
+     ],
+     [
+      -1,
+      -1,
+      0
+     ]
+    ],
+    "seconds": 7.0
+   },
+   "13a_4317": {
+    "name": "13a_4317",
+    "u": "3",
+    "sigma": 6,
+    "det": 183,
+    "verdict": "PASS",
+    "candidates": 27,
+    "witness_form": [
+     [
+      2,
+      16,
+      16
+     ],
+     [
+      0,
+      0,
+      -15
+     ]
+    ],
+    "seconds": 2.5
+   },
+   "13a_4328": {
+    "name": "13a_4328",
+    "u": "3",
+    "sigma": -6,
+    "det": 155,
+    "verdict": "PASS",
+    "candidates": 23,
+    "witness_form": [
+     [
+      8,
+      8,
+      10
+     ],
+     [
+      -7,
+      -7,
+      6
+     ]
+    ],
+    "seconds": 6.0
+   },
+   "13a_4387": {
+    "name": "13a_4387",
+    "u": "3",
+    "sigma": -6,
+    "det": 275,
+    "verdict": "PASS",
+    "candidates": 48,
+    "witness_form": [
+     [
+      6,
+      10,
+      10
+     ],
+     [
+      -6,
+      -4,
+      8
+     ]
+    ],
+    "seconds": 38.9
+   },
+   "13a_4509": {
+    "name": "13a_4509",
+    "u": "3",
+    "sigma": 6,
+    "det": 223,
+    "verdict": "PASS",
+    "candidates": 41,
+    "witness_form": [
+     [
+      12,
+      12,
+      12
+     ],
+     [
+      -11,
+      -10,
+      9
+     ]
+    ],
+    "seconds": 16.2
+   },
+   "13a_4561": {
+    "name": "13a_4561",
+    "u": "3",
+    "sigma": -6,
+    "det": 131,
+    "verdict": "PASS",
+    "candidates": 16,
+    "witness_form": [
+     [
+      4,
+      8,
+      8
+     ],
+     [
+      -3,
+      -3,
+      7
+     ]
+    ],
+    "seconds": 4.5
+   },
+   "13a_4595": {
+    "name": "13a_4595",
+    "u": "3",
+    "sigma": -6,
+    "det": 319,
+    "verdict": "PASS",
+    "candidates": 45,
+    "witness_form": [
+     [
+      2,
+      12,
+      14
+     ],
+     [
+      0,
+      -1,
+      -11
+     ]
+    ],
+    "seconds": 56.6
+   },
+   "13a_4697": {
+    "name": "13a_4697",
+    "u": "3",
+    "sigma": -6,
+    "det": 315,
+    "verdict": "PASS",
+    "candidates": 56,
+    "witness_form": [
+     [
+      2,
+      10,
+      12
+     ],
+     [
+      -1,
+      -1,
+      9
+     ]
+    ],
+    "seconds": 53.1
+   },
+   "13a_4741": {
+    "name": "13a_4741",
+    "u": "3",
+    "sigma": -6,
+    "det": 251,
+    "verdict": "PASS",
+    "candidates": 31,
+    "witness_form": [
+     [
+      4,
+      10,
+      10
+     ],
+     [
+      -1,
+      -1,
+      9
+     ]
+    ],
+    "seconds": 23.2
+   },
+   "13a_4795": {
+    "name": "13a_4795",
+    "u": "3",
+    "sigma": 6,
+    "det": 275,
+    "verdict": "PASS",
+    "candidates": 48,
+    "witness_form": [
+     [
+      2,
+      6,
+      6
+     ],
+     [
+      -1,
+      -1,
+      0
+     ]
+    ],
+    "seconds": 30.9
+   },
+   "13a_4834": {
+    "name": "13a_4834",
+    "u": "3",
+    "sigma": -6,
+    "det": 43,
+    "verdict": "PASS",
+    "candidates": 11,
+    "witness_form": [
+     [
+      8,
+      8,
+      8
+     ],
+     [
+      -7,
+      -7,
+      7
+     ]
+    ],
+    "seconds": 0.3
+   },
+   "13a_803": {
+    "name": "13a_803",
+    "u": "3",
+    "sigma": -6,
+    "det": 267,
+    "verdict": "PASS",
+    "candidates": 44,
+    "witness_form": [
+     [
+      2,
+      2,
+      16
+     ],
+     [
+      0,
+      -1,
+      0
+     ]
+    ],
+    "seconds": 42.2
+   },
+   "13a_858": {
+    "name": "13a_858",
+    "u": "3",
+    "sigma": -6,
+    "det": 223,
+    "verdict": "PASS",
+    "candidates": 41,
+    "witness_form": [
+     [
+      2,
+      20,
+      20
+     ],
+     [
+      -1,
+      -1,
+      19
+     ]
+    ],
+    "seconds": 11.4
+   },
+   "13a_893": {
+    "name": "13a_893",
+    "u": "3",
+    "sigma": -6,
+    "det": 303,
+    "verdict": "PASS",
+    "candidates": 34,
+    "witness_form": [
+     [
+      4,
+      6,
+      8
+     ],
+     [
+      -1,
+      -3,
+      -3
+     ]
+    ],
+    "seconds": 22.1
+   },
+   "13a_1047": {
+    "name": "13a_1047",
+    "u": "3",
+    "sigma": 6,
+    "det": 251,
+    "verdict": "PASS",
+    "candidates": 31,
+    "witness_form": [
+     [
+      2,
+      6,
+      10
+     ],
+     [
+      -1,
+      -1,
+      -4
+     ]
+    ],
+    "seconds": 27.3
+   },
+   "13a_1119": {
+    "name": "13a_1119",
+    "u": "3",
+    "sigma": -6,
+    "det": 387,
+    "verdict": "PASS",
+    "candidates": 71,
+    "witness_form": [
+     [
+      2,
+      12,
+      14
+     ],
+     [
+      -1,
+      -1,
+      11
+     ]
+    ],
+    "seconds": 222.2
+   },
+   "13a_1243": {
+    "name": "13a_1243",
+    "u": "3",
+    "sigma": 6,
+    "det": 191,
+    "verdict": "PASS",
+    "candidates": 23,
+    "witness_form": [
+     [
+      4,
+      4,
+      6
+     ],
+     [
+      -2,
+      -3,
+      2
+     ]
+    ],
+    "seconds": 2.2
+   },
+   "13a_1290": {
+    "name": "13a_1290",
+    "u": "3",
+    "sigma": 6,
+    "det": 207,
+    "verdict": "PASS",
+    "candidates": 38,
+    "witness_form": [
+     [
+      6,
+      10,
+      10
+     ],
+     [
+      -5,
+      -5,
+      9
+     ]
+    ],
+    "seconds": 16.7
+   },
+   "13a_1376": {
+    "name": "13a_1376",
+    "u": "3",
+    "sigma": 6,
+    "det": 179,
+    "verdict": "PASS",
+    "candidates": 22,
+    "witness_form": [
+     [
+      10,
+      10,
+      10
+     ],
+     [
+      -9,
+      -8,
+      7
+     ]
+    ],
+    "seconds": 6.5
+   },
+   "13a_1520": {
+    "name": "13a_1520",
+    "u": "3",
+    "sigma": 6,
+    "det": 207,
+    "verdict": "PASS",
+    "candidates": 38,
+    "witness_form": [
+     [
+      2,
+      2,
+      22
+     ],
+     [
+      -1,
+      -1,
+      1
+     ]
+    ],
+    "seconds": 12.0
+   },
+   "13a_1799": {
+    "name": "13a_1799",
+    "u": "3",
+    "sigma": -6,
+    "det": 163,
+    "verdict": "PASS",
+    "candidates": 28,
+    "witness_form": [
+     [
+      2,
+      4,
+      6
+     ],
+     [
+      -1,
+      -1,
+      1
+     ]
+    ],
+    "seconds": 9.1
+   },
+   "13a_1912": {
+    "name": "13a_1912",
+    "u": "3",
+    "sigma": -6,
+    "det": 275,
+    "verdict": "PASS",
+    "candidates": 48,
+    "witness_form": [
+     [
+      4,
+      4,
+      4
+     ],
+     [
+      -1,
+      -1,
+      1
+     ]
+    ],
+    "seconds": 48.8
+   },
+   "13a_2009": {
+    "name": "13a_2009",
+    "u": "3",
+    "sigma": -6,
+    "det": 211,
+    "verdict": "PASS",
+    "candidates": 26,
+    "witness_form": [
+     [
+      2,
+      6,
+      14
+     ],
+     [
+      -1,
+      -1,
+      -6
+     ]
+    ],
+    "seconds": 17.1
+   },
+   "13a_2072": {
+    "name": "13a_2072",
+    "u": "3",
+    "sigma": 6,
+    "det": 179,
+    "verdict": "PASS",
+    "candidates": 22,
+    "witness_form": [
+     [
+      4,
+      4,
+      6
+     ],
+     [
+      -2,
+      -3,
+      1
+     ]
+    ],
+    "seconds": 7.2
+   },
+   "13a_2136": {
+    "name": "13a_2136",
+    "u": "3",
+    "sigma": -6,
+    "det": 175,
+    "verdict": "PASS",
+    "candidates": 34,
+    "witness_form": [
+     [
+      2,
+      4,
+      6
+     ],
+     [
+      -1,
+      0,
+      -1
+     ]
+    ],
+    "seconds": 6.7
+   },
+   "13a_2197": {
+    "name": "13a_2197",
+    "u": "3",
+    "sigma": -6,
+    "det": 335,
+    "verdict": "PASS",
+    "candidates": 45,
+    "witness_form": [
+     [
+      2,
+      4,
+      12
+     ],
+     [
+      -1,
+      -1,
+      -1
+     ]
+    ],
+    "seconds": 15.9
+   },
+   "13a_2286": {
+    "name": "13a_2286",
+    "u": "3",
+    "sigma": 6,
+    "det": 155,
+    "verdict": "PASS",
+    "candidates": 23,
+    "witness_form": [
+     [
+      8,
+      8,
+      10
+     ],
+     [
+      -7,
+      -7,
+      6
+     ]
+    ],
+    "seconds": 6.5
+   },
+   "13a_2325": {
+    "name": "13a_2325",
+    "u": "3",
+    "sigma": 6,
+    "det": 287,
+    "verdict": "PASS",
+    "candidates": 36,
+    "witness_form": [
+     [
+      2,
+      4,
+      8
+     ],
+     [
+      0,
+      -1,
+      0
+     ]
+    ],
+    "seconds": 8.8
+   },
+   "13a_2462": {
+    "name": "13a_2462",
+    "u": "3",
+    "sigma": 6,
+    "det": 87,
+    "verdict": "PASS",
+    "candidates": 16,
+    "witness_form": [
+     [
+      2,
+      8,
+      8
+     ],
+     [
+      0,
+      0,
+      -7
+     ]
+    ],
+    "seconds": 1.2
+   },
+   "13a_2539": {
+    "name": "13a_2539",
+    "u": "3",
+    "sigma": -6,
+    "det": 247,
+    "verdict": "PASS",
+    "candidates": 41,
+    "witness_form": [
+     [
+      4,
+      6,
+      12
+     ],
+     [
+      -1,
+      -3,
+      7
+     ]
+    ],
+    "seconds": 24.2
+   },
+   "13a_2689": {
+    "name": "13a_2689",
+    "u": "3",
+    "sigma": -6,
+    "det": 75,
+    "verdict": "PASS",
+    "candidates": 23,
+    "witness_form": [
+     [
+      2,
+      4,
+      4
+     ],
+     [
+      -1,
+      -1,
+      2
+     ]
+    ],
+    "seconds": 2.3
+   },
+   "13a_2763": {
+    "name": "13a_2763",
+    "u": "3",
+    "sigma": -6,
+    "det": 235,
+    "verdict": "PASS",
+    "candidates": 39,
+    "witness_form": [
+     [
+      2,
+      6,
+      8
+     ],
+     [
+      -1,
+      -1,
+      -3
+     ]
+    ],
+    "seconds": 43.1
+   },
+   "13a_2816": {
+    "name": "13a_2816",
+    "u": "3",
+    "sigma": -6,
+    "det": 215,
+    "verdict": "PASS",
+    "candidates": 35,
+    "witness_form": [
+     [
+      2,
+      6,
+      6
+     ],
+     [
+      -1,
+      -1,
+      3
+     ]
+    ],
+    "seconds": 4.0
+   },
+   "13a_2831": {
+    "name": "13a_2831",
+    "u": "3",
+    "sigma": 6,
+    "det": 203,
+    "verdict": "PASS",
+    "candidates": 28,
+    "witness_form": [
+     [
+      4,
+      8,
+      8
+     ],
+     [
+      0,
+      0,
+      -7
+     ]
+    ],
+    "seconds": 12.7
+   },
+   "13a_2851": {
+    "name": "13a_2851",
+    "u": "3",
+    "sigma": -6,
+    "det": 299,
+    "verdict": "PASS",
+    "candidates": 34,
+    "witness_form": [
+     [
+      4,
+      6,
+      6
+     ],
+     [
+      -3,
+      -1,
+      3
+     ]
+    ],
+    "seconds": 36.2
+   },
+   "13a_2878": {
+    "name": "13a_2878",
+    "u": "3",
+    "sigma": -6,
+    "det": 331,
+    "verdict": "PASS",
+    "candidates": 46,
+    "witness_form": [
+     [
+      4,
+      6,
+      6
+     ],
+     [
+      -3,
+      -1,
+      -1
+     ]
+    ],
+    "seconds": 85.4
+   },
+   "13a_2923": {
+    "name": "13a_2923",
+    "u": "3",
+    "sigma": -6,
+    "det": 211,
+    "verdict": "PASS",
+    "candidates": 26,
+    "witness_form": [
+     [
+      2,
+      4,
+      8
+     ],
+     [
+      -1,
+      -1,
+      2
+     ]
+    ],
+    "seconds": 16.7
+   },
+   "13a_2948": {
+    "name": "13a_2948",
+    "u": "3",
+    "sigma": 6,
+    "det": 75,
+    "verdict": "PASS",
+    "candidates": 23,
+    "witness_form": [
+     [
+      14,
+      14,
+      14
+     ],
+     [
+      -13,
+      -13,
+      12
+     ]
+    ],
+    "seconds": 1.8
+   },
+   "13a_2982": {
+    "name": "13a_2982",
+    "u": "3",
+    "sigma": -6,
+    "det": 371,
+    "verdict": "PASS",
+    "candidates": 44,
+    "witness_form": [
+     [
+      2,
+      4,
+      14
+     ],
+     [
+      -1,
+      -1,
+      3
+     ]
+    ],
+    "seconds": 137.3
+   },
+   "13a_3015": {
+    "name": "13a_3015",
+    "u": "3",
+    "sigma": -6,
+    "det": 219,
+    "verdict": "PASS",
+    "candidates": 32,
+    "witness_form": [
+     [
+      2,
+      2,
+      14
+     ],
+     [
+      0,
+      -1,
+      -1
+     ]
+    ],
+    "seconds": 35.4
+   },
+   "13a_3097": {
+    "name": "13a_3097",
+    "u": "3",
+    "sigma": -6,
+    "det": 239,
+    "verdict": "PASS",
+    "candidates": 22,
+    "witness_form": [
+     [
+      4,
+      6,
+      8
+     ],
+     [
+      -3,
+      -3,
+      5
+     ]
+    ],
+    "seconds": 2.8
+   },
+   "13a_3115": {
+    "name": "13a_3115",
+    "u": "3",
+    "sigma": -6,
+    "det": 167,
+    "verdict": "PASS",
+    "candidates": 23,
+    "witness_form": [
+     [
+      2,
+      4,
+      8
+     ],
+     [
+      -1,
+      -1,
+      3
+     ]
+    ],
+    "seconds": 3.5
+   },
+   "13a_3129": {
+    "name": "13a_3129",
+    "u": "3",
+    "sigma": -6,
+    "det": 299,
+    "verdict": "PASS",
+    "candidates": 34,
+    "witness_form": [
+     [
+      4,
+      6,
+      8
+     ],
+     [
+      -2,
+      -3,
+      5
+     ]
+    ],
+    "seconds": 34.7
+   },
+   "13a_3139": {
+    "name": "13a_3139",
+    "u": "3",
+    "sigma": -6,
+    "det": 279,
+    "verdict": "PASS",
+    "candidates": 65,
+    "witness_form": [
+     [
+      4,
+      4,
+      10
+     ],
+     [
+      -2,
+      -4,
+      1
+     ]
+    ],
+    "seconds": 26.8
+   },
+   "13a_3212": {
+    "name": "13a_3212",
+    "u": "3",
+    "sigma": -6,
+    "det": 231,
+    "verdict": "PASS",
+    "candidates": 32,
+    "witness_form": [
+     [
+      2,
+      2,
+      14
+     ],
+     [
+      0,
+      -1,
+      0
+     ]
+    ],
+    "seconds": 12.9
+   },
+   "13a_3262": {
+    "name": "13a_3262",
+    "u": "3",
+    "sigma": -6,
+    "det": 271,
+    "verdict": "PASS",
+    "candidates": 37,
+    "witness_form": [
+     [
+      2,
+      24,
+      24
+     ],
+     [
+      -1,
+      -1,
+      23
+     ]
+    ],
+    "seconds": 12.4
+   },
+   "13a_3329": {
+    "name": "13a_3329",
+    "u": "3",
+    "sigma": -6,
+    "det": 311,
+    "verdict": "PASS",
+    "candidates": 41,
+    "witness_form": [
+     [
+      2,
+      6,
+      8
+     ],
+     [
+      -1,
+      -1,
+      -2
+     ]
+    ],
+    "seconds": 4.6
+   },
+   "13a_3358": {
+    "name": "13a_3358",
+    "u": "3",
+    "sigma": 6,
+    "det": 199,
+    "verdict": "PASS",
+    "candidates": 30,
+    "witness_form": [
+     [
+      10,
+      10,
+      12
+     ],
+     [
+      -9,
+      -9,
+      8
+     ]
+    ],
+    "seconds": 12.3
+   },
+   "13a_3530": {
+    "name": "13a_3530",
+    "u": "3",
+    "sigma": 6,
+    "det": 315,
+    "verdict": "PASS",
+    "candidates": 56,
+    "witness_form": [
+     [
+      4,
+      12,
+      12
+     ],
+     [
+      0,
+      0,
+      -11
+     ]
+    ],
+    "seconds": 53.4
+   },
+   "13a_3599": {
+    "name": "13a_3599",
+    "u": "3",
+    "sigma": 6,
+    "det": 363,
+    "verdict": "PASS",
+    "candidates": 70,
+    "witness_form": [
+     [
+      2,
+      4,
+      12
+     ],
+     [
+      -1,
+      -1,
+      0
+     ]
+    ],
+    "seconds": 176.7
+   },
+   "13a_3703": {
+    "name": "13a_3703",
+    "u": "3",
+    "sigma": 6,
+    "det": 163,
+    "verdict": "PASS",
+    "candidates": 28,
+    "witness_form": [
+     [
+      28,
+      28,
+      28
+     ],
+     [
+      -27,
+      -27,
+      27
+     ]
+    ],
+    "seconds": 4.8
+   },
+   "13a_3788": {
+    "name": "13a_3788",
+    "u": "3",
+    "sigma": -6,
+    "det": 307,
+    "verdict": "PASS",
+    "candidates": 45,
+    "witness_form": [
+     [
+      2,
+      6,
+      6
+     ],
+     [
+      -1,
+      0,
+      -1
+     ]
+    ],
+    "seconds": 50.3
+   },
+   "13a_3892": {
+    "name": "13a_3892",
+    "u": "3",
+    "sigma": -6,
+    "det": 239,
+    "verdict": "PASS",
+    "candidates": 22,
+    "witness_form": [
+     [
+      2,
+      10,
+      14
+     ],
+     [
+      -1,
+      -1,
+      -9
+     ]
+    ],
+    "seconds": 1.8
+   },
+   "13a_3960": {
+    "name": "13a_3960",
+    "u": "3",
+    "sigma": -6,
+    "det": 295,
+    "verdict": "PASS",
+    "candidates": 39,
+    "witness_form": [
+     [
+      2,
+      12,
+      16
+     ],
+     [
+      -1,
+      -1,
+      -11
+     ]
+    ],
+    "seconds": 19.0
+   },
+   "13a_3974": {
+    "name": "13a_3974",
+    "u": "3",
+    "sigma": 6,
+    "det": 307,
+    "verdict": "PASS",
+    "candidates": 45,
+    "witness_form": [
+     [
+      6,
+      6,
+      8
+     ],
+     [
+      -5,
+      -1,
+      1
+     ]
+    ],
+    "seconds": 48.5
+   },
+   "13a_4090": {
+    "name": "13a_4090",
+    "u": "3",
+    "sigma": 6,
+    "det": 231,
+    "verdict": "PASS",
+    "candidates": 32,
+    "witness_form": [
+     [
+      6,
+      6,
+      6
+     ],
+     [
+      -5,
+      0,
+      0
+     ]
+    ],
+    "seconds": 10.7
+   },
+   "13a_4259": {
+    "name": "13a_4259",
+    "u": "3",
+    "sigma": 6,
+    "det": 235,
+    "verdict": "PASS",
+    "candidates": 39,
+    "witness_form": [
+     [
+      12,
+      12,
+      12
+     ],
+     [
+      -11,
+      -10,
+      10
+     ]
+    ],
+    "seconds": 33.1
+   },
+   "13a_4306": {
+    "name": "13a_4306",
+    "u": "3",
+    "sigma": 6,
+    "det": 207,
+    "verdict": "PASS",
+    "candidates": 38,
+    "witness_form": [
+     [
+      2,
+      18,
+      18
+     ],
+     [
+      0,
+      0,
+      -17
+     ]
+    ],
+    "seconds": 9.6
+   },
+   "13a_4318": {
+    "name": "13a_4318",
+    "u": "3",
+    "sigma": 6,
+    "det": 227,
+    "verdict": "PASS",
+    "candidates": 29,
+    "witness_form": [
+     [
+      2,
+      4,
+      8
+     ],
+     [
+      -1,
+      -1,
+      0
+     ]
+    ],
+    "seconds": 22.6
+   },
+   "13a_4329": {
+    "name": "13a_4329",
+    "u": "3",
+    "sigma": -6,
+    "det": 171,
+    "verdict": "PASS",
+    "candidates": 39,
+    "witness_form": [
+     [
+      2,
+      2,
+      10
+     ],
+     [
+      0,
+      0,
+      0
+     ]
+    ],
+    "seconds": 8.9
+   },
+   "13a_4432": {
+    "name": "13a_4432",
+    "u": "3",
+    "sigma": -6,
+    "det": 275,
+    "verdict": "PASS",
+    "candidates": 48,
+    "witness_form": [
+     [
+      8,
+      8,
+      12
+     ],
+     [
+      -7,
+      -7,
+      7
+     ]
+    ],
+    "seconds": 26.3
+   },
+   "13a_4527": {
+    "name": "13a_4527",
+    "u": "3",
+    "sigma": 6,
+    "det": 211,
+    "verdict": "PASS",
+    "candidates": 26,
+    "witness_form": [
+     [
+      6,
+      8,
+      8
+     ],
+     [
+      -3,
+      -2,
+      7
+     ]
+    ],
+    "seconds": 13.2
+   },
+   "13a_4570": {
+    "name": "13a_4570",
+    "u": "3",
+    "sigma": -6,
+    "det": 79,
+    "verdict": "PASS",
+    "candidates": 12,
+    "witness_form": [
+     [
+      2,
+      8,
+      8
+     ],
+     [
+      -1,
+      -1,
+      7
+     ]
+    ],
+    "seconds": 0.5
+   },
+   "13a_4607": {
+    "name": "13a_4607",
+    "u": "3",
+    "sigma": -6,
+    "det": 135,
+    "verdict": "PASS",
+    "candidates": 32,
+    "witness_form": [
+     [
+      24,
+      24,
+      24
+     ],
+     [
+      -23,
+      -23,
+      22
+     ]
+    ],
+    "seconds": 1.4
+   },
+   "13a_4698": {
+    "name": "13a_4698",
+    "u": "3",
+    "sigma": -6,
+    "det": 279,
+    "verdict": "PASS",
+    "candidates": 65,
+    "witness_form": [
+     [
+      6,
+      10,
+      10
+     ],
+     [
+      -4,
+      -4,
+      9
+     ]
+    ],
+    "seconds": 13.6
+   },
+   "13a_4747": {
+    "name": "13a_4747",
+    "u": "3",
+    "sigma": -6,
+    "det": 155,
+    "verdict": "PASS",
+    "candidates": 23,
+    "witness_form": [
+     [
+      8,
+      8,
+      10
+     ],
+     [
+      -7,
+      -7,
+      6
+     ]
+    ],
+    "seconds": 5.8
+   },
+   "13a_4797": {
+    "name": "13a_4797",
+    "u": "3",
+    "sigma": -6,
+    "det": 339,
+    "verdict": "PASS",
+    "candidates": 44,
+    "witness_form": [
+     [
+      2,
+      2,
+      20
+     ],
+     [
+      0,
+      -1,
+      0
+     ]
+    ],
+    "seconds": 69.5
+   },
+   "13a_4837": {
+    "name": "13a_4837",
+    "u": "3",
+    "sigma": -6,
+    "det": 299,
+    "verdict": "PASS",
+    "candidates": 34,
+    "witness_form": [
+     [
+      2,
+      4,
+      10
+     ],
+     [
+      -1,
+      -1,
+      1
+     ]
+    ],
+    "seconds": 27.5
+   }
+  },
+  "apply": {
+   "11a_291": {
+    "name": "11a_291",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 99,
+    "verdict": "OBSTRUCTED",
+    "candidates": 23,
+    "seconds": 2.8
+   },
+   "11a_298": {
+    "name": "11a_298",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 131,
+    "verdict": "OBSTRUCTED",
+    "candidates": 16,
+    "seconds": 4.0
+   },
+   "11a_319": {
+    "name": "11a_319",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 119,
+    "verdict": "OBSTRUCTED",
+    "candidates": 21,
+    "seconds": 0.8
+   },
+   "11a_336": {
+    "name": "11a_336",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 59,
+    "verdict": "OBSTRUCTED",
+    "candidates": 11,
+    "seconds": 0.4
+   },
+   "11a_340": {
+    "name": "11a_340",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 87,
+    "verdict": "OBSTRUCTED",
+    "candidates": 16,
+    "seconds": 1.0
+   },
+   "11a_353": {
+    "name": "11a_353",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 123,
+    "verdict": "OBSTRUCTED",
+    "candidates": 21,
+    "seconds": 3.4
+   },
+   "11a_356": {
+    "name": "11a_356",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 79,
+    "verdict": "OBSTRUCTED",
+    "candidates": 12,
+    "seconds": 0.6
+   },
+   "11a_357": {
+    "name": "11a_357",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 91,
+    "verdict": "OBSTRUCTED",
+    "candidates": 19,
+    "seconds": 1.6
+   },
+   "12a_94": {
+    "name": "12a_94",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 163,
+    "verdict": "OBSTRUCTED",
+    "candidates": 28,
+    "seconds": 7.4
+   },
+   "12a_102": {
+    "name": "12a_102",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 239,
+    "verdict": "OBSTRUCTED",
+    "candidates": 22,
+    "seconds": 2.5
+   },
+   "12a_144": {
+    "name": "12a_144",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 151,
+    "verdict": "OBSTRUCTED",
+    "candidates": 21,
+    "seconds": 2.8
+   },
+   "12a_145": {
+    "name": "12a_145",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 179,
+    "verdict": "OBSTRUCTED",
+    "candidates": 22,
+    "seconds": 5.9
+   },
+   "12a_146": {
+    "name": "12a_146",
+    "u": "[3,4]",
+    "sigma": 6,
+    "det": 55,
+    "verdict": "PASS",
+    "candidates": 12,
+    "witness_form": [
+     [
+      2,
+      6,
+      6
+     ],
+     [
+      -1,
+      -1,
+      5
+     ]
+    ],
+    "seconds": 0.6
+   },
+   "12a_319": {
+    "name": "12a_319",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 183,
+    "verdict": "OBSTRUCTED",
+    "candidates": 27,
+    "seconds": 6.2
+   },
+   "12a_368": {
+    "name": "12a_368",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 167,
+    "verdict": "OBSTRUCTED",
+    "candidates": 23,
+    "seconds": 3.3
+   },
+   "12a_391": {
+    "name": "12a_391",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 187,
+    "verdict": "OBSTRUCTED",
+    "candidates": 31,
+    "seconds": 17.3
+   },
+   "12a_431": {
+    "name": "12a_431",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 275,
+    "verdict": "OBSTRUCTED",
+    "candidates": 48,
+    "seconds": 29.5
+   },
+   "12a_586": {
+    "name": "12a_586",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 203,
+    "verdict": "OBSTRUCTED",
+    "candidates": 28,
+    "seconds": 10.7
+   },
+   "12a_659": {
+    "name": "12a_659",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 263,
+    "verdict": "OBSTRUCTED",
+    "candidates": 27,
+    "seconds": 6.1
+   },
+   "12a_762": {
+    "name": "12a_762",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 51,
+    "verdict": "PASS",
+    "candidates": 9,
+    "witness_form": [
+     [
+      10,
+      10,
+      10
+     ],
+     [
+      -9,
+      -9,
+      8
+     ]
+    ],
+    "seconds": 0.4
+   },
+   "12a_794": {
+    "name": "12a_794",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 91,
+    "verdict": "PASS",
+    "candidates": 19,
+    "witness_form": [
+     [
+      6,
+      6,
+      6
+     ],
+     [
+      -5,
+      -4,
+      3
+     ]
+    ],
+    "seconds": 1.5
+   },
+   "12a_801": {
+    "name": "12a_801",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 135,
+    "verdict": "PASS",
+    "candidates": 32,
+    "witness_form": [
+     [
+      6,
+      6,
+      6
+     ],
+     [
+      -4,
+      -4,
+      1
+     ]
+    ],
+    "seconds": 3.2
+   },
+   "12a_814": {
+    "name": "12a_814",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 159,
+    "verdict": "OBSTRUCTED",
+    "candidates": 26,
+    "seconds": 3.4
+   },
+   "12a_828": {
+    "name": "12a_828",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 195,
+    "verdict": "OBSTRUCTED",
+    "candidates": 31,
+    "seconds": 16.2
+   },
+   "12a_877": {
+    "name": "12a_877",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 131,
+    "verdict": "OBSTRUCTED",
+    "candidates": 16,
+    "seconds": 4.1
+   },
+   "12a_900": {
+    "name": "12a_900",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 247,
+    "verdict": "OBSTRUCTED",
+    "candidates": 41,
+    "seconds": 19.4
+   },
+   "12a_973": {
+    "name": "12a_973",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 243,
+    "verdict": "OBSTRUCTED",
+    "candidates": 64,
+    "seconds": 37.3
+   },
+   "12a_995": {
+    "name": "12a_995",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 227,
+    "verdict": "OBSTRUCTED",
+    "candidates": 29,
+    "seconds": 23.1
+   },
+   "12a_1004": {
+    "name": "12a_1004",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 259,
+    "verdict": "OBSTRUCTED",
+    "candidates": 34,
+    "seconds": 33.9
+   },
+   "12a_1035": {
+    "name": "12a_1035",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 155,
+    "verdict": "OBSTRUCTED",
+    "candidates": 23,
+    "seconds": 5.5
+   },
+   "12a_1112": {
+    "name": "12a_1112",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 215,
+    "verdict": "OBSTRUCTED",
+    "candidates": 35,
+    "seconds": 4.0
+   },
+   "12a_1114": {
+    "name": "12a_1114",
+    "u": "[3,4]",
+    "sigma": 6,
+    "det": 95,
+    "verdict": "PASS",
+    "candidates": 11,
+    "witness_form": [
+     [
+      2,
+      4,
+      6
+     ],
+     [
+      0,
+      -1,
+      -3
+     ]
+    ],
+    "seconds": 0.6
+   },
+   "13a_169": {
+    "name": "13a_169",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 179,
+    "verdict": "PASS",
+    "candidates": 22,
+    "witness_form": [
+     [
+      10,
+      10,
+      10
+     ],
+     [
+      -9,
+      -8,
+      7
+     ]
+    ],
+    "seconds": 4.9
+   },
+   "13a_171": {
+    "name": "13a_171",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 255,
+    "verdict": "PASS",
+    "candidates": 43,
+    "witness_form": [
+     [
+      6,
+      6,
+      10
+     ],
+     [
+      -4,
+      -6,
+      3
+     ]
+    ],
+    "seconds": 15.1
+   },
+   "13a_248": {
+    "name": "13a_248",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 351,
+    "verdict": "OBSTRUCTED",
+    "candidates": 68,
+    "seconds": 49.5
+   },
+   "13a_357": {
+    "name": "13a_357",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 447,
+    "verdict": "OBSTRUCTED",
+    "candidates": 56,
+    "seconds": 81.3
+   },
+   "13a_425": {
+    "name": "13a_425",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 163,
+    "verdict": "PASS",
+    "candidates": 28,
+    "witness_form": [
+     [
+      2,
+      2,
+      18
+     ],
+     [
+      -1,
+      -1,
+      0
+     ]
+    ],
+    "seconds": 6.0
+   },
+   "13a_507": {
+    "name": "13a_507",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 387,
+    "verdict": "OBSTRUCTED",
+    "candidates": 71,
+    "seconds": 177.1
+   },
+   "13a_517": {
+    "name": "13a_517",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 387,
+    "verdict": "OBSTRUCTED",
+    "candidates": 71,
+    "seconds": 173.8
+   },
+   "13a_526": {
+    "name": "13a_526",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 303,
+    "verdict": "OBSTRUCTED",
+    "candidates": 34,
+    "seconds": 17.8
+   },
+   "13a_543": {
+    "name": "13a_543",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 303,
+    "verdict": "OBSTRUCTED",
+    "candidates": 34,
+    "seconds": 18.6
+   },
+   "13a_647": {
+    "name": "13a_647",
+    "u": "[3,4]",
+    "sigma": 6,
+    "det": 147,
+    "verdict": "OBSTRUCTED",
+    "candidates": 42,
+    "seconds": 7.5
+   },
+   "13a_1061": {
+    "name": "13a_1061",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 279,
+    "verdict": "OBSTRUCTED",
+    "candidates": 65,
+    "seconds": 18.8
+   },
+   "13a_1353": {
+    "name": "13a_1353",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 455,
+    "verdict": "OBSTRUCTED",
+    "candidates": 60,
+    "seconds": 42.8
+   },
+   "13a_1464": {
+    "name": "13a_1464",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 195,
+    "verdict": "PASS",
+    "candidates": 31,
+    "witness_form": [
+     [
+      6,
+      6,
+      10
+     ],
+     [
+      -5,
+      -5,
+      4
+     ]
+    ],
+    "seconds": 19.1
+   },
+   "13a_1582": {
+    "name": "13a_1582",
+    "u": "[3,4]",
+    "sigma": 6,
+    "det": 83,
+    "verdict": "PASS",
+    "candidates": 11,
+    "witness_form": [
+     [
+      2,
+      2,
+      10
+     ],
+     [
+      -1,
+      -1,
+      0
+     ]
+    ],
+    "seconds": 1.6
+   },
+   "13a_1941": {
+    "name": "13a_1941",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 235,
+    "verdict": "OBSTRUCTED",
+    "candidates": 39,
+    "seconds": 43.2
+   },
+   "13a_2149": {
+    "name": "13a_2149",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 343,
+    "verdict": "OBSTRUCTED",
+    "candidates": 56,
+    "seconds": 83.7
+   },
+   "13a_2342": {
+    "name": "13a_2342",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 375,
+    "verdict": "OBSTRUCTED",
+    "candidates": 61,
+    "seconds": 84.2
+   },
+   "13a_2760": {
+    "name": "13a_2760",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 239,
+    "verdict": "OBSTRUCTED",
+    "candidates": 22,
+    "seconds": 3.3
+   },
+   "13a_2871": {
+    "name": "13a_2871",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 443,
+    "verdict": "OBSTRUCTED",
+    "candidates": 50,
+    "seconds": 167.5
+   },
+   "13a_3060": {
+    "name": "13a_3060",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 483,
+    "verdict": "OBSTRUCTED",
+    "candidates": 62,
+    "seconds": 283.1
+   },
+   "13a_3117": {
+    "name": "13a_3117",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 335,
+    "verdict": "OBSTRUCTED",
+    "candidates": 45,
+    "seconds": 20.1
+   },
+   "13a_3686": {
+    "name": "13a_3686",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 255,
+    "verdict": "OBSTRUCTED",
+    "candidates": 43,
+    "seconds": 19.4
+   },
+   "13a_3715": {
+    "name": "13a_3715",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 251,
+    "verdict": "OBSTRUCTED",
+    "candidates": 31,
+    "seconds": 27.8
+   },
+   "13a_4054": {
+    "name": "13a_4054",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 479,
+    "verdict": "OBSTRUCTED",
+    "candidates": 55,
+    "seconds": 19.2
+   },
+   "13a_4095": {
+    "name": "13a_4095",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 351,
+    "verdict": "OBSTRUCTED",
+    "candidates": 68,
+    "seconds": 61.2
+   },
+   "13a_4195": {
+    "name": "13a_4195",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 303,
+    "verdict": "OBSTRUCTED",
+    "candidates": 34,
+    "seconds": 21.6
+   },
+   "13a_4303": {
+    "name": "13a_4303",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 179,
+    "verdict": "OBSTRUCTED",
+    "candidates": 22,
+    "seconds": 6.8
+   },
+   "13a_4380": {
+    "name": "13a_4380",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 311,
+    "verdict": "OBSTRUCTED",
+    "candidates": 41,
+    "seconds": 6.5
+   },
+   "13a_4395": {
+    "name": "13a_4395",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 207,
+    "verdict": "OBSTRUCTED",
+    "candidates": 38,
+    "seconds": 17.1
+   },
+   "13a_4492": {
+    "name": "13a_4492",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 335,
+    "verdict": "OBSTRUCTED",
+    "candidates": 45,
+    "seconds": 19.2
+   },
+   "13a_4563": {
+    "name": "13a_4563",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 211,
+    "verdict": "OBSTRUCTED",
+    "candidates": 26,
+    "seconds": 16.2
+   },
+   "13a_4622": {
+    "name": "13a_4622",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 247,
+    "verdict": "PASS",
+    "candidates": 41,
+    "witness_form": [
+     [
+      2,
+      6,
+      6
+     ],
+     [
+      -1,
+      -1,
+      -1
+     ]
+    ],
+    "seconds": 22.4
+   },
+   "13a_4765": {
+    "name": "13a_4765",
+    "u": "[3,4]",
+    "sigma": 6,
+    "det": 147,
+    "verdict": "PASS",
+    "candidates": 42,
+    "witness_form": [
+     [
+      8,
+      8,
+      8
+     ],
+     [
+      -7,
+      -6,
+      6
+     ]
+    ],
+    "seconds": 8.4
+   },
+   "13a_4780": {
+    "name": "13a_4780",
+    "u": "[3,5]",
+    "sigma": -6,
+    "det": 183,
+    "verdict": "OBSTRUCTED",
+    "candidates": 27,
+    "seconds": 7.2
+   },
+   "13a_4802": {
+    "name": "13a_4802",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 251,
+    "verdict": "OBSTRUCTED",
+    "candidates": 31,
+    "seconds": 26.3
+   },
+   "13a_4825": {
+    "name": "13a_4825",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 191,
+    "verdict": "OBSTRUCTED",
+    "candidates": 23,
+    "seconds": 2.2
+   },
+   "13a_4839": {
+    "name": "13a_4839",
+    "u": "[3,5]",
+    "sigma": -6,
+    "det": 111,
+    "verdict": "OBSTRUCTED",
+    "candidates": 25,
+    "seconds": 2.6
+   },
+   "13a_4854": {
+    "name": "13a_4854",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 135,
+    "verdict": "OBSTRUCTED",
+    "candidates": 32,
+    "seconds": 4.4
+   },
+   "13a_4867": {
+    "name": "13a_4867",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 83,
+    "verdict": "OBSTRUCTED",
+    "candidates": 11,
+    "seconds": 1.2
+   },
+   "13a_575": {
+    "name": "13a_575",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 183,
+    "verdict": "PASS",
+    "candidates": 27,
+    "witness_form": [
+     [
+      2,
+      16,
+      16
+     ],
+     [
+      0,
+      0,
+      -15
+     ]
+    ],
+    "seconds": 2.9
+   },
+   "13a_648": {
+    "name": "13a_648",
+    "u": "[3,4]",
+    "sigma": 6,
+    "det": 223,
+    "verdict": "OBSTRUCTED",
+    "candidates": 41,
+    "seconds": 15.9
+   },
+   "13a_1245": {
+    "name": "13a_1245",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 235,
+    "verdict": "PASS",
+    "candidates": 39,
+    "witness_form": [
+     [
+      2,
+      6,
+      8
+     ],
+     [
+      -1,
+      -1,
+      -3
+     ]
+    ],
+    "seconds": 37.1
+   },
+   "13a_1354": {
+    "name": "13a_1354",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 423,
+    "verdict": "OBSTRUCTED",
+    "candidates": 76,
+    "seconds": 113.8
+   },
+   "13a_1467": {
+    "name": "13a_1467",
+    "u": "[3,4]",
+    "sigma": 6,
+    "det": 151,
+    "verdict": "OBSTRUCTED",
+    "candidates": 21,
+    "seconds": 3.7
+   },
+   "13a_1718": {
+    "name": "13a_1718",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 247,
+    "verdict": "PASS",
+    "candidates": 41,
+    "witness_form": [
+     [
+      2,
+      10,
+      12
+     ],
+     [
+      -1,
+      -1,
+      -8
+     ]
+    ],
+    "seconds": 24.0
+   },
+   "13a_2036": {
+    "name": "13a_2036",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 171,
+    "verdict": "PASS",
+    "candidates": 39,
+    "witness_form": [
+     [
+      6,
+      10,
+      10
+     ],
+     [
+      -5,
+      -4,
+      9
+     ]
+    ],
+    "seconds": 9.9
+   },
+   "13a_2268": {
+    "name": "13a_2268",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 231,
+    "verdict": "PASS",
+    "candidates": 32,
+    "witness_form": [
+     [
+      6,
+      6,
+      6
+     ],
+     [
+      -4,
+      -3,
+      0
+     ]
+    ],
+    "seconds": 15.8
+   },
+   "13a_2620": {
+    "name": "13a_2620",
+    "u": "[3,4]",
+    "sigma": 6,
+    "det": 231,
+    "verdict": "OBSTRUCTED",
+    "candidates": 32,
+    "seconds": 16.7
+   },
+   "13a_2773": {
+    "name": "13a_2773",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 347,
+    "verdict": "OBSTRUCTED",
+    "candidates": 40,
+    "seconds": 53.2
+   },
+   "13a_2955": {
+    "name": "13a_2955",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 331,
+    "verdict": "OBSTRUCTED",
+    "candidates": 46,
+    "seconds": 89.2
+   },
+   "13a_3095": {
+    "name": "13a_3095",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 183,
+    "verdict": "OBSTRUCTED",
+    "candidates": 27,
+    "seconds": 7.9
+   },
+   "13a_3120": {
+    "name": "13a_3120",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 219,
+    "verdict": "OBSTRUCTED",
+    "candidates": 32,
+    "seconds": 38.1
+   },
+   "13a_3687": {
+    "name": "13a_3687",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 315,
+    "verdict": "OBSTRUCTED",
+    "candidates": 56,
+    "seconds": 76.6
+   },
+   "13a_3783": {
+    "name": "13a_3783",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 271,
+    "verdict": "PASS",
+    "candidates": 37,
+    "witness_form": [
+     [
+      6,
+      6,
+      8
+     ],
+     [
+      -1,
+      -5,
+      4
+     ]
+    ],
+    "seconds": 18.9
+   },
+   "13a_4069": {
+    "name": "13a_4069",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 299,
+    "verdict": "OBSTRUCTED",
+    "candidates": 34,
+    "seconds": 37.9
+   },
+   "13a_4099": {
+    "name": "13a_4099",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 431,
+    "verdict": "OBSTRUCTED",
+    "candidates": 47,
+    "seconds": 19.7
+   },
+   "13a_4213": {
+    "name": "13a_4213",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 223,
+    "verdict": "OBSTRUCTED",
+    "candidates": 41,
+    "seconds": 20.2
+   },
+   "13a_4332": {
+    "name": "13a_4332",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 319,
+    "verdict": "OBSTRUCTED",
+    "candidates": 45,
+    "seconds": 68.2
+   },
+   "13a_4382": {
+    "name": "13a_4382",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 295,
+    "verdict": "OBSTRUCTED",
+    "candidates": 39,
+    "seconds": 25.4
+   },
+   "13a_4453": {
+    "name": "13a_4453",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 323,
+    "verdict": "OBSTRUCTED",
+    "candidates": 42,
+    "seconds": 57.0
+   },
+   "13a_4551": {
+    "name": "13a_4551",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 155,
+    "verdict": "OBSTRUCTED",
+    "candidates": 23,
+    "seconds": 7.1
+   },
+   "13a_4564": {
+    "name": "13a_4564",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 99,
+    "verdict": "OBSTRUCTED",
+    "candidates": 23,
+    "seconds": 2.2
+   },
+   "13a_4623": {
+    "name": "13a_4623",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 187,
+    "verdict": "PASS",
+    "candidates": 31,
+    "witness_form": [
+     [
+      6,
+      6,
+      6
+     ],
+     [
+      -5,
+      -1,
+      0
+     ]
+    ],
+    "seconds": 21.6
+   },
+   "13a_4771": {
+    "name": "13a_4771",
+    "u": "[3,5]",
+    "sigma": -6,
+    "det": 247,
+    "verdict": "OBSTRUCTED",
+    "candidates": 41,
+    "seconds": 24.6
+   },
+   "13a_4788": {
+    "name": "13a_4788",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 211,
+    "verdict": "OBSTRUCTED",
+    "candidates": 26,
+    "seconds": 17.5
+   },
+   "13a_4805": {
+    "name": "13a_4805",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 359,
+    "verdict": "OBSTRUCTED",
+    "candidates": 34,
+    "seconds": 8.7
+   },
+   "13a_4827": {
+    "name": "13a_4827",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 219,
+    "verdict": "OBSTRUCTED",
+    "candidates": 32,
+    "seconds": 37.7
+   },
+   "13a_4841": {
+    "name": "13a_4841",
+    "u": "[3,5]",
+    "sigma": -6,
+    "det": 171,
+    "verdict": "OBSTRUCTED",
+    "candidates": 39,
+    "seconds": 12.4
+   },
+   "13a_4859": {
+    "name": "13a_4859",
+    "u": "[3,5]",
+    "sigma": -6,
+    "det": 303,
+    "verdict": "OBSTRUCTED",
+    "candidates": 34,
+    "seconds": 23.2
+   },
+   "13a_4868": {
+    "name": "13a_4868",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 127,
+    "verdict": "OBSTRUCTED",
+    "candidates": 21,
+    "seconds": 3.6
+   },
+   "13a_621": {
+    "name": "13a_621",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 255,
+    "verdict": "PASS",
+    "candidates": 43,
+    "witness_form": [
+     [
+      6,
+      6,
+      10
+     ],
+     [
+      -4,
+      -6,
+      3
+     ]
+    ],
+    "seconds": 15.6
+   },
+   "13a_665": {
+    "name": "13a_665",
+    "u": "[3,4]",
+    "sigma": 6,
+    "det": 231,
+    "verdict": "OBSTRUCTED",
+    "candidates": 32,
+    "seconds": 12.4
+   },
+   "13a_1270": {
+    "name": "13a_1270",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 375,
+    "verdict": "OBSTRUCTED",
+    "candidates": 61,
+    "seconds": 99.1
+   },
+   "13a_1356": {
+    "name": "13a_1356",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 355,
+    "verdict": "OBSTRUCTED",
+    "candidates": 49,
+    "seconds": 212.4
+   },
+   "13a_1471": {
+    "name": "13a_1471",
+    "u": "[3,4]",
+    "sigma": 6,
+    "det": 179,
+    "verdict": "OBSTRUCTED",
+    "candidates": 22,
+    "seconds": 7.6
+   },
+   "13a_1893": {
+    "name": "13a_1893",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 359,
+    "verdict": "OBSTRUCTED",
+    "candidates": 34,
+    "seconds": 8.9
+   },
+   "13a_2076": {
+    "name": "13a_2076",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 267,
+    "verdict": "OBSTRUCTED",
+    "candidates": 44,
+    "seconds": 49.4
+   },
+   "13a_2289": {
+    "name": "13a_2289",
+    "u": "[3,4]",
+    "sigma": 6,
+    "det": 107,
+    "verdict": "OBSTRUCTED",
+    "candidates": 11,
+    "seconds": 2.1
+   },
+   "13a_2725": {
+    "name": "13a_2725",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 207,
+    "verdict": "OBSTRUCTED",
+    "candidates": 38,
+    "seconds": 18.7
+   },
+   "13a_2857": {
+    "name": "13a_2857",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 231,
+    "verdict": "OBSTRUCTED",
+    "candidates": 32,
+    "seconds": 16.0
+   },
+   "13a_2957": {
+    "name": "13a_2957",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 503,
+    "verdict": "OBSTRUCTED",
+    "candidates": 57,
+    "seconds": 45.7
+   },
+   "13a_3098": {
+    "name": "13a_3098",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 227,
+    "verdict": "OBSTRUCTED",
+    "candidates": 29,
+    "seconds": 29.1
+   },
+   "13a_3130": {
+    "name": "13a_3130",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 455,
+    "verdict": "OBSTRUCTED",
+    "candidates": 60,
+    "seconds": 45.7
+   },
+   "13a_3688": {
+    "name": "13a_3688",
+    "u": "[3,4]",
+    "sigma": 6,
+    "det": 111,
+    "verdict": "PASS",
+    "candidates": 25,
+    "witness_form": [
+     [
+      6,
+      6,
+      8
+     ],
+     [
+      -5,
+      -5,
+      4
+     ]
+    ],
+    "seconds": 2.8
+   },
+   "13a_3962": {
+    "name": "13a_3962",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 411,
+    "verdict": "OBSTRUCTED",
+    "candidates": 58,
+    "seconds": 215.2
+   },
+   "13a_4086": {
+    "name": "13a_4086",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 275,
+    "verdict": "OBSTRUCTED",
+    "candidates": 48,
+    "seconds": 36.9
+   },
+   "13a_4105": {
+    "name": "13a_4105",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 171,
+    "verdict": "OBSTRUCTED",
+    "candidates": 39,
+    "seconds": 10.3
+   },
+   "13a_4215": {
+    "name": "13a_4215",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 347,
+    "verdict": "OBSTRUCTED",
+    "candidates": 40,
+    "seconds": 50.7
+   },
+   "13a_4366": {
+    "name": "13a_4366",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 419,
+    "verdict": "OBSTRUCTED",
+    "candidates": 48,
+    "seconds": 136.1
+   },
+   "13a_4383": {
+    "name": "13a_4383",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 275,
+    "verdict": "OBSTRUCTED",
+    "candidates": 48,
+    "seconds": 34.6
+   },
+   "13a_4459": {
+    "name": "13a_4459",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 371,
+    "verdict": "OBSTRUCTED",
+    "candidates": 44,
+    "seconds": 128.7
+   },
+   "13a_4552": {
+    "name": "13a_4552",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 215,
+    "verdict": "OBSTRUCTED",
+    "candidates": 35,
+    "seconds": 4.4
+   },
+   "13a_4567": {
+    "name": "13a_4567",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 327,
+    "verdict": "OBSTRUCTED",
+    "candidates": 56,
+    "seconds": 66.7
+   },
+   "13a_4757": {
+    "name": "13a_4757",
+    "u": "[3,5]",
+    "sigma": -6,
+    "det": 403,
+    "verdict": "OBSTRUCTED",
+    "candidates": 54,
+    "seconds": 191.3
+   },
+   "13a_4772": {
+    "name": "13a_4772",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 215,
+    "verdict": "OBSTRUCTED",
+    "candidates": 35,
+    "seconds": 4.0
+   },
+   "13a_4789": {
+    "name": "13a_4789",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 259,
+    "verdict": "OBSTRUCTED",
+    "candidates": 34,
+    "seconds": 33.4
+   },
+   "13a_4812": {
+    "name": "13a_4812",
+    "u": "[3,5]",
+    "sigma": -6,
+    "det": 235,
+    "verdict": "OBSTRUCTED",
+    "candidates": 39,
+    "seconds": 34.3
+   },
+   "13a_4831": {
+    "name": "13a_4831",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 139,
+    "verdict": "OBSTRUCTED",
+    "candidates": 20,
+    "seconds": 5.9
+   },
+   "13a_4850": {
+    "name": "13a_4850",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 231,
+    "verdict": "OBSTRUCTED",
+    "candidates": 32,
+    "seconds": 12.7
+   },
+   "13a_4860": {
+    "name": "13a_4860",
+    "u": "[3,5]",
+    "sigma": -6,
+    "det": 267,
+    "verdict": "OBSTRUCTED",
+    "candidates": 44,
+    "seconds": 38.4
+   },
+   "13a_4870": {
+    "name": "13a_4870",
+    "u": "[3,5]",
+    "sigma": -6,
+    "det": 175,
+    "verdict": "OBSTRUCTED",
+    "candidates": 34,
+    "seconds": 5.5
+   },
+   "13a_643": {
+    "name": "13a_643",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 123,
+    "verdict": "PASS",
+    "candidates": 21,
+    "witness_form": [
+     [
+      22,
+      22,
+      22
+     ],
+     [
+      -21,
+      -21,
+      20
+     ]
+    ],
+    "seconds": 2.6
+   },
+   "13a_932": {
+    "name": "13a_932",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 259,
+    "verdict": "PASS",
+    "candidates": 34,
+    "witness_form": [
+     [
+      6,
+      6,
+      6
+     ],
+     [
+      -4,
+      -4,
+      2
+     ]
+    ],
+    "seconds": 34.0
+   },
+   "13a_1306": {
+    "name": "13a_1306",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 407,
+    "verdict": "OBSTRUCTED",
+    "candidates": 40,
+    "seconds": 31.4
+   },
+   "13a_1396": {
+    "name": "13a_1396",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 247,
+    "verdict": "PASS",
+    "candidates": 41,
+    "witness_form": [
+     [
+      2,
+      10,
+      12
+     ],
+     [
+      -1,
+      -1,
+      -8
+     ]
+    ],
+    "seconds": 23.2
+   },
+   "13a_1545": {
+    "name": "13a_1545",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 203,
+    "verdict": "PASS",
+    "candidates": 28,
+    "witness_form": [
+     [
+      10,
+      10,
+      12
+     ],
+     [
+      -9,
+      -9,
+      9
+     ]
+    ],
+    "seconds": 11.6
+   },
+   "13a_1911": {
+    "name": "13a_1911",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 327,
+    "verdict": "OBSTRUCTED",
+    "candidates": 56,
+    "seconds": 77.2
+   },
+   "13a_2128": {
+    "name": "13a_2128",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 255,
+    "verdict": "OBSTRUCTED",
+    "candidates": 43,
+    "seconds": 20.2
+   },
+   "13a_2333": {
+    "name": "13a_2333",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 291,
+    "verdict": "OBSTRUCTED",
+    "candidates": 46,
+    "seconds": 51.2
+   },
+   "13a_2759": {
+    "name": "13a_2759",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 211,
+    "verdict": "OBSTRUCTED",
+    "candidates": 26,
+    "seconds": 18.1
+   },
+   "13a_2867": {
+    "name": "13a_2867",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 395,
+    "verdict": "OBSTRUCTED",
+    "candidates": 44,
+    "seconds": 162.1
+   },
+   "13a_2977": {
+    "name": "13a_2977",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 383,
+    "verdict": "OBSTRUCTED",
+    "candidates": 47,
+    "seconds": 35.6
+   },
+   "13a_3103": {
+    "name": "13a_3103",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 351,
+    "verdict": "OBSTRUCTED",
+    "candidates": 68,
+    "seconds": 74.0
+   },
+   "13a_3594": {
+    "name": "13a_3594",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 219,
+    "verdict": "OBSTRUCTED",
+    "candidates": 32,
+    "seconds": 37.4
+   },
+   "13a_3713": {
+    "name": "13a_3713",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 319,
+    "verdict": "OBSTRUCTED",
+    "candidates": 45,
+    "seconds": 66.7
+   },
+   "13a_3971": {
+    "name": "13a_3971",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 351,
+    "verdict": "OBSTRUCTED",
+    "candidates": 68,
+    "seconds": 62.7
+   },
+   "13a_4087": {
+    "name": "13a_4087",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 195,
+    "verdict": "OBSTRUCTED",
+    "candidates": 31,
+    "seconds": 20.3
+   },
+   "13a_4190": {
+    "name": "13a_4190",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 315,
+    "verdict": "OBSTRUCTED",
+    "candidates": 56,
+    "seconds": 64.1
+   },
+   "13a_4217": {
+    "name": "13a_4217",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 463,
+    "verdict": "OBSTRUCTED",
+    "candidates": 62,
+    "seconds": 122.9
+   },
+   "13a_4369": {
+    "name": "13a_4369",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 255,
+    "verdict": "OBSTRUCTED",
+    "candidates": 43,
+    "seconds": 18.5
+   },
+   "13a_4388": {
+    "name": "13a_4388",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 371,
+    "verdict": "OBSTRUCTED",
+    "candidates": 44,
+    "seconds": 136.3
+   },
+   "13a_4464": {
+    "name": "13a_4464",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 415,
+    "verdict": "OBSTRUCTED",
+    "candidates": 54,
+    "seconds": 93.5
+   },
+   "13a_4553": {
+    "name": "13a_4553",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 171,
+    "verdict": "OBSTRUCTED",
+    "candidates": 39,
+    "seconds": 11.0
+   },
+   "13a_4569": {
+    "name": "13a_4569",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 159,
+    "verdict": "OBSTRUCTED",
+    "candidates": 26,
+    "seconds": 3.9
+   },
+   "13a_4764": {
+    "name": "13a_4764",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 279,
+    "verdict": "OBSTRUCTED",
+    "candidates": 65,
+    "seconds": 28.0
+   },
+   "13a_4774": {
+    "name": "13a_4774",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 399,
+    "verdict": "OBSTRUCTED",
+    "candidates": 62,
+    "seconds": 75.1
+   },
+   "13a_4800": {
+    "name": "13a_4800",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 315,
+    "verdict": "OBSTRUCTED",
+    "candidates": 56,
+    "seconds": 55.0
+   },
+   "13a_4821": {
+    "name": "13a_4821",
+    "u": "[3,5]",
+    "sigma": -6,
+    "det": 343,
+    "verdict": "OBSTRUCTED",
+    "candidates": 56,
+    "seconds": 97.8
+   },
+   "13a_4833": {
+    "name": "13a_4833",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 151,
+    "verdict": "OBSTRUCTED",
+    "candidates": 21,
+    "seconds": 2.8
+   },
+   "13a_4852": {
+    "name": "13a_4852",
+    "u": "[3,4]",
+    "sigma": -6,
+    "det": 91,
+    "verdict": "OBSTRUCTED",
+    "candidates": 19,
+    "seconds": 1.6
+   },
+   "13a_4865": {
+    "name": "13a_4865",
+    "u": "[3,5]",
+    "sigma": -6,
+    "det": 195,
+    "verdict": "OBSTRUCTED",
+    "candidates": 31,
+    "seconds": 16.0
+   },
+   "13a_4876": {
+    "name": "13a_4876",
+    "u": "[3,5]",
+    "sigma": -6,
+    "det": 135,
+    "verdict": "OBSTRUCTED",
+    "candidates": 32,
+    "seconds": 3.7
+   }
+  }
+ }
+}

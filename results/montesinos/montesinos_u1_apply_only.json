@@ -1,0 +1,557 @@
+{
+ "lens_check": null,
+ "validate": {},
+ "apply": {
+  "11n_122": {
+   "verdict": "OBSTRUCTED",
+   "rank": 6,
+   "flipped": true,
+   "n_classes": 27,
+   "range": [
+    1,
+    2
+   ],
+   "seconds": 0.01
+  },
+  "11n_138": {
+   "verdict": "OBSTRUCTED",
+   "rank": 8,
+   "flipped": false,
+   "n_classes": 15,
+   "range": [
+    1,
+    2
+   ],
+   "seconds": 0.04
+  },
+  "11n_17": {
+   "verdict": "OBSTRUCTED",
+   "rank": 7,
+   "flipped": true,
+   "n_classes": 47,
+   "range": [
+    1,
+    2
+   ],
+   "seconds": 0.03
+  },
+  "11n_3": {
+   "verdict": "OBSTRUCTED",
+   "rank": 6,
+   "flipped": true,
+   "n_classes": 43,
+   "range": [
+    1,
+    2
+   ],
+   "seconds": 0.01
+  },
+  "11n_51": {
+   "verdict": "OBSTRUCTED",
+   "rank": 7,
+   "flipped": true,
+   "n_classes": 29,
+   "range": [
+    1,
+    2
+   ],
+   "seconds": 0.02
+  },
+  "11n_54": {
+   "verdict": "OBSTRUCTED",
+   "rank": 6,
+   "flipped": true,
+   "n_classes": 43,
+   "range": [
+    1,
+    2
+   ],
+   "seconds": 0.01
+  },
+  "11n_60": {
+   "verdict": "OBSTRUCTED",
+   "rank": 6,
+   "flipped": true,
+   "n_classes": 31,
+   "range": [
+    1,
+    2
+   ],
+   "seconds": 0.01
+  },
+  "12n_11": {
+   "verdict": "OBSTRUCTED",
+   "rank": 6,
+   "flipped": true,
+   "n_classes": 61,
+   "range": [
+    1,
+    2
+   ],
+   "seconds": 0.02
+  },
+  "12n_12": {
+   "verdict": "OBSTRUCTED",
+   "rank": 6,
+   "flipped": true,
+   "n_classes": 79,
+   "range": [
+    1,
+    2
+   ],
+   "seconds": 0.02
+  },
+  "12n_154": {
+   "verdict": "OBSTRUCTED",
+   "rank": 7,
+   "flipped": true,
+   "n_classes": 47,
+   "range": [
+    1,
+    2
+   ],
+   "seconds": 0.03
+  },
+  "12n_159": {
+   "verdict": "OBSTRUCTED",
+   "rank": 7,
+   "flipped": true,
+   "n_classes": 55,
+   "range": [
+    1,
+    2
+   ],
+   "seconds": 0.04
+  },
+  "12n_160": {
+   "verdict": "OBSTRUCTED",
+   "rank": 7,
+   "flipped": true,
+   "n_classes": 53,
+   "range": [
+    1,
+    2
+   ],
+   "seconds": 0.03
+  },
+  "12n_162": {
+   "verdict": "OBSTRUCTED",
+   "rank": 7,
+   "flipped": true,
+   "n_classes": 61,
+   "range": [
+    1,
+    2
+   ],
+   "seconds": 0.04
+  },
+  "12n_167": {
+   "verdict": "OBSTRUCTED",
+   "rank": 7,
+   "flipped": true,
+   "n_classes": 67,
+   "range": [
+    1,
+    3
+   ],
+   "seconds": 0.04
+  },
+  "12n_170": {
+   "verdict": "OBSTRUCTED",
+   "rank": 5,
+   "flipped": true,
+   "n_classes": 81,
+   "range": [
+    1,
+    2
+   ],
+   "seconds": 0.01
+  },
+  "12n_238": {
+   "verdict": "OBSTRUCTED",
+   "rank": 7,
+   "flipped": true,
+   "n_classes": 31,
+   "range": [
+    1,
+    2
+   ],
+   "seconds": 0.02
+  },
+  "12n_241": {
+   "verdict": "OBSTRUCTED",
+   "rank": 7,
+   "flipped": true,
+   "n_classes": 59,
+   "range": [
+    1,
+    2
+   ],
+   "seconds": 0.03
+  },
+  "12n_286": {
+   "verdict": "OBSTRUCTED",
+   "rank": 7,
+   "flipped": true,
+   "n_classes": 45,
+   "range": [
+    1,
+    2
+   ],
+   "seconds": 0.04
+  },
+  "12n_288": {
+   "verdict": "OBSTRUCTED",
+   "rank": 7,
+   "flipped": true,
+   "n_classes": 49,
+   "range": [
+    1,
+    2
+   ],
+   "seconds": 0.03
+  },
+  "12n_295": {
+   "verdict": "OBSTRUCTED",
+   "rank": 6,
+   "flipped": true,
+   "n_classes": 107,
+   "range": [
+    1,
+    2
+   ],
+   "seconds": 0.03
+  },
+  "12n_301": {
+   "verdict": "OBSTRUCTED",
+   "rank": 7,
+   "flipped": false,
+   "n_classes": 67,
+   "range": [
+    1,
+    2
+   ],
+   "seconds": 0.04
+  },
+  "12n_302": {
+   "verdict": "OBSTRUCTED",
+   "rank": 6,
+   "flipped": true,
+   "n_classes": 111,
+   "range": [
+    1,
+    2
+   ],
+   "seconds": 0.03
+  },
+  "12n_304": {
+   "verdict": "OBSTRUCTED",
+   "rank": 5,
+   "flipped": true,
+   "n_classes": 71,
+   "range": [
+    1,
+    3
+   ],
+   "seconds": 0.01
+  },
+  "12n_307": {
+   "verdict": "OBSTRUCTED",
+   "rank": 7,
+   "flipped": true,
+   "n_classes": 77,
+   "range": [
+    1,
+    3
+   ],
+   "seconds": 0.04
+  },
+  "12n_309": {
+   "verdict": "PASS",
+   "rank": 5,
+   "flipped": false,
+   "n_classes": 1,
+   "range": [
+    1,
+    2
+   ],
+   "seconds": 0.0
+  },
+  "12n_337": {
+   "verdict": "OBSTRUCTED",
+   "rank": 6,
+   "flipped": true,
+   "n_classes": 103,
+   "range": [
+    1,
+    2
+   ],
+   "seconds": 0.03
+  },
+  "12n_41": {
+   "verdict": "OBSTRUCTED",
+   "rank": 8,
+   "flipped": true,
+   "n_classes": 19,
+   "range": [
+    1,
+    2
+   ],
+   "seconds": 0.04
+  },
+  "12n_42": {
+   "verdict": "OBSTRUCTED",
+   "rank": 6,
+   "flipped": true,
+   "n_classes": 59,
+   "range": [
+    1,
+    2
+   ],
+   "seconds": 0.02
+  },
+  "12n_43": {
+   "verdict": "OBSTRUCTED",
+   "rank": 6,
+   "flipped": true,
+   "n_classes": 81,
+   "range": [
+    1,
+    2
+   ],
+   "seconds": 0.02
+  },
+  "12n_44": {
+   "verdict": "OBSTRUCTED",
+   "rank": 8,
+   "flipped": true,
+   "n_classes": 51,
+   "range": [
+    1,
+    2
+   ],
+   "seconds": 0.07
+  },
+  "12n_444": {
+   "verdict": "OBSTRUCTED",
+   "rank": 8,
+   "flipped": true,
+   "n_classes": 27,
+   "range": [
+    1,
+    2
+   ],
+   "seconds": 0.05
+  },
+  "12n_45": {
+   "verdict": "OBSTRUCTED",
+   "rank": 7,
+   "flipped": true,
+   "n_classes": 37,
+   "range": [
+    1,
+    2
+   ],
+   "seconds": 0.03
+  },
+  "12n_457": {
+   "verdict": "PASS",
+   "rank": 5,
+   "flipped": true,
+   "n_classes": 11,
+   "range": [
+    1,
+    2
+   ],
+   "seconds": 0.0
+  },
+  "12n_47": {
+   "verdict": "OBSTRUCTED",
+   "rank": 8,
+   "flipped": true,
+   "n_classes": 59,
+   "range": [
+    1,
+    2
+   ],
+   "seconds": 0.07
+  },
+  "12n_470": {
+   "verdict": "OBSTRUCTED",
+   "rank": 8,
+   "flipped": true,
+   "n_classes": 41,
+   "range": [
+    1,
+    2
+   ],
+   "seconds": 0.06
+  },
+  "12n_471": {
+   "verdict": "OBSTRUCTED",
+   "rank": 5,
+   "flipped": true,
+   "n_classes": 71,
+   "range": [
+    1,
+    2
+   ],
+   "seconds": 0.01
+  },
+  "12n_475": {
+   "verdict": "OBSTRUCTED",
+   "rank": 9,
+   "flipped": true,
+   "n_classes": 7,
+   "range": [
+    1,
+    2
+   ],
+   "seconds": 0.07
+  },
+  "12n_478": {
+   "verdict": "OBSTRUCTED",
+   "rank": 7,
+   "flipped": true,
+   "n_classes": 29,
+   "range": [
+    1,
+    2
+   ],
+   "seconds": 0.02
+  },
+  "12n_479": {
+   "verdict": "OBSTRUCTED",
+   "rank": 6,
+   "flipped": true,
+   "n_classes": 83,
+   "range": [
+    1,
+    2
+   ],
+   "seconds": 0.02
+  },
+  "12n_48": {
+   "verdict": "OBSTRUCTED",
+   "rank": 6,
+   "flipped": true,
+   "n_classes": 49,
+   "range": [
+    1,
+    2
+   ],
+   "seconds": 0.02
+  },
+  "12n_500": {
+   "verdict": "OBSTRUCTED",
+   "rank": 5,
+   "flipped": true,
+   "n_classes": 51,
+   "range": [
+    1,
+    2
+   ],
+   "seconds": 0.01
+  },
+  "12n_501": {
+   "verdict": "OBSTRUCTED",
+   "rank": 7,
+   "flipped": true,
+   "n_classes": 49,
+   "range": [
+    1,
+    2
+   ],
+   "seconds": 0.03
+  },
+  "12n_522": {
+   "verdict": "OBSTRUCTED",
+   "rank": 7,
+   "flipped": false,
+   "n_classes": 23,
+   "range": [
+    1,
+    3
+   ],
+   "seconds": 0.02
+  },
+  "12n_523": {
+   "verdict": "OBSTRUCTED",
+   "rank": 9,
+   "flipped": false,
+   "n_classes": 13,
+   "range": [
+    1,
+    2
+   ],
+   "seconds": 0.1
+  },
+  "12n_550": {
+   "verdict": "OBSTRUCTED",
+   "rank": 8,
+   "flipped": false,
+   "n_classes": 33,
+   "range": [
+    1,
+    2
+   ],
+   "seconds": 0.06
+  },
+  "12n_564": {
+   "verdict": "OBSTRUCTED",
+   "rank": 7,
+   "flipped": false,
+   "n_classes": 39,
+   "range": [
+    1,
+    2
+   ],
+   "seconds": 0.03
+  },
+  "12n_577": {
+   "verdict": "OBSTRUCTED",
+   "rank": 7,
+   "flipped": true,
+   "n_classes": 27,
+   "range": [
+    1,
+    2
+   ],
+   "seconds": 0.03
+  },
+  "12n_578": {
+   "verdict": "OBSTRUCTED",
+   "rank": 6,
+   "flipped": true,
+   "n_classes": 93,
+   "range": [
+    1,
+    2
+   ],
+   "seconds": 0.02
+  },
+  "12n_721": {
+   "verdict": "OBSTRUCTED",
+   "rank": 7,
+   "flipped": true,
+   "n_classes": 25,
+   "range": [
+    1,
+    3
+   ],
+   "seconds": 0.03
+  },
+  "12n_723": {
+   "verdict": "OBSTRUCTED",
+   "rank": 9,
+   "flipped": true,
+   "n_classes": 19,
+   "range": [
+    1,
+    2
+   ],
+   "seconds": 0.09
+  }
+ },
+ "named": {}
+}

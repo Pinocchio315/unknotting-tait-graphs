@@ -1,0 +1,607 @@
+{"verdict": "PASS", "candidates": 1, "witness_form": [10, 10, 9], "name": "10_6", "interval": "[2,3]", "sigma": -4, "det": 37, "seconds": 0.3}
+{"verdict": "PASS", "candidates": 2, "witness_form": [2, 8, 1], "name": "10_47", "interval": "[2,3]", "sigma": 4, "det": 41, "seconds": 0.34}
+{"verdict": "PASS", "candidates": 2, "witness_form": [2, 12, 1], "name": "10_100", "interval": "[2,3]", "sigma": 4, "det": 65, "seconds": 0.35}
+{"verdict": "OBSTRUCTED", "candidates": 1, "name": "11a_144", "interval": "[2,3]", "sigma": 4, "det": 73, "seconds": 0.02}
+{"verdict": "PASS", "candidates": 2, "witness_form": [6, 6, 4], "name": "10_76", "interval": "[2,3]", "sigma": -4, "det": 57, "seconds": 0.3}
+{"verdict": "PASS", "candidates": 2, "witness_form": [6, 10, 5], "name": "11a_105", "interval": "[2,3]", "sigma": -4, "det": 109, "seconds": 0.32}
+{"verdict": "PASS", "candidates": 2, "witness_form": [4, 4, 2], "name": "10_61", "interval": "[2,3]", "sigma": -4, "det": 33, "seconds": 0.34}
+{"verdict": "OBSTRUCTED", "candidates": 1, "name": "11a_299", "interval": "[2,3]", "sigma": -4, "det": 97, "seconds": 0.06}
+{"verdict": "PASS", "candidates": 2, "witness_form": [2, 10, 0], "name": "11a_161", "interval": "[2,3]", "sigma": 4, "det": 57, "seconds": 0.09}
+{"verdict": "PASS", "candidates": 2, "witness_form": [10, 12, 9], "name": "11a_20", "interval": "[2,3]", "sigma": -4, "det": 113, "seconds": 0.08}
+{"verdict": "PASS", "candidates": 4, "witness_form": [6, 6, 1], "name": "11a_304", "interval": "[2,3]", "sigma": -4, "det": 117, "seconds": 0.1}
+{"verdict": "PASS", "candidates": 2, "witness_form": [8, 8, 6], "name": "11a_293", "interval": "[2,3]", "sigma": 4, "det": 81, "seconds": 0.14}
+{"verdict": "PASS", "candidates": 4, "witness_form": [2, 18, 0], "name": "11a_49", "interval": "[2,3]", "sigma": -4, "det": 105, "seconds": 0.07}
+{"verdict": "PASS", "candidates": 1, "witness_form": [4, 10, 3], "name": "11a_53", "interval": "[2,3]", "sigma": 4, "det": 97, "seconds": 0.05}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "11a_320", "interval": "[2,3]", "sigma": -4, "det": 109, "seconds": 0.15}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "11a_329", "interval": "[2,3]", "sigma": -4, "det": 145, "seconds": 0.11}
+{"verdict": "OBSTRUCTED", "candidates": 1, "name": "11a_64", "interval": "[2,3]", "sigma": 4, "det": 97, "seconds": 0.03}
+{"verdict": "PASS", "candidates": 2, "witness_form": [22, 22, 21], "name": "11a_60", "interval": "[2,3]", "sigma": -4, "det": 85, "seconds": 0.06}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "11a_63", "interval": "[2,3]", "sigma": 4, "det": 93, "seconds": 0.07}
+{"verdict": "PASS", "candidates": 2, "witness_form": [24, 24, 23], "name": "11a_346", "interval": "[2,3]", "sigma": -4, "det": 93, "seconds": 0.15}
+{"verdict": "PASS", "candidates": 2, "witness_form": [12, 14, 11], "name": "12a_1009", "interval": "[2,3]", "sigma": -4, "det": 137, "seconds": 0.12}
+{"verdict": "PASS", "candidates": 2, "witness_form": [4, 12, 2], "name": "12a_1084", "interval": "[2,3]", "sigma": -4, "det": 145, "seconds": 0.15}
+{"verdict": "PASS", "candidates": 2, "witness_form": [4, 12, 1], "name": "12a_1089", "interval": "[2,3]", "sigma": -4, "det": 157, "seconds": 0.15}
+{"verdict": "PASS", "candidates": 3, "witness_form": [4, 16, 0], "name": "12a_1099", "interval": "[2,3]", "sigma": 4, "det": 217, "seconds": 0.13}
+{"verdict": "PASS", "candidates": 1, "witness_form": [4, 10, 3], "name": "12a_1031", "interval": "[2,3]", "sigma": 4, "det": 97, "seconds": 0.25}
+{"verdict": "PASS", "candidates": 2, "witness_form": [6, 10, 5], "name": "12a_1017", "interval": "[2,3]", "sigma": -4, "det": 109, "seconds": 0.27}
+{"verdict": "PASS", "candidates": 2, "witness_form": [2, 20, 1], "name": "12a_1159", "interval": "[2,3]", "sigma": -4, "det": 113, "seconds": 0.14}
+{"verdict": "PASS", "candidates": 3, "witness_form": [4, 8, 3], "name": "12a_1162", "interval": "[2,3]", "sigma": -4, "det": 69, "seconds": 0.12}
+{"verdict": "PASS", "candidates": 4, "witness_form": [8, 12, 6], "name": "12a_1080", "interval": "[2,3]", "sigma": -4, "det": 201, "seconds": 0.37}
+{"verdict": "PASS", "candidates": 2, "witness_form": [2, 20, 1], "name": "12a_1107", "interval": "[2,3]", "sigma": 4, "det": 113, "seconds": 0.26}
+{"verdict": "PASS", "candidates": 4, "witness_form": [18, 18, 16], "name": "12a_114", "interval": "[2,3]", "sigma": -4, "det": 201, "seconds": 0.33}
+{"verdict": "PASS", "candidates": 2, "witness_form": [2, 24, 1], "name": "12a_1223", "interval": "[2,3]", "sigma": -4, "det": 137, "seconds": 0.15}
+{"verdict": "PASS", "candidates": 4, "witness_form": [18, 18, 16], "name": "12a_117", "interval": "[2,3]", "sigma": -4, "det": 201, "seconds": 0.32}
+{"verdict": "PASS", "candidates": 2, "witness_form": [16, 16, 14], "name": "12a_1184", "interval": "[2,3]", "sigma": -4, "det": 177, "seconds": 0.25}
+{"verdict": "PASS", "candidates": 2, "witness_form": [22, 22, 21], "name": "12a_1243", "interval": "[2,3]", "sigma": -4, "det": 85, "seconds": 0.15}
+{"verdict": "PASS", "candidates": 1, "witness_form": [4, 10, 3], "name": "12a_1240", "interval": "[2,3]", "sigma": -4, "det": 97, "seconds": 0.25}
+{"verdict": "PASS", "candidates": 4, "witness_form": [6, 8, 3], "name": "12a_1266", "interval": "[2,3]", "sigma": -4, "det": 129, "seconds": 0.21}
+{"verdict": "PASS", "candidates": 4, "witness_form": [42, 42, 41], "name": "12a_1210", "interval": "[2,3]", "sigma": 4, "det": 165, "seconds": 0.49}
+{"verdict": "PASS", "candidates": 2, "witness_form": [2, 30, 0], "name": "12a_1255", "interval": "[2,3]", "sigma": -4, "det": 177, "seconds": 0.28}
+{"verdict": "PASS", "candidates": 4, "witness_form": [6, 6, 1], "name": "12a_1247", "interval": "[2,3]", "sigma": -4, "det": 117, "seconds": 0.35}
+{"verdict": "PASS", "candidates": 1, "witness_form": [6, 10, 2], "name": "12a_186", "interval": "[2,3]", "sigma": 4, "det": 193, "seconds": 0.08}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "12a_152", "interval": "[2,3]", "sigma": -4, "det": 113, "seconds": 0.16}
+{"verdict": "PASS", "candidates": 2, "witness_form": [2, 8, 1], "name": "12a_1278", "interval": "[2,3]", "sigma": 4, "det": 41, "seconds": 0.33}
+{"verdict": "PASS", "candidates": 4, "witness_form": [4, 8, 0], "name": "12a_193", "interval": "[2,3]", "sigma": 4, "det": 105, "seconds": 0.17}
+{"verdict": "PASS", "candidates": 3, "witness_form": [8, 10, 6], "name": "12a_195", "interval": "[2,3]", "sigma": 4, "det": 141, "seconds": 0.2}
+{"verdict": "OBSTRUCTED", "candidates": 1, "name": "12a_254", "interval": "[2,3]", "sigma": -4, "det": 97, "seconds": 0.05}
+{"verdict": "PASS", "candidates": 3, "witness_form": [2, 8, 0], "name": "12a_1286", "interval": "[2,3]", "sigma": 4, "det": 45, "seconds": 0.41}
+{"verdict": "PASS", "candidates": 4, "witness_form": [8, 12, 7], "name": "12a_238", "interval": "[2,3]", "sigma": -4, "det": 149, "seconds": 0.13}
+{"verdict": "OBSTRUCTED", "candidates": 1, "name": "12a_289", "interval": "[2,3]", "sigma": -4, "det": 193, "seconds": 0.08}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "12a_269", "interval": "[2,3]", "sigma": -4, "det": 153, "seconds": 0.17}
+{"verdict": "PASS", "candidates": 3, "witness_form": [2, 34, 1], "name": "12a_294", "interval": "[2,3]", "sigma": 4, "det": 197, "seconds": 0.18}
+{"verdict": "PASS", "candidates": 5, "witness_form": [14, 14, 11], "name": "12a_199", "interval": "[2,3]", "sigma": -4, "det": 245, "seconds": 0.36}
+{"verdict": "PASS", "candidates": 4, "witness_form": [2, 26, 0], "name": "12a_297", "interval": "[2,3]", "sigma": 4, "det": 153, "seconds": 0.18}
+{"verdict": "PASS", "candidates": 2, "witness_form": [2, 24, 1], "name": "12a_304", "interval": "[2,3]", "sigma": 4, "det": 137, "seconds": 0.16}
+{"verdict": "PASS", "candidates": 3, "witness_form": [2, 24, 0], "name": "12a_329", "interval": "[2,3]", "sigma": -4, "det": 141, "seconds": 0.09}
+{"verdict": "PASS", "candidates": 3, "witness_form": [4, 18, 2], "name": "12a_350", "interval": "[2,3]", "sigma": -4, "det": 229, "seconds": 0.1}
+{"verdict": "PASS", "candidates": 5, "witness_form": [8, 10, 4], "name": "12a_315", "interval": "[2,3]", "sigma": -4, "det": 221, "seconds": 0.29}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "12a_320", "interval": "[2,3]", "sigma": -4, "det": 157, "seconds": 0.27}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "12a_35", "interval": "[2,3]", "sigma": -4, "det": 177, "seconds": 0.24}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "12a_331", "interval": "[2,3]", "sigma": 4, "det": 177, "seconds": 0.26}
+{"verdict": "PASS", "candidates": 1, "witness_form": [4, 10, 3], "name": "12a_371", "interval": "[2,3]", "sigma": 4, "det": 97, "seconds": 0.06}
+{"verdict": "OBSTRUCTED", "candidates": 3, "name": "12a_231", "interval": "[2,3]", "sigma": -4, "det": 213, "seconds": 0.63}
+{"verdict": "PASS", "candidates": 2, "witness_form": [10, 12, 9], "name": "12a_370", "interval": "[2,3]", "sigma": 4, "det": 113, "seconds": 0.09}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "12a_37", "interval": "[2,3]", "sigma": -4, "det": 133, "seconds": 0.18}
+{"verdict": "PASS", "candidates": 4, "witness_form": [6, 6, 1], "name": "12a_375", "interval": "[2,3]", "sigma": 4, "det": 117, "seconds": 0.11}
+{"verdict": "OBSTRUCTED", "candidates": 1, "name": "12a_47", "interval": "[2,3]", "sigma": -4, "det": 193, "seconds": 0.08}
+{"verdict": "PASS", "candidates": 2, "witness_form": [34, 34, 33], "name": "12a_382", "interval": "[2,3]", "sigma": 4, "det": 133, "seconds": 0.25}
+{"verdict": "PASS", "candidates": 3, "witness_form": [10, 10, 6], "name": "12a_44", "interval": "[2,3]", "sigma": -4, "det": 217, "seconds": 0.21}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "12a_421", "interval": "[2,3]", "sigma": -4, "det": 133, "seconds": 0.29}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "12a_443", "interval": "[2,3]", "sigma": -4, "det": 125, "seconds": 0.27}
+{"verdict": "PASS", "candidates": 4, "witness_form": [12, 12, 10], "name": "12a_508", "interval": "[2,3]", "sigma": -4, "det": 129, "seconds": 0.16}
+{"verdict": "PASS", "candidates": 2, "witness_form": [2, 24, 1], "name": "12a_533", "interval": "[2,3]", "sigma": 4, "det": 137, "seconds": 0.1}
+{"verdict": "PASS", "candidates": 3, "witness_form": [6, 10, 1], "name": "12a_553", "interval": "[2,3]", "sigma": -4, "det": 205, "seconds": 0.11}
+{"verdict": "PASS", "candidates": 2, "witness_form": [4, 12, 2], "name": "12a_556", "interval": "[2,3]", "sigma": -4, "det": 145, "seconds": 0.07}
+{"verdict": "PASS", "candidates": 2, "witness_form": [4, 12, 1], "name": "12a_568", "interval": "[2,3]", "sigma": -4, "det": 157, "seconds": 0.06}
+{"verdict": "PASS", "candidates": 3, "witness_form": [20, 22, 19], "name": "12a_461", "interval": "[2,3]", "sigma": -4, "det": 233, "seconds": 0.3}
+{"verdict": "PASS", "candidates": 3, "witness_form": [18, 18, 17], "name": "12a_580", "interval": "[2,3]", "sigma": 4, "det": 69, "seconds": 0.08}
+{"verdict": "PASS", "candidates": 3, "witness_form": [4, 16, 0], "name": "12a_592", "interval": "[2,3]", "sigma": -4, "det": 217, "seconds": 0.11}
+{"verdict": "PASS", "candidates": 2, "witness_form": [28, 28, 27], "name": "12a_600", "interval": "[2,3]", "sigma": -4, "det": 109, "seconds": 0.13}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "12a_610", "interval": "[2,3]", "sigma": -4, "det": 137, "seconds": 0.18}
+{"verdict": "PASS", "candidates": 1, "witness_form": [4, 10, 3], "name": "12a_651", "interval": "[2,3]", "sigma": -4, "det": 97, "seconds": 0.11}
+{"verdict": "PASS", "candidates": 3, "witness_form": [10, 10, 6], "name": "12a_64", "interval": "[2,3]", "sigma": -4, "det": 217, "seconds": 0.2}
+{"verdict": "PASS", "candidates": 2, "witness_form": [10, 16, 9], "name": "12a_616", "interval": "[2,3]", "sigma": -4, "det": 265, "seconds": 0.21}
+{"verdict": "PASS", "candidates": 1, "witness_form": [4, 6, 1], "name": "12a_641", "interval": "[2,3]", "sigma": 4, "det": 73, "seconds": 0.2}
+{"verdict": "OBSTRUCTED", "candidates": 1, "name": "12a_661", "interval": "[2,3]", "sigma": -4, "det": 193, "seconds": 0.09}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "12a_653", "interval": "[2,3]", "sigma": -4, "det": 145, "seconds": 0.2}
+{"verdict": "PASS", "candidates": 2, "witness_form": [4, 12, 2], "name": "12a_681", "interval": "[2,3]", "sigma": -4, "det": 145, "seconds": 0.17}
+{"verdict": "PASS", "candidates": 4, "witness_form": [4, 14, 3], "name": "12a_730", "interval": "[2,3]", "sigma": -4, "det": 153, "seconds": 0.12}
+{"verdict": "PASS", "candidates": 3, "witness_form": [8, 10, 6], "name": "12a_693", "interval": "[2,3]", "sigma": 4, "det": 141, "seconds": 0.21}
+{"verdict": "OBSTRUCTED", "candidates": 1, "name": "12a_763", "interval": "[2,3]", "sigma": -4, "det": 97, "seconds": 0.05}
+{"verdict": "PASS", "candidates": 4, "witness_form": [2, 26, 1], "name": "12a_78", "interval": "[2,3]", "sigma": 4, "det": 149, "seconds": 0.09}
+{"verdict": "PASS", "candidates": 4, "witness_form": [6, 8, 0], "name": "12a_702", "interval": "[2,3]", "sigma": 4, "det": 165, "seconds": 0.31}
+{"verdict": "PASS", "candidates": 6, "witness_form": [8, 8, 2], "name": "12a_686", "interval": "[2,3]", "sigma": -4, "det": 209, "seconds": 0.36}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "12a_796", "interval": "[2,3]", "sigma": -4, "det": 57, "seconds": 0.05}
+{"verdict": "PASS", "candidates": 4, "witness_form": [4, 20, 3], "name": "12a_741", "interval": "[2,3]", "sigma": -4, "det": 237, "seconds": 0.28}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "12a_764", "interval": "[2,3]", "sigma": -4, "det": 133, "seconds": 0.18}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "12a_795", "interval": "[2,3]", "sigma": -4, "det": 137, "seconds": 0.11}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "12a_800", "interval": "[2,3]", "sigma": -4, "det": 93, "seconds": 0.09}
+{"verdict": "PASS", "candidates": 4, "witness_form": [4, 10, 1], "name": "12a_841", "interval": "[2,3]", "sigma": -4, "det": 129, "seconds": 0.11}
+{"verdict": "PASS", "candidates": 2, "witness_form": [6, 10, 4], "name": "12a_85", "interval": "[2,3]", "sigma": 4, "det": 145, "seconds": 0.1}
+{"verdict": "OBSTRUCTED", "candidates": 3, "name": "12a_75", "interval": "[2,3]", "sigma": -4, "det": 205, "seconds": 0.48}
+{"verdict": "PASS", "candidates": 5, "witness_form": [2, 28, 1], "name": "12a_869", "interval": "[2,3]", "sigma": 4, "det": 161, "seconds": 0.18}
+{"verdict": "PASS", "candidates": 2, "witness_form": [4, 12, 1], "name": "12a_947", "interval": "[2,3]", "sigma": -4, "det": 157, "seconds": 0.06}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "12a_812", "interval": "[2,3]", "sigma": -4, "det": 201, "seconds": 0.34}
+{"verdict": "PASS", "candidates": 3, "witness_form": [2, 16, 1], "name": "12a_881", "interval": "[2,3]", "sigma": 4, "det": 89, "seconds": 0.24}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "12a_938", "interval": "[2,3]", "sigma": -4, "det": 133, "seconds": 0.18}
+{"verdict": "OBSTRUCTED", "candidates": 5, "name": "12a_880", "interval": "[2,3]", "sigma": -4, "det": 161, "seconds": 0.32}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "12a_97", "interval": "[2,3]", "sigma": -4, "det": 129, "seconds": 0.23}
+{"verdict": "OBSTRUCTED", "candidates": 3, "name": "12a_798", "interval": "[2,3]", "sigma": -4, "det": 213, "seconds": 0.61}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "12a_978", "interval": "[2,3]", "sigma": -4, "det": 133, "seconds": 0.17}
+{"verdict": "PASS", "candidates": 2, "witness_form": [4, 12, 1], "name": "12a_985", "interval": "[2,3]", "sigma": 4, "det": 157, "seconds": 0.07}
+{"verdict": "PASS", "candidates": 4, "witness_form": [2, 22, 1], "name": "12a_988", "interval": "[2,3]", "sigma": 4, "det": 125, "seconds": 0.09}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "12a_974", "interval": "[2,3]", "sigma": -4, "det": 177, "seconds": 0.35}
+{"verdict": "OBSTRUCTED", "candidates": 1, "name": "12a_996", "interval": "[2,3]", "sigma": -4, "det": 193, "seconds": 0.18}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "12a_967", "interval": "[2,3]", "sigma": 4, "det": 253, "seconds": 0.47}
+{"verdict": "PASS", "candidates": 5, "witness_form": [4, 24, 1], "name": "13a_1036", "interval": "[2,3]", "sigma": -4, "det": 325, "seconds": 0.19}
+{"verdict": "OBSTRUCTED", "candidates": 3, "name": "12a_983", "interval": "[2,3]", "sigma": -4, "det": 229, "seconds": 0.48}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_1043", "interval": "[2,3]", "sigma": -4, "det": 133, "seconds": 0.26}
+{"verdict": "PASS", "candidates": 6, "witness_form": [2, 36, 1], "name": "13a_1002", "interval": "[2,3]", "sigma": -4, "det": 209, "seconds": 0.5}
+{"verdict": "PASS", "candidates": 2, "witness_form": [4, 30, 2], "name": "13a_1077", "interval": "[2,3]", "sigma": -4, "det": 397, "seconds": 0.37}
+{"verdict": "PASS", "candidates": 4, "witness_form": [2, 52, 1], "name": "13a_106", "interval": "[2,3]", "sigma": -4, "det": 305, "seconds": 0.6}
+{"verdict": "PASS", "candidates": 4, "witness_form": [2, 52, 1], "name": "13a_1102", "interval": "[2,3]", "sigma": -4, "det": 305, "seconds": 0.54}
+{"verdict": "PASS", "candidates": 3, "witness_form": [12, 12, 9], "name": "13a_1112", "interval": "[2,3]", "sigma": 4, "det": 205, "seconds": 0.47}
+{"verdict": "OBSTRUCTED", "candidates": 6, "name": "13a_1062", "interval": "[2,3]", "sigma": -4, "det": 189, "seconds": 0.95}
+{"verdict": "PASS", "candidates": 5, "witness_form": [4, 24, 1], "name": "13a_1148", "interval": "[2,3]", "sigma": -4, "det": 325, "seconds": 0.21}
+{"verdict": "OBSTRUCTED", "candidates": 3, "name": "13a_1137", "interval": "[2,3]", "sigma": -4, "det": 433, "seconds": 0.68}
+{"verdict": "PASS", "candidates": 4, "witness_form": [10, 10, 2], "name": "13a_112", "interval": "[2,3]", "sigma": 4, "det": 345, "seconds": 0.82}
+{"verdict": "PASS", "candidates": 3, "witness_form": [12, 12, 9], "name": "13a_1156", "interval": "[2,3]", "sigma": -4, "det": 205, "seconds": 0.16}
+{"verdict": "PASS", "candidates": 6, "witness_form": [2, 36, 1], "name": "13a_1158", "interval": "[2,3]", "sigma": -4, "det": 209, "seconds": 0.22}
+{"verdict": "PASS", "candidates": 2, "witness_form": [6, 16, 4], "name": "13a_1166", "interval": "[2,3]", "sigma": -4, "det": 277, "seconds": 0.2}
+{"verdict": "OBSTRUCTED", "candidates": 1, "name": "13a_1182", "interval": "[2,3]", "sigma": -4, "det": 193, "seconds": 0.11}
+{"verdict": "PASS", "candidates": 4, "witness_form": [22, 24, 21], "name": "13a_1149", "interval": "[2,3]", "sigma": 4, "det": 257, "seconds": 0.49}
+{"verdict": "PASS", "candidates": 6, "witness_form": [2, 46, 1], "name": "13a_1184", "interval": "[2,3]", "sigma": -4, "det": 269, "seconds": 0.22}
+{"verdict": "PASS", "candidates": 3, "witness_form": [4, 18, 2], "name": "13a_1229", "interval": "[2,3]", "sigma": -4, "det": 229, "seconds": 0.2}
+{"verdict": "PASS", "candidates": 4, "witness_form": [2, 26, 1], "name": "13a_1224", "interval": "[2,3]", "sigma": 4, "det": 149, "seconds": 0.3}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_1147", "interval": "[2,3]", "sigma": -4, "det": 417, "seconds": 1.27}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_1051", "interval": "[2,3]", "sigma": 4, "det": 357, "seconds": 2.23}
+{"verdict": "PASS", "candidates": 4, "witness_form": [4, 16, 2], "name": "13a_1233", "interval": "[2,3]", "sigma": -4, "det": 201, "seconds": 0.32}
+{"verdict": "OBSTRUCTED", "candidates": 3, "name": "13a_1140", "interval": "[2,3]", "sigma": -4, "det": 421, "seconds": 1.51}
+{"verdict": "PASS", "candidates": 4, "witness_form": [8, 12, 6], "name": "13a_1246", "interval": "[2,3]", "sigma": -4, "det": 201, "seconds": 0.3}
+{"verdict": "PASS", "candidates": 3, "witness_form": [12, 12, 9], "name": "13a_1247", "interval": "[2,3]", "sigma": 4, "det": 205, "seconds": 0.22}
+{"verdict": "PASS", "candidates": 2, "witness_form": [10, 16, 9], "name": "13a_1255", "interval": "[2,3]", "sigma": 4, "det": 265, "seconds": 0.2}
+{"verdict": "PASS", "candidates": 3, "witness_form": [4, 18, 2], "name": "13a_1275", "interval": "[2,3]", "sigma": -4, "det": 229, "seconds": 0.2}
+{"verdict": "PASS", "candidates": 6, "witness_form": [4, 20, 1], "name": "13a_126", "interval": "[2,3]", "sigma": -4, "det": 269, "seconds": 0.32}
+{"verdict": "PASS", "candidates": 4, "witness_form": [10, 10, 2], "name": "13a_123", "interval": "[2,3]", "sigma": 4, "det": 345, "seconds": 0.8}
+{"verdict": "OBSTRUCTED", "candidates": 3, "name": "13a_1295", "interval": "[2,3]", "sigma": 4, "det": 229, "seconds": 0.5}
+{"verdict": "PASS", "candidates": 4, "witness_form": [8, 12, 3], "name": "13a_1287", "interval": "[2,3]", "sigma": -4, "det": 309, "seconds": 0.65}
+{"verdict": "PASS", "candidates": 4, "witness_form": [4, 26, 0], "name": "13a_1258", "interval": "[2,3]", "sigma": -4, "det": 357, "seconds": 0.89}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_1339", "interval": "[2,3]", "sigma": 4, "det": 265, "seconds": 0.21}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_1331", "interval": "[2,3]", "sigma": -4, "det": 257, "seconds": 0.47}
+{"verdict": "PASS", "candidates": 6, "witness_form": [4, 18, 3], "name": "13a_1377", "interval": "[2,3]", "sigma": 4, "det": 209, "seconds": 0.26}
+{"verdict": "PASS", "candidates": 4, "witness_form": [2, 46, 0], "name": "13a_1378", "interval": "[2,3]", "sigma": 4, "det": 273, "seconds": 0.47}
+{"verdict": "PASS", "candidates": 6, "witness_form": [10, 14, 3], "name": "13a_1303", "interval": "[2,3]", "sigma": -4, "det": 477, "seconds": 1.57}
+{"verdict": "PASS", "candidates": 3, "witness_form": [54, 54, 53], "name": "13a_1383", "interval": "[2,3]", "sigma": 4, "det": 213, "seconds": 0.69}
+{"verdict": "OBSTRUCTED", "candidates": 3, "name": "13a_1329", "interval": "[2,3]", "sigma": 4, "det": 373, "seconds": 1.28}
+{"verdict": "OBSTRUCTED", "candidates": 3, "name": "13a_1398", "interval": "[2,3]", "sigma": -4, "det": 225, "seconds": 0.39}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_1413", "interval": "[2,3]", "sigma": -4, "det": 173, "seconds": 0.36}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_1273", "interval": "[2,3]", "sigma": -4, "det": 333, "seconds": 2.41}
+{"verdict": "PASS", "candidates": 5, "witness_form": [8, 10, 4], "name": "13a_1432", "interval": "[2,3]", "sigma": -4, "det": 221, "seconds": 0.33}
+{"verdict": "PASS", "candidates": 4, "witness_form": [2, 60, 1], "name": "13a_1404", "interval": "[2,3]", "sigma": -4, "det": 353, "seconds": 0.48}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_1440", "interval": "[2,3]", "sigma": -4, "det": 185, "seconds": 0.36}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_1317", "interval": "[2,3]", "sigma": -4, "det": 333, "seconds": 2.39}
+{"verdict": "PASS", "candidates": 2, "witness_form": [16, 16, 14], "name": "13a_1452", "interval": "[2,3]", "sigma": 4, "det": 177, "seconds": 0.48}
+{"verdict": "PASS", "candidates": 3, "witness_form": [2, 16, 1], "name": "13a_1461", "interval": "[2,3]", "sigma": -4, "det": 89, "seconds": 0.52}
+{"verdict": "PASS", "candidates": 4, "witness_form": [2, 28, 0], "name": "13a_1462", "interval": "[2,3]", "sigma": 4, "det": 165, "seconds": 0.49}
+{"verdict": "OBSTRUCTED", "candidates": 3, "name": "13a_1465", "interval": "[2,3]", "sigma": -4, "det": 241, "seconds": 0.26}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_1475", "interval": "[2,3]", "sigma": 4, "det": 113, "seconds": 0.07}
+{"verdict": "PASS", "candidates": 3, "witness_form": [16, 18, 14], "name": "13a_148", "interval": "[2,3]", "sigma": -4, "det": 301, "seconds": 0.3}
+{"verdict": "PASS", "candidates": 3, "witness_form": [2, 54, 1], "name": "13a_147", "interval": "[2,3]", "sigma": -4, "det": 317, "seconds": 0.48}
+{"verdict": "OBSTRUCTED", "candidates": 6, "name": "13a_1472", "interval": "[2,3]", "sigma": 4, "det": 209, "seconds": 0.48}
+{"verdict": "OBSTRUCTED", "candidates": 5, "name": "13a_1469", "interval": "[2,3]", "sigma": 4, "det": 221, "seconds": 0.68}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_1491", "interval": "[2,3]", "sigma": -4, "det": 253, "seconds": 0.56}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_1403", "interval": "[2,3]", "sigma": -4, "det": 333, "seconds": 1.8}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_1495", "interval": "[2,3]", "sigma": 4, "det": 257, "seconds": 0.39}
+{"verdict": "PASS", "candidates": 3, "witness_form": [20, 22, 19], "name": "13a_1503", "interval": "[2,3]", "sigma": 4, "det": 233, "seconds": 0.38}
+{"verdict": "PASS", "candidates": 2, "witness_form": [4, 22, 3], "name": "13a_151", "interval": "[2,3]", "sigma": -4, "det": 265, "seconds": 0.27}
+{"verdict": "OBSTRUCTED", "candidates": 6, "name": "13a_150", "interval": "[2,3]", "sigma": -4, "det": 297, "seconds": 0.89}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_1546", "interval": "[2,3]", "sigma": -4, "det": 249, "seconds": 0.47}
+{"verdict": "PASS", "candidates": 4, "witness_form": [10, 10, 2], "name": "13a_1541", "interval": "[2,3]", "sigma": 4, "det": 345, "seconds": 0.79}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_1547", "interval": "[2,3]", "sigma": 4, "det": 137, "seconds": 0.19}
+{"verdict": "OBSTRUCTED", "candidates": 6, "name": "13a_154", "interval": "[2,3]", "sigma": -4, "det": 297, "seconds": 0.88}
+{"verdict": "PASS", "candidates": 4, "witness_form": [10, 16, 7], "name": "13a_1543", "interval": "[2,3]", "sigma": 4, "det": 393, "seconds": 0.84}
+{"verdict": "OBSTRUCTED", "candidates": 5, "name": "13a_1499", "interval": "[2,3]", "sigma": 4, "det": 325, "seconds": 1.47}
+{"verdict": "OBSTRUCTED", "candidates": 3, "name": "13a_1557", "interval": "[2,3]", "sigma": 4, "det": 225, "seconds": 0.38}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_1552", "interval": "[2,3]", "sigma": 4, "det": 253, "seconds": 0.62}
+{"verdict": "PASS", "candidates": 3, "witness_form": [2, 36, 0], "name": "13a_1559", "interval": "[2,3]", "sigma": 4, "det": 213, "seconds": 0.49}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_1580", "interval": "[2,3]", "sigma": -4, "det": 137, "seconds": 0.14}
+{"verdict": "PASS", "candidates": 2, "witness_form": [4, 12, 2], "name": "13a_1583", "interval": "[2,3]", "sigma": 4, "det": 145, "seconds": 0.16}
+{"verdict": "PASS", "candidates": 4, "witness_form": [2, 28, 0], "name": "13a_1584", "interval": "[2,3]", "sigma": 4, "det": 165, "seconds": 0.27}
+{"verdict": "PASS", "candidates": 6, "witness_form": [4, 22, 1], "name": "13a_157", "interval": "[2,3]", "sigma": -4, "det": 297, "seconds": 0.57}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_16", "interval": "[2,3]", "sigma": 4, "det": 177, "seconds": 0.32}
+{"verdict": "PASS", "candidates": 7, "witness_form": [6, 20, 5], "name": "13a_1567", "interval": "[2,3]", "sigma": -4, "det": 329, "seconds": 0.77}
+{"verdict": "PASS", "candidates": 4, "witness_form": [8, 12, 3], "name": "13a_1586", "interval": "[2,3]", "sigma": 4, "det": 309, "seconds": 0.65}
+{"verdict": "PASS", "candidates": 6, "witness_form": [4, 22, 1], "name": "13a_160", "interval": "[2,3]", "sigma": -4, "det": 297, "seconds": 0.57}
+{"verdict": "OBSTRUCTED", "candidates": 3, "name": "13a_1618", "interval": "[2,3]", "sigma": 4, "det": 217, "seconds": 0.34}
+{"verdict": "OBSTRUCTED", "candidates": 5, "name": "13a_1616", "interval": "[2,3]", "sigma": -4, "det": 293, "seconds": 1.08}
+{"verdict": "PASS", "candidates": 5, "witness_form": [2, 48, 1], "name": "13a_162", "interval": "[2,3]", "sigma": 4, "det": 281, "seconds": 0.4}
+{"verdict": "PASS", "candidates": 6, "witness_form": [26, 26, 24], "name": "13a_1603", "interval": "[2,3]", "sigma": 4, "det": 297, "seconds": 1.23}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_1643", "interval": "[2,3]", "sigma": -4, "det": 145, "seconds": 0.13}
+{"verdict": "PASS", "candidates": 2, "witness_form": [6, 12, 0], "name": "13a_1645", "interval": "[2,3]", "sigma": 4, "det": 253, "seconds": 0.2}
+{"verdict": "OBSTRUCTED", "candidates": 7, "name": "13a_1554", "interval": "[2,3]", "sigma": -4, "det": 405, "seconds": 2.36}
+{"verdict": "PASS", "candidates": 1, "witness_form": [6, 10, 2], "name": "13a_1630", "interval": "[2,3]", "sigma": -4, "det": 193, "seconds": 0.33}
+{"verdict": "PASS", "candidates": 4, "witness_form": [6, 18, 3], "name": "13a_1699", "interval": "[2,3]", "sigma": 4, "det": 349, "seconds": 0.25}
+{"verdict": "PASS", "candidates": 4, "witness_form": [4, 20, 3], "name": "13a_1688", "interval": "[2,3]", "sigma": -4, "det": 237, "seconds": 0.39}
+{"verdict": "PASS", "candidates": 4, "witness_form": [2, 46, 0], "name": "13a_1683", "interval": "[2,3]", "sigma": -4, "det": 273, "seconds": 0.6}
+{"verdict": "OBSTRUCTED", "candidates": 6, "name": "13a_1617", "interval": "[2,3]", "sigma": 4, "det": 261, "seconds": 1.7}
+{"verdict": "PASS", "candidates": 2, "witness_form": [4, 22, 3], "name": "13a_1703", "interval": "[2,3]", "sigma": 4, "det": 265, "seconds": 0.24}
+{"verdict": "OBSTRUCTED", "candidates": 6, "name": "13a_1615", "interval": "[2,3]", "sigma": -4, "det": 389, "seconds": 2.12}
+{"verdict": "PASS", "candidates": 4, "witness_form": [4, 12, 3], "name": "13a_1741", "interval": "[2,3]", "sigma": -4, "det": 125, "seconds": 0.16}
+{"verdict": "OBSTRUCTED", "candidates": 3, "name": "13a_172", "interval": "[2,3]", "sigma": -4, "det": 197, "seconds": 0.52}
+{"verdict": "PASS", "candidates": 3, "witness_form": [58, 58, 57], "name": "13a_174", "interval": "[2,3]", "sigma": 4, "det": 229, "seconds": 0.46}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_170", "interval": "[2,3]", "sigma": -4, "det": 273, "seconds": 0.82}
+{"verdict": "PASS", "candidates": 2, "witness_form": [6, 12, 0], "name": "13a_177", "interval": "[2,3]", "sigma": -4, "det": 253, "seconds": 0.15}
+{"verdict": "PASS", "candidates": 6, "witness_form": [6, 12, 4], "name": "13a_1744", "interval": "[2,3]", "sigma": -4, "det": 189, "seconds": 0.32}
+{"verdict": "PASS", "candidates": 7, "witness_form": [28, 30, 27], "name": "13a_1692", "interval": "[2,3]", "sigma": -4, "det": 329, "seconds": 1.28}
+{"verdict": "PASS", "candidates": 1, "witness_form": [6, 10, 2], "name": "13a_1757", "interval": "[2,3]", "sigma": -4, "det": 193, "seconds": 0.34}
+{"verdict": "PASS", "candidates": 2, "witness_form": [4, 22, 3], "name": "13a_1865", "interval": "[2,3]", "sigma": -4, "det": 265, "seconds": 0.18}
+{"verdict": "PASS", "candidates": 3, "witness_form": [2, 54, 1], "name": "13a_1772", "interval": "[2,3]", "sigma": -4, "det": 317, "seconds": 0.46}
+{"verdict": "PASS", "candidates": 4, "witness_form": [18, 18, 16], "name": "13a_1867", "interval": "[2,3]", "sigma": -4, "det": 201, "seconds": 0.36}
+{"verdict": "PASS", "candidates": 2, "witness_form": [2, 20, 1], "name": "13a_1811", "interval": "[2,3]", "sigma": -4, "det": 113, "seconds": 0.56}
+{"verdict": "OBSTRUCTED", "candidates": 3, "name": "13a_1826", "interval": "[2,3]", "sigma": -4, "det": 225, "seconds": 0.62}
+{"verdict": "PASS", "candidates": 1, "witness_form": [6, 10, 2], "name": "13a_1921", "interval": "[2,3]", "sigma": -4, "det": 193, "seconds": 0.36}
+{"verdict": "PASS", "candidates": 2, "witness_form": [16, 16, 14], "name": "13a_1951", "interval": "[2,3]", "sigma": -4, "det": 177, "seconds": 0.33}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_1943", "interval": "[2,3]", "sigma": -4, "det": 153, "seconds": 0.43}
+{"verdict": "OBSTRUCTED", "candidates": 6, "name": "13a_1721", "interval": "[2,3]", "sigma": -4, "det": 297, "seconds": 1.63}
+{"verdict": "PASS", "candidates": 3, "witness_form": [2, 40, 1], "name": "13a_1966", "interval": "[2,3]", "sigma": -4, "det": 233, "seconds": 0.5}
+{"verdict": "PASS", "candidates": 5, "witness_form": [2, 50, 1], "name": "13a_1968", "interval": "[2,3]", "sigma": -4, "det": 293, "seconds": 0.56}
+{"verdict": "PASS", "candidates": 6, "witness_form": [8, 10, 0], "name": "13a_1952", "interval": "[2,3]", "sigma": -4, "det": 285, "seconds": 0.97}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_1974", "interval": "[2,3]", "sigma": 4, "det": 153, "seconds": 0.81}
+{"verdict": "PASS", "candidates": 4, "witness_form": [2, 56, 0], "name": "13a_1969", "interval": "[2,3]", "sigma": 4, "det": 333, "seconds": 0.83}
+{"verdict": "PASS", "candidates": 4, "witness_form": [2, 46, 0], "name": "13a_1985", "interval": "[2,3]", "sigma": 4, "det": 273, "seconds": 0.59}
+{"verdict": "PASS", "candidates": 5, "witness_form": [2, 48, 1], "name": "13a_203", "interval": "[2,3]", "sigma": 4, "det": 281, "seconds": 0.38}
+{"verdict": "PASS", "candidates": 7, "witness_form": [2, 56, 1], "name": "13a_1997", "interval": "[2,3]", "sigma": -4, "det": 329, "seconds": 0.57}
+{"verdict": "PASS", "candidates": 3, "witness_form": [6, 16, 5], "name": "13a_2030", "interval": "[2,3]", "sigma": -4, "det": 241, "seconds": 0.25}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_2037", "interval": "[2,3]", "sigma": -4, "det": 265, "seconds": 0.27}
+{"verdict": "PASS", "candidates": 4, "witness_form": [4, 14, 3], "name": "13a_2042", "interval": "[2,3]", "sigma": 4, "det": 153, "seconds": 0.35}
+{"verdict": "PASS", "candidates": 2, "witness_form": [40, 40, 39], "name": "13a_2069", "interval": "[2,3]", "sigma": -4, "det": 157, "seconds": 0.26}
+{"verdict": "PASS", "candidates": 5, "witness_form": [2, 38, 1], "name": "13a_2098", "interval": "[2,3]", "sigma": -4, "det": 221, "seconds": 0.29}
+{"verdict": "PASS", "candidates": 6, "witness_form": [4, 26, 3], "name": "13a_2119", "interval": "[2,3]", "sigma": -4, "det": 321, "seconds": 0.67}
+{"verdict": "OBSTRUCTED", "candidates": 6, "name": "13a_2025", "interval": "[2,3]", "sigma": -4, "det": 297, "seconds": 1.71}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_2125", "interval": "[2,3]", "sigma": 4, "det": 237, "seconds": 0.7}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_209", "interval": "[2,3]", "sigma": 4, "det": 345, "seconds": 1.15}
+{"verdict": "OBSTRUCTED", "candidates": 5, "name": "13a_1910", "interval": "[2,3]", "sigma": -4, "det": 325, "seconds": 3.61}
+{"verdict": "PASS", "candidates": 4, "witness_form": [2, 52, 1], "name": "13a_2159", "interval": "[2,3]", "sigma": 4, "det": 305, "seconds": 0.46}
+{"verdict": "PASS", "candidates": 6, "witness_form": [4, 22, 2], "name": "13a_2158", "interval": "[2,3]", "sigma": 4, "det": 285, "seconds": 0.62}
+{"verdict": "PASS", "candidates": 4, "witness_form": [10, 20, 9], "name": "13a_2132", "interval": "[2,3]", "sigma": -4, "det": 417, "seconds": 0.99}
+{"verdict": "PASS", "candidates": 2, "witness_form": [6, 12, 0], "name": "13a_2173", "interval": "[2,3]", "sigma": -4, "det": 253, "seconds": 0.44}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_217", "interval": "[2,3]", "sigma": -4, "det": 385, "seconds": 0.91}
+{"verdict": "PASS", "candidates": 4, "witness_form": [60, 60, 59], "name": "13a_2176", "interval": "[2,3]", "sigma": 4, "det": 237, "seconds": 0.72}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_2185", "interval": "[2,3]", "sigma": -4, "det": 201, "seconds": 0.67}
+{"verdict": "PASS", "candidates": 7, "witness_form": [2, 56, 1], "name": "13a_2194", "interval": "[2,3]", "sigma": 4, "det": 329, "seconds": 0.59}
+{"verdict": "PASS", "candidates": 3, "witness_form": [6, 10, 1], "name": "13a_2238", "interval": "[2,3]", "sigma": 4, "det": 205, "seconds": 0.39}
+{"verdict": "PASS", "candidates": 4, "witness_form": [12, 12, 7], "name": "13a_2203", "interval": "[2,3]", "sigma": -4, "det": 333, "seconds": 0.69}
+{"verdict": "PASS", "candidates": 1, "witness_form": [6, 10, 2], "name": "13a_2263", "interval": "[2,3]", "sigma": 4, "det": 193, "seconds": 0.33}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_2290", "interval": "[2,3]", "sigma": 4, "det": 185, "seconds": 0.35}
+{"verdict": "OBSTRUCTED", "candidates": 3, "name": "13a_2269", "interval": "[2,3]", "sigma": -4, "det": 205, "seconds": 0.54}
+{"verdict": "PASS", "candidates": 2, "witness_form": [16, 16, 14], "name": "13a_2284", "interval": "[2,3]", "sigma": 4, "det": 177, "seconds": 0.51}
+{"verdict": "OBSTRUCTED", "candidates": 3, "name": "13a_2291", "interval": "[2,3]", "sigma": 4, "det": 205, "seconds": 0.47}
+{"verdict": "OBSTRUCTED", "candidates": 3, "name": "13a_2317", "interval": "[2,3]", "sigma": 4, "det": 141, "seconds": 0.21}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_2295", "interval": "[2,3]", "sigma": -4, "det": 277, "seconds": 0.54}
+{"verdict": "PASS", "candidates": 1, "witness_form": [6, 10, 2], "name": "13a_2326", "interval": "[2,3]", "sigma": 4, "det": 193, "seconds": 0.15}
+{"verdict": "PASS", "candidates": 2, "witness_form": [6, 16, 4], "name": "13a_2336", "interval": "[2,3]", "sigma": -4, "det": 277, "seconds": 0.14}
+{"verdict": "PASS", "candidates": 2, "witness_form": [4, 30, 2], "name": "13a_2353", "interval": "[2,3]", "sigma": -4, "det": 397, "seconds": 0.27}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_2334", "interval": "[2,3]", "sigma": -4, "det": 177, "seconds": 0.53}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_231", "interval": "[2,3]", "sigma": -4, "det": 385, "seconds": 0.93}
+{"verdict": "OBSTRUCTED", "candidates": 6, "name": "13a_2310", "interval": "[2,3]", "sigma": -4, "det": 297, "seconds": 0.94}
+{"verdict": "PASS", "candidates": 6, "witness_form": [8, 14, 2], "name": "13a_234", "interval": "[2,3]", "sigma": -4, "det": 389, "seconds": 0.66}
+{"verdict": "OBSTRUCTED", "candidates": 7, "name": "13a_1984", "interval": "[2,3]", "sigma": -4, "det": 425, "seconds": 5.11}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_2360", "interval": "[2,3]", "sigma": 4, "det": 337, "seconds": 0.22}
+{"verdict": "PASS", "candidates": 3, "witness_form": [2, 34, 1], "name": "13a_2356", "interval": "[2,3]", "sigma": 4, "det": 197, "seconds": 0.43}
+{"verdict": "PASS", "candidates": 2, "witness_form": [4, 24, 2], "name": "13a_2376", "interval": "[2,3]", "sigma": -4, "det": 313, "seconds": 0.19}
+{"verdict": "PASS", "candidates": 2, "witness_form": [2, 30, 0], "name": "13a_237", "interval": "[2,3]", "sigma": 4, "det": 177, "seconds": 0.46}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_2359", "interval": "[2,3]", "sigma": 4, "det": 273, "seconds": 0.77}
+{"verdict": "OBSTRUCTED", "candidates": 3, "name": "13a_2365", "interval": "[2,3]", "sigma": 4, "det": 213, "seconds": 0.6}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_2373", "interval": "[2,3]", "sigma": -4, "det": 253, "seconds": 0.64}
+{"verdict": "PASS", "candidates": 6, "witness_form": [2, 48, 0], "name": "13a_2391", "interval": "[2,3]", "sigma": -4, "det": 285, "seconds": 0.53}
+{"verdict": "PASS", "candidates": 2, "witness_form": [6, 16, 1], "name": "13a_2400", "interval": "[2,3]", "sigma": 4, "det": 337, "seconds": 0.26}
+{"verdict": "PASS", "candidates": 4, "witness_form": [8, 10, 3], "name": "13a_2395", "interval": "[2,3]", "sigma": 4, "det": 249, "seconds": 0.42}
+{"verdict": "PASS", "candidates": 3, "witness_form": [4, 18, 1], "name": "13a_2409", "interval": "[2,3]", "sigma": 4, "det": 241, "seconds": 0.22}
+{"verdict": "PASS", "candidates": 3, "witness_form": [4, 16, 0], "name": "13a_2405", "interval": "[2,3]", "sigma": -4, "det": 217, "seconds": 0.45}
+{"verdict": "PASS", "candidates": 2, "witness_form": [4, 24, 2], "name": "13a_2421", "interval": "[2,3]", "sigma": 4, "det": 313, "seconds": 0.24}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_2412", "interval": "[2,3]", "sigma": 4, "det": 253, "seconds": 0.49}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_2434", "interval": "[2,3]", "sigma": 4, "det": 201, "seconds": 0.34}
+{"verdict": "PASS", "candidates": 4, "witness_form": [6, 18, 0], "name": "13a_2417", "interval": "[2,3]", "sigma": -4, "det": 385, "seconds": 0.64}
+{"verdict": "OBSTRUCTED", "candidates": 3, "name": "13a_2379", "interval": "[2,3]", "sigma": -4, "det": 301, "seconds": 1.39}
+{"verdict": "PASS", "candidates": 2, "witness_form": [4, 24, 2], "name": "13a_2438", "interval": "[2,3]", "sigma": 4, "det": 313, "seconds": 0.25}
+{"verdict": "PASS", "candidates": 3, "witness_form": [8, 10, 6], "name": "13a_2445", "interval": "[2,3]", "sigma": -4, "det": 141, "seconds": 0.21}
+{"verdict": "PASS", "candidates": 4, "witness_form": [4, 12, 3], "name": "13a_2464", "interval": "[2,3]", "sigma": 4, "det": 125, "seconds": 0.16}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_2399", "interval": "[2,3]", "sigma": -4, "det": 393, "seconds": 1.23}
+{"verdict": "PASS", "candidates": 3, "witness_form": [6, 12, 3], "name": "13a_2453", "interval": "[2,3]", "sigma": 4, "det": 217, "seconds": 0.26}
+{"verdict": "PASS", "candidates": 4, "witness_form": [38, 38, 37], "name": "13a_2449", "interval": "[2,3]", "sigma": 4, "det": 149, "seconds": 0.31}
+{"verdict": "PASS", "candidates": 4, "witness_form": [6, 8, 2], "name": "13a_2475", "interval": "[2,3]", "sigma": -4, "det": 149, "seconds": 0.2}
+{"verdict": "OBSTRUCTED", "candidates": 1, "name": "13a_2478", "interval": "[2,3]", "sigma": 4, "det": 193, "seconds": 0.17}
+{"verdict": "PASS", "candidates": 4, "witness_form": [10, 16, 8], "name": "13a_2447", "interval": "[2,3]", "sigma": 4, "det": 333, "seconds": 0.54}
+{"verdict": "PASS", "candidates": 4, "witness_form": [16, 20, 15], "name": "13a_247", "interval": "[2,3]", "sigma": -4, "det": 309, "seconds": 0.71}
+{"verdict": "PASS", "candidates": 2, "witness_form": [2, 30, 0], "name": "13a_2493", "interval": "[2,3]", "sigma": -4, "det": 177, "seconds": 0.47}
+{"verdict": "PASS", "candidates": 4, "witness_form": [2, 60, 1], "name": "13a_2485", "interval": "[2,3]", "sigma": -4, "det": 353, "seconds": 0.56}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_251", "interval": "[2,3]", "sigma": -4, "det": 257, "seconds": 0.46}
+{"verdict": "PASS", "candidates": 3, "witness_form": [4, 6, 0], "name": "13a_2568", "interval": "[2,3]", "sigma": 4, "det": 77, "seconds": 0.51}
+{"verdict": "PASS", "candidates": 5, "witness_form": [8, 10, 1], "name": "13a_2533", "interval": "[2,3]", "sigma": -4, "det": 281, "seconds": 0.63}
+{"verdict": "PASS", "candidates": 4, "witness_form": [8, 14, 5], "name": "13a_2600", "interval": "[2,3]", "sigma": -4, "det": 305, "seconds": 0.7}
+{"verdict": "OBSTRUCTED", "candidates": 6, "name": "13a_2502", "interval": "[2,3]", "sigma": -4, "det": 285, "seconds": 1.45}
+{"verdict": "PASS", "candidates": 4, "witness_form": [8, 10, 3], "name": "13a_2610", "interval": "[2,3]", "sigma": -4, "det": 249, "seconds": 0.44}
+{"verdict": "PASS", "candidates": 4, "witness_form": [6, 12, 5], "name": "13a_2616", "interval": "[2,3]", "sigma": 4, "det": 153, "seconds": 0.4}
+{"verdict": "PASS", "candidates": 6, "witness_form": [4, 26, 3], "name": "13a_2606", "interval": "[2,3]", "sigma": -4, "det": 321, "seconds": 0.73}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_2520", "interval": "[2,3]", "sigma": -4, "det": 377, "seconds": 1.36}
+{"verdict": "PASS", "candidates": 3, "witness_form": [6, 22, 5], "name": "13a_2634", "interval": "[2,3]", "sigma": -4, "det": 373, "seconds": 0.26}
+{"verdict": "PASS", "candidates": 4, "witness_form": [4, 30, 1], "name": "13a_2644", "interval": "[2,3]", "sigma": -4, "det": 409, "seconds": 0.35}
+{"verdict": "PASS", "candidates": 6, "witness_form": [2, 62, 1], "name": "13a_2623", "interval": "[2,3]", "sigma": -4, "det": 365, "seconds": 0.65}
+{"verdict": "PASS", "candidates": 2, "witness_form": [6, 16, 4], "name": "13a_2663", "interval": "[2,3]", "sigma": 4, "det": 277, "seconds": 0.21}
+{"verdict": "OBSTRUCTED", "candidates": 1, "name": "13a_2697", "interval": "[2,3]", "sigma": 4, "det": 193, "seconds": 0.09}
+{"verdict": "PASS", "candidates": 7, "witness_form": [2, 56, 1], "name": "13a_2636", "interval": "[2,3]", "sigma": -4, "det": 329, "seconds": 0.62}
+{"verdict": "PASS", "candidates": 4, "witness_form": [6, 12, 2], "name": "13a_2695", "interval": "[2,3]", "sigma": -4, "det": 237, "seconds": 0.47}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_2698", "interval": "[2,3]", "sigma": 4, "det": 277, "seconds": 0.49}
+{"verdict": "PASS", "candidates": 6, "witness_form": [8, 14, 2], "name": "13a_269", "interval": "[2,3]", "sigma": -4, "det": 389, "seconds": 0.67}
+{"verdict": "PASS", "candidates": 4, "witness_form": [30, 30, 28], "name": "13a_2628", "interval": "[2,3]", "sigma": -4, "det": 345, "seconds": 1.28}
+{"verdict": "PASS", "candidates": 1, "witness_form": [4, 10, 3], "name": "13a_2709", "interval": "[2,3]", "sigma": -4, "det": 97, "seconds": 0.51}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_2761", "interval": "[2,3]", "sigma": 4, "det": 153, "seconds": 0.17}
+{"verdict": "PASS", "candidates": 2, "witness_form": [16, 16, 14], "name": "13a_2753", "interval": "[2,3]", "sigma": -4, "det": 177, "seconds": 0.52}
+{"verdict": "PASS", "candidates": 4, "witness_form": [4, 26, 0], "name": "13a_273", "interval": "[2,3]", "sigma": 4, "det": 357, "seconds": 0.82}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_2777", "interval": "[2,3]", "sigma": -4, "det": 149, "seconds": 0.51}
+{"verdict": "OBSTRUCTED", "candidates": 3, "name": "13a_2784", "interval": "[2,3]", "sigma": 4, "det": 233, "seconds": 0.32}
+{"verdict": "PASS", "candidates": 3, "witness_form": [20, 20, 18], "name": "13a_2772", "interval": "[2,3]", "sigma": -4, "det": 225, "seconds": 0.71}
+{"verdict": "PASS", "candidates": 6, "witness_form": [6, 14, 3], "name": "13a_2794", "interval": "[2,3]", "sigma": -4, "det": 261, "seconds": 0.29}
+{"verdict": "OBSTRUCTED", "candidates": 5, "name": "13a_2510", "interval": "[2,3]", "sigma": 4, "det": 325, "seconds": 3.59}
+{"verdict": "OBSTRUCTED", "candidates": 3, "name": "13a_2805", "interval": "[2,3]", "sigma": -4, "det": 181, "seconds": 0.51}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_2821", "interval": "[2,3]", "sigma": -4, "det": 177, "seconds": 0.33}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_2785", "interval": "[2,3]", "sigma": 4, "det": 237, "seconds": 0.74}
+{"verdict": "PASS", "candidates": 4, "witness_form": [2, 66, 0], "name": "13a_2814", "interval": "[2,3]", "sigma": -4, "det": 393, "seconds": 0.6}
+{"verdict": "PASS", "candidates": 3, "witness_form": [20, 22, 19], "name": "13a_284", "interval": "[2,3]", "sigma": -4, "det": 233, "seconds": 0.33}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_2843", "interval": "[2,3]", "sigma": 4, "det": 137, "seconds": 0.1}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_2834", "interval": "[2,3]", "sigma": 4, "det": 253, "seconds": 0.49}
+{"verdict": "PASS", "candidates": 4, "witness_form": [4, 20, 3], "name": "13a_2841", "interval": "[2,3]", "sigma": -4, "det": 237, "seconds": 0.33}
+{"verdict": "OBSTRUCTED", "candidates": 3, "name": "13a_2832", "interval": "[2,3]", "sigma": 4, "det": 213, "seconds": 0.61}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_2865", "interval": "[2,3]", "sigma": 4, "det": 177, "seconds": 0.25}
+{"verdict": "OBSTRUCTED", "candidates": 6, "name": "13a_2809", "interval": "[2,3]", "sigma": 4, "det": 189, "seconds": 1.26}
+{"verdict": "PASS", "candidates": 3, "witness_form": [4, 22, 0], "name": "13a_2885", "interval": "[2,3]", "sigma": -4, "det": 301, "seconds": 0.22}
+{"verdict": "OBSTRUCTED", "candidates": 0, "name": "13a_2890", "interval": "[2,3]", "sigma": -4, "det": 289, "seconds": 0.11}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_2859", "interval": "[2,3]", "sigma": -4, "det": 157, "seconds": 0.49}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_2766", "interval": "[2,3]", "sigma": 4, "det": 357, "seconds": 2.32}
+{"verdict": "OBSTRUCTED", "candidates": 3, "name": "13a_2911", "interval": "[2,3]", "sigma": 4, "det": 217, "seconds": 0.21}
+{"verdict": "PASS", "candidates": 2, "witness_form": [4, 30, 2], "name": "13a_2894", "interval": "[2,3]", "sigma": -4, "det": 397, "seconds": 0.3}
+{"verdict": "PASS", "candidates": 2, "witness_form": [16, 16, 14], "name": "13a_2872", "interval": "[2,3]", "sigma": 4, "det": 177, "seconds": 0.53}
+{"verdict": "PASS", "candidates": 3, "witness_form": [4, 18, 2], "name": "13a_2927", "interval": "[2,3]", "sigma": 4, "det": 229, "seconds": 0.2}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_2888", "interval": "[2,3]", "sigma": -4, "det": 249, "seconds": 0.47}
+{"verdict": "PASS", "candidates": 2, "witness_form": [10, 12, 9], "name": "13a_2937", "interval": "[2,3]", "sigma": 4, "det": 113, "seconds": 0.15}
+{"verdict": "PASS", "candidates": 2, "witness_form": [4, 24, 2], "name": "13a_295", "interval": "[2,3]", "sigma": -4, "det": 313, "seconds": 0.18}
+{"verdict": "PASS", "candidates": 3, "witness_form": [10, 12, 8], "name": "13a_3019", "interval": "[2,3]", "sigma": -4, "det": 181, "seconds": 0.13}
+{"verdict": "PASS", "candidates": 2, "witness_form": [64, 64, 63], "name": "13a_2931", "interval": "[2,3]", "sigma": 4, "det": 253, "seconds": 0.6}
+{"verdict": "PASS", "candidates": 1, "witness_form": [4, 6, 1], "name": "13a_3021", "interval": "[2,3]", "sigma": 4, "det": 73, "seconds": 0.44}
+{"verdict": "PASS", "candidates": 2, "witness_form": [2, 30, 0], "name": "13a_3030", "interval": "[2,3]", "sigma": -4, "det": 177, "seconds": 0.2}
+{"verdict": "PASS", "candidates": 4, "witness_form": [12, 12, 8], "name": "13a_2996", "interval": "[2,3]", "sigma": -4, "det": 273, "seconds": 0.7}
+{"verdict": "PASS", "candidates": 3, "witness_form": [10, 14, 7], "name": "13a_3029", "interval": "[2,3]", "sigma": -4, "det": 317, "seconds": 0.55}
+{"verdict": "PASS", "candidates": 4, "witness_form": [26, 28, 25], "name": "13a_2981", "interval": "[2,3]", "sigma": -4, "det": 305, "seconds": 0.83}
+{"verdict": "PASS", "candidates": 3, "witness_form": [2, 34, 1], "name": "13a_3046", "interval": "[2,3]", "sigma": 4, "det": 197, "seconds": 0.44}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_3100", "interval": "[2,3]", "sigma": -4, "det": 145, "seconds": 0.36}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_3089", "interval": "[2,3]", "sigma": -4, "det": 409, "seconds": 0.79}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_3121", "interval": "[2,3]", "sigma": -4, "det": 153, "seconds": 0.76}
+{"verdict": "PASS", "candidates": 4, "witness_form": [8, 10, 3], "name": "13a_3156", "interval": "[2,3]", "sigma": 4, "det": 249, "seconds": 0.46}
+{"verdict": "PASS", "candidates": 4, "witness_form": [10, 10, 1], "name": "13a_3109", "interval": "[2,3]", "sigma": -4, "det": 357, "seconds": 1.22}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_2965", "interval": "[2,3]", "sigma": 4, "det": 333, "seconds": 2.41}
+{"verdict": "PASS", "candidates": 3, "witness_form": [2, 54, 1], "name": "13a_3167", "interval": "[2,3]", "sigma": -4, "det": 317, "seconds": 0.59}
+{"verdict": "OBSTRUCTED", "candidates": 3, "name": "13a_3065", "interval": "[2,3]", "sigma": -4, "det": 445, "seconds": 1.94}
+{"verdict": "PASS", "candidates": 3, "witness_form": [2, 54, 1], "name": "13a_3169", "interval": "[2,3]", "sigma": -4, "det": 317, "seconds": 0.56}
+{"verdict": "PASS", "candidates": 4, "witness_form": [2, 56, 0], "name": "13a_3158", "interval": "[2,3]", "sigma": 4, "det": 333, "seconds": 0.99}
+{"verdict": "PASS", "candidates": 3, "witness_form": [4, 16, 0], "name": "13a_3182", "interval": "[2,3]", "sigma": -4, "det": 217, "seconds": 0.45}
+{"verdict": "PASS", "candidates": 3, "witness_form": [4, 16, 0], "name": "13a_3192", "interval": "[2,3]", "sigma": -4, "det": 217, "seconds": 0.44}
+{"verdict": "PASS", "candidates": 3, "witness_form": [2, 54, 1], "name": "13a_3190", "interval": "[2,3]", "sigma": -4, "det": 317, "seconds": 0.55}
+{"verdict": "PASS", "candidates": 3, "witness_form": [2, 54, 1], "name": "13a_3188", "interval": "[2,3]", "sigma": -4, "det": 317, "seconds": 0.56}
+{"verdict": "PASS", "candidates": 3, "witness_form": [6, 10, 1], "name": "13a_3225", "interval": "[2,3]", "sigma": -4, "det": 205, "seconds": 0.2}
+{"verdict": "PASS", "candidates": 2, "witness_form": [4, 22, 3], "name": "13a_3222", "interval": "[2,3]", "sigma": -4, "det": 265, "seconds": 0.49}
+{"verdict": "PASS", "candidates": 2, "witness_form": [2, 24, 1], "name": "13a_3217", "interval": "[2,3]", "sigma": -4, "det": 137, "seconds": 0.66}
+{"verdict": "PASS", "candidates": 7, "witness_form": [8, 14, 3], "name": "13a_3146", "interval": "[2,3]", "sigma": -4, "det": 369, "seconds": 2.35}
+{"verdict": "PASS", "candidates": 3, "witness_form": [6, 10, 1], "name": "13a_3255", "interval": "[2,3]", "sigma": -4, "det": 205, "seconds": 0.2}
+{"verdict": "PASS", "candidates": 2, "witness_form": [28, 28, 27], "name": "13a_3270", "interval": "[2,3]", "sigma": -4, "det": 109, "seconds": 0.22}
+{"verdict": "PASS", "candidates": 4, "witness_form": [6, 16, 3], "name": "13a_3248", "interval": "[2,3]", "sigma": -4, "det": 305, "seconds": 0.72}
+{"verdict": "PASS", "candidates": 4, "witness_form": [2, 42, 0], "name": "13a_3265", "interval": "[2,3]", "sigma": -4, "det": 249, "seconds": 0.57}
+{"verdict": "PASS", "candidates": 4, "witness_form": [4, 30, 3], "name": "13a_3232", "interval": "[2,3]", "sigma": -4, "det": 377, "seconds": 0.94}
+{"verdict": "PASS", "candidates": 4, "witness_form": [6, 16, 3], "name": "13a_3261", "interval": "[2,3]", "sigma": -4, "det": 305, "seconds": 0.72}
+{"verdict": "PASS", "candidates": 4, "witness_form": [4, 30, 3], "name": "13a_3259", "interval": "[2,3]", "sigma": -4, "det": 377, "seconds": 0.93}
+{"verdict": "PASS", "candidates": 4, "witness_form": [2, 42, 0], "name": "13a_3277", "interval": "[2,3]", "sigma": -4, "det": 249, "seconds": 0.58}
+{"verdict": "PASS", "candidates": 1, "witness_form": [6, 10, 2], "name": "13a_333", "interval": "[2,3]", "sigma": -4, "det": 193, "seconds": 0.11}
+{"verdict": "PASS", "candidates": 3, "witness_form": [2, 40, 1], "name": "13a_3308", "interval": "[2,3]", "sigma": -4, "det": 233, "seconds": 0.28}
+{"verdict": "PASS", "candidates": 5, "witness_form": [4, 24, 3], "name": "13a_329", "interval": "[2,3]", "sigma": 4, "det": 293, "seconds": 0.51}
+{"verdict": "PASS", "candidates": 3, "witness_form": [4, 16, 0], "name": "13a_3297", "interval": "[2,3]", "sigma": 4, "det": 217, "seconds": 0.45}
+{"verdict": "PASS", "candidates": 2, "witness_form": [4, 24, 2], "name": "13a_3371", "interval": "[2,3]", "sigma": -4, "det": 313, "seconds": 0.25}
+{"verdict": "PASS", "candidates": 2, "witness_form": [4, 12, 1], "name": "13a_3453", "interval": "[2,3]", "sigma": -4, "det": 157, "seconds": 0.15}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_3310", "interval": "[2,3]", "sigma": -4, "det": 253, "seconds": 0.55}
+{"verdict": "PASS", "candidates": 4, "witness_form": [12, 12, 8], "name": "13a_3364", "interval": "[2,3]", "sigma": 4, "det": 273, "seconds": 0.67}
+{"verdict": "PASS", "candidates": 4, "witness_form": [8, 10, 3], "name": "13a_3444", "interval": "[2,3]", "sigma": 4, "det": 249, "seconds": 0.66}
+{"verdict": "PASS", "candidates": 5, "witness_form": [8, 16, 4], "name": "13a_3482", "interval": "[2,3]", "sigma": -4, "det": 401, "seconds": 0.8}
+{"verdict": "PASS", "candidates": 5, "witness_form": [8, 12, 5], "name": "13a_351", "interval": "[2,3]", "sigma": -4, "det": 245, "seconds": 0.42}
+{"verdict": "PASS", "candidates": 5, "witness_form": [6, 14, 2], "name": "13a_35", "interval": "[2,3]", "sigma": -4, "det": 281, "seconds": 0.58}
+{"verdict": "PASS", "candidates": 3, "witness_form": [4, 16, 0], "name": "13a_3512", "interval": "[2,3]", "sigma": -4, "det": 217, "seconds": 0.23}
+{"verdict": "PASS", "candidates": 3, "witness_form": [6, 22, 5], "name": "13a_3515", "interval": "[2,3]", "sigma": 4, "det": 373, "seconds": 0.27}
+{"verdict": "PASS", "candidates": 2, "witness_form": [10, 16, 9], "name": "13a_3536", "interval": "[2,3]", "sigma": 4, "det": 265, "seconds": 0.29}
+{"verdict": "PASS", "candidates": 6, "witness_form": [2, 82, 1], "name": "13a_3464", "interval": "[2,3]", "sigma": -4, "det": 485, "seconds": 1.53}
+{"verdict": "PASS", "candidates": 7, "witness_form": [8, 14, 0], "name": "13a_3376", "interval": "[2,3]", "sigma": -4, "det": 405, "seconds": 1.87}
+{"verdict": "PASS", "candidates": 6, "witness_form": [6, 20, 4], "name": "13a_3553", "interval": "[2,3]", "sigma": 4, "det": 365, "seconds": 0.7}
+{"verdict": "PASS", "candidates": 3, "witness_form": [4, 18, 1], "name": "13a_3567", "interval": "[2,3]", "sigma": 4, "det": 241, "seconds": 0.41}
+{"verdict": "OBSTRUCTED", "candidates": 7, "name": "13a_3531", "interval": "[2,3]", "sigma": 4, "det": 329, "seconds": 1.34}
+{"verdict": "PASS", "candidates": 5, "witness_form": [2, 48, 1], "name": "13a_3564", "interval": "[2,3]", "sigma": 4, "det": 281, "seconds": 0.76}
+{"verdict": "PASS", "candidates": 2, "witness_form": [12, 16, 8], "name": "13a_3577", "interval": "[2,3]", "sigma": -4, "det": 457, "seconds": 0.39}
+{"verdict": "PASS", "candidates": 4, "witness_form": [4, 14, 2], "name": "13a_3593", "interval": "[2,3]", "sigma": -4, "det": 173, "seconds": 0.21}
+{"verdict": "PASS", "candidates": 4, "witness_form": [2, 80, 1], "name": "13a_3551", "interval": "[2,3]", "sigma": 4, "det": 473, "seconds": 1.35}
+{"verdict": "PASS", "candidates": 6, "witness_form": [4, 22, 1], "name": "13a_358", "interval": "[2,3]", "sigma": 4, "det": 297, "seconds": 0.56}
+{"verdict": "PASS", "candidates": 4, "witness_form": [8, 10, 3], "name": "13a_3596", "interval": "[2,3]", "sigma": 4, "det": 249, "seconds": 0.43}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_3601", "interval": "[2,3]", "sigma": 4, "det": 457, "seconds": 0.38}
+{"verdict": "PASS", "candidates": 4, "witness_form": [8, 12, 6], "name": "13a_3605", "interval": "[2,3]", "sigma": -4, "det": 201, "seconds": 0.38}
+{"verdict": "PASS", "candidates": 5, "witness_form": [2, 42, 1], "name": "13a_3653", "interval": "[2,3]", "sigma": -4, "det": 245, "seconds": 0.57}
+{"verdict": "PASS", "candidates": 3, "witness_form": [4, 16, 1], "name": "13a_3689", "interval": "[2,3]", "sigma": 4, "det": 213, "seconds": 0.37}
+{"verdict": "PASS", "candidates": 2, "witness_form": [34, 34, 33], "name": "13a_3609", "interval": "[2,3]", "sigma": -4, "det": 133, "seconds": 0.83}
+{"verdict": "PASS", "candidates": 6, "witness_form": [2, 62, 1], "name": "13a_369", "interval": "[2,3]", "sigma": -4, "det": 365, "seconds": 0.58}
+{"verdict": "PASS", "candidates": 4, "witness_form": [2, 52, 1], "name": "13a_3667", "interval": "[2,3]", "sigma": 4, "det": 305, "seconds": 0.86}
+{"verdict": "OBSTRUCTED", "candidates": 5, "name": "13a_3498", "interval": "[2,3]", "sigma": -4, "det": 325, "seconds": 3.7}
+{"verdict": "PASS", "candidates": 5, "witness_form": [2, 28, 1], "name": "13a_370", "interval": "[2,3]", "sigma": -4, "det": 161, "seconds": 0.37}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_3691", "interval": "[2,3]", "sigma": -4, "det": 201, "seconds": 0.67}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_3716", "interval": "[2,3]", "sigma": -4, "det": 137, "seconds": 0.34}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_3705", "interval": "[2,3]", "sigma": 4, "det": 277, "seconds": 0.45}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_3704", "interval": "[2,3]", "sigma": 4, "det": 273, "seconds": 0.77}
+{"verdict": "PASS", "candidates": 6, "witness_form": [26, 26, 24], "name": "13a_3690", "interval": "[2,3]", "sigma": 4, "det": 297, "seconds": 1.37}
+{"verdict": "PASS", "candidates": 4, "witness_form": [2, 60, 1], "name": "13a_3736", "interval": "[2,3]", "sigma": 4, "det": 353, "seconds": 0.47}
+{"verdict": "OBSTRUCTED", "candidates": 3, "name": "13a_3698", "interval": "[2,3]", "sigma": -4, "det": 301, "seconds": 1.37}
+{"verdict": "PASS", "candidates": 5, "witness_form": [10, 18, 7], "name": "13a_3727", "interval": "[2,3]", "sigma": 4, "det": 469, "seconds": 0.91}
+{"verdict": "PASS", "candidates": 2, "witness_form": [2, 30, 0], "name": "13a_3845", "interval": "[2,3]", "sigma": 4, "det": 177, "seconds": 0.18}
+{"verdict": "PASS", "candidates": 6, "witness_form": [2, 62, 1], "name": "13a_3779", "interval": "[2,3]", "sigma": -4, "det": 365, "seconds": 0.67}
+{"verdict": "OBSTRUCTED", "candidates": 3, "name": "13a_3784", "interval": "[2,3]", "sigma": -4, "det": 197, "seconds": 0.54}
+{"verdict": "PASS", "candidates": 3, "witness_form": [4, 34, 3], "name": "13a_3823", "interval": "[2,3]", "sigma": 4, "det": 433, "seconds": 0.41}
+{"verdict": "PASS", "candidates": 3, "witness_form": [2, 54, 1], "name": "13a_3867", "interval": "[2,3]", "sigma": -4, "det": 317, "seconds": 0.52}
+{"verdict": "PASS", "candidates": 6, "witness_form": [2, 36, 1], "name": "13a_3869", "interval": "[2,3]", "sigma": 4, "det": 209, "seconds": 0.55}
+{"verdict": "PASS", "candidates": 5, "witness_form": [2, 48, 1], "name": "13a_3872", "interval": "[2,3]", "sigma": -4, "det": 281, "seconds": 0.48}
+{"verdict": "OBSTRUCTED", "candidates": 6, "name": "13a_3814", "interval": "[2,3]", "sigma": -4, "det": 189, "seconds": 1.05}
+{"verdict": "OBSTRUCTED", "candidates": 3, "name": "13a_3902", "interval": "[2,3]", "sigma": 4, "det": 181, "seconds": 0.21}
+{"verdict": "PASS", "candidates": 7, "witness_form": [14, 18, 12], "name": "13a_3864", "interval": "[2,3]", "sigma": -4, "det": 369, "seconds": 1.19}
+{"verdict": "PASS", "candidates": 2, "witness_form": [10, 16, 9], "name": "13a_3922", "interval": "[2,3]", "sigma": -4, "det": 265, "seconds": 0.56}
+{"verdict": "PASS", "candidates": 4, "witness_form": [2, 64, 1], "name": "13a_3943", "interval": "[2,3]", "sigma": 4, "det": 377, "seconds": 0.56}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_3975", "interval": "[2,3]", "sigma": 4, "det": 337, "seconds": 0.22}
+{"verdict": "PASS", "candidates": 6, "witness_form": [6, 18, 1], "name": "13a_3874", "interval": "[2,3]", "sigma": -4, "det": 381, "seconds": 0.99}
+{"verdict": "PASS", "candidates": 4, "witness_form": [4, 28, 3], "name": "13a_3980", "interval": "[2,3]", "sigma": 4, "det": 349, "seconds": 0.26}
+{"verdict": "PASS", "candidates": 5, "witness_form": [8, 10, 1], "name": "13a_3976", "interval": "[2,3]", "sigma": -4, "det": 281, "seconds": 0.55}
+{"verdict": "PASS", "candidates": 3, "witness_form": [20, 22, 19], "name": "13a_40", "interval": "[2,3]", "sigma": -4, "det": 233, "seconds": 0.4}
+{"verdict": "PASS", "candidates": 6, "witness_form": [4, 22, 1], "name": "13a_4", "interval": "[2,3]", "sigma": -4, "det": 297, "seconds": 0.66}
+{"verdict": "PASS", "candidates": 6, "witness_form": [14, 22, 13], "name": "13a_387", "interval": "[2,3]", "sigma": -4, "det": 485, "seconds": 2.15}
+{"verdict": "PASS", "candidates": 4, "witness_form": [8, 12, 3], "name": "13a_4016", "interval": "[2,3]", "sigma": -4, "det": 309, "seconds": 0.69}
+{"verdict": "PASS", "candidates": 3, "witness_form": [2, 40, 1], "name": "13a_4025", "interval": "[2,3]", "sigma": 4, "det": 233, "seconds": 0.49}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_4091", "interval": "[2,3]", "sigma": 4, "det": 253, "seconds": 0.49}
+{"verdict": "OBSTRUCTED", "candidates": 6, "name": "13a_3963", "interval": "[2,3]", "sigma": -4, "det": 389, "seconds": 2.21}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_3981", "interval": "[2,3]", "sigma": 4, "det": 309, "seconds": 1.71}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_4093", "interval": "[2,3]", "sigma": 4, "det": 385, "seconds": 0.84}
+{"verdict": "OBSTRUCTED", "candidates": 3, "name": "13a_4101", "interval": "[2,3]", "sigma": 4, "det": 205, "seconds": 0.46}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_4080", "interval": "[2,3]", "sigma": -4, "det": 417, "seconds": 1.33}
+{"verdict": "PASS", "candidates": 6, "witness_form": [4, 22, 1], "name": "13a_4096", "interval": "[2,3]", "sigma": 4, "det": 297, "seconds": 0.67}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_4113", "interval": "[2,3]", "sigma": 4, "det": 337, "seconds": 0.22}
+{"verdict": "PASS", "candidates": 3, "witness_form": [4, 16, 3], "name": "13a_4114", "interval": "[2,3]", "sigma": 4, "det": 181, "seconds": 0.15}
+{"verdict": "OBSTRUCTED", "candidates": 3, "name": "13a_4106", "interval": "[2,3]", "sigma": -4, "det": 217, "seconds": 0.56}
+{"verdict": "OBSTRUCTED", "candidates": 7, "name": "13a_4057", "interval": "[2,3]", "sigma": -4, "det": 425, "seconds": 1.8}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_4104", "interval": "[2,3]", "sigma": 4, "det": 385, "seconds": 1.03}
+{"verdict": "PASS", "candidates": 4, "witness_form": [6, 8, 3], "name": "13a_4108", "interval": "[2,3]", "sigma": 4, "det": 129, "seconds": 0.8}
+{"verdict": "PASS", "candidates": 6, "witness_form": [6, 14, 3], "name": "13a_415", "interval": "[2,3]", "sigma": 4, "det": 261, "seconds": 0.36}
+{"verdict": "PASS", "candidates": 4, "witness_form": [4, 30, 1], "name": "13a_4153", "interval": "[2,3]", "sigma": 4, "det": 409, "seconds": 0.37}
+{"verdict": "PASS", "candidates": 4, "witness_form": [4, 14, 3], "name": "13a_4120", "interval": "[2,3]", "sigma": -4, "det": 153, "seconds": 0.79}
+{"verdict": "PASS", "candidates": 4, "witness_form": [12, 12, 8], "name": "13a_4123", "interval": "[2,3]", "sigma": -4, "det": 273, "seconds": 1.06}
+{"verdict": "PASS", "candidates": 6, "witness_form": [6, 14, 0], "name": "13a_4134", "interval": "[2,3]", "sigma": -4, "det": 297, "seconds": 1.04}
+{"verdict": "PASS", "candidates": 5, "witness_form": [4, 24, 3], "name": "13a_418", "interval": "[2,3]", "sigma": -4, "det": 293, "seconds": 0.53}
+{"verdict": "PASS", "candidates": 4, "witness_form": [24, 24, 22], "name": "13a_4155", "interval": "[2,3]", "sigma": 4, "det": 273, "seconds": 1.19}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_419", "interval": "[2,3]", "sigma": 4, "det": 253, "seconds": 0.63}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_4191", "interval": "[2,3]", "sigma": -4, "det": 265, "seconds": 0.58}
+{"verdict": "PASS", "candidates": 4, "witness_form": [12, 12, 6], "name": "13a_4188", "interval": "[2,3]", "sigma": -4, "det": 385, "seconds": 0.8}
+{"verdict": "PASS", "candidates": 5, "witness_form": [8, 8, 1], "name": "13a_4202", "interval": "[2,3]", "sigma": 4, "det": 221, "seconds": 0.36}
+{"verdict": "PASS", "candidates": 4, "witness_form": [2, 60, 1], "name": "13a_4193", "interval": "[2,3]", "sigma": 4, "det": 353, "seconds": 0.57}
+{"verdict": "OBSTRUCTED", "candidates": 3, "name": "13a_4207", "interval": "[2,3]", "sigma": 4, "det": 241, "seconds": 0.19}
+{"verdict": "PASS", "candidates": 6, "witness_form": [4, 14, 0], "name": "13a_4203", "interval": "[2,3]", "sigma": 4, "det": 189, "seconds": 0.31}
+{"verdict": "PASS", "candidates": 3, "witness_form": [6, 12, 3], "name": "13a_423", "interval": "[2,3]", "sigma": 4, "det": 217, "seconds": 0.27}
+{"verdict": "PASS", "candidates": 5, "witness_form": [8, 8, 1], "name": "13a_4230", "interval": "[2,3]", "sigma": -4, "det": 221, "seconds": 0.28}
+{"verdict": "OBSTRUCTED", "candidates": 3, "name": "13a_4216", "interval": "[2,3]", "sigma": -4, "det": 233, "seconds": 0.63}
+{"verdict": "OBSTRUCTED", "candidates": 5, "name": "13a_4198", "interval": "[2,3]", "sigma": 4, "det": 325, "seconds": 1.48}
+{"verdict": "PASS", "candidates": 4, "witness_form": [4, 20, 2], "name": "13a_426", "interval": "[2,3]", "sigma": -4, "det": 257, "seconds": 0.31}
+{"verdict": "PASS", "candidates": 3, "witness_form": [2, 36, 0], "name": "13a_427", "interval": "[2,3]", "sigma": -4, "det": 213, "seconds": 0.23}
+{"verdict": "PASS", "candidates": 2, "witness_form": [34, 34, 33], "name": "13a_4275", "interval": "[2,3]", "sigma": 4, "det": 133, "seconds": 0.15}
+{"verdict": "PASS", "candidates": 6, "witness_form": [8, 16, 6], "name": "13a_4231", "interval": "[2,3]", "sigma": -4, "det": 321, "seconds": 0.92}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_4200", "interval": "[2,3]", "sigma": -4, "det": 357, "seconds": 2.34}
+{"verdict": "OBSTRUCTED", "candidates": 8, "name": "13a_4156", "interval": "[2,3]", "sigma": -4, "det": 461, "seconds": 3.6}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_4320", "interval": "[2,3]", "sigma": 4, "det": 145, "seconds": 0.08}
+{"verdict": "OBSTRUCTED", "candidates": 3, "name": "13a_4293", "interval": "[2,3]", "sigma": -4, "det": 217, "seconds": 0.28}
+{"verdict": "PASS", "candidates": 2, "witness_form": [6, 22, 2], "name": "13a_4281", "interval": "[2,3]", "sigma": -4, "det": 457, "seconds": 0.34}
+{"verdict": "PASS", "candidates": 3, "witness_form": [6, 12, 3], "name": "13a_4310", "interval": "[2,3]", "sigma": 4, "det": 217, "seconds": 0.49}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_4232", "interval": "[2,3]", "sigma": -4, "det": 333, "seconds": 1.79}
+{"verdict": "PASS", "candidates": 6, "witness_form": [48, 48, 47], "name": "13a_4336", "interval": "[2,3]", "sigma": 4, "det": 189, "seconds": 0.6}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_4185", "interval": "[2,3]", "sigma": -4, "det": 493, "seconds": 4.35}
+{"verdict": "OBSTRUCTED", "candidates": 6, "name": "13a_4326", "interval": "[2,3]", "sigma": 4, "det": 189, "seconds": 0.86}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_434", "interval": "[2,3]", "sigma": 4, "det": 253, "seconds": 0.63}
+{"verdict": "OBSTRUCTED", "candidates": 6, "name": "13a_4322", "interval": "[2,3]", "sigma": -4, "det": 321, "seconds": 1.23}
+{"verdict": "PASS", "candidates": 4, "witness_form": [24, 24, 22], "name": "13a_4341", "interval": "[2,3]", "sigma": 4, "det": 273, "seconds": 0.77}
+{"verdict": "OBSTRUCTED", "candidates": 5, "name": "13a_4390", "interval": "[2,3]", "sigma": -4, "det": 161, "seconds": 0.52}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_4392", "interval": "[2,3]", "sigma": 4, "det": 253, "seconds": 0.48}
+{"verdict": "OBSTRUCTED", "candidates": 6, "name": "13a_4385", "interval": "[2,3]", "sigma": 4, "det": 297, "seconds": 0.82}
+{"verdict": "OBSTRUCTED", "candidates": 3, "name": "13a_4396", "interval": "[2,3]", "sigma": -4, "det": 181, "seconds": 0.49}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_438", "interval": "[2,3]", "sigma": 4, "det": 345, "seconds": 1.12}
+{"verdict": "PASS", "candidates": 4, "witness_form": [4, 30, 1], "name": "13a_4421", "interval": "[2,3]", "sigma": -4, "det": 409, "seconds": 0.29}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_443", "interval": "[2,3]", "sigma": 4, "det": 265, "seconds": 0.24}
+{"verdict": "PASS", "candidates": 4, "witness_form": [12, 12, 7], "name": "13a_440", "interval": "[2,3]", "sigma": 4, "det": 333, "seconds": 0.63}
+{"verdict": "PASS", "candidates": 5, "witness_form": [2, 48, 1], "name": "13a_4414", "interval": "[2,3]", "sigma": 4, "det": 281, "seconds": 0.74}
+{"verdict": "PASS", "candidates": 3, "witness_form": [4, 18, 1], "name": "13a_4483", "interval": "[2,3]", "sigma": -4, "det": 241, "seconds": 0.21}
+{"verdict": "PASS", "candidates": 2, "witness_form": [2, 24, 1], "name": "13a_4468", "interval": "[2,3]", "sigma": 4, "det": 137, "seconds": 0.68}
+{"verdict": "PASS", "candidates": 6, "witness_form": [4, 14, 0], "name": "13a_448", "interval": "[2,3]", "sigma": 4, "det": 189, "seconds": 0.53}
+{"verdict": "PASS", "candidates": 4, "witness_form": [4, 28, 3], "name": "13a_4521", "interval": "[2,3]", "sigma": 4, "det": 349, "seconds": 0.32}
+{"verdict": "PASS", "candidates": 4, "witness_form": [10, 16, 7], "name": "13a_4478", "interval": "[2,3]", "sigma": -4, "det": 393, "seconds": 0.94}
+{"verdict": "OBSTRUCTED", "candidates": 3, "name": "13a_4461", "interval": "[2,3]", "sigma": -4, "det": 301, "seconds": 1.43}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_4465", "interval": "[2,3]", "sigma": -4, "det": 397, "seconds": 1.46}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_4565", "interval": "[2,3]", "sigma": -4, "det": 145, "seconds": 0.39}
+{"verdict": "OBSTRUCTED", "candidates": 3, "name": "13a_4556", "interval": "[2,3]", "sigma": -4, "det": 141, "seconds": 0.51}
+{"verdict": "PASS", "candidates": 2, "witness_form": [2, 24, 1], "name": "13a_457", "interval": "[2,3]", "sigma": 4, "det": 137, "seconds": 0.29}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_4571", "interval": "[2,3]", "sigma": -4, "det": 85, "seconds": 0.29}
+{"verdict": "OBSTRUCTED", "candidates": 5, "name": "13a_4510", "interval": "[2,3]", "sigma": 4, "det": 293, "seconds": 1.08}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_4508", "interval": "[2,3]", "sigma": -4, "det": 393, "seconds": 1.28}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_4580", "interval": "[2,3]", "sigma": -4, "det": 265, "seconds": 0.27}
+{"verdict": "PASS", "candidates": 4, "witness_form": [6, 12, 2], "name": "13a_4608", "interval": "[2,3]", "sigma": -4, "det": 237, "seconds": 0.46}
+{"verdict": "PASS", "candidates": 5, "witness_form": [8, 8, 1], "name": "13a_4617", "interval": "[2,3]", "sigma": -4, "det": 221, "seconds": 0.37}
+{"verdict": "PASS", "candidates": 7, "witness_form": [2, 56, 1], "name": "13a_4609", "interval": "[2,3]", "sigma": -4, "det": 329, "seconds": 0.62}
+{"verdict": "PASS", "candidates": 2, "witness_form": [4, 12, 2], "name": "13a_4599", "interval": "[2,3]", "sigma": -4, "det": 145, "seconds": 0.73}
+{"verdict": "OBSTRUCTED", "candidates": 5, "name": "13a_4624", "interval": "[2,3]", "sigma": -4, "det": 281, "seconds": 0.73}
+{"verdict": "PASS", "candidates": 2, "witness_form": [12, 16, 10], "name": "13a_4645", "interval": "[2,3]", "sigma": -4, "det": 313, "seconds": 0.33}
+{"verdict": "PASS", "candidates": 4, "witness_form": [10, 16, 8], "name": "13a_4633", "interval": "[2,3]", "sigma": 4, "det": 333, "seconds": 0.56}
+{"verdict": "PASS", "candidates": 3, "witness_form": [6, 10, 1], "name": "13a_4646", "interval": "[2,3]", "sigma": -4, "det": 205, "seconds": 0.2}
+{"verdict": "PASS", "candidates": 6, "witness_form": [6, 14, 3], "name": "13a_4626", "interval": "[2,3]", "sigma": -4, "det": 261, "seconds": 0.62}
+{"verdict": "OBSTRUCTED", "candidates": 3, "name": "13a_4579", "interval": "[2,3]", "sigma": -4, "det": 421, "seconds": 1.56}
+{"verdict": "PASS", "candidates": 4, "witness_form": [2, 34, 0], "name": "13a_4656", "interval": "[2,3]", "sigma": -4, "det": 201, "seconds": 0.3}
+{"verdict": "PASS", "candidates": 5, "witness_form": [2, 48, 1], "name": "13a_4636", "interval": "[2,3]", "sigma": -4, "det": 281, "seconds": 0.76}
+{"verdict": "PASS", "candidates": 3, "witness_form": [4, 22, 0], "name": "13a_4699", "interval": "[2,3]", "sigma": -4, "det": 301, "seconds": 0.2}
+{"verdict": "PASS", "candidates": 4, "witness_form": [12, 12, 6], "name": "13a_4660", "interval": "[2,3]", "sigma": -4, "det": 385, "seconds": 0.65}
+{"verdict": "PASS", "candidates": 3, "witness_form": [2, 24, 0], "name": "13a_4651", "interval": "[2,3]", "sigma": -4, "det": 141, "seconds": 0.77}
+{"verdict": "PASS", "candidates": 6, "witness_form": [4, 22, 1], "name": "13a_468", "interval": "[2,3]", "sigma": -4, "det": 297, "seconds": 0.59}
+{"verdict": "PASS", "candidates": 4, "witness_form": [8, 12, 3], "name": "13a_4703", "interval": "[2,3]", "sigma": -4, "det": 309, "seconds": 0.68}
+{"verdict": "PASS", "candidates": 3, "witness_form": [10, 10, 6], "name": "13a_474", "interval": "[2,3]", "sigma": -4, "det": 217, "seconds": 0.34}
+{"verdict": "PASS", "candidates": 4, "witness_form": [26, 28, 25], "name": "13a_4704", "interval": "[2,3]", "sigma": -4, "det": 305, "seconds": 0.83}
+{"verdict": "PASS", "candidates": 3, "witness_form": [2, 38, 0], "name": "13a_4766", "interval": "[2,3]", "sigma": 4, "det": 225, "seconds": 0.34}
+{"verdict": "OBSTRUCTED", "candidates": 3, "name": "13a_4655", "interval": "[2,3]", "sigma": -4, "det": 317, "seconds": 1.53}
+{"verdict": "PASS", "candidates": 2, "witness_form": [16, 16, 14], "name": "13a_4782", "interval": "[2,3]", "sigma": 4, "det": 177, "seconds": 0.33}
+{"verdict": "PASS", "candidates": 6, "witness_form": [8, 16, 3], "name": "13a_4726", "interval": "[2,3]", "sigma": -4, "det": 429, "seconds": 1.12}
+{"verdict": "PASS", "candidates": 4, "witness_form": [2, 46, 0], "name": "13a_4758", "interval": "[2,3]", "sigma": -4, "det": 273, "seconds": 0.88}
+{"verdict": "OBSTRUCTED", "candidates": 3, "name": "13a_4796", "interval": "[2,3]", "sigma": 4, "det": 241, "seconds": 0.19}
+{"verdict": "OBSTRUCTED", "candidates": 3, "name": "13a_4756", "interval": "[2,3]", "sigma": 4, "det": 373, "seconds": 1.33}
+{"verdict": "PASS", "candidates": 6, "witness_form": [6, 18, 5], "name": "13a_4792", "interval": "[2,3]", "sigma": 4, "det": 285, "seconds": 0.74}
+{"verdict": "OBSTRUCTED", "candidates": 3, "name": "13a_48", "interval": "[2,3]", "sigma": 4, "det": 197, "seconds": 0.59}
+{"verdict": "PASS", "candidates": 6, "witness_form": [4, 22, 1], "name": "13a_480", "interval": "[2,3]", "sigma": -4, "det": 297, "seconds": 0.58}
+{"verdict": "PASS", "candidates": 6, "witness_form": [4, 22, 1], "name": "13a_481", "interval": "[2,3]", "sigma": -4, "det": 297, "seconds": 0.57}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_4820", "interval": "[2,3]", "sigma": 4, "det": 313, "seconds": 0.2}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_4810", "interval": "[2,3]", "sigma": 4, "det": 277, "seconds": 0.46}
+{"verdict": "OBSTRUCTED", "candidates": 1, "name": "13a_4835", "interval": "[2,3]", "sigma": -4, "det": 73, "seconds": 0.21}
+{"verdict": "OBSTRUCTED", "candidates": 3, "name": "13a_4836", "interval": "[2,3]", "sigma": -4, "det": 77, "seconds": 0.28}
+{"verdict": "OBSTRUCTED", "candidates": 6, "name": "13a_4768", "interval": "[2,3]", "sigma": 4, "det": 261, "seconds": 1.6}
+{"verdict": "PASS", "candidates": 3, "witness_form": [6, 16, 5], "name": "13a_569", "interval": "[2,3]", "sigma": 4, "det": 241, "seconds": 0.26}
+{"verdict": "PASS", "candidates": 4, "witness_form": [4, 20, 0], "name": "13a_4817", "interval": "[2,3]", "sigma": -4, "det": 273, "seconds": 0.74}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_571", "interval": "[2,3]", "sigma": 4, "det": 249, "seconds": 0.4}
+{"verdict": "PASS", "candidates": 2, "witness_form": [40, 40, 39], "name": "13a_578", "interval": "[2,3]", "sigma": -4, "det": 157, "seconds": 0.21}
+{"verdict": "PASS", "candidates": 4, "witness_form": [24, 24, 22], "name": "13a_564", "interval": "[2,3]", "sigma": -4, "det": 273, "seconds": 0.84}
+{"verdict": "PASS", "candidates": 7, "witness_form": [6, 18, 2], "name": "13a_56", "interval": "[2,3]", "sigma": -4, "det": 369, "seconds": 1.01}
+{"verdict": "PASS", "candidates": 4, "witness_form": [4, 20, 0], "name": "13a_574", "interval": "[2,3]", "sigma": 4, "det": 273, "seconds": 0.71}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_586", "interval": "[2,3]", "sigma": 4, "det": 253, "seconds": 0.49}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_576", "interval": "[2,3]", "sigma": -4, "det": 237, "seconds": 0.78}
+{"verdict": "PASS", "candidates": 5, "witness_form": [2, 42, 1], "name": "13a_596", "interval": "[2,3]", "sigma": 4, "det": 245, "seconds": 0.32}
+{"verdict": "PASS", "candidates": 4, "witness_form": [8, 10, 3], "name": "13a_594", "interval": "[2,3]", "sigma": 4, "det": 249, "seconds": 0.43}
+{"verdict": "PASS", "candidates": 3, "witness_form": [52, 52, 51], "name": "13a_587", "interval": "[2,3]", "sigma": -4, "det": 205, "seconds": 0.6}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_584", "interval": "[2,3]", "sigma": -4, "det": 353, "seconds": 0.99}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_60", "interval": "[2,3]", "sigma": -4, "det": 277, "seconds": 0.53}
+{"verdict": "PASS", "candidates": 2, "witness_form": [10, 12, 5], "name": "13a_618", "interval": "[2,3]", "sigma": 4, "det": 337, "seconds": 0.22}
+{"verdict": "PASS", "candidates": 5, "witness_form": [2, 42, 1], "name": "13a_601", "interval": "[2,3]", "sigma": 4, "det": 245, "seconds": 0.32}
+{"verdict": "PASS", "candidates": 1, "witness_form": [4, 10, 3], "name": "13a_624", "interval": "[2,3]", "sigma": 4, "det": 97, "seconds": 0.21}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_589", "interval": "[2,3]", "sigma": -4, "det": 353, "seconds": 0.98}
+{"verdict": "PASS", "candidates": 2, "witness_form": [64, 64, 63], "name": "13a_617", "interval": "[2,3]", "sigma": 4, "det": 253, "seconds": 0.5}
+{"verdict": "PASS", "candidates": 4, "witness_form": [6, 12, 5], "name": "13a_631", "interval": "[2,3]", "sigma": 4, "det": 153, "seconds": 0.4}
+{"verdict": "OBSTRUCTED", "candidates": 3, "name": "13a_644", "interval": "[2,3]", "sigma": -4, "det": 217, "seconds": 0.28}
+{"verdict": "PASS", "candidates": 4, "witness_form": [6, 12, 5], "name": "13a_636", "interval": "[2,3]", "sigma": 4, "det": 153, "seconds": 0.4}
+{"verdict": "OBSTRUCTED", "candidates": 3, "name": "13a_65", "interval": "[2,3]", "sigma": -4, "det": 241, "seconds": 0.26}
+{"verdict": "PASS", "candidates": 5, "witness_form": [8, 22, 7], "name": "13a_623", "interval": "[2,3]", "sigma": -4, "det": 449, "seconds": 0.9}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_653", "interval": "[2,3]", "sigma": 4, "det": 149, "seconds": 0.23}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_645", "interval": "[2,3]", "sigma": -4, "det": 253, "seconds": 0.57}
+{"verdict": "PASS", "candidates": 5, "witness_form": [8, 22, 7], "name": "13a_629", "interval": "[2,3]", "sigma": -4, "det": 449, "seconds": 0.88}
+{"verdict": "PASS", "candidates": 4, "witness_form": [4, 14, 1], "name": "13a_658", "interval": "[2,3]", "sigma": -4, "det": 185, "seconds": 0.33}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_666", "interval": "[2,3]", "sigma": 4, "det": 157, "seconds": 0.16}
+{"verdict": "OBSTRUCTED", "candidates": 3, "name": "13a_661", "interval": "[2,3]", "sigma": 4, "det": 233, "seconds": 0.29}
+{"verdict": "PASS", "candidates": 3, "witness_form": [4, 16, 3], "name": "13a_735", "interval": "[2,3]", "sigma": -4, "det": 181, "seconds": 0.18}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_670", "interval": "[2,3]", "sigma": 4, "det": 177, "seconds": 0.35}
+{"verdict": "PASS", "candidates": 3, "witness_form": [16, 18, 14], "name": "13a_743", "interval": "[2,3]", "sigma": 4, "det": 301, "seconds": 0.26}
+{"verdict": "PASS", "candidates": 2, "witness_form": [6, 16, 4], "name": "13a_798", "interval": "[2,3]", "sigma": 4, "det": 277, "seconds": 0.2}
+{"verdict": "PASS", "candidates": 4, "witness_form": [6, 12, 2], "name": "13a_721", "interval": "[2,3]", "sigma": 4, "det": 237, "seconds": 0.44}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_82", "interval": "[2,3]", "sigma": 4, "det": 137, "seconds": 0.18}
+{"verdict": "PASS", "candidates": 4, "witness_form": [8, 10, 3], "name": "13a_819", "interval": "[2,3]", "sigma": 4, "det": 249, "seconds": 0.32}
+{"verdict": "PASS", "candidates": 4, "witness_form": [10, 16, 8], "name": "13a_746", "interval": "[2,3]", "sigma": -4, "det": 333, "seconds": 0.59}
+{"verdict": "PASS", "candidates": 7, "witness_form": [6, 18, 2], "name": "13a_71", "interval": "[2,3]", "sigma": -4, "det": 369, "seconds": 0.98}
+{"verdict": "PASS", "candidates": 2, "witness_form": [40, 40, 39], "name": "13a_861", "interval": "[2,3]", "sigma": 4, "det": 157, "seconds": 0.26}
+{"verdict": "PASS", "candidates": 5, "witness_form": [8, 12, 5], "name": "13a_835", "interval": "[2,3]", "sigma": -4, "det": 245, "seconds": 0.43}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_859", "interval": "[2,3]", "sigma": -4, "det": 277, "seconds": 0.52}
+{"verdict": "PASS", "candidates": 5, "witness_form": [24, 26, 23], "name": "13a_826", "interval": "[2,3]", "sigma": -4, "det": 281, "seconds": 0.71}
+{"verdict": "PASS", "candidates": 4, "witness_form": [4, 14, 3], "name": "13a_910", "interval": "[2,3]", "sigma": -4, "det": 153, "seconds": 0.2}
+{"verdict": "OBSTRUCTED", "candidates": 2, "name": "13a_933", "interval": "[2,3]", "sigma": -4, "det": 177, "seconds": 0.28}
+{"verdict": "PASS", "candidates": 3, "witness_form": [4, 22, 0], "name": "13a_975", "interval": "[2,3]", "sigma": -4, "det": 301, "seconds": 0.28}
+{"verdict": "PASS", "candidates": 7, "witness_form": [6, 20, 5], "name": "13a_895", "interval": "[2,3]", "sigma": -4, "det": 329, "seconds": 0.92}
+{"verdict": "PASS", "candidates": 4, "witness_form": [2, 52, 1], "name": "13a_96", "interval": "[2,3]", "sigma": -4, "det": 305, "seconds": 0.6}
+{"verdict": "PASS", "candidates": 4, "witness_form": [4, 28, 3], "name": "13a_984", "interval": "[2,3]", "sigma": -4, "det": 349, "seconds": 0.17}
+{"verdict": "PASS", "candidates": 4, "witness_form": [2, 64, 1], "name": "13a_976", "interval": "[2,3]", "sigma": -4, "det": 377, "seconds": 0.56}
+{"verdict": "OBSTRUCTED", "candidates": 6, "name": "13a_896", "interval": "[2,3]", "sigma": -4, "det": 261, "seconds": 1.66}
+{"verdict": "PASS", "candidates": 6, "witness_form": [12, 14, 9], "name": "13a_989", "interval": "[2,3]", "sigma": -4, "det": 297, "seconds": 0.79}
+{"verdict": "PASS", "candidates": 4, "witness_form": [24, 24, 22], "name": "13a_991", "interval": "[2,3]", "sigma": -4, "det": 273, "seconds": 0.81}
+{"verdict": "OBSTRUCTED", "candidates": 6, "name": "13a_796", "interval": "[2,3]", "sigma": -4, "det": 437, "seconds": 2.95}
+{"verdict": "OBSTRUCTED", "candidates": 3, "name": "13a_983", "interval": "[2,3]", "sigma": -4, "det": 317, "seconds": 1.5}
+{"verdict": "OBSTRUCTED", "candidates": 4, "name": "13a_901", "interval": "[2,3]", "sigma": -4, "det": 453, "seconds": 3.16}

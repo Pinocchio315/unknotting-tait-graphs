@@ -1,0 +1,34 @@
+{
+ "rows": 69632,
+ "u1_rows": 26531,
+ "u1_rows_lickorish_pass": 26531,
+ "cyclic_rows": 66701,
+ "x_generates_rows": 55312,
+ "sharp2_rows": 4729,
+ "sharp2_good": 2966,
+ "sharp2_neutral": 1763,
+ "sharp2_neutral_lickorish_fail": 830,
+ "sharp2_neutral_lickorish_pass": 933,
+ "sharp2_neutral_pass_children": 101,
+ "breakdown_rows": {
+  "alternating (McCoy)": 840,
+  "Montesinos correction terms": 13,
+  "composite": 42,
+  "other (correction terms of Owens-Strle)": 27,
+  "four-genus / tau": 7,
+  "Alexander module / cyclic covers": 4
+ },
+ "breakdown_children": {
+  "alternating (McCoy)": 83,
+  "other (correction terms of Owens-Strle)": 3,
+  "Montesinos correction terms": 4,
+  "composite": 7,
+  "four-genus / tau": 3,
+  "Alexander module / cyclic covers": 1
+ },
+ "other_children": [
+  "10_148",
+  "11n_40",
+  "11n_5"
+ ]
+}

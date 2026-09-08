@@ -1,0 +1,72 @@
+labels: Counter({'neutral': 32515, 'good': 29918, 'bad': 4067, None: 3132})
+composite labels used (sum-blocks rigorous, sum-jones heuristic): Counter({'sum-blocks': 2059, 'sum-jones': 603})
+
+(sign, R>1/2, sigma_c - sigma): {(-1, 0, 0): 17079, (1, 0, 2): 19726, (1, 1, 0): 19227, (-1, 1, -2): 13600}
+sharp knots: 1506; mean crossings 12.47, mean sigma-dropping crossings 6.57
+
+### ALL knots, all crossings (good vs not): 66500 rows, 5546 knots, good=29918, AUC=0.955
+   hit@1 GBM                      5398/5546 = 0.973
+   hit@1 min det ratio            4144/5546 = 0.747
+   hit@1 min reduced crossings    4290/5546 = 0.774
+   hit@1 sig-drop then min ratio  4645/5546 = 0.838
+   hit@1 first crossing           2716/5546 = 0.490
+   permutation importance: u=0.240, dsig=0.112, det_changed=0.097, reduced_crossings=0.095, sigma=0.086, sig_rel=0.021, n_white=0.015, n_black=0.014
+
+### sharp knots, all crossings: 18176 rows, 1506 knots, good=6646, AUC=0.990
+   hit@1 GBM                      1474/1506 = 0.979
+   hit@1 min det ratio            925/1506 = 0.614
+   hit@1 min reduced crossings    1095/1506 = 0.727
+   hit@1 sig-drop then min ratio  1357/1506 = 0.901
+   hit@1 first crossing           429/1506 = 0.285
+   permutation importance: dsig=0.302, u=0.093, det_changed=0.019, reduced_crossings=0.017, ratio=0.004, Rf=0.002, n_white=0.001, twist_max_diagram=0.001
+
+### sharp knots, sigma-dropping crossings only: 9623 rows, 1506 knots, good=6646, AUC=0.965
+   hit@1 GBM                      1477/1506 = 0.981
+   hit@1 min det ratio            1357/1506 = 0.901
+   hit@1 min reduced crossings    1410/1506 = 0.936
+   hit@1 sig-drop then min ratio  1357/1506 = 0.901
+   hit@1 first crossing           1164/1506 = 0.773
+   permutation importance: u=0.357, reduced_crossings=0.075, det_changed=0.066, ratio=0.012, Rf=0.009, twist_max_diagram=0.005, twist_par=0.004, n_white=0.004
+
+### non-sharp knots, all crossings: 48324 rows, 4040 knots, good=23272, AUC=0.938
+   hit@1 GBM                      3925/4040 = 0.972
+   hit@1 min det ratio            3219/4040 = 0.797
+   hit@1 min reduced crossings    3195/4040 = 0.791
+   hit@1 sig-drop then min ratio  3288/4040 = 0.814
+   hit@1 first crossing           2287/4040 = 0.566
+   permutation importance: u=0.178, det_changed=0.158, reduced_crossings=0.099, dsig=0.058, sig_rel=0.036, n_white=0.024, ratio=0.022, n_black=0.018
+
+### u=2, sigma=0 knots: 14894 rows, 1236 knots, good=7677, AUC=0.887
+   hit@1 GBM                      1203/1236 = 0.973
+   hit@1 min det ratio            1008/1236 = 0.816
+   hit@1 min reduced crossings    1004/1236 = 0.812
+   hit@1 sig-drop then min ratio  1008/1236 = 0.816
+   hit@1 first crossing           807/1236 = 0.653
+   permutation importance: det_changed=0.227, reduced_crossings=0.150, dsig=0.051, n_black=0.042, Rf=0.039, det=0.031, ratio=0.028, n_white=0.020
+
+### u=2, |sigma|=2 knots: 24283 rows, 2027 knots, good=11328, AUC=0.918
+   hit@1 GBM                      1956/2027 = 0.965
+   hit@1 min det ratio            1458/2027 = 0.719
+   hit@1 min reduced crossings    1474/2027 = 0.727
+   hit@1 sig-drop then min ratio  1507/2027 = 0.743
+   hit@1 first crossing           1129/2027 = 0.557
+   permutation importance: det_changed=0.179, dsig=0.162, reduced_crossings=0.114, n_white=0.029, ratio=0.023, n_black=0.019, Rf=0.018, twist_max_diagram=0.016
+
+### ALL knots, LOCAL features only (no K_c data): 66500 rows, 5546 knots, good=29918, AUC=0.905
+   hit@1 GBM                      5054/5546 = 0.911
+   hit@1 min det ratio            4144/5546 = 0.747
+   hit@1 min reduced crossings    4290/5546 = 0.774
+   hit@1 sig-drop then min ratio  4645/5546 = 0.838
+   hit@1 first crossing           2716/5546 = 0.490
+   permutation importance: u=0.234, Rf=0.146, sigma=0.107, sig_drop=0.101, sign=0.022, n_black=0.022, det=0.020, sig_rel=0.020
+
+### sharp sigma-dropping, LOCAL only: 9623 rows, 1506 knots, good=6646, AUC=0.929
+   hit@1 GBM                      1441/1506 = 0.957
+   hit@1 min det ratio            1357/1506 = 0.901
+   hit@1 min reduced crossings    1410/1506 = 0.936
+   hit@1 sig-drop then min ratio  1357/1506 = 0.901
+   hit@1 first crossing           1164/1506 = 0.773
+   permutation importance: u=0.375, Rf=0.180, det=0.042, twist_par=0.018, n_white=0.014, twist_max_diagram=0.012, deg_min=0.010, face_min=0.010
+
+exact rules (>= 300 rows, <= 0.5% exceptions), predicting good or not-good:
+   reduced_crossings <= 0: n=849 good=849

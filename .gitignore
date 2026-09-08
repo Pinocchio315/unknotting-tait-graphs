@@ -1,0 +1,21 @@
+__pycache__/
+*.pyc
+.DS_Store
+figures/
+logs/
+*.log
+# outputs of running the scripts in place
+appendix_tables/
+verified/
+xup_runs*/
+ctl/
+torsion_sweep*/
+lower_bounds_scan.csv
+seifert_check.json
+verify815_regina.json
+results/*/work/
+lower_bounds/owens/run_u4_local.log
+lower_bounds/owens/results_u4_local_*.jsonl
+
+# Reproducible v1.1 reports (deposited inputs remain read-only)
+generated/

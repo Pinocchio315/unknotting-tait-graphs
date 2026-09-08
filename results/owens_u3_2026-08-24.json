@@ -1,0 +1,1770 @@
+[
+ {
+  "name": "11a_144",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 73,
+  "verdict": "OBSTRUCTED",
+  "candidates": 1
+ },
+ {
+  "name": "11a_299",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 97,
+  "verdict": "OBSTRUCTED",
+  "candidates": 1
+ },
+ {
+  "name": "11a_320",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 109,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "11a_329",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 145,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "11a_63",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 93,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "11a_64",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 97,
+  "verdict": "OBSTRUCTED",
+  "candidates": 1
+ },
+ {
+  "name": "12a_152",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 113,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "12a_231",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 213,
+  "verdict": "OBSTRUCTED",
+  "candidates": 3
+ },
+ {
+  "name": "12a_254",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 97,
+  "verdict": "OBSTRUCTED",
+  "candidates": 1
+ },
+ {
+  "name": "12a_269",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 153,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "12a_289",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 193,
+  "verdict": "OBSTRUCTED",
+  "candidates": 1
+ },
+ {
+  "name": "12a_320",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 157,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "12a_331",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 177,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "12a_35",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 177,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "12a_37",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 133,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "12a_421",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 133,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "12a_443",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 125,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "12a_47",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 193,
+  "verdict": "OBSTRUCTED",
+  "candidates": 1
+ },
+ {
+  "name": "12a_610",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 137,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "12a_653",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 145,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "12a_661",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 193,
+  "verdict": "OBSTRUCTED",
+  "candidates": 1
+ },
+ {
+  "name": "12a_75",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 205,
+  "verdict": "OBSTRUCTED",
+  "candidates": 3
+ },
+ {
+  "name": "12a_763",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 97,
+  "verdict": "OBSTRUCTED",
+  "candidates": 1
+ },
+ {
+  "name": "12a_764",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 133,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "12a_795",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 137,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "12a_796",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 57,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "12a_798",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 213,
+  "verdict": "OBSTRUCTED",
+  "candidates": 3
+ },
+ {
+  "name": "12a_800",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 93,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "12a_812",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 201,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "12a_880",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 161,
+  "verdict": "OBSTRUCTED",
+  "candidates": 5
+ },
+ {
+  "name": "12a_938",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 133,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "12a_967",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 253,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "12a_97",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 129,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "12a_974",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 177,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "12a_978",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 133,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "12a_983",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 229,
+  "verdict": "OBSTRUCTED",
+  "candidates": 3
+ },
+ {
+  "name": "12a_996",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 193,
+  "verdict": "OBSTRUCTED",
+  "candidates": 1
+ },
+ {
+  "name": "13a_1043",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 133,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_1051",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 357,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_1062",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 189,
+  "verdict": "OBSTRUCTED",
+  "candidates": 6
+ },
+ {
+  "name": "13a_1137",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 433,
+  "verdict": "OBSTRUCTED",
+  "candidates": 3
+ },
+ {
+  "name": "13a_1140",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 421,
+  "verdict": "OBSTRUCTED",
+  "candidates": 3
+ },
+ {
+  "name": "13a_1147",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 417,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_1182",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 193,
+  "verdict": "OBSTRUCTED",
+  "candidates": 1
+ },
+ {
+  "name": "13a_1273",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 333,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_1295",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 229,
+  "verdict": "OBSTRUCTED",
+  "candidates": 3
+ },
+ {
+  "name": "13a_1317",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 333,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_1329",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 373,
+  "verdict": "OBSTRUCTED",
+  "candidates": 3
+ },
+ {
+  "name": "13a_1331",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 257,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_1339",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 265,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_1398",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 225,
+  "verdict": "OBSTRUCTED",
+  "candidates": 3
+ },
+ {
+  "name": "13a_1403",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 333,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_1413",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 173,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_1440",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 185,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_1465",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 241,
+  "verdict": "OBSTRUCTED",
+  "candidates": 3
+ },
+ {
+  "name": "13a_1469",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 221,
+  "verdict": "OBSTRUCTED",
+  "candidates": 5
+ },
+ {
+  "name": "13a_1472",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 209,
+  "verdict": "OBSTRUCTED",
+  "candidates": 6
+ },
+ {
+  "name": "13a_1475",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 113,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_1491",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 253,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_1495",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 257,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_1499",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 325,
+  "verdict": "OBSTRUCTED",
+  "candidates": 5
+ },
+ {
+  "name": "13a_150",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 297,
+  "verdict": "OBSTRUCTED",
+  "candidates": 6
+ },
+ {
+  "name": "13a_154",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 297,
+  "verdict": "OBSTRUCTED",
+  "candidates": 6
+ },
+ {
+  "name": "13a_1546",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 249,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_1547",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 137,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_1552",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 253,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_1554",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 405,
+  "verdict": "OBSTRUCTED",
+  "candidates": 7
+ },
+ {
+  "name": "13a_1557",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 225,
+  "verdict": "OBSTRUCTED",
+  "candidates": 3
+ },
+ {
+  "name": "13a_1580",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 137,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_16",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 177,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_1615",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 389,
+  "verdict": "OBSTRUCTED",
+  "candidates": 6
+ },
+ {
+  "name": "13a_1616",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 293,
+  "verdict": "OBSTRUCTED",
+  "candidates": 5
+ },
+ {
+  "name": "13a_1617",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 261,
+  "verdict": "OBSTRUCTED",
+  "candidates": 6
+ },
+ {
+  "name": "13a_1618",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 217,
+  "verdict": "OBSTRUCTED",
+  "candidates": 3
+ },
+ {
+  "name": "13a_1643",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 145,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_170",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 273,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_172",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 197,
+  "verdict": "OBSTRUCTED",
+  "candidates": 3
+ },
+ {
+  "name": "13a_1721",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 297,
+  "verdict": "OBSTRUCTED",
+  "candidates": 6
+ },
+ {
+  "name": "13a_1826",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 225,
+  "verdict": "OBSTRUCTED",
+  "candidates": 3
+ },
+ {
+  "name": "13a_1910",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 325,
+  "verdict": "OBSTRUCTED",
+  "candidates": 5
+ },
+ {
+  "name": "13a_1943",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 153,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_1974",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 153,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_1984",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 425,
+  "verdict": "OBSTRUCTED",
+  "candidates": 7
+ },
+ {
+  "name": "13a_2025",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 297,
+  "verdict": "OBSTRUCTED",
+  "candidates": 6
+ },
+ {
+  "name": "13a_2037",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 265,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_209",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 345,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_2125",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 237,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_217",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 385,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_2185",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 201,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_2269",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 205,
+  "verdict": "OBSTRUCTED",
+  "candidates": 3
+ },
+ {
+  "name": "13a_2290",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 185,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_2291",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 205,
+  "verdict": "OBSTRUCTED",
+  "candidates": 3
+ },
+ {
+  "name": "13a_2295",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 277,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_231",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 385,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_2310",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 297,
+  "verdict": "OBSTRUCTED",
+  "candidates": 6
+ },
+ {
+  "name": "13a_2317",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 141,
+  "verdict": "OBSTRUCTED",
+  "candidates": 3
+ },
+ {
+  "name": "13a_2334",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 177,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_2359",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 273,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_2360",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 337,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_2365",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 213,
+  "verdict": "OBSTRUCTED",
+  "candidates": 3
+ },
+ {
+  "name": "13a_2373",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 253,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_2379",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 301,
+  "verdict": "OBSTRUCTED",
+  "candidates": 3
+ },
+ {
+  "name": "13a_2399",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 393,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_2412",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 253,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_2434",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 201,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_2478",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 193,
+  "verdict": "OBSTRUCTED",
+  "candidates": 1
+ },
+ {
+  "name": "13a_2502",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 285,
+  "verdict": "OBSTRUCTED",
+  "candidates": 6
+ },
+ {
+  "name": "13a_251",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 257,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_2510",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 325,
+  "verdict": "OBSTRUCTED",
+  "candidates": 5
+ },
+ {
+  "name": "13a_2520",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 377,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_2697",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 193,
+  "verdict": "OBSTRUCTED",
+  "candidates": 1
+ },
+ {
+  "name": "13a_2698",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 277,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_2761",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 153,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_2766",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 357,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_2777",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 149,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_2784",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 233,
+  "verdict": "OBSTRUCTED",
+  "candidates": 3
+ },
+ {
+  "name": "13a_2785",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 237,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_2805",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 181,
+  "verdict": "OBSTRUCTED",
+  "candidates": 3
+ },
+ {
+  "name": "13a_2809",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 189,
+  "verdict": "OBSTRUCTED",
+  "candidates": 6
+ },
+ {
+  "name": "13a_2821",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 177,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_2832",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 213,
+  "verdict": "OBSTRUCTED",
+  "candidates": 3
+ },
+ {
+  "name": "13a_2834",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 253,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_2843",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 137,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_2859",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 157,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_2865",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 177,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_2888",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 249,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_2890",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 289,
+  "verdict": "OBSTRUCTED",
+  "candidates": 0
+ },
+ {
+  "name": "13a_2911",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 217,
+  "verdict": "OBSTRUCTED",
+  "candidates": 3
+ },
+ {
+  "name": "13a_2965",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 333,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_3065",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 445,
+  "verdict": "OBSTRUCTED",
+  "candidates": 3
+ },
+ {
+  "name": "13a_3089",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 409,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_3100",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 145,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_3121",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 153,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_3310",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 253,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_3498",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 325,
+  "verdict": "OBSTRUCTED",
+  "candidates": 5
+ },
+ {
+  "name": "13a_3531",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 329,
+  "verdict": "OBSTRUCTED",
+  "candidates": 7
+ },
+ {
+  "name": "13a_3601",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 457,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_3691",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 201,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_3698",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 301,
+  "verdict": "OBSTRUCTED",
+  "candidates": 3
+ },
+ {
+  "name": "13a_3704",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 273,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_3705",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 277,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_3716",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 137,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_3784",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 197,
+  "verdict": "OBSTRUCTED",
+  "candidates": 3
+ },
+ {
+  "name": "13a_3814",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 189,
+  "verdict": "OBSTRUCTED",
+  "candidates": 6
+ },
+ {
+  "name": "13a_3902",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 181,
+  "verdict": "OBSTRUCTED",
+  "candidates": 3
+ },
+ {
+  "name": "13a_3963",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 389,
+  "verdict": "OBSTRUCTED",
+  "candidates": 6
+ },
+ {
+  "name": "13a_3975",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 337,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_3981",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 309,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_4057",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 425,
+  "verdict": "OBSTRUCTED",
+  "candidates": 7
+ },
+ {
+  "name": "13a_4080",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 417,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_4091",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 253,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_4093",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 385,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_4101",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 205,
+  "verdict": "OBSTRUCTED",
+  "candidates": 3
+ },
+ {
+  "name": "13a_4104",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 385,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_4106",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 217,
+  "verdict": "OBSTRUCTED",
+  "candidates": 3
+ },
+ {
+  "name": "13a_4113",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 337,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_4156",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 461,
+  "verdict": "OBSTRUCTED",
+  "candidates": 8
+ },
+ {
+  "name": "13a_4185",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 493,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_419",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 253,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_4191",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 265,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_4198",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 325,
+  "verdict": "OBSTRUCTED",
+  "candidates": 5
+ },
+ {
+  "name": "13a_4200",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 357,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_4207",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 241,
+  "verdict": "OBSTRUCTED",
+  "candidates": 3
+ },
+ {
+  "name": "13a_4216",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 233,
+  "verdict": "OBSTRUCTED",
+  "candidates": 3
+ },
+ {
+  "name": "13a_4232",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 333,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_4293",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 217,
+  "verdict": "OBSTRUCTED",
+  "candidates": 3
+ },
+ {
+  "name": "13a_4320",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 145,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_4322",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 321,
+  "verdict": "OBSTRUCTED",
+  "candidates": 6
+ },
+ {
+  "name": "13a_4326",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 189,
+  "verdict": "OBSTRUCTED",
+  "candidates": 6
+ },
+ {
+  "name": "13a_434",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 253,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_438",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 345,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_4385",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 297,
+  "verdict": "OBSTRUCTED",
+  "candidates": 6
+ },
+ {
+  "name": "13a_4390",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 161,
+  "verdict": "OBSTRUCTED",
+  "candidates": 5
+ },
+ {
+  "name": "13a_4392",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 253,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_4396",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 181,
+  "verdict": "OBSTRUCTED",
+  "candidates": 3
+ },
+ {
+  "name": "13a_443",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 265,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_4461",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 301,
+  "verdict": "OBSTRUCTED",
+  "candidates": 3
+ },
+ {
+  "name": "13a_4465",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 397,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_4508",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 393,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_4510",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 293,
+  "verdict": "OBSTRUCTED",
+  "candidates": 5
+ },
+ {
+  "name": "13a_4556",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 141,
+  "verdict": "OBSTRUCTED",
+  "candidates": 3
+ },
+ {
+  "name": "13a_4565",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 145,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_4571",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 85,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_4579",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 421,
+  "verdict": "OBSTRUCTED",
+  "candidates": 3
+ },
+ {
+  "name": "13a_4580",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 265,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_4624",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 281,
+  "verdict": "OBSTRUCTED",
+  "candidates": 5
+ },
+ {
+  "name": "13a_4655",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 317,
+  "verdict": "OBSTRUCTED",
+  "candidates": 3
+ },
+ {
+  "name": "13a_4756",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 373,
+  "verdict": "OBSTRUCTED",
+  "candidates": 3
+ },
+ {
+  "name": "13a_4768",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 261,
+  "verdict": "OBSTRUCTED",
+  "candidates": 6
+ },
+ {
+  "name": "13a_4796",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 241,
+  "verdict": "OBSTRUCTED",
+  "candidates": 3
+ },
+ {
+  "name": "13a_48",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 197,
+  "verdict": "OBSTRUCTED",
+  "candidates": 3
+ },
+ {
+  "name": "13a_4810",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 277,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_4820",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 313,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_4835",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 73,
+  "verdict": "OBSTRUCTED",
+  "candidates": 1
+ },
+ {
+  "name": "13a_4836",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 77,
+  "verdict": "OBSTRUCTED",
+  "candidates": 3
+ },
+ {
+  "name": "13a_571",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 249,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_576",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 237,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_584",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 353,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_586",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 253,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_589",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 353,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_60",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 277,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_644",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 217,
+  "verdict": "OBSTRUCTED",
+  "candidates": 3
+ },
+ {
+  "name": "13a_645",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 253,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_65",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 241,
+  "verdict": "OBSTRUCTED",
+  "candidates": 3
+ },
+ {
+  "name": "13a_653",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 149,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_661",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 233,
+  "verdict": "OBSTRUCTED",
+  "candidates": 3
+ },
+ {
+  "name": "13a_666",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 157,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_670",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 177,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_796",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 437,
+  "verdict": "OBSTRUCTED",
+  "candidates": 6
+ },
+ {
+  "name": "13a_82",
+  "interval": "[2,3]",
+  "sigma": 4,
+  "det": 137,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_859",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 277,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_896",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 261,
+  "verdict": "OBSTRUCTED",
+  "candidates": 6
+ },
+ {
+  "name": "13a_901",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 453,
+  "verdict": "OBSTRUCTED",
+  "candidates": 4
+ },
+ {
+  "name": "13a_933",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 177,
+  "verdict": "OBSTRUCTED",
+  "candidates": 2
+ },
+ {
+  "name": "13a_983",
+  "interval": "[2,3]",
+  "sigma": -4,
+  "det": 317,
+  "verdict": "OBSTRUCTED",
+  "candidates": 3
+ },
+ {
+  "name": "12a_634",
+  "interval": "[2,3]",
+  "sigma": 2,
+  "det": 135,
+  "verdict": "OBSTRUCTED",
+  "candidates": 6
+ },
+ {
+  "name": "13a_2720",
+  "interval": "[2,3]",
+  "sigma": -2,
+  "det": 243,
+  "verdict": "OBSTRUCTED",
+  "candidates": null
+ },
+ {
+  "name": "13a_2727",
+  "interval": "[2,3]",
+  "sigma": -2,
+  "det": 243,
+  "verdict": "OBSTRUCTED",
+  "candidates": null
+ },
+ {
+  "name": "13a_2745",
+  "interval": "[2,3]",
+  "sigma": -2,
+  "det": 243,
+  "verdict": "OBSTRUCTED",
+  "candidates": 8
+ },
+ {
+  "name": "13a_2008",
+  "interval": "[2,3]",
+  "sigma": 2,
+  "det": 351,
+  "verdict": "OBSTRUCTED",
+  "candidates": 10
+ },
+ {
+  "name": "13a_3607",
+  "interval": "[2,3]",
+  "sigma": -2,
+  "det": 351,
+  "verdict": "OBSTRUCTED",
+  "candidates": 10
+ }
+]

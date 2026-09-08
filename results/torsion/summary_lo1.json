@@ -1,0 +1,26 @@
+{
+ "interval_lo": 1,
+ "rows": 3002,
+ "ord_distribution": {
+  "1": 2998,
+  "2": 4
+ },
+ "new_lower_bounds": [
+  {
+   "name": "13n_1166",
+   "ord_u": 2
+  },
+  {
+   "name": "13n_2504",
+   "ord_u": 2
+  },
+  {
+   "name": "13n_2807",
+   "ord_u": 2
+  },
+  {
+   "name": "13n_689",
+   "ord_u": 2
+  }
+ ]
+}

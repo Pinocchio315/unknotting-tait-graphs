@@ -1,0 +1,3 @@
+{"name": "13a_3714", "u": "[4,5]", "sigma": -8, "det": 273, "verdict": "OBSTRUCTED", "candidates": 2485, "seconds": 11054.9, "role": "target"}
+{"name": "13a_4212", "u": "[4,5]", "sigma": -8, "det": 301, "verdict": "OBSTRUCTED", "candidates": 5712, "seconds": 14048.6, "role": "target"}
+{"name": "13a_4368", "u": "[4,5]", "sigma": -8, "det": 269, "verdict": "OBSTRUCTED", "candidates": 7418, "seconds": 22671.9, "role": "target"}

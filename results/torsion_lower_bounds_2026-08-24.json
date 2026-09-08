@@ -1,0 +1,39 @@
+{
+ "date": "2026-08-24",
+ "method": "HFK^- U-torsion (Alishahi-Eftekhary) + KnotJob extortion order (Alishahi/Alishahi-Dowlin)",
+ "rows_scanned": 3002,
+ "hits": [
+  {
+   "name": "13n_689",
+   "interval": "[1,3]",
+   "det": "39",
+   "signature": "-2",
+   "in_lickorish_815": false,
+   "conclusion": "[1,3] -> [2,3] (NEW)"
+  },
+  {
+   "name": "13n_1166",
+   "interval": "[1,2]",
+   "det": "31",
+   "signature": "-2",
+   "in_lickorish_815": false,
+   "conclusion": "u = 2 (exact, NEW)"
+  },
+  {
+   "name": "13n_2504",
+   "interval": "[1,2]",
+   "det": "63",
+   "signature": "-2",
+   "in_lickorish_815": false,
+   "conclusion": "u = 2 (exact, NEW)"
+  },
+  {
+   "name": "13n_2807",
+   "interval": "[1,2]",
+   "det": "55",
+   "signature": "-2",
+   "in_lickorish_815": true,
+   "conclusion": "u = 2 (already known from the Lickorish 815 sweep; independent reproof)"
+  }
+ ]
+}
