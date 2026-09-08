@@ -1,0 +1,162 @@
+{
+ "name": "12n_491",
+ "pd": [
+  [
+   1,
+   5,
+   2,
+   4
+  ],
+  [
+   3,
+   11,
+   4,
+   10
+  ],
+  [
+   16,
+   5,
+   17,
+   6
+  ],
+  [
+   20,
+   8,
+   21,
+   7
+  ],
+  [
+   9,
+   3,
+   10,
+   2
+  ],
+  [
+   18,
+   11,
+   19,
+   12
+  ],
+  [
+   22,
+   13,
+   23,
+   14
+  ],
+  [
+   8,
+   15,
+   9,
+   16
+  ],
+  [
+   24,
+   17,
+   1,
+   18
+  ],
+  [
+   14,
+   19,
+   15,
+   20
+  ],
+  [
+   6,
+   22,
+   7,
+   21
+  ],
+  [
+   12,
+   23,
+   13,
+   24
+  ]
+ ],
+ "determinant": 69,
+ "reduced_khovanov_mod2_rank": 69,
+ "certificate": {
+  "crossing": 0,
+  "det": [
+   69,
+   48,
+   21
+  ],
+  "res0": {
+   "crossing": 0,
+   "det": [
+    48,
+    43,
+    5
+   ],
+   "res0": "alternating(9)",
+   "res1": "alternating(4)"
+  },
+  "res1": {
+   "crossing": 0,
+   "det": [
+    21,
+    19,
+    2
+   ],
+   "res0": {
+    "crossing": 1,
+    "det": [
+     19,
+     9,
+     10
+    ],
+    "res0": {
+     "crossing": 1,
+     "det": [
+      9,
+      8,
+      1
+     ],
+     "res0": {
+      "crossing": 1,
+      "det": [
+       8,
+       7,
+       1
+      ],
+      "res0": "alternating(5)",
+      "res1": "unknot"
+     },
+     "res1": "unknot"
+    },
+    "res1": {
+     "crossing": 1,
+     "det": [
+      10,
+      9,
+      1
+     ],
+     "res0": {
+      "crossing": 2,
+      "det": [
+       9,
+       8,
+       1
+      ],
+      "res0": {
+       "crossing": 0,
+       "det": [
+        8,
+        7,
+        1
+       ],
+       "res0": "alternating(5)",
+       "res1": "unknot"
+      },
+      "res1": "unknot"
+     },
+     "res1": "unknot"
+    }
+   },
+   "res1": "alternating(2)"
+  }
+ },
+ "note": "resolution tree: crossing index in the simplified PD of the current link, det = det(res0) + det(res1); leaves are alternating diagrams or the unknot"
+}

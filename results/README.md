@@ -38,6 +38,7 @@ changes to the input files used to assemble the paper's tables.
 | `owens_rank4/` | Explicitly frozen partial output and two JSONL snapshots; completed exclusions give all 21 values with `u=5`, including the six added results |
 | `cyclic_cover/` | Nakanishi's generator bounds from cyclic branched-cover homology |
 | `montesinos/` | Correction terms and reduced Floer homology of Montesinos plumbings; 44 exact values and five further improved ranges as the primary method |
+| `bernhard_jablan/` | Correction terms of the double branched covers of `12n491` and `13n3370` from Greene's spanning-tree model (`greene_d_*_2026-09-08.json`) and the quasi-alternating certificate of `12n491`; the surgery test excludes `u = 1` for both, so `u(12n491) = u(13n3370) = 2`, and with `u(12n288) = u(12n501) = 2` from `montesinos/` and Theorem 1.3 of Brittenham–Hermiller (arXiv:1705.05985) the knot `13n3370` is a counterexample to the Bernhard–Jablan conjecture; scripts in `../lower_bounds/greene/` |
 | `crossing_changes/mccoy_alternating_u1_2026-09-08.json` | 27 alternating knots, their original input ranges, and the completed McCoy obstruction |
 | `comparison/gebel_prangley_2026.json` | Theorem lists used in the comparison with concurrent work in the conclusion |
 
