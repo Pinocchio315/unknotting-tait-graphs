@@ -1,0 +1,497 @@
+{
+  "baseline_construction": "Use database_knotinfo 2026.8.1 ranges, replacing the 104 entries in the deposited rollback list by their 2026.4.1 ranges. This also restores 27 lower bounds from 2 to 1. The result is not an unmodified release.",
+  "comparison_release": "2026.9.1",
+  "counts": {
+    "all_larger_upper_bounds": 104,
+    "baseline_differences_2026_4_1": 2937,
+    "baseline_differences_2026_6_1": 150,
+    "baseline_differences_2026_8_1": 104,
+    "baseline_differences_2026_9_1": 328,
+    "gebel_prangley_exact_agreements": 194,
+    "gebel_prangley_range_agreements": 30,
+    "mccoy_dataset_missing": 522,
+    "mccoy_dataset_overlap": 3105,
+    "mccoy_excluded": 2917,
+    "mccoy_historical_subset": 27,
+    "mccoy_total": 3627,
+    "mccoy_u1": 710,
+    "modified_entries": 104,
+    "paper_exact": 1227,
+    "reference_knots": 12965,
+    "restored_lower_entries": 27,
+    "retained_larger_upper_bounds": 97,
+    "september_disjoint_intervals": 7,
+    "september_exact_agreements": 194,
+    "september_exact_disagreements": 6,
+    "september_exact_entries": 200,
+    "september_incomparable_intervals": 3,
+    "september_strictly_weaker_intervals": 94,
+    "september_unresolved_exact": 1027
+  },
+  "description": "Historical research baseline and public package comparison; tabulated ranges are not new mathematical evidence.",
+  "disputes": [
+    {
+      "baseline": [
+        3,
+        4
+      ],
+      "computed_lower_bound": 4,
+      "knot": "12a_107",
+      "lower_tags": [
+        "O3"
+      ],
+      "paper": [
+        4,
+        4
+      ],
+      "september": [
+        3,
+        3
+      ],
+      "sources": [
+        "owens_rank3/results_u3_2026-09-07.json"
+      ]
+    },
+    {
+      "baseline": [
+        2,
+        3
+      ],
+      "computed_lower_bound": 3,
+      "knot": "13a_15",
+      "lower_tags": [
+        "O2"
+      ],
+      "paper": [
+        3,
+        3
+      ],
+      "september": [
+        2,
+        2
+      ],
+      "sources": [
+        "owens_rank2/owens_verdicts_sigma4_alternating_2026-09-07.json"
+      ]
+    },
+    {
+      "baseline": [
+        2,
+        3
+      ],
+      "computed_lower_bound": 3,
+      "knot": "13a_422",
+      "lower_tags": [
+        "O2"
+      ],
+      "paper": [
+        3,
+        3
+      ],
+      "september": [
+        2,
+        2
+      ],
+      "sources": [
+        "owens_rank2/owens_verdicts_sigma4_alternating_2026-09-07.json"
+      ]
+    },
+    {
+      "baseline": [
+        2,
+        3
+      ],
+      "computed_lower_bound": 3,
+      "knot": "13a_55",
+      "lower_tags": [
+        "O2"
+      ],
+      "paper": [
+        3,
+        3
+      ],
+      "september": [
+        2,
+        2
+      ],
+      "sources": [
+        "owens_rank2/owens_verdicts_sigma4_alternating_2026-09-07.json"
+      ]
+    },
+    {
+      "baseline": [
+        2,
+        3
+      ],
+      "computed_lower_bound": 3,
+      "knot": "13a_568",
+      "lower_tags": [
+        "O2"
+      ],
+      "paper": [
+        3,
+        3
+      ],
+      "september": [
+        2,
+        2
+      ],
+      "sources": [
+        "owens_rank2/owens_verdicts_sigma4_alternating_2026-09-07.json"
+      ]
+    },
+    {
+      "baseline": [
+        2,
+        4
+      ],
+      "computed_lower_bound": 3,
+      "knot": "13a_650",
+      "lower_tags": [
+        "O2"
+      ],
+      "paper": [
+        3,
+        4
+      ],
+      "september": [
+        2,
+        2
+      ],
+      "sources": [
+        "cyclic_cover/cyclic_cover_bound_2026-09-07.json",
+        "owens_rank2/owens_verdicts_sigma4_alternating_2026-09-07.json"
+      ]
+    },
+    {
+      "baseline": [
+        3,
+        4
+      ],
+      "computed_lower_bound": 4,
+      "knot": "13a_660",
+      "lower_tags": [
+        "O3"
+      ],
+      "paper": [
+        4,
+        4
+      ],
+      "september": [
+        3,
+        3
+      ],
+      "sources": [
+        "owens_rank3/results_u3_2026-09-07.json"
+      ]
+    }
+  ],
+  "exact_partition": {
+    "different_exact_value": 6,
+    "same_exact_value": 194,
+    "september_unresolved": 1027
+  },
+  "gebel_prangley_overlap": {
+    "all_theorem_3_ranges_agree": true,
+    "exact_agreement_set_equals_theorems_1_and_2": true,
+    "exact_knots": [
+      "11a_144",
+      "11a_299",
+      "11a_320",
+      "11a_329",
+      "11a_63",
+      "11a_64",
+      "12a_152",
+      "12a_231",
+      "12a_254",
+      "12a_269",
+      "12a_289",
+      "12a_320",
+      "12a_331",
+      "12a_35",
+      "12a_37",
+      "12a_421",
+      "12a_443",
+      "12a_47",
+      "12a_610",
+      "12a_653",
+      "12a_661",
+      "12a_75",
+      "12a_763",
+      "12a_764",
+      "12a_795",
+      "12a_796",
+      "12a_798",
+      "12a_800",
+      "12a_812",
+      "12a_880",
+      "12a_938",
+      "12a_967",
+      "12a_97",
+      "12a_974",
+      "12a_978",
+      "12a_983",
+      "12a_996",
+      "13a_1043",
+      "13a_1051",
+      "13a_1062",
+      "13a_1137",
+      "13a_1140",
+      "13a_1147",
+      "13a_1182",
+      "13a_1295",
+      "13a_1329",
+      "13a_1331",
+      "13a_1339",
+      "13a_1403",
+      "13a_1413",
+      "13a_1440",
+      "13a_1465",
+      "13a_1469",
+      "13a_1472",
+      "13a_1475",
+      "13a_1491",
+      "13a_1495",
+      "13a_1499",
+      "13a_150",
+      "13a_154",
+      "13a_1546",
+      "13a_1547",
+      "13a_1552",
+      "13a_1554",
+      "13a_1580",
+      "13a_16",
+      "13a_1615",
+      "13a_1616",
+      "13a_1618",
+      "13a_1643",
+      "13a_170",
+      "13a_172",
+      "13a_1943",
+      "13a_2037",
+      "13a_209",
+      "13a_2125",
+      "13a_217",
+      "13a_2185",
+      "13a_2269",
+      "13a_2290",
+      "13a_2291",
+      "13a_2295",
+      "13a_231",
+      "13a_2310",
+      "13a_2317",
+      "13a_2334",
+      "13a_2359",
+      "13a_2360",
+      "13a_2365",
+      "13a_2373",
+      "13a_2379",
+      "13a_2399",
+      "13a_2412",
+      "13a_2434",
+      "13a_2478",
+      "13a_2502",
+      "13a_251",
+      "13a_2520",
+      "13a_2697",
+      "13a_2698",
+      "13a_2761",
+      "13a_2766",
+      "13a_2777",
+      "13a_2784",
+      "13a_2785",
+      "13a_2805",
+      "13a_2821",
+      "13a_2832",
+      "13a_2834",
+      "13a_2843",
+      "13a_2859",
+      "13a_2865",
+      "13a_2888",
+      "13a_2911",
+      "13a_3065",
+      "13a_3089",
+      "13a_3100",
+      "13a_3310",
+      "13a_3531",
+      "13a_3601",
+      "13a_3691",
+      "13a_3698",
+      "13a_3704",
+      "13a_3705",
+      "13a_3716",
+      "13a_3784",
+      "13a_3902",
+      "13a_3963",
+      "13a_3975",
+      "13a_3981",
+      "13a_4057",
+      "13a_4080",
+      "13a_4091",
+      "13a_4093",
+      "13a_4101",
+      "13a_4104",
+      "13a_4106",
+      "13a_4113",
+      "13a_4156",
+      "13a_4185",
+      "13a_419",
+      "13a_4191",
+      "13a_4198",
+      "13a_4200",
+      "13a_4207",
+      "13a_4216",
+      "13a_4232",
+      "13a_4293",
+      "13a_4320",
+      "13a_4322",
+      "13a_434",
+      "13a_438",
+      "13a_4385",
+      "13a_4390",
+      "13a_4392",
+      "13a_4396",
+      "13a_443",
+      "13a_4461",
+      "13a_4465",
+      "13a_4508",
+      "13a_4510",
+      "13a_4556",
+      "13a_4565",
+      "13a_4571",
+      "13a_4579",
+      "13a_4580",
+      "13a_4624",
+      "13a_4655",
+      "13a_4756",
+      "13a_4796",
+      "13a_48",
+      "13a_4810",
+      "13a_4820",
+      "13a_4835",
+      "13a_4836",
+      "13a_571",
+      "13a_576",
+      "13a_584",
+      "13a_586",
+      "13a_589",
+      "13a_60",
+      "13a_644",
+      "13a_645",
+      "13a_65",
+      "13a_653",
+      "13a_661",
+      "13a_666",
+      "13a_670",
+      "13a_796",
+      "13a_82",
+      "13a_859",
+      "13a_901",
+      "13a_933",
+      "13a_983"
+    ],
+    "range_knots": [
+      "11a_354",
+      "12a_1037",
+      "12a_1097",
+      "12a_1113",
+      "12a_156",
+      "12a_392",
+      "13a_2129",
+      "13a_2767",
+      "13a_3176",
+      "13a_3595",
+      "13a_4088",
+      "13a_4196",
+      "13a_4214",
+      "13a_4233",
+      "13a_4304",
+      "13a_4454",
+      "13a_4493",
+      "13a_4554",
+      "13a_4773",
+      "13a_4781",
+      "13a_4790",
+      "13a_4813",
+      "13a_4840",
+      "13a_4842",
+      "13a_4851",
+      "13a_4853",
+      "13a_4855",
+      "13a_4869",
+      "13a_4871",
+      "13a_4872"
+    ],
+    "source_url": "https://arxiv.org/html/2608.25256v1"
+  },
+  "incomparable_intervals": [
+    {
+      "baseline": [
+        1,
+        3
+      ],
+      "knot": "13n_197",
+      "paper": [
+        2,
+        3
+      ],
+      "relation": "overlapping_incomparable",
+      "september": [
+        1,
+        2
+      ]
+    },
+    {
+      "baseline": [
+        1,
+        3
+      ],
+      "knot": "13n_41",
+      "paper": [
+        2,
+        3
+      ],
+      "relation": "overlapping_incomparable",
+      "september": [
+        1,
+        2
+      ]
+    },
+    {
+      "baseline": [
+        1,
+        4
+      ],
+      "knot": "13n_4588",
+      "paper": [
+        2,
+        4
+      ],
+      "relation": "overlapping_incomparable",
+      "september": [
+        1,
+        3
+      ]
+    }
+  ],
+  "input_sha256": {
+    "results/comparison/gebel_prangley_2026.json": "7fec51b02e7d46116a6df91d3dce81e6e9778cdaa463b3c22b08e8f0a13c32a2",
+    "results/comparison/gebel_prangley_source_verification.json": "92b8ab5667cabfef2b3ac844e14dd3d863d007425486eb092474be118409da1d",
+    "results/comparison/releases/manifest.json": "8a74df1e7de3d541b9ab874af3150a87ff36b78c49b38f1f3442da5f91d21dd3",
+    "results/crossing_changes/dataset_v2.json.gz": "f1406df00e2aadd09d9dd81542893e830fc3d020045ceb035f0ed2df8454a694",
+    "results/crossing_changes/mccoy_alternating_all_2026-09-08.json": "0d8457358ecfa7bc978f02b47d3f896f097adb3f32be8578b958d464247941cb",
+    "results/crossing_changes/mccoy_alternating_u1_2026-09-08.json": "e7ac801a06f4f78ef8e845889efdd3c50000c7f9705569ae481d6b459e089b5f",
+    "results/dkt/knotinfo_rollback_list_2026-09-07.csv": "c406637915d8c50529a03717105bc1ff7291727b4a6dc279a24ecf64e22714aa",
+    "results/paper_v1_1_manifest.json": "5800881c2895cfb28e7963577d90ba492b544106c60a0cfe87b633ce7a45ab94",
+    "results/paper_v1_1_snapshot.json": "f9841832d9f990692b9472759dc087dc76b8d967e178ed8317551ffc1a13f909"
+  },
+  "interpretation": [
+    "The 1227 count refers to exact determinations relative to the historical baseline; it is not a count of previously unpublished values.",
+    "The September package has exact entries for 200 of these knots: 194 agree and six disagree. The other 1027 entries are unresolved in that package.",
+    "The 194 agreeing exact entries coincide exactly with the knots in Theorems 1 and 2 of Gebel--Prangley; their 30 Theorem 3 ranges also agree with the reconstruction.",
+    "Seven disjoint intervals require explicit reconciliation; no contradictory release range is silently intersected with a proved lower bound.",
+    "Excluding the seven conflicts, 97 retained upper bounds exceed the September bounds: 94 intervals are strictly weaker and three have a stronger lower bound but a weaker upper bound.",
+    "McCoy verification is a consistency audit of deposited computations and tabulated release inputs, not a new scan of all diagrams. The crossing dataset covers 3105 of the 3627 knots and agrees on every stored unknotting-crossing list."
+  ],
+  "schema_version": 1
+}

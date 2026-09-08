@@ -1,6 +1,6 @@
 # Lower-bound computations
 
-This directory accompanies **How to Compute the Unknotting Number: Theory and Computation**, Sections 3 and 5.1. The subsections of Section 3 are unnumbered; the names below identify the corresponding arguments. Every obstruction is a necessary condition for an unknotting sequence. A passing test does not prove an upper bound, and a resource limit supplies no obstruction.
+This directory accompanies **Computation of Unknotting Numbers: Which Knot Breaks the Bernhard–Jablan Conjecture?**, Sections 3 and 5.1. The subsections of Section 3 are unnumbered; the names below identify the corresponding arguments. Every obstruction is a necessary condition for an unknotting sequence. A passing test does not prove an upper bound, and a resource limit supplies no obstruction.
 
 | Script | Location in the paper | Mathematical role |
 |---|---|---|

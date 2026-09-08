@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Compare the separately supplied v1.1 LaTeX source to the frozen computations.
+"""Compare separately supplied v1.1 or v1.2 LaTeX to the frozen computations.
 
 This checks numerical consistency and transcription, not the validity of the
 mathematical proofs. The parser expects the manuscript's current table syntax;
@@ -8,51 +8,48 @@ No manuscript file is written.
 """
 from __future__ import annotations
 import argparse
-from collections import Counter
 from fractions import Fraction
-import gzip
 import json
 from pathlib import Path
 import re
-from consolidate_results import RESULTS, primary_tag, read_json, reconstruct
+from consolidate_results import (RESULTS, comparison_counts, comparison_report,
+                                 manuscript_counts, manuscript_tex, read_json, reconstruct)
 
 
-def manuscript_counts(consolidated, table):
-    """Read the manuscript's numerical premises without generating LaTeX files."""
-    changed = consolidated['changed']
-    totals = consolidated['counts']
-    exact = [r for r in changed.values() if r['new'][0] == r['new'][1]]
-    by_value_method = Counter((r['new'][0], primary_tag(r)) for r in exact)
-    improved_methods = totals['improved_by_primary_method']
-    scan = read_json(RESULTS/'open23/priority_u23_final.json')
-    cyclic = read_json(RESULTS/'cyclic_cover/cyclic_cover_bound_2026-09-07.json')
-    cyclic_degrees = Counter(cyclic[name]['n'] for name, r in changed.items() if primary_tag(r) == 'c')
-    snapshot = read_json(RESULTS/'paper_v1_1_snapshot.json')
-    sig4 = read_json(RESULTS/'owens_rank2/owens_verdicts_sigma4_alternating_2026-09-07.json')
-    with gzip.open(RESULTS/'crossing_changes/dataset_v2.json.gz', 'rt') as stream:
-        data_knots = {r['knot'] for r in json.load(stream)}
-    return {
-        'nChildren': len(scan['children']),
-        'nCyclicNew': sum(cyclic_degrees.values()),
-        'nCyclicThree': cyclic_degrees[3], 'nCyclicFour': cyclic_degrees[4],
-        'nCyclicFive': cyclic_degrees[5], 'nDataKnots': len(data_knots),
-        'nDichotomy': sum(heuristic == 0 for _, _, _, heuristic in scan['zero_candidate_knots']),
-        'nExact': totals['exact'], 'nExactLower': totals['exact_lower'],
-        'nImproved': totals['improved'], 'nImprovedL': improved_methods.get('L', 0),
-        'nImprovedC': improved_methods.get('c', 0), 'nMcCoyKnots': improved_methods.get('K', 0),
-        'nOpenTwoThreeAlt': len(scan['zero_candidate_knots']) + len(scan['knots_with_candidates']),
-        'nRefKnots': len(table),
-        'nSigFourImproved': sum(snapshot[r['name']] == [2, 4] and r['verdict'] == 'OBSTRUCTED' for r in sig4),
-        'nSigFourObstructed': sum(snapshot[r['name']] == [2, 3] and r['verdict'] == 'OBSTRUCTED' for r in sig4),
-        'nSigFourOpen': sum(snapshot[r['name']] == [2, 3] for r in sig4),
-        'nUtwo': totals['exact_by_u']['2'], 'nUtwoL': by_value_method[2, 'L'],
-        'nUtwoM': by_value_method[2, 'M'], 'nUtwoC': by_value_method[2, 'c'],
-        'nUtwoG': by_value_method[2, 'G'],
-        'nUthree': totals['exact_by_u']['3'], 'nUthreeC': by_value_method[3, 'c'],
-        'nUthreeOwens': sum(by_value_method[3, tag] for tag in ('O2', 'a', 'OT', 'g')),
-        'nUfour': totals['exact_by_u']['4'], 'nUfive': totals['exact_by_u']['5'],
-        'nWithCandidates': len(scan['knots_with_candidates']) - len(scan.get('moved_to_tierB_after_resolution', [])),
-    }
+def load_manuscript(path):
+    """Resolve local TeX inputs without executing LaTeX or shell commands.
+
+    The paper's numerical inputs are authenticated by exact regeneration before
+    expansion. A missing or stale file is an error, even if its visible numbers
+    would happen to match a hand-edited copy elsewhere. Inclusion cycles and
+    dynamic paths are rejected rather than silently omitting part of the paper.
+    """
+    path = Path(path).resolve()
+    consolidated, table = reconstruct()
+    expected = manuscript_tex(consolidated, table)
+    inputs = {}
+
+    def expand(source_path, stack):
+        if source_path in stack:
+            raise ValueError(f'Cyclic manuscript input: {source_path}')
+        source = source_path.read_text()
+        # An escaped percent is text, not the beginning of a TeX comment.
+        source = re.sub(r'(?<!\\)%[^\n]*', '', source)
+        def replace(match):
+            name = match[1]
+            if re.search(r'[\\{}]', name):
+                raise ValueError(f'Dynamic manuscript input is unsupported: {name}')
+            target = (path.parent / name).resolve()
+            if not target.suffix:
+                target = target.with_suffix('.tex')
+            if target.name in expected and 'paper_v1_2' in target.parts:
+                require(target.read_text() == expected[target.name],
+                        f'Stale generated manuscript input: {target}')
+                inputs[target.name] = target
+            return expand(target, stack + (source_path,))
+        return re.sub(r'\\input\s*\{([^}]+)\}', replace, source)
+
+    return expand(path, ()), inputs
 
 
 def require(condition, message):
@@ -77,8 +74,15 @@ def verify(tex):
     consolidated, table = reconstruct()
     counts = manuscript_counts(consolidated, table)
     changed = consolidated['changed']
-    macros = {name: int(value.replace('{,}', '')) for name, value in re.findall(
-        r'\\newcommand\{\\(n\w+)\}\{(\d+(?:\{,\}\d+)*)\}', tex)}
+    definitions = re.findall(
+        r'\\newcommand\{\\(n\w+)\}\{(\d+(?:\{,\}\d+)*)\}', tex)
+    require(len(definitions) == len({name for name, _ in definitions}),
+            'Repeated count macro: remove the copied block and retain its generated input')
+    macros = {name: int(value.replace('{,}', '')) for name, value in definitions}
+    # The historical standalone v1.1 source has no release-comparison macros.
+    # If any v1.2 comparison is present, require the complete generated set.
+    if 'nBaselineOverrides' in macros:
+        counts.update(comparison_counts(comparison_report(consolidated, table)))
     require(macros == counts, f'Manuscript count macros disagree: '
             f'{[(k, macros.get(k), counts.get(k)) for k in macros.keys() | counts.keys() if macros.get(k) != counts.get(k)]}')
     sections = re.split(r'\\section\{', tex[tex.index(r'\appendix'):])[1:]
@@ -99,6 +103,15 @@ def verify(tex):
     expected = {name: [record['reference'], record['new']] for name, record in changed.items()
                 if record['new'][0] != record['new'][1]}
     require(entries == expected, 'Appendix E: missing knots or mismatching intervals')
+
+    # Upper-case G denotes Greene's model; lower-case g remains the homology
+    # generator bound. Accept the old notation only for the standalone v1.1
+    # source, which predates the notation change and has no generated inputs.
+    if r'\mathrm{G}' in sections[3]:
+        marked = {knotinfo_name(name) for name in re.findall(
+            r'(\d+[an]\d+)\$\^\{\\mathrm\{G\}\}\$', sections[3])}
+        require(marked == {'12n_491', '13n_3370'},
+                'Appendix D: Greene superscripts do not match the two records')
 
     # These conditional statements must remain separate from exact values.
     scan = read_json(RESULTS/'open23/priority_u23_final.json')
@@ -153,10 +166,13 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--tex', type=Path, required=True)
     args = parser.parse_args()
-    result = verify(args.tex.read_text())
+    source, inputs = load_manuscript(args.tex)
+    result = verify(source)
     print(f"All {result['count_macros']} count macros, {result['appendix_entries']} Appendix A--F entries/ranges, "
           f"{result['pd_certificates']} Appendix G PD certificates, and "
           f"{result['correction_term_classes']} Appendix H correction-term classes agree.")
+    if inputs:
+        print(f'All {len(inputs)} generated numerical inputs agree with exact regeneration.')
 
 
 if __name__ == '__main__':

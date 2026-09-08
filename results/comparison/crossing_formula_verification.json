@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "status": "PASSED",
+  "scope": "Exact rational comparison of stored crossing-change data with the determinant, signature, and self-linking formulas.",
+  "limitations": [
+    "This audit does not recompute knot invariants from the underlying diagrams.",
+    "Agreement between deposited records is a consistency test, not an independent certification of their original computation.",
+    "The u_result=1 labels are archived inputs; passing the Lickorish obstruction does not establish unknotting number one."
+  ],
+  "inputs": {
+    "crossing_dataset": {
+      "path": "results/crossing_changes/dataset_v2.json.gz",
+      "sha256": "f1406df00e2aadd09d9dd81542893e830fc3d020045ceb035f0ed2df8454a694",
+      "bytes": 1439106,
+      "records": 69632
+    },
+    "electrical_records": {
+      "path": "results/crossing_changes/lickorish_electrical_2026-09-07.json",
+      "sha256": "a130061d265207f5cd0b14d3cf62d09711a66179267b15b831e27c7a732e4ffa",
+      "bytes": 11365322,
+      "records": 69632
+    }
+  },
+  "implementation_sha256": "383607f1c8b23d2a9457c10b16745ccc2561eaf11fd22c33196ebb848e71870c",
+  "arithmetic": "fractions.Fraction; exact integers and rational strings only",
+  "execution": "single process; no workers or external topology engines",
+  "counts": {
+    "parent_knots": 5546,
+    "crossing_changes": 69632,
+    "recorded_u_one_rows": 26531
+  },
+  "mismatches": {
+    "positive_tait_sign": 0,
+    "oriented_crossing_sign": 0,
+    "resistance_between_zero_and_one": 0,
+    "resistance_not_one_half": 0,
+    "dual_resistances_sum_to_one": 0,
+    "determinant_from_resistance": 0,
+    "determinant_matches_electrical_record": 0,
+    "signature_change_from_resistance": 0,
+    "self_linking_from_resistance": 0,
+    "recorded_u_one_passes_lickorish": 0
+  },
+  "mismatch_examples": {},
+  "signature_convention": "All parent Tait signs are +1; oriented crossing sign +1 is type II and -1 is type I.",
+  "signature_patterns": [
+    {
+      "oriented_crossing_sign": -1,
+      "resistance_greater_than_one_half": false,
+      "signature_change": 0,
+      "count": 17079
+    },
+    {
+      "oriented_crossing_sign": -1,
+      "resistance_greater_than_one_half": true,
+      "signature_change": -2,
+      "count": 13600
+    },
+    {
+      "oriented_crossing_sign": 1,
+      "resistance_greater_than_one_half": false,
+      "signature_change": 2,
+      "count": 19726
+    },
+    {
+      "oriented_crossing_sign": 1,
+      "resistance_greater_than_one_half": true,
+      "signature_change": 0,
+      "count": 19227
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Upper bounds: diagrams and crossing changes
 
-This directory supports Section 4 of *How to Compute the Unknotting Number: Theory and Computation*. An upper bound is established by an authenticated diagram of the named knot, an explicit sequence of isotopies, and distinct marked crossing changes. The endpoint must be the unknot or a knot with an independently justified upper bound.
+This directory supports Section 4 of *Computation of Unknotting Numbers: Which Knot Breaks the Bernhard–Jablan Conjecture?*. An upper bound is established by an authenticated diagram of the named knot, an explicit sequence of isotopies, and distinct marked crossing changes. The endpoint must be the unknot or a knot with an independently justified upper bound.
 
 The search programs propose such constructions. `run_search.py` uses random walks in embedded Tait graphs, while `cluster/enum_search.py` enumerates diagrams reachable within a chosen crossing budget. `flipdet.py` screens crossing subsets with the matrix determinant lemma modulo a prime. A matching determinant is only a filter: it neither identifies a knot nor detects the unknot. Search exhaustion within a finite move budget gives no lower bound on the unknotting number.
 

@@ -1,6 +1,6 @@
 # Enumeration of equivalent diagrams
 
-This directory contains the enumeration search used with the upper-bound constructions and candidate analysis in Section 4 of *How to Compute the Unknotting Number: Theory and Computation*. Within a chosen crossing budget, the search expands diagrams by pass moves, Reidemeister III moves, flypes, and optional Reidemeister II additions. Canonical codes avoid repeated screening. The search can propose a sequence of crossing changes to the unknot or to a partner with a known upper bound.
+This directory contains the enumeration search used with the upper-bound constructions and candidate analysis in Section 4 of *Computation of Unknotting Numbers: Which Knot Breaks the Bernhard–Jablan Conjecture?*. Within a chosen crossing budget, the search expands diagrams by pass moves, Reidemeister III moves, flypes, and optional Reidemeister II additions. Canonical codes avoid repeated screening. The search can propose a sequence of crossing changes to the unknot or to a partner with a known upper bound.
 
 The search kernels use the Python standard library. Local endpoint recognition and certificate verification additionally require the topology environment described in the top-level README.
 

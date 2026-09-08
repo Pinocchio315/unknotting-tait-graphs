@@ -1,6 +1,6 @@
 # Montesinos knots
 
-These programs implement Section 3, **Montesinos knots**, of *How to Compute the Unknotting Number: Theory and Computation*.
+These programs implement Section 3, **Montesinos knots**, of *Computation of Unknotting Numbers: Which Knot Breaks the Bernhard–Jablan Conjecture?*.
 
 A Montesinos knot is the numerator closure of a sum of rational tangles. Its double branched cover is a Seifert fibred space. The code normalizes its rational Seifert invariants and reverses orientation when necessary to obtain a negative-definite star-shaped plumbing. Each noncentral vertex has weight at most minus its valence, so at most the central vertex is bad. The graph hypotheses are checked before applying the plumbing formula.
 

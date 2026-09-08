@@ -1,7 +1,7 @@
-# How to Compute the Unknotting Number: Theory and Computation
+# Computation of Unknotting Numbers: Which Knot Breaks the Bernhard–Jablan Conjecture?
 
 Companion code and deposited computational records for the manuscript by
-Seong-Jin Lee, version 1.1 (September 2026).
+Seong-Jin Lee, version 1.2 (September 2026).
 
 The paper explains how topological obstructions and explicit crossing changes
 work together. An obstruction raises a lower bound for `u(K)`; an unknotting
@@ -62,25 +62,71 @@ records for 21 of 24 targets; an unfinished target is not treated as obstructed.
 
 ## Inputs and provenance
 
-[`results/paper_v1_1_snapshot.json`](results/paper_v1_1_snapshot.json) freezes the
-12,965 comparison ranges used by the manuscript. It is an archived collection
-of input ranges, **not an unmodified export of a currently installed database**.
-The [manifest](results/paper_v1_1_manifest.json) records the source and SHA-256
-checksum of every input used in consolidation.
+[`results/paper_v1_1_snapshot.json`](results/paper_v1_1_snapshot.json) freezes a
+**historical research baseline**, assembled on September 8, 2026, for the
+12,965 knots in the study. It starts with the `database_knotinfo` 2026.8.1
+package ranges and restores the April 2026 ranges for the 104 knots listed
+in the deposited override file. Of these, 27 also have their lower bound
+restored from two to one. It is **not an unmodified KnotInfo release**.
+The [input manifest](results/paper_v1_1_manifest.json) authenticates the
+mathematical records used in consolidation; the
+[release audit](results/comparison/baseline_comparison.json) explains and
+reconstructs the comparison baseline.
 
-The 27 McCoy records explicitly store their original `[1,b]` input ranges.
-The frozen comparison retains those ranges, so the corresponding improvements
-to `[2,b]` are counted once, as in Appendix E. An older deposited aggregate had
-already incorporated these lower bounds and therefore counted only 149 further
-improvements. Historical aggregates remain intact; use the v1.1 pipeline below
-for the current paper.
+The historical baseline differs from the public package snapshots 2026.6.1
+and 2026.9.1 in 150 and 328 entries, respectively. Frozen extracts of the
+April, June, August, and September releases include public wheel URLs,
+SHA-256 hashes, package upload times, and original range fields. Reproduce
+the comparison without installing or querying any live database:
+
+```bash
+python audit_knotinfo_releases.py --verify
+```
+
+Among the 1,227 historical-baseline exact determinations, the September
+package has **194 agreeing exact values, six conflicting exact values,
+and 1,027 unresolved entries**. Thus 200 entries are already exact in that
+package, but only 194 agree. These are database comparisons, not a claim
+that all remaining values are previously unpublished. The 194 agreeing
+exact values are precisely the values in Gebel–Prangley; their 30 improved
+lower bounds also agree with the deposited computations. Including the
+non-exact range for `13a_650`, there are seven disjoint intervals:
+
+| Knot | Computed interval | Package 2026.9.1 |
+| --- | ---: | ---: |
+| `12a_107` | 4 | 3 |
+| `13a_15` | 3 | 2 |
+| `13a_55` | 3 | 2 |
+| `13a_422` | 3 | 2 |
+| `13a_568` | 3 | 2 |
+| `13a_650` | [3,4] | 2 |
+| `13a_660` | 4 | 3 |
+
+These disagreements are explicitly recorded in the paper and audit; the
+pipeline never intersects incompatible intervals and calls the result an
+improvement. Outside these seven conflicts, 97 retained upper bounds are
+larger than those in the September package: 94 intervals are strictly
+wider, and three have a stronger lower bound but a weaker upper bound.
+The historical comparison is retained for reproducibility, while the
+release comparison makes these limitations visible.
+
+The 27 McCoy improvements are improvements against this historical
+baseline only: all 27 lower bounds were already two in the June package.
+The larger deposited McCoy computation checks all 3,627 alternating knots
+with April lower bound one. It finds an unknotting crossing for exactly the
+710 knots recorded with `u = 1`, and none for the other 2,917 knots, whose
+June lower bounds are two. This is an independent verification of those
+recorded bounds, not 2,917 newly determined values. The separate crossing
+dataset covers 3,105 of this cohort and agrees with every deposited
+unknotting-crossing list in that overlap.
 
 The comparison snapshot retains `[1,3]` for `13n_3370`. Its independently
 published upper bound two is recorded in
 [`brittenham_hermiller_upper_bounds.json`](results/bernhard_jablan/brittenham_hermiller_upper_bounds.json),
 with the original DT code and the crossing change to `11n_21`. Consolidation
 keeps this source distinct from the new Greene lower bounds. Both new exact
-values use method tag `G`; Appendix D marks them with superscript `g`.
+values use method tag `G`; Appendix D marks them with superscript `G`.
+Lower-case `g` continues to denote the homology generator bound.
 
 The computational scripts use the `database_knotinfo==2026.8.1` snapshot for
 knot diagrams and invariants. Reporting reads only the frozen deposited inputs;
@@ -114,15 +160,28 @@ python consolidate_results.py
 ```
 
 This writes `generated/consolidated.json`, `generated/u_table.json`,
-and `generated/counts.json`, including all 21 values with `u = 5`.
-Neither manuscript version nor a deposited result file is overwritten.
+and `generated/counts.json`, including both Greene cases and all 21 values
+with `u = 5`. It also regenerates the 29 result macros, 21 release-comparison macros,
+and the rows of the lower-bound summary, the release-discrepancy table, and Appendices A–F
+in `generated/paper_v1_2/`. The v1.2 manuscript uses these
+files directly through `\input`; counts and table entries are not copied
+into the manuscript. Layout, table legends, and mathematical explanations
+remain in the manuscript. Neither a manuscript nor a deposited result file
+is overwritten. Old files under `generated/appendix_tables/` are historical
+outputs of a removed generator and are not used by this pipeline.
 
 If the LaTeX manuscript is available separately, its actual entries and marked
 PD codes and correction-term tables can also be compared with the deposited data:
 
 ```bash
-python verify_manuscript.py --tex /path/to/main_v1.1.tex
+python verify_manuscript.py --tex /path/to/main_v1.2.tex
 ```
+
+The verifier resolves local `\input` files, rejects stale generated inputs,
+and compares all appendix entries, marked PD codes, and correction-term
+values with the deposited records. It also accepts the standalone v1.1 source.
+To compile v1.2, keep the repository as the adjacent `code/` directory or
+adjust the manuscript input paths after regenerating the files.
 
 The consolidation pipeline needs only the Python standard library. It rejects a
 changed source checksum, an unknown knot name, conflicting completed verdicts,
@@ -137,6 +196,8 @@ python upper_bounds/selftest.py
 python upper_bounds/verify_presentation_diagrams.py
 python upper_bounds/verify_braid_certificate.py
 python upper_bounds/verify_bj_upper_bounds.py
+python audit_crossing_formulas.py
+python audit_11a14_figure.py
 python lower_bounds/owens/validate.py
 python lower_bounds/owens/crosscheck.py 11a_63 13a_16 9_10 8_5
 ```
@@ -158,6 +219,30 @@ python upper_bounds/verify_certificates.py results/witness_chains --paper --out 
 Campaign verification and verification of the final presentation PD codes are
 separate tasks. Some identifications use SnapPy's numerical isometry routines;
 these should not be described as interval-certified proofs of homeomorphism.
+`audit_crossing_formulas.py` compares all 69,632 stored crossing changes
+from 5,546 parent knots with the determinant, signature, dual-resistance,
+and self-linking formulas in exact rational arithmetic. The deposited
+[audit summary](results/comparison/crossing_formula_verification.json)
+records zero mismatches and hashes both input files. This is a comparison
+of stored records; it does not recompute their invariants or certify their
+knot identifications. The command prints its result and writes a file only
+when `--out PATH` is supplied.
+
+`audit_11a14_figure.py` freshly replays three exterior comparisons for the
+published `11a_14` figure using the PD codes in
+[`11a14_figure_verification.json`](results/comparison/11a14_figure_verification.json).
+It compares the left diagram with `11a_14`, its boxed crossing change with
+`8_8`, and the right diagram with `10_129`. These are SnapPy floating-point
+canonical isometries, allowing mirrors, with at most 12 attempts per pair;
+they are not interval-certified identifications. Exact integer Jones state
+sums on the small 8- and 10-crossing reference diagrams separately verify
+`V_8_8(t^-1) = V_10_129(t)`. The unknotting numbers two and one for those
+references are explicitly dated tabulated inputs. The default command
+reads the deposited inputs and writes nothing; `--write` deliberately
+refreshes the record. No live KnotInfo access is needed. This diagnostic
+concerns the displayed crossing change, not every upper bound in the
+104-entry baseline override list.
+
 The regression tests exercise mathematical kernels and known examples; they do
 not rerun every deposited obstruction or identify every Appendix F crossing neighbor.
 
@@ -171,9 +256,9 @@ updating the frozen inputs and manuscript counts.
 ```bibtex
 @misc{Lee2026,
   author = {Lee, Seong-Jin},
-  title = {How to Compute the Unknotting Number: Theory and Computation},
+  title = {Computation of Unknotting Numbers: Which Knot Breaks the Bernhard–Jablan Conjecture?},
   year = {2026},
-  note = {Manuscript, version 1.1; accompanying code and computational data},
+  note = {Manuscript, version 1.2; accompanying code and computational data},
   url = {https://github.com/Pinocchio315/unknotting-tait-graphs}
 }
 ```

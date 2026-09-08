@@ -1,6 +1,6 @@
 # Crossing changes in alternating diagrams
 
-This directory supports Sections 3–5 of *How to Compute the Unknotting Number: Theory and Computation*. It studies the knots obtained by changing each crossing of an alternating diagram, and it supplies McCoy tests and the conditional Bernhard–Jablan analysis in Section 5.2.
+This directory supports Sections 3–5 of *Computation of Unknotting Numbers: Which Knot Breaks the Bernhard–Jablan Conjecture?*. It studies the knots obtained by changing each crossing of an alternating diagram, and it supplies McCoy tests and the conditional Bernhard–Jablan analysis in Section 5.2.
 
 The electrical description in Section 4 uses a positive-definite Goeritz matrix `G`. Changing an edge with incidence vector `x` gives `G - 2xxᵀ`; effective resistance is `xᵀG⁻¹x`. Determinant and linking-pairing updates are evaluated exactly. `sig.py` implements the Gordon–Litherland formula with exact rational inertia, including its type-II correction, so a floating-point eigenvalue tolerance cannot change a signature bound.
 
@@ -9,6 +9,17 @@ The electrical description in Section 4 uses a positive-definite Goeritz matrix 
 Canonical diagram codes, numerical SnapPy isometries against named KnotInfo diagrams, and identified factors in a diagrammatic connected-sum decomposition provide separate identification routes. Matching a determinant and a Jones polynomial is only a hypothesis. `candidates.py` keeps that hypothesis in a separate classification and prevents it from becoming a verified upper-bound witness. Likewise, a decomposition with only one nontrivial factor does not justify the lower bound for a nontrivial connected sum.
 
 The Appendix F candidate classification is conditional on the Bernhard–Jablan conjecture and the recorded identification and bound premises. It does not establish `u = 3` unconditionally. A failure to find an unknotting crossing in a general diagram does not supply a lower bound. The special alternating case is treated separately by McCoy's theorem.
+
+The published `11a_14` figure can be checked with
+`python audit_11a14_figure.py` from the repository root. This read-only
+command replays three numerical exterior comparisons from deposited PD
+codes: the left diagram represents `11a_14`, its boxed crossing change
+leads to `8_8`, and the right diagram represents `10_129`, allowing mirrors.
+SnapPy uses floating-point canonical isometries, not interval certification.
+A separate exact Jones state sum on the small reference diagrams verifies
+`V_8_8(t^-1) = V_10_129(t)`; it is not used for identification. The dated
+reference values and the scope of this single-figure diagnostic are stored
+in `results/comparison/11a14_figure_verification.json`.
 
 ## McCoy verification
 
@@ -21,7 +32,32 @@ python crossing_changes/mccoy_u1_check.py --all /path/to/archived-wheel --out ge
 python -m unittest discover -s tests -p test_upper_bounds.py -v
 ```
 
-The optional `--all` command reads the named archived April 2026 database wheel and is a separate historical comparison; it is not needed to reproduce the manuscript snapshot. Choose names actually present among the frozen targets for a bounded subset. New McCoy output goes to `generated/` unless an output path is explicitly supplied.
+The deposited full computation covers all 3,627 alternating knots whose
+April 2026 package lower bound was one. Exactly 710 have a recorded
+unknotting crossing; the other 2,917 have none, agreeing with the lower
+bounds two already recorded in June. The 27 changes in the historical
+baseline are a subset of these 2,917 verifications and are not new lower
+bounds relative to June. The separate crossing dataset covers 3,105 knots
+in the cohort and agrees with every stored unknotting-crossing list in
+that overlap; the other 522 rely on the deposited full McCoy computation.
+
+`python audit_knotinfo_releases.py --verify` checks this comparison from
+frozen public range extracts and deposited records, without restarting a
+search. The optional `--all` command above instead reruns the computation
+from the named April wheel. Choose names actually present among the frozen
+targets for a bounded subset. New McCoy output goes to `generated/` unless
+an output path is explicitly supplied.
+
+## Crossing-formula audit
+
+From the repository root, run `python audit_crossing_formulas.py` to compare
+the determinant, signature, dual-resistance, and self-linking formulas with
+all 69,632 deposited crossing changes from 5,546 parent knots. The audit uses
+exact rational arithmetic and reports zero mismatches for the frozen inputs.
+It records hashes identifying the compared inputs and checks stored values;
+it does not recompute diagrams or establish their knot identifications.
+Output is printed unless `--out PATH` is explicitly supplied. The deposited
+summary is `results/comparison/crossing_formula_verification.json`.
 
 ## Pipeline files
 
