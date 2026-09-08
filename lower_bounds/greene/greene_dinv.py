@@ -153,13 +153,31 @@ class Diagram:
 
     def spinc_index(self, labels):
         """index the classes [v] in coker(G_W) = Z/D by multiples of one generator; returns (index dict, lam)"""
-        # generator: the class of a standard basis vector of order D
+        # A generator of the cyclic cokernel, as a vector so that its self-pairing is available.  The
+        # standard basis vectors are tried first, in order, so a diagram that was already labelled keeps
+        # exactly the labelling it had; only diagrams with no generating basis vector reach the wider
+        # search over vectors with entries in {-1, 0, 1}, which is what a cyclic group always admits.
+        def _order(vec):
+            lab = tuple(int(t) % self.D for t in (self.adj * vec))
+            for o in range(1, self.D + 1):
+                if all((o * t) % self.D == 0 for t in lab):
+                    return o, lab
+            return None, lab
+        g = glab = None
         for k in range(self.m):
-            e = sympy.zeros(self.m, 1); e[k] = 1; lab = tuple(int(t) % self.D for t in (self.adj * e))
-            order = next(o for o in range(1, self.D + 1) if all((o * t) % self.D == 0 for t in lab))
+            e = sympy.zeros(self.m, 1); e[k] = 1
+            order, lab = _order(e)
             if order == self.D:
-                g = e; glab = lab; break
-        else:
+                g, glab = e, lab; break
+        if g is None:
+            for coefficients in itertools.product((0, 1, -1), repeat=self.m):
+                if not any(coefficients):
+                    continue
+                v = sympy.Matrix(self.m, 1, list(coefficients))
+                order, lab = _order(v)
+                if order == self.D:
+                    g, glab = v, lab; break
+        if g is None:
             return None, None
         index = {tuple((j * t) % self.D for t in glab): j for j in range(self.D)}
         lam = Fraction(int((g.T * self.adj * g)[0]), self.det) % 1
