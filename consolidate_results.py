@@ -461,30 +461,6 @@ def manuscript_counts(consolidated, table, results=RESULTS):
             sweep[role, 'verdict_' + row['verdict']] += 1
             if row['verdict'] == 'OBSTRUCTED': sweep[role, row['test']] += 1
     greene_exact = sum(count for (value, tag), count in by_value_method.items() if tag == 'G')
-    # Sigma_2(A # B) = Sigma_2(A) # Sigma_2(B), so the generator bound of the double branched cover is
-    # additive.  Where it is sharp for both summands, the unknotting number of the connected sum is
-    # forced; these are the knots for which that happens.
-    import ast as _ast, database_knotinfo as _dk
-    kinfo = {r['name']: r for r in _dk.link_list() if str(r.get('crossing_number', '')).strip().isdigit()}
-    def _g2(name):
-        raw = str(kinfo[name].get('torsion_numbers', '')).strip()
-        if not raw:
-            return None
-        try:
-            factors = dict((int(m), list(f)) for m, f in _ast.literal_eval(raw))
-        except (SyntaxError, ValueError, TypeError):
-            return None
-        return None if 2 not in factors else sum(1 for x in factors[2] if x != 1)
-    sharp = [n for n, v in table.items() if v[0] == v[1] >= 1 and n in kinfo and _g2(n) == v[0]]
-    sharp_u1 = sum(1 for n in sharp if table[n][0] == 1)
-    u1_scan, u1_open, u1_with, u1_open_with = {}, {}, 0, 0
-    if consolidated.get('manuscript') == 'v1.3':
-        u1_scan = read_json(results/'crossing_changes/u1_minimal_diagram_scan_2026-09-08.json')
-        u1_open = read_json(results/'crossing_changes/u1_open_diagram_scan_2026-09-08.json')
-        u1_with = sum(bool(r['unknotting_crossings']) for r in u1_scan.values())
-        u1_open_with = sum(bool(r['unknotting_crossings']) for r in u1_open.values())
-        if any(r['undecided'] for r in u1_scan.values()) or any(r['undecided'] for r in u1_open.values()):
-            raise ValueError('An undecided crossing change leaves the minimal-diagram scan incomplete')
     counts = {
         'nChildren': len(scan['children']),
         'nCyclicNew': sum(cyclic_degrees.values()),
@@ -523,20 +499,13 @@ def manuscript_counts(consolidated, table, results=RESULTS):
         'nSweepExact': greene_exact, 'nSweepImproved': improved_methods.get('G', 0),
         'nSweepNewExact': sum(1 for r in exact if primary_tag(r) == 'G'
                             and 'greene/sweep_2026-09-08.jsonl.gz' in r['sources']),
-        'nSharpGenerator': len(sharp), 'nSharpGeneratorUone': sharp_u1,
-        'nSharpGeneratorAdded': sum(1 for n in sharp if snapshot.get(n, [0, 9])[0] != snapshot.get(n, [0, 9])[1]),
-        'nSharpGeneratorSums': len(sharp) * (len(sharp) + 1) // 2,
-        'nSharpGeneratorSumsNontrivial': (len(sharp) * (len(sharp) + 1) // 2
-                                          - sharp_u1 * (sharp_u1 + 1) // 2),
-        'nUoneVerified': len(u1_scan), 'nUoneWithCrossing': u1_with,
-        'nUoneOpenScanned': len(u1_open), 'nUoneOpenWithCrossing': u1_open_with,
         'nSweepUoneTargets': sum(1 for e in frozen['targets'].values() if e['test'] == 'u1'),
         'nSweepRankTargets': sum(1 for e in frozen['targets'].values() if e['test'] != 'u1'),
     }
 
     if consolidated.get('manuscript') != 'v1.3':
         counts = {k: v for k, v in counts.items()
-                  if not k.startswith('nUone') and k != 'nDichotomyHeuristic'}
+                  if k != 'nDichotomyHeuristic'}
     if not consolidated.get('manuscript', 'v1.3').startswith('v1.3'):
         counts = {k: v for k, v in counts.items() if not k.startswith('nSweep')}
     return counts

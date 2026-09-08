@@ -72,12 +72,6 @@ whose exclusions would require unverified Jones-only identifications. The last
 group consists of 39 entries in the heuristic list and seven further proposed
 composites; none enters the proved dichotomy count.
 
-A separate scan examines **one tabulated minimal diagram per knot**. It finds
-an unknotting crossing for all 1,516 knots recorded with `u=1`, and none in the
-chosen diagrams of 546 knots with unresolved lower-end-one ranges. For a
-nonalternating knot, a negative result in this one diagram says nothing about
-other minimal diagrams and does not exclude unknotting number one.
-
 ## Inputs and provenance
 
 [`results/paper_v1_1_snapshot.json`](results/paper_v1_1_snapshot.json) freezes a

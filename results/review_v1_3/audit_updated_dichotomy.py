@@ -95,6 +95,11 @@ def main():
         records = [r for r in unresolved if r['knot'] == parent]
         assert records and all(r['verdict'][0] == 'composite(jones)' for r in records)
         assert parent not in rigorous
+    flypes = {r['knot']: r for r in map(json.loads,
+        (ROOT / 'results/open23/flype_orbit_check.jsonl').read_text().splitlines())}
+    assert rigorous <= set(flypes)
+    orbit_unresolved = {k: len(flypes[k]['candidates']) for k in sorted(rigorous)
+                        if flypes[k]['candidates']}
     report = {
         'rows_sha256': hashlib.sha256(new_bytes).hexdigest(),
         'crossing_rows': len(new), 'parents': len(by_knot),
@@ -111,9 +116,11 @@ def main():
         'candidate_parent_list': len(final['knots_with_candidates']),
         'jones_only_moved_parents': sorted(moved),
         'jones_only_zero_candidate_parents': sum(r[3] != 0 for r in final['zero_candidate_knots']),
+        'rigorous_parents_with_unresolved_supplementary_orbit_identifications': orbit_unresolved,
         'limits': ['Existing numerical SnapPy identifications are inherited evidence.',
                    'This audit verifies classification and dependence on the separately audited Greene bounds.',
-                   'The seven Jones-only moved parents are not included among the 959 proved dichotomies.']}
+                   'The seven Jones-only moved parents are not included among the 959 proved dichotomies.',
+                   'Five supplementary flype checks retain unidentified neighbours; the reference-diagram exclusions and flyping lemma establish their dichotomies.']}
     (HERE / 'updated_dichotomy_audit.json').write_text(json.dumps(report, indent=2) + '\n')
     print({k: v for k, v in report.items() if k not in
            {'changed_intervals', 'new_parent_dependencies', 'limits'}})

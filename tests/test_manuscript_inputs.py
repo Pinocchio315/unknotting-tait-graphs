@@ -5,6 +5,7 @@ and LaTeX inclusion. They do not rerun an obstruction or certify its proof.
 """
 from pathlib import Path
 import copy
+import builtins
 import gzip
 import json
 import tempfile
@@ -123,6 +124,19 @@ class ManuscriptInputTests(unittest.TestCase):
         with patch.object(reporting, 'read_json', side_effect=poisoned):
             with self.assertRaisesRegex(ValueError, 'categories overlap'):
                 manuscript_counts(consolidated, table)
+
+    def test_reporting_does_not_read_a_live_database_or_add_unreviewed_sum_counts(self):
+        original_import = builtins.__import__
+        def frozen_import(name, *args, **kwargs):
+            if name == 'database_knotinfo' or name.startswith('database_knotinfo.'):
+                raise AssertionError('Reporting must use authenticated deposited inputs')
+            return original_import(name, *args, **kwargs)
+        with patch('builtins.__import__', side_effect=frozen_import):
+            for version in ('v1.2', 'v1.3'):
+                consolidated, table = reconstruct(manuscript=version)
+                counts = manuscript_counts(consolidated, table)
+                self.assertFalse(any(key.startswith(('nSharpGenerator', 'nCommonPrime', 'nUone'))
+                                     for key in counts))
 
 
 class SweepBookkeepingTests(unittest.TestCase):

@@ -82,6 +82,19 @@ paper. Accordingly, once every crossing in one minimal diagram has a sound
 exclusion, the conditional theorem follows. No heuristic search failure or
 machine-learning classification is being substituted for this implication.
 
+The separate software exploration of flype orbits does retain 201 unresolved
+identifications for five of the 959 certified parents: 13a1002 (32 rows),
+13a1159 (one unidentified row), 13a134 (48 rows), 13a159 (80 rows), and
+13a370 (40 rows). The other four names' rows are Jones-ambiguous composite
+matches. Therefore the supplementary statement that every software orbit
+check has no candidate is too strong. This does **not** invalidate their
+theorem: every crossing of each reference diagram has a sound exclusion,
+and the mathematical flyping lemma already transports the resulting knot
+types to every minimal diagram. The unknown labels arise from repeated
+software identification on other diagrams, not a missing mathematical
+case in the reference-diagram proof. The manuscript was corrected to rely
+on that proof and omit the overstatement about the supplementary checks.
+
 The change in `crossing_changes/paths.py` switches the default lower/upper
 table from the older fixed file to `generated/u_table.json`, with an explicit
 `CC_U_TABLE` override. This is appropriate for propagating the new Greene

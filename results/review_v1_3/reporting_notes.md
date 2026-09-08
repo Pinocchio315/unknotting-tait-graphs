@@ -99,9 +99,25 @@ python verify_manuscript.py --tex ../main_v1.2.tex
 python verify_manuscript.py --tex ../main_v1.3.tex
 ```
 
-The focused reporting suite passed 13 tests, including corruption of a candidate
+The focused reporting suite passed 14 tests, including corruption of a candidate
 set, an omitted comparison, a hidden surviving fit, a repeated job, mixed
 manuscript versions, and attempted promotion of a Jones-only case into the
 certified category. `reporting_audit.json` records all 1,707 transitions and
 the source hashes. Independent mathematical computation checks are documented
 by the other audit files in this directory.
+
+## Final scope requested by the author
+
+The extra proposition about the minimal-diagram search around `13n_1587`
+and the connected-sum discussion were removed from the manuscript at the
+author's request. Their scan and common-prime calculations remain ancillary
+review records. Neither family supplies production macros or a production
+manifest dependency. In particular, the erroneous blanket generator-additivity
+block is archived as rejected code; a correct common-prime experiment is kept
+separately and is not a paper result.
+
+After these removals, the v1.3 verifier checks 68 numerical macros and 4,068
+Appendix A–F entries, with the 959 conditional knots retained. The unchanged
+v1.2 profile still checks 50 macros and 2,209 entries. A further regression
+rejects a live database import or the reintroduction of either omitted result
+family into manuscript counts; it passed after the final removals.

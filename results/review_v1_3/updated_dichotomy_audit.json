@@ -4985,9 +4985,17 @@
     "13a_473"
   ],
   "jones_only_zero_candidate_parents": 39,
+  "rigorous_parents_with_unresolved_supplementary_orbit_identifications": {
+    "13a_1002": 32,
+    "13a_1159": 1,
+    "13a_134": 48,
+    "13a_159": 80,
+    "13a_370": 40
+  },
   "limits": [
     "Existing numerical SnapPy identifications are inherited evidence.",
     "This audit verifies classification and dependence on the separately audited Greene bounds.",
-    "The seven Jones-only moved parents are not included among the 959 proved dichotomies."
+    "The seven Jones-only moved parents are not included among the 959 proved dichotomies.",
+    "Five supplementary flype checks retain unidentified neighbours; the reference-diagram exclusions and flyping lemma establish their dichotomies."
   ]
 }

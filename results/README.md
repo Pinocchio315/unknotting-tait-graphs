@@ -145,8 +145,8 @@ what remained a stored-result verification.
 | `crossing_changes/dataset_v2.json.gz` and accompanying analyses | Single crossing changes in the reference alternating diagrams, identified children, signatures, determinants, and crossing features |
 | `open23/priority_u23_final.json` | Current Appendix F input: 959 rigorous conditional cases; 46 other parents rely on Jones-only identifications and are excluded |
 | `open23/priority_u23_paper_v1_3.json` | Frozen pre-update classification used by the historical reporting profile; distinct from the current 959-knot analysis |
-| `crossing_changes/u1_minimal_diagram_scan_2026-09-08.json` | One tabulated minimal diagram for each of 1,516 knots of known unknotting number one; every chosen diagram has an unknotting crossing |
-| `crossing_changes/u1_open_diagram_scan_2026-09-08.json` | One tabulated minimal diagram for each of 546 unresolved lower-end-one ranges; no unknotting crossing was found in those chosen diagrams |
+| `crossing_changes/u1_minimal_diagram_scan_2026-09-08.json` | Ancillary review data, excluded from the revised manuscript: one tabulated minimal diagram for each of 1,516 knots of known unknotting number one; every chosen diagram has an unknotting crossing |
+| `crossing_changes/u1_open_diagram_scan_2026-09-08.json` | Ancillary review data, excluded from the revised manuscript: one tabulated minimal diagram for each of 546 unresolved lower-end-one ranges; no unknotting crossing was found in those chosen diagrams |
 | Other files in `open23/` | Flype checks, child-knot data, and supplementary exploratory classifications |
 
 The earlier Greene records give `u(12n_491) = u(13n_3370) = 2`. Together with

@@ -61,6 +61,9 @@ summary is `results/comparison/crossing_formula_verification.json`.
 
 ## Pipeline files
 
+The following scan is retained as ancillary review work and is not a claim or
+numerical input of the revised v1.3 manuscript.
+
 `u1_minimal_diagram_scan.py` tests every crossing of one tabulated minimal
 diagram per knot. The archived positive cohort has 1,516 knots and the open
 cohort has 546. A negative result applies only to the chosen diagram; the

@@ -344,8 +344,6 @@
   "comparison/gebel_prangley_2026.json": "7fec51b02e7d46116a6df91d3dce81e6e9778cdaa463b3c22b08e8f0a13c32a2",
   "crossing_changes/dataset_v2.json.gz": "f1406df00e2aadd09d9dd81542893e830fc3d020045ceb035f0ed2df8454a694",
   "crossing_changes/mccoy_alternating_u1_2026-09-08.json": "e7ac801a06f4f78ef8e845889efdd3c50000c7f9705569ae481d6b459e089b5f",
-  "crossing_changes/u1_minimal_diagram_scan_2026-09-08.json": "d4619cd8bf914a40b151e96b0c74a034e42bfd890392aaa03c50fb5f1be37cd4",
-  "crossing_changes/u1_open_diagram_scan_2026-09-08.json": "a461c1200c72a0f98203d71fa99218d5176a227de55cfa9e5216fbe403a87d5f",
   "cyclic_cover/cyclic_cover_bound_2026-09-07.json": "301b33339778569bf069667280fe40a331764273c1d981c68da8666e6ce1a066",
   "generator_bound_2026-08-24.json": "b1b95c34050104a12819d3a64d673953c3a96ad7ad54aab8fc261c95d8087bd0",
   "greene/greene_targets_2026-09-08.json": "ef5789b8477984d9d8a423b392dfe8d2f84659a8c2509f600db0f49ec35e2c38",
