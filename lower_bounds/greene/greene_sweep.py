@@ -115,6 +115,18 @@ def main():
     which = 'controls' if args.controls else 'targets'
     entries = data[which]
 
+    if not args.one:
+        sys.path.insert(0, str(HERE))
+        try:
+            import numpy, sympy                                    # noqa: F401
+            import greene_dinv, half_integral, pin_dinv, greene_ranks   # noqa: F401
+        except Exception as exc:                                   # noqa: BLE001
+            sys.exit(f'the computation modules do not import here: {exc!r}\n'
+                     'the interpreter needs numpy and sympy, and this directory needs greene_dinv.py, '
+                     'half_integral.py, pin_dinv.py, greene_ranks.py and the owens modules '
+                     '(owens_obstruction.py, owens_u3.py, owens_u4.py, linkform.py); '
+                     'build the directory with make_server_package.py')
+
     if args.one:
         print(json.dumps(run_one(entries[args.one]), sort_keys=True), flush=True)
         return
@@ -131,16 +143,21 @@ def main():
     order = order[i::total_shards]
 
     out = args.out or HERE / f'results_{which}_{i}_{total_shards}.jsonl'
-    done = set()
+    CONCLUSIVE = {'OBSTRUCTED', 'PASS', 'UNDECIDED', 'NOT_APPLICABLE'}
+    done, retry = set(), set()
     if out.exists():
         for line in out.read_text().splitlines():
             try:
-                done.add(json.loads(line)['name'])
+                record = json.loads(line)
             except Exception:
-                pass
+                continue
+            (done if record.get('verdict') in CONCLUSIVE else retry).add(record['name'])
+    retry -= done
     todo = [n for n in order if n not in done]
-    print(f'{which}: {len(order)} in shard {i}/{total_shards}, {len(done & set(order))} already recorded, '
-          f'{len(todo)} to run, {args.workers} workers -> {out}', flush=True)
+    again = len(retry & set(order))
+    print(f'{which}: {len(order)} in shard {i}/{total_shards}, {len(done & set(order))} already settled, '
+          f'{again} to retry after an error or timeout, {len(todo)} to run, '
+          f'{args.workers} workers -> {out}', flush=True)
 
     def work(name):
         started = time.time()
