@@ -156,7 +156,9 @@ class Diagram:
         # A generator of the cyclic cokernel, as a vector so that its self-pairing is available.  The
         # standard basis vectors are tried first, in order, so a diagram that was already labelled keeps
         # exactly the labelling it had; only diagrams with no generating basis vector reach the wider
-        # search over vectors with entries in {-1, 0, 1}, which is what a cyclic group always admits.
+        # bounded search over vectors with entries in {-1, 0, 1}. If no generator
+        # is found, the caller stops without producing a bound; no claim of
+        # completeness for this bounded generator search is needed.
         def _order(vec):
             lab = tuple(int(t) % self.D for t in (self.adj * vec))
             for o in range(1, self.D + 1):

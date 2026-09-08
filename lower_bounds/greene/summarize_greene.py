@@ -28,14 +28,16 @@ def load(paths):
         if not path.exists():
             continue
         files += 1
-        for line in path.read_text().splitlines():
+        for lineno, line in enumerate(path.read_text().splitlines(), 1):
+            if not line.strip():
+                continue
             try:
                 record = json.loads(line)
-            except json.JSONDecodeError:
-                continue
+            except json.JSONDecodeError as exc:
+                raise ValueError(f'{path}:{lineno}: malformed result record') from exc
             name = record.get('name')
             if name is None:
-                continue
+                raise ValueError(f'{path}:{lineno}: result record has no knot name')
             record['source_file'] = path.name
             old = best.get(name)
             if old is None:
@@ -59,7 +61,10 @@ def main():
     args = ap.parse_args()
 
     data = json.loads(args.targets.read_text())
-    records, clashes, files = load(args.files)
+    try:
+        records, clashes, files = load(args.files)
+    except ValueError as exc:
+        ap.error(str(exc))
     print(f'{files} result files, {len(records)} knots\n')
 
     if clashes:
@@ -87,7 +92,10 @@ def main():
                           'missing': missing}
         print()
 
-    bad = sorted(n for n, r in records.items() if r.get('control_ok') is False)
+    # The frozen control list, not an optional flag supplied by a worker,
+    # determines whether an obstruction contradicts an adopted exact value.
+    bad = sorted(n for n, r in records.items() if r.get('control_ok') is False
+                 or (n in data['controls'] and r['verdict'] == 'OBSTRUCTED'))
     if bad:
         print('*** CONTROLS OBSTRUCTED: the implementation contradicts a known unknotting number ***')
         print('    ' + ' '.join(bad))
@@ -95,6 +103,12 @@ def main():
     else:
         settled_controls = summary['controls']['settled']
         print(f'control check: no obstructed control among the {settled_controls} settled\n')
+
+    # Never publish a bounds file after detecting inconsistent source records.
+    # In particular, an earlier OBSTRUCTED record must not survive a later PASS
+    # merely because it happened to appear first in the command-line file list.
+    if clashes or bad:
+        sys.exit('No bounds written: resolve conflicting verdicts or obstructed controls first')
 
     bounds = {}
     for name, r in sorted(records.items()):
@@ -116,8 +130,6 @@ def main():
         args.out.write_text(json.dumps({'summary': summary, 'contradictions': clashes, 'bounds': bounds},
                                        sort_keys=True, indent=1) + '\n')
         print(f'\nwrote {args.out}')
-    if bad:
-        sys.exit(1)
 
 
 if __name__ == '__main__':

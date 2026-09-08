@@ -6,7 +6,8 @@ RESULTS = os.path.join(ROOT, 'results')
 CC = os.path.join(RESULTS, 'crossing_changes')          # dataset of crossing changes (5,542 alternating knots)
 OPEN23 = os.path.join(RESULTS, 'open23')                # the 833 open alternating [2,3] knots
 WORK = os.environ.get('CC_WORK', os.path.join(CC, 'work'))   # per-shard intermediate files (not deposited)
-U_TABLE = os.path.join(RESULTS, 'u_table_2026-09-07.json')   # name -> [lo, hi] (reference table + our bounds)
+U_TABLE = os.environ.get('CC_U_TABLE',                       # name -> [lo, hi] (comparison table + our bounds);
+                        os.path.join(ROOT, 'generated', 'u_table.json'))   # the consolidation writes this one
 DKT_104 = os.path.join(RESULTS, 'dkt', 'dkt_104.json')
 ALL_CODES = os.path.join(ROOT, 'upper_bounds', 'data', 'all_knot_codes.json')
 RANKING = os.path.join(ROOT, 'experiments', 'ml', 'u23_ranking_2026-09-07.json')

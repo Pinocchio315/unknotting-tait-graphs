@@ -27356,10 +27356,9 @@
    ],
    "settled": 1964,
    "verdicts": {
-    "ERROR": 1,
+    "ERROR": 2,
     "OBSTRUCTED": 1707,
     "PASS": 256,
-    "TIMEOUT": 1,
     "UNDECIDED": 1
    },
    "wanted": 1967

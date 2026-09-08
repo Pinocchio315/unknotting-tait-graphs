@@ -1,0 +1,4370 @@
+{
+ "11n_116": {
+  "alternating": false,
+  "crossing_number": 11,
+  "determinant": 1,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "12n_115": {
+  "alternating": false,
+  "crossing_number": 12,
+  "determinant": 11,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "12n_118": {
+  "alternating": false,
+  "crossing_number": 12,
+  "determinant": 7,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "12n_132": {
+  "alternating": false,
+  "crossing_number": 12,
+  "determinant": 49,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "12n_141": {
+  "alternating": false,
+  "crossing_number": 12,
+  "determinant": 57,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "12n_184": {
+  "alternating": false,
+  "crossing_number": 12,
+  "determinant": 43,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "12n_19": {
+  "alternating": false,
+  "crossing_number": 12,
+  "determinant": 1,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "12n_192": {
+  "alternating": false,
+  "crossing_number": 12,
+  "determinant": 23,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "12n_195": {
+  "alternating": false,
+  "crossing_number": 12,
+  "determinant": 19,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "12n_210": {
+  "alternating": false,
+  "crossing_number": 12,
+  "determinant": 1,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "12n_214": {
+  "alternating": false,
+  "crossing_number": 12,
+  "determinant": 1,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "12n_230": {
+  "alternating": false,
+  "crossing_number": 12,
+  "determinant": 19,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "12n_258": {
+  "alternating": false,
+  "crossing_number": 12,
+  "determinant": 15,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "12n_265": {
+  "alternating": false,
+  "crossing_number": 12,
+  "determinant": 63,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "12n_282": {
+  "alternating": false,
+  "crossing_number": 12,
+  "determinant": 21,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "12n_309": {
+  "alternating": false,
+  "crossing_number": 12,
+  "determinant": 1,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "12n_314": {
+  "alternating": false,
+  "crossing_number": 12,
+  "determinant": 55,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "12n_318": {
+  "alternating": false,
+  "crossing_number": 12,
+  "determinant": 1,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "12n_346": {
+  "alternating": false,
+  "crossing_number": 12,
+  "determinant": 13,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "12n_351": {
+  "alternating": false,
+  "crossing_number": 12,
+  "determinant": 31,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "12n_354": {
+  "alternating": false,
+  "crossing_number": 12,
+  "determinant": 23,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "12n_377": {
+  "alternating": false,
+  "crossing_number": 12,
+  "determinant": 39,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "12n_382": {
+  "alternating": false,
+  "crossing_number": 12,
+  "determinant": 19,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "12n_411": {
+  "alternating": false,
+  "crossing_number": 12,
+  "determinant": 19,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "12n_437": {
+  "alternating": false,
+  "crossing_number": 12,
+  "determinant": 29,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "12n_439": {
+  "alternating": false,
+  "crossing_number": 12,
+  "determinant": 3,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "12n_449": {
+  "alternating": false,
+  "crossing_number": 12,
+  "determinant": 35,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "12n_456": {
+  "alternating": false,
+  "crossing_number": 12,
+  "determinant": 17,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "12n_51": {
+  "alternating": false,
+  "crossing_number": 12,
+  "determinant": 9,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "12n_519": {
+  "alternating": false,
+  "crossing_number": 12,
+  "determinant": 7,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "12n_629": {
+  "alternating": false,
+  "crossing_number": 12,
+  "determinant": 27,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "12n_634": {
+  "alternating": false,
+  "crossing_number": 12,
+  "determinant": 47,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "12n_670": {
+  "alternating": false,
+  "crossing_number": 12,
+  "determinant": 25,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "12n_673": {
+  "alternating": false,
+  "crossing_number": 12,
+  "determinant": 5,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "12n_676": {
+  "alternating": false,
+  "crossing_number": 12,
+  "determinant": 9,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "12n_681": {
+  "alternating": false,
+  "crossing_number": 12,
+  "determinant": 25,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "12n_690": {
+  "alternating": false,
+  "crossing_number": 12,
+  "determinant": 45,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "12n_808": {
+  "alternating": false,
+  "crossing_number": 12,
+  "determinant": 31,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "12n_809": {
+  "alternating": false,
+  "crossing_number": 12,
+  "determinant": 15,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "12n_812": {
+  "alternating": false,
+  "crossing_number": 12,
+  "determinant": 9,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "12n_815": {
+  "alternating": false,
+  "crossing_number": 12,
+  "determinant": 7,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "12n_82": {
+  "alternating": false,
+  "crossing_number": 12,
+  "determinant": 35,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "12n_835": {
+  "alternating": false,
+  "crossing_number": 12,
+  "determinant": 13,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "12n_868": {
+  "alternating": false,
+  "crossing_number": 12,
+  "determinant": 33,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "12n_87": {
+  "alternating": false,
+  "crossing_number": 12,
+  "determinant": 49,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1002": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 43,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1007": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 59,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1010": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 75,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1016": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 3,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1019": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 1,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1021": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 7,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1033": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 101,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1038": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 51,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1041": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 5,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1048": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 59,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1051": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 75,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1057": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 27,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1059": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 27,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1062": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 27,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1073": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 63,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1074": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 33,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1076": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 63,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1078": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 57,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1083": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 69,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1087": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 51,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1090": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 49,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1096": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 1,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1099": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 101,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1122": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 23,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1128": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 39,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1133": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 15,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1134": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 11,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1177": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 15,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1226": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 7,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1231": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 29,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1236": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 35,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1242": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 75,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1245": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 41,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1246": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 3,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_125": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 59,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1269": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 1,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1275": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 75,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1279": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 15,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1281": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 3,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1282": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 27,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1286": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 33,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1287": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 9,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1304": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 41,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1306": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 27,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1307": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 3,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1309": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 27,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1313": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 9,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1314": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 33,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1316": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 9,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1330": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 15,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1331": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 23,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1337": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 51,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1350": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 47,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1351": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 47,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1354": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 35,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1366": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 33,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1371": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 41,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1376": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 41,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1387": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 9,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1389": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 33,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1391": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 9,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1435": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 9,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1441": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 13,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1467": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 21,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1469": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 51,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1474": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 25,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_148": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 49,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1496": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 1,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1505": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 11,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1526": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 39,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1541": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 23,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1550": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 71,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1552": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 93,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1576": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 3,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_158": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 1,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1585": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 27,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1588": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 23,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1607": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 1,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1616": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 49,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1618": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 11,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1619": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 33,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1625": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 67,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1639": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 37,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1646": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 7,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1658": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 27,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1661": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 27,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1671": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 27,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1674": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 9,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1687": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 35,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1690": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 1,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1694": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 47,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1717": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 31,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_172": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 49,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1720": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 19,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1736": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 19,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1739": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 21,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1746": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 31,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1777": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 31,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1780": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 71,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1799": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 69,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1805": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 9,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1810": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 17,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1815": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 59,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1816": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 55,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1830": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 51,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1848": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 33,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1849": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 9,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1868": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 71,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1886": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 23,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1888": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 17,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1899": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 31,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1911": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 7,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1915": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 29,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1944": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 87,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1948": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 59,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1953": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 31,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1957": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 29,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1995": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 1,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_1999": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 3,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2003": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 37,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2004": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 27,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2022": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 3,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2024": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 3,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2033": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 31,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2047": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 7,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2051": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 1,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2066": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 7,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2079": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 43,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2087": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 31,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2093": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 23,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2094": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 27,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2117": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 53,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2122": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 11,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2127": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 11,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2134": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 45,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2135": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 55,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2140": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 1,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_217": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 91,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2181": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 7,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2182": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 3,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2212": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 7,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2222": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 51,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2230": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 29,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2233": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 47,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2248": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 61,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2249": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 61,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2255": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 11,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2256": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 23,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2266": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 11,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_227": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 39,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2276": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 19,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2279": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 21,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2282": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 11,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2295": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 17,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2296": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 21,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2299": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 19,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2300": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 1,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2333": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 17,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2343": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 37,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2344": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 43,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_237": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 33,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2376": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 9,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2381": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 45,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2415": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 5,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2445": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 9,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2454": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 105,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2458": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 21,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2471": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 37,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2475": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 47,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2480": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 19,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2485": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 15,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2513": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 27,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2522": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 1,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2527": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 5,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2533": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 31,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2559": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 47,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2577": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 17,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2592": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 31,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2599": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 15,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2600": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 47,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2611": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 43,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2622": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 5,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2632": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 67,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2638": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 31,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2640": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 47,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2645": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 55,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2648": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 27,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2683": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 27,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2695": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 43,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2719": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 21,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2728": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 15,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_273": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 71,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2734": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 63,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2735": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 11,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2757": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 45,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2769": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 3,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2784": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 5,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2794": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 53,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2798": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 21,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2800": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 37,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2801": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 25,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2828": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 65,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2846": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 17,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_286": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 39,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2872": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 7,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2930": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 27,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2938": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 87,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2943": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 79,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2950": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 9,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_296": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 33,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2968": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 45,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2969": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 3,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2977": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 27,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2992": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 11,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_2995": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 21,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3023": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 53,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3028": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 3,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3067": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 9,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3077": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 1,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3080": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 47,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3088": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 13,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3149": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 61,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_315": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 53,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3162": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 25,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3163": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 19,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3173": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 9,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_318": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 79,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3181": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 61,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3192": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 13,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_322": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 31,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3238": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 17,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3242": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 41,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3247": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 17,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_326": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 95,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3265": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 15,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3287": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 69,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_33": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 23,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_330": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 127,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3301": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 7,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3315": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 45,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3343": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 63,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3346": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 33,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3348": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 11,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3371": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 7,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3402": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 47,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3410": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 79,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3413": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 79,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3428": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 65,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3429": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 33,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_345": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 89,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3451": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 9,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3463": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 9,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3466": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 19,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3469": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 17,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3477": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 47,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3479": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 79,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_348": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 95,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3510": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 9,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3517": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 9,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_352": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 127,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3541": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 31,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3542": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 63,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3545": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 49,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3547": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 11,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3567": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 43,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3577": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 81,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3578": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 49,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_358": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 89,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3582": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 11,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_36": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 19,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3602": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 7,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3624": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 49,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_363": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 67,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3630": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 81,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3646": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 27,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3658": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 45,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3660": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 45,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3661": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 21,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3662": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 27,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3665": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 51,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3677": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 41,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3687": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 47,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_369": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 41,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3690": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 9,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3693": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 11,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3702": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 1,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3741": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 57,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3744": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 111,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3747": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 57,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3750": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 111,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3752": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 79,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3760": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 23,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3764": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 13,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3769": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 79,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3772": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 57,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3775": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 111,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3778": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 57,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3781": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 111,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3782": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 13,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3800": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 25,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3809": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 33,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3812": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 33,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3819": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 47,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3826": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 67,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3828": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 47,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3832": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 67,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3835": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 25,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3842": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 11,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3843": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 21,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3846": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 47,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3847": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 25,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3848": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 47,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3850": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 43,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3851": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 33,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3856": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 11,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3857": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 21,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3861": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 47,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3862": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 33,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3863": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 47,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3864": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 43,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3865": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 25,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3870": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 73,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3871": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 1,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3872": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 1,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3873": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 95,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3874": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 73,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_388": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 13,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3885": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 31,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3886": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 5,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3887": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 17,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3888": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 1,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3892": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 39,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3893": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 33,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3894": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 17,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3895": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 1,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3896": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 39,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3897": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 1,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3898": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 71,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3899": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 71,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3912": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 63,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3933": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 73,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3934": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 1,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3935": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 95,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3936": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 1,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3937": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 73,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3938": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 1,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3939": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 71,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3941": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 71,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3951": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 43,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_396": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 5,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3962": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 47,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3963": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 49,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_397": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 53,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3975": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 31,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3979": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 17,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3981": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 67,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3982": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 119,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_3997": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 41,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_4010": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 23,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_4028": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 79,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_4032": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 23,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_4036": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 71,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_405": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 81,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_4058": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 23,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_4079": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 23,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_4104": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 11,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_4105": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 19,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_4115": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 81,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_412": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 1,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_4132": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 31,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_417": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 81,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_420": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 31,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_4206": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 51,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_4238": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 67,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_4241": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 35,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_4283": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 19,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_4298": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 25,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_4304": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 11,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_4317": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 103,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_4324": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 17,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_4332": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 23,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_4373": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 53,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_4379": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 61,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_4390": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 17,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_4396": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 135,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_440": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 81,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_441": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 87,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_446": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 11,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_4462": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 27,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_4466": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 9,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_4475": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 37,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_4486": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 19,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_449": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 81,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_450": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 31,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_4522": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 35,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_453": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 11,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_4539": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 13,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_456": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 67,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_4571": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 39,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_4572": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 23,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_4578": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 17,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_4582": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 1,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_459": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 19,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_4591": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 1,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_4595": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 15,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_4607": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 29,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_4620": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 21,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_4634": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 19,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_4638": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 29,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_4643": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 31,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_468": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 13,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_4737": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 15,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_475": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 89,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_478": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 11,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_4802": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 45,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_481": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 59,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_4828": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 75,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_487": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 19,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_4934": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 41,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_496": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 41,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_4968": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 31,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_5017": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 9,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_5019": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 27,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_510": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 95,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_514": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 127,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_521": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 89,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_524": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 95,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_526": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 127,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_531": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 89,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_539": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 59,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_543": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 79,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_547": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 31,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_548": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 31,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_557": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 89,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_560": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 27,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_567": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 31,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_571": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 5,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_572": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 9,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_574": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 39,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_577": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 1,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_592": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 3,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_611": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 9,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_612": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 9,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_628": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 3,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_700": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 7,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_715": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 55,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_737": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 49,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_741": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 71,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_743": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 1,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_746": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 35,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_751": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 25,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_761": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 69,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_780": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 43,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_783": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 25,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_786": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 17,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_793": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 49,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_795": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 25,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_800": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 41,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_803": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 55,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_814": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 59,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_826": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 51,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_83": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 23,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_835": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 9,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_840": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 33,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_845": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 3,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_856": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 59,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_860": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 77,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_863": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 3,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_866": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 1,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_872": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 49,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_876": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 27,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_880": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 41,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_882": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 49,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_901": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 7,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_906": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 29,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_911": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 47,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_917": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 1,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_922": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 25,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_925": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 55,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_93": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 69,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_931": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 27,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_936": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 51,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_939": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 49,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_942": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 29,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_948": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 7,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_951": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 27,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_954": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 71,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_955": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 1,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_963": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 33,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_964": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 63,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_966": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 57,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_968": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 69,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_973": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 9,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_975": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 15,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_978": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 87,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_979": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 81,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_985": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 15,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_988": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 27,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_99": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 29,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_996": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 21,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ },
+ "13n_999": {
+  "alternating": false,
+  "crossing_number": 13,
+  "determinant": 3,
+  "unknotting_crossings": [],
+  "undecided": [],
+  "verdict": "none in this diagram"
+ }
+}

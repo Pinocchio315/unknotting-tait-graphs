@@ -1,19 +1,18 @@
-zero-candidate knots (KnotInfo diagram): 838 rigorous 806
-flype-orbit validation on them: knots with a genuine candidate in another minimal diagram: 0 ; with only unidentified/ambiguous results in other diagrams: 3
-mean number of minimal diagrams: 12.5
-|sigma|=4: 386 of which zero-candidate 342 ; |sigma|=2: 450 zero-candidate 350
-mean P(u=3) of the earlier ML ranking: with candidates 0.376 zero-candidate 0.318
-distinct child knots: 112 ; parents covered: 182 ; knots with only unresolved candidates: 7
-   11n_129   [1, 2] parents=15 maxscore=0.674  12a_985, 13a_1503, 13a_1532, 13a_2453, 13a_3515, 13a_374, 13a_393
-   11n_116   [1, 2] parents=10 maxscore=0.849  12a_1085, 12a_1269, 12a_494, 12a_687, 13a_1343, 13a_1526, 13a_2531
-   11n_94    [1, 2] parents= 7 maxscore=0.748  12a_496, 13a_1034, 13a_1662, 13a_2195, 13a_3034, 13a_3147, 13a_3149
-   11n_160   [1, 2] parents= 7 maxscore=0.681  13a_3515, 13a_3779, 13a_4188, 13a_4193, 13a_4449, 13a_4645, 13a_4817
-   12n_9     [1, 2] parents= 6 maxscore=0.749  13a_1139, 13a_213, 13a_25, 13a_3482, 13a_3864, 13a_618
-   12n_84    [1, 3] parents= 6 maxscore=0.405  13a_1080, 13a_134, 13a_1676, 13a_2195, 13a_2837, 13a_3871
-   12n_330   [1, 2] parents= 5 maxscore=0.737  13a_218, 13a_232, 13a_3109, 13a_3376, 13a_3690
-   12n_415   [1, 2] parents= 5 maxscore=0.718  13a_1077, 13a_1968, 13a_3464, 13a_3727, 13a_4193
-   11n_112   [1, 2] parents= 5 maxscore=0.681  12a_553, 13a_2610, 13a_3727, 13a_4521, 13a_4609
-   12n_49    [1, 2] parents= 5 maxscore=0.448  13a_1717, 13a_3529, 13a_4654, 13a_655, 13a_683
-   12n_291   [1, 3] parents= 5 maxscore=0.390  13a_1122, 13a_1309, 13a_1656, 13a_736, 13a_971
-   11n_166   [1, 2] parents= 4 maxscore=0.468  13a_3495, 13a_3789, 13a_3945, 13a_4056
-targets written: 112
+zero-candidate knots (KnotInfo diagram): 998 rigorous 959
+flype-orbit validation on them: knots with a genuine candidate in another minimal diagram: 0 ; with only unidentified/ambiguous results in other diagrams: 5
+mean number of minimal diagrams: 11.85
+|sigma|=4: 386 of which zero-candidate 383 ; |sigma|=2: 450 zero-candidate 431
+mean P(u=3) of the earlier ML ranking: with candidates 0.495 zero-candidate 0.324
+distinct child knots: 11 ; parents covered: 22 ; knots with only unresolved candidates: 7
+   11n_116   [1, 2] parents=10 maxscore=0.854  12a_1085, 12a_1269, 12a_494, 12a_687, 13a_1343, 13a_1526, 13a_2531
+   12n_519   [1, 2] parents= 2 maxscore=0.924  13a_1505, 13a_4657
+   12n_382   [1, 2] parents= 2 maxscore=0.533  13a_2517, 13a_2611
+   12n_815   [1, 2] parents= 1 maxscore=0.955  13a_3781
+   12n_309   [1, 2] parents= 1 maxscore=0.795  13a_1536
+   12n_868   [1, 2] parents= 1 maxscore=0.755  13a_3810
+   12n_282   [1, 2] parents= 1 maxscore=0.713  13a_4634
+   12n_258   [1, 2] parents= 1 maxscore=0.550  13a_2667
+   12n_377   [1, 2] parents= 1 maxscore=0.488  13a_4794
+   12n_351   [1, 2] parents= 1 maxscore=0.426  13a_791
+   12n_629   [1, 2] parents= 1 maxscore=0.408  13a_4515
+targets written: 11

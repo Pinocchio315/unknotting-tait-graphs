@@ -7,9 +7,12 @@ spanning-tree model supplies the same correction terms for a knot that need not 
 enumeration of definite forms is unchanged.  This module contains only the comparison; the forms come
 from `owens_obstruction` (rank two), `owens_u3` and `owens_u4`.
 
-Conventions.  The published tests use the orientation with d(spin) = -|sigma|/4 and place the spin
-structure at the origin of the discriminant group.  Greene's model gives d(spin) = -sigma/4 for the
-signed signature, so the vector is negated when sigma < 0, which is the mirror image.
+Conventions. The signed signature fixes the orientation in Owens's same-sign
+crossing-change hypothesis, so the vector is negated when sigma < 0. The unique
+spin structure is the origin of the odd-order discriminant group. As an
+additional conservative restriction this implementation requires
+d(spin) = -|sigma|/4; a mismatch returns ERROR and supplies no obstruction.
+That equality is not asserted for arbitrary knots with L-space branched covers.
 
     python greene_ranks.py --validate 5_1 7_3 9_10 9_13     # alternating controls against the published test
 """
@@ -128,8 +131,21 @@ def rank_test(d, D, n, pairing=None):
     `d` maps Z/D to the correction terms in the orientation with d(0) = -|sigma|/4 = -n/2; a verdict of
     OBSTRUCTED proves u >= n + 1.
     """
+    if type(D) is not int or D < 3 or D % 2 == 0 or n not in (2, 3, 4):
+        raise ValueError('The rank test requires odd determinant greater than one and rank 2, 3 or 4')
+    if set(d) != set(range(D)) or any(type(k) is not int for k in d):
+        raise ValueError('Exactly D correction terms with integer cyclic labels are required')
+    if any(isinstance(v, float) for v in d.values()):
+        raise ValueError('Correction terms must be exact rational numbers')
+    d = {k: Fraction(v) for k, v in d.items()}
     if pairing is None:
         pairing = Fraction(0)
+    else:
+        if isinstance(pairing, float):
+            raise ValueError('The linking pairing must be an exact rational number')
+        pairing = Fraction(pairing) % 1
+        if pairing.denominator != D:
+            raise ValueError('The supplied self-pairing must belong to a cyclic generator')
     spin = Fraction(-n, 2)
     if d.get(0) != spin:
         return {'verdict': 'ERROR', 'reason': f'd(spin) = {d.get(0)} is not -|sigma|/4 = {spin}'}
@@ -197,6 +213,7 @@ def main():
     from pin_dinv import pin
     rows = {r['name']: r for r in dk.link_list() if str(r.get('crossing_number', '')).strip().isdigit()}
     published = {2: obstruct_u2, 3: obstruct_u3}
+    failures = []
     for name in args.knots:
         row = rows[name]
         D, sigma = int(row['determinant']), int(row['signature'])
@@ -206,19 +223,24 @@ def main():
             continue
         pd = [list(map(int, c)) for c in ast.literal_eval(row['pd_notation'])]
         reference = goeritz_d(pd, sigma, D)
-        current, _, _ = pin(name, pd, D, verbose=False)
+        current, pairing, _ = pin(name, pd, D, verbose=False)
         if any(len(values) != 1 for values in current.values()):
             print(f'{name}: the pages leave classes ambiguous, skipped')
+            failures.append(name)
             continue
         greene = oriented({k: next(iter(v)) for k, v in current.items()}, sigma)
         same = reference is not None and any(
             all(greene[unit * k % D] == reference[k] for k in range(D))
             for unit in range(1, D) if math.gcd(unit, D) == 1)
-        mine = rank_test(greene, D, n)
+        mine = rank_test(greene, D, n, pairing=pairing)
         theirs = published[n](pd, sigma, D)
         flag = 'OK' if mine['verdict'] == theirs['verdict'] else 'MISMATCH'
         print(f'{name}: det {D} sigma {sigma} rank {n} | Greene d == Goeritz m_G: {same} | '
               f'this module {mine["verdict"]} | published {theirs["verdict"]} | {flag}', flush=True)
+        if not same or flag != 'OK':
+            failures.append(name)
+    if failures:
+        sys.exit('Validation did not pass for: ' + ' '.join(failures))
 
 
 if __name__ == '__main__':

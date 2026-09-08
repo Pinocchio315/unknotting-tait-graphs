@@ -1,0 +1,115 @@
+{
+  "bounds_identical": true,
+  "before_summary": {
+    "controls": {
+      "missing": [
+        "12n_338",
+        "12n_74",
+        "13n_1195",
+        "13n_1643",
+        "13n_1730",
+        "13n_1905",
+        "13n_2192",
+        "13n_224",
+        "13n_2307",
+        "13n_283",
+        "13n_2941",
+        "13n_2988",
+        "13n_3079",
+        "13n_3137",
+        "13n_3401",
+        "13n_3409",
+        "13n_3499",
+        "13n_3551",
+        "13n_3566",
+        "13n_442",
+        "13n_719",
+        "13n_977"
+      ],
+      "settled": 1430,
+      "verdicts": {
+        "PASS": 1421,
+        "TIMEOUT": 22,
+        "UNDECIDED": 9
+      },
+      "wanted": 1452
+    },
+    "targets": {
+      "missing": [
+        "13n_4876",
+        "13n_4973",
+        "13n_5102"
+      ],
+      "settled": 1964,
+      "verdicts": {
+        "ERROR": 1,
+        "OBSTRUCTED": 1707,
+        "PASS": 256,
+        "TIMEOUT": 1,
+        "UNDECIDED": 1
+      },
+      "wanted": 1967
+    }
+  },
+  "after_summary": {
+    "controls": {
+      "missing": [
+        "12n_338",
+        "12n_74",
+        "13n_1195",
+        "13n_1643",
+        "13n_1730",
+        "13n_1905",
+        "13n_2192",
+        "13n_224",
+        "13n_2307",
+        "13n_283",
+        "13n_2941",
+        "13n_2988",
+        "13n_3079",
+        "13n_3137",
+        "13n_3401",
+        "13n_3409",
+        "13n_3499",
+        "13n_3551",
+        "13n_3566",
+        "13n_442",
+        "13n_719",
+        "13n_977"
+      ],
+      "settled": 1430,
+      "verdicts": {
+        "PASS": 1421,
+        "TIMEOUT": 22,
+        "UNDECIDED": 9
+      },
+      "wanted": 1452
+    },
+    "targets": {
+      "missing": [
+        "13n_4876",
+        "13n_4973",
+        "13n_5102"
+      ],
+      "settled": 1964,
+      "verdicts": {
+        "ERROR": 2,
+        "OBSTRUCTED": 1707,
+        "PASS": 256,
+        "UNDECIDED": 1
+      },
+      "wanted": 1967
+    }
+  },
+  "raw_sha256": "60c046924a38989dc59cbe38f82ea15834f8c89e160dc215157f631e45ef378c",
+  "summary_sha256": "9726782f9c9dc02378feb3dca52129ade53f2a7710a1229d3f05836fad4c3207",
+  "command": [
+    "/Users/pinocchio/.pyenv/versions/unknot-venv/bin/python",
+    "lower_bounds/greene/summarize_greene.py",
+    "/private/tmp/review-v13-sweep-unchanged.jsonl",
+    "--targets",
+    "results/greene/greene_targets_2026-09-08.json",
+    "--out",
+    "results/greene/sweep_2026-09-08.json"
+  ]
+}

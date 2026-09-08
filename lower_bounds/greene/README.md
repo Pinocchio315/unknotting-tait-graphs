@@ -4,8 +4,10 @@ The obstructions of Section 3 compare the correction terms of `Σ₂(K)` with th
 an unknotting sequence.  For an alternating knot the correction terms come from the sharp Goeritz form.
 This directory removes that restriction: when the reduced Khovanov homology over `F₂` has rank equal to
 the determinant, the branched-cover spectral sequence makes `Σ₂(K)` an `L`-space, and Greene's
-spanning-tree model computes the correction terms from any diagram.  The comparison with the definite
-forms is then unchanged, so the same tests apply to non-alternating knots.
+spanning-tree model gives finite candidate sets for the correction terms. Intersecting the sets from
+different markings may determine every value. If some values remain ambiguous, all surviving candidate
+vectors are tested; only their unanimous exclusion gives an obstruction. The same comparison with
+definite forms therefore applies to these non-alternating knots.
 
 The method was written to decide `u(12n491)`, the knot left open by Brittenham and Hermiller's
 counterexample to the Bernhard–Jablan conjecture (arXiv:1705.05985).
@@ -16,7 +18,7 @@ counterexample to the Bernhard–Jablan conjecture (arXiv:1705.05985).
 |---|---|---|---|
 | `12n491` | `[1,2]` | `u = 2` | with `u(12n288) = u(12n501) = 2` from `../montesinos/`, identifies `13n3370` as the counterexample |
 | `13n3370` | `[1,3]` | `u = 2` | four correction terms remain ambiguous; all nine candidate vectors are obstructed |
-| `13n1587` | `[1,2]` | `u = 2` | settles the second example of arXiv:1705.05985, §3 |
+| `13n1587` | `[1,2]` | `u = 2` | localizes the second example of arXiv:1705.05985, §3, to this knot or a minimal-diagram neighbour with unknotting number one |
 | `13n1669` | `[2,4]` | not obstructed | the rank-two test admits the form `(18,18,17)`; the value stays open |
 
 Deposited records are in `../../results/bernhard_jablan/`.
@@ -40,7 +42,7 @@ Deposited records are in `../../results/bernhard_jablan/`.
 
 `build_greene_targets.py` selects the knots to which a test applies.  A knot qualifies when it is
 non-alternating, its reduced mod-2 Khovanov homology has rank equal to the determinant, and
-`H₁(Σ₂(K))` is cyclic.  The recorded range and the signature then choose the test: a range `[1, b]` gives
+`H₁(Σ₂(K))` is cyclic. The worker rechecks the frozen mod-2 vector and the signature/test hypotheses before computing a bound.  The recorded range and the signature then choose the test: a range `[1, b]` gives
 the Ni–Wu test for `u = 1`, and a range `[n, b]` with `|σ| = 2n` gives the rank `n` test, which excludes
 `n` crossing changes and so raises the lower bound to `n + 1`.
 
@@ -63,8 +65,9 @@ ssh SERVER "tar xzf greene_server.tar.gz && cd greene_server && sbatch slurm_gre
 
 Sixteen array tasks each take one sixteenth of the work.  A task sweeps its share of the controls first
 and goes on to the targets only if none of them is obstructed, so an implementation error stops the job
-before any target is computed.  Resubmitting the same command resumes: a knot already recorded in the
-output file is skipped, so a wall-clock limit costs only the unfinished knots.
+before any target is computed.  Resubmitting the same command resumes: a completed verdict already recorded in the
+output file is skipped; errors and timeouts are retried. An obstructed control recorded by an earlier
+run also stops resumption, so it cannot be bypassed by rerunning the launcher.
 
 The rank-four enumeration is much slower than the rest.  To keep it out of the main job and run it
 separately:
@@ -83,9 +86,10 @@ Verdicts: `OBSTRUCTED` raises the lower bound, and `PASS`, `UNDECIDED`, `TIMEOUT
 bound.  A time limit is not a negative mathematical result.
 
 A run split between the cluster and another machine leaves several result files.  `summarize_greene.py`
-reads any number of them, keeps one record per knot (a conclusive verdict replaces an error or a
-timeout, and two different conclusive verdicts for one knot are reported as a contradiction), states the
-coverage against the frozen list, checks that no control is obstructed, and writes the bounds:
+reads any number of them, rejects malformed records, keeps one record per knot (a conclusive verdict replaces an error or a
+timeout, while different completed verdicts for one knot stop publication of the summary), states the
+coverage against the frozen list, checks controls by membership in that list, and writes the bounds only
+if no inconsistent verdict or obstructed control has been found:
 
 ```sh
 python summarize_greene.py runs/*/*.jsonl --out ../../results/greene/sweep.json
@@ -100,3 +104,13 @@ tests of `../owens/`.  All twelve agree.  On the Montesinos knots `8_20`, `9_43`
 correction terms agree with the star plumbings of `../montesinos/`, and the surgery test admits the
 knots of unknotting number one (`3_1`, `4_1`, `5_2`, `8_20`, `9_44`) and excludes `5_1`, `7_4`, `9_43`.
 The correction terms of `12n491` were recomputed from an independent minimal diagram and agree.
+
+The rank-two through rank-four implementation fixes orientation using the signed signature. It also
+requires `d(spin) = -|sigma|/4` as a conservative implementation restriction; a mismatch gives no bound.
+This equality is not a general assertion about all knots with L-space branched covers. A missing
+linking pairing disables the prime-pairing part of the pre-filter; the validation command supplies the
+computed pairing and therefore exercises the same filter as the sweep.
+
+The v1.3 audit in `../../results/review_v1_3/` includes input checks for the full frozen cohort, a bounded
+replay through each implemented rank, independent rank-two comparisons for the three new conflicting
+knots, and regressions for input rejection and failure handling.

@@ -14,6 +14,7 @@ is consulted, and conflicting bounds stop the run before any output is written.
 from __future__ import annotations
 
 import argparse
+import ast
 from collections import Counter, defaultdict
 from dataclasses import dataclass
 from fractions import Fraction
@@ -26,6 +27,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 RESULTS = ROOT / 'results'
+PAPER_SCAN = 'open23/priority_u23_paper_v1_3.json'
 PRIORITY = ('L', 't', 'a', 'OT', 'O2', 'g', 'c', 'M', 'G', 'K', 'O3', 'O4', 'w', 'b', 'BH')
 COMPLETED = {'PASS', 'OBSTRUCTED'}
 RANK4_LOGS = ('owens_rank4/results_u4_local_2026-09-07_snapshot.jsonl',
@@ -37,13 +39,16 @@ def read_json(path):
         return json.load(stream)
 
 
-def verify_manifest(results=RESULTS):
+def verify_manifest(results=RESULTS, manuscript="v1.3"):
     """Reject missing or altered deposited inputs rather than silently recounting."""
     results = Path(results)
-    manifest = read_json(results / 'paper_v1_3_manifest.json')
+    if manuscript not in {'v1.1', 'v1.2', 'v1.3'}:
+        raise ValueError(f'Unsupported manuscript version: {manuscript}')
+    version = '1_3' if manuscript == 'v1.3' else '1_1'
+    manifest = read_json(results / f'paper_v{version}_manifest.json')
     for name, expected in manifest['sha256'].items():
         if hashlib.sha256((results / name).read_bytes()).hexdigest() != expected:
-            raise ValueError(f'Deposited input differs from the v1.1 manifest: {name}')
+            raise ValueError(f'Deposited input differs from the {manifest["manuscript"]} manifest: {name}')
     return manifest
 
 
@@ -116,7 +121,108 @@ def greene_obstructed(record):
     return obstructed
 
 
-def collect_bounds(results=RESULTS):
+def validate_sweep_record(row, entry, role):
+    """Check the deposited premises and exhaustive candidate bookkeeping.
+
+    This does not recompute the Floer complex. It prevents an incomplete page,
+    skipped candidate, or failed worker from being reported as a lower bound.
+    Inconclusive candidates remain admissible for this purpose.
+    """
+    name, order = entry['name'], entry['determinant']
+    validate_interval(entry['range'])
+    length = max(entry['range'][0], 1)
+    expected_test = 'u1' if length == 1 else f'rank{length}'
+    vector = ast.literal_eval(entry['reduced_mod2_vector_raw'])
+    if (type(order) is not int or order < 3 or order % 2 == 0
+            or length not in (1, 2, 3, 4) or entry['test'] != expected_test
+            or not vector or any(len(e) != 4 or e[0] != 2 or e[1] < 0
+                or any(type(x) is not int for x in e) for e in vector)
+            or sum(e[1] for e in vector) != order or entry['khovanov_rank'] != order
+            or type(entry['signature']) is not int
+            or (length == 1 and abs(entry['signature']) > 2)
+            or (length > 1 and abs(entry['signature']) != 2 * length)):
+        raise ValueError(f'Invalid frozen Greene premise: {name}')
+    if role == 'control':
+        if (entry['range'] != [length, length]
+                or entry.get('known_unknotting_number') != length):
+            raise ValueError(f'Invalid Greene control: {name}')
+    elif entry['range'][0] == entry['range'][1]:
+        raise ValueError(f'A Greene target must have an open range: {name}')
+    if row['name'] != name or row.get('role') != role:
+        raise ValueError(f'Greene knot or role mismatch: {name}')
+    verdict = row['verdict']
+    if verdict not in {'OBSTRUCTED', 'PASS', 'UNDECIDED', 'NOT_APPLICABLE', 'ERROR', 'TIMEOUT'}:
+        raise ValueError(f'Unknown Greene verdict: {name}: {verdict}')
+    if verdict in {'ERROR', 'TIMEOUT', 'NOT_APPLICABLE'}:
+        return
+    if (row['det'] != order or row['sigma'] != entry['signature']
+            or row['test'] != expected_test or row['range'] != entry['range']
+            or row['excluded_length'] != length):
+        raise ValueError(f'Greene output disagrees with the frozen premise: {name}')
+    if 'd' in row:
+        choices = {int(k): {Fraction(v)} for k, v in row['d'].items()}
+    else:
+        pinned, ambiguous = row['pinned'], row['ambiguous']
+        if pinned.keys() & ambiguous.keys():
+            raise ValueError(f'Overlapping Greene candidate classes: {name}')
+        choices = {int(k): {Fraction(v)} for k, v in pinned.items()}
+        choices.update({int(k): set(map(Fraction, v)) for k, v in ambiguous.items()})
+    if (set(choices) != set(range(order)) or not all(choices.values())
+            or any(v != choices[(-k) % order] for k, v in choices.items())):
+        raise ValueError(f'Incomplete Greene candidate classes: {name}')
+    expected = math.prod(len(v) for k, v in choices.items() if k <= (-k) % order)
+    tests = row['candidate_verdicts']
+    if (type(row['candidate_vectors']) is not int or row['candidate_vectors'] != expected
+            or len(tests) != expected or type(row['admitting_vectors']) is not int):
+        raise ValueError(f'Incomplete Greene candidate-vector enumeration: {name}')
+    for test in tests:
+        if test['test'] != expected_test or type(test['admits']) is not bool:
+            raise ValueError(f'Mismatched Greene candidate test: {name}')
+        detail = test['detail']
+        if length == 1:
+            if not isinstance(detail['fits'], list) or test['admits'] != bool(detail['fits']):
+                raise ValueError(f'Inconsistent Greene surgery-test fits: {name}')
+        elif test['admits'] != (detail['verdict'] != 'OBSTRUCTED'):
+            raise ValueError(f'Inconsistent Greene definite-form verdict: {name}')
+    admitting = sum(test['admits'] for test in tests)
+    if (row['admitting_vectors'] != admitting
+            or (verdict == 'OBSTRUCTED') != (admitting == 0)):
+        raise ValueError(f'Inconsistent completed Greene verdict: {name}')
+    if verdict == 'OBSTRUCTED':
+        if role == 'control':
+            raise ValueError(f'Greene sweep obstructs the control {name}')
+        if row.get('lower_bound') != length + 1:
+            raise ValueError(f'Wrong Greene lower bound: {name}')
+
+
+def read_greene_sweep(results=RESULTS):
+    """Read each frozen job once; unreported jobs remain explicitly uncompleted."""
+    results = Path(results)
+    frozen = read_json(results / 'greene/greene_targets_2026-09-08.json')
+    if set(frozen['controls']) & set(frozen['targets']):
+        raise ValueError('The Greene target and control sets overlap')
+    records = {}
+    with gzip.open(results / 'greene/sweep_2026-09-08.jsonl.gz', 'rt') as handle:
+        for number, line in enumerate(handle, 1):
+            if not line.strip():
+                continue
+            try:
+                row = json.loads(line)
+            except json.JSONDecodeError as exc:
+                raise ValueError(f'Malformed Greene sweep JSON at line {number}') from exc
+            name = row['name']
+            if name in records:
+                raise ValueError(f'Duplicate frozen Greene sweep record: {name}')
+            role = 'control' if name in frozen['controls'] else 'target'
+            entry = frozen[role + 's'].get(name)
+            if entry is None:
+                raise ValueError(f'Greene sweep knot outside the frozen list: {name}')
+            validate_sweep_record(row, entry, role)
+            records[name] = row
+    return frozen, records
+
+
+def collect_bounds(results=RESULTS, include_sweep=True):
     """Translate each deposited theorem application to a bound with provenance.
 
     Tags select the primary explanation in the appendices; they do not count a
@@ -201,38 +307,12 @@ def collect_bounds(results=RESULTS):
     # homology over F_2 has rank equal to its determinant, which is the L-space premise recorded there.
     # A record contributes only when it is a completed obstruction whose excluded length matches the
     # comparison range and the signature, so a timeout or an inconclusive comparison supplies nothing.
-    source = 'greene/sweep_2026-09-08.jsonl.gz'
-    frozen = data('greene/greene_targets_2026-09-08.json')
-    controls_ok = 0
-    with gzip.open(results / source, 'rt') as handle:
-        for number, line in enumerate(handle, 1):
-            if not line.strip(): continue
-            try: row = json.loads(line)
-            except json.JSONDecodeError as exc:
-                raise ValueError(f'Malformed JSON in {source}:{number}') from exc
-            name = row['name']
-            entry = frozen['controls'].get(name) or frozen['targets'].get(name)
-            if entry is None:
-                raise ValueError(f'{source}:{number} reports a knot outside the frozen list: {name}')
-            if row['verdict'] != 'OBSTRUCTED':
-                # A timeout or an inconclusive comparison carries no detail fields and no bound.
-                continue
-            if (entry['determinant'] != row['det'] or entry['khovanov_rank'] != entry['determinant']
-                    or entry['signature'] != row['sigma'] or entry['test'] != row['test']):
-                raise ValueError(f'{source}:{number} disagrees with the frozen premise for {name}')
-            length = row['excluded_length']
-            if (length != max(entry['range'][0], 1) or row.get('lower_bound') != length + 1
-                    or row['admitting_vectors'] != 0 or row['candidate_vectors'] < 1
-                    or (length > 1 and abs(entry['signature']) != 2 * length)):
-                raise ValueError(f'{source}:{number} is not a completed obstruction: {name}')
-            if name in frozen['controls']:
-                # A control has a known unknotting number equal to the excluded length, so an
-                # obstruction there would contradict a recorded value rather than establish one.
-                raise ValueError(f'{source}:{number} obstructs the control {name}')
-            add(name, length + 1, 'G', source)
-        controls_ok = len(frozen['controls'])
-    if controls_ok != len(frozen['controls']):
-        raise ValueError('The control set was not read')
+    if include_sweep:
+        source = 'greene/sweep_2026-09-08.jsonl.gz'
+        _, records = read_greene_sweep(results)
+        for name, row in records.items():
+            if row['verdict'] == 'OBSTRUCTED':
+                add(name, row['lower_bound'], 'G', source)
 
     # The archived comparison has upper bound three for 13n_3370. Its sharper
     # upper bound is already in Brittenham--Hermiller, Theorem 1.3(a), and is
@@ -320,17 +400,17 @@ def summarize(table, changed):
         'improved_by_primary_method': dict(sorted(Counter(map(primary_tag, improved)).items()))}
 
 
-def reconstruct(results=RESULTS):
+def reconstruct(results=RESULTS, manuscript="v1.3"):
     """Validate all inputs and counts in memory before the caller writes outputs."""
     results = Path(results)
-    manifest = verify_manifest(results)
-    bounds, rank4 = collect_bounds(results)
+    manifest = verify_manifest(results, manuscript)
+    bounds, rank4 = collect_bounds(results, include_sweep=manuscript == "v1.3")
     table, changed = merge_bounds(read_json(results / 'paper_v1_1_snapshot.json'), bounds)
     counts = summarize(table, changed)
     for key, expected in manifest['expected'].items():
         if key in counts and counts[key] != expected:
             raise ValueError(f'Manuscript count mismatch: {key}: {counts[key]} != {expected}')
-    return {'reference': 'results/paper_v1_1_snapshot.json', 'changed': changed,
+    return {'manuscript': manuscript, 'reference': 'results/paper_v1_1_snapshot.json', 'changed': changed,
             'rank4_status': rank4, 'counts': counts}, table
 
 
@@ -343,30 +423,36 @@ def manuscript_counts(consolidated, table, results=RESULTS):
     exact = [r for r in changed.values() if r['new'][0] == r['new'][1]]
     by_value_method = Counter((r['new'][0], primary_tag(r)) for r in exact)
     improved_methods = totals['improved_by_primary_method']
-    scan = read_json(results/'open23/priority_u23_final.json')
+    scan = read_json(results/PAPER_SCAN)
     cyclic = read_json(results/'cyclic_cover/cyclic_cover_bound_2026-09-07.json')
     cyclic_degrees = Counter(cyclic[name]['n'] for name, r in changed.items() if primary_tag(r) == 'c')
     snapshot = read_json(results/'paper_v1_1_snapshot.json')
     sig4 = read_json(results/'owens_rank2/owens_verdicts_sigma4_alternating_2026-09-07.json')
     with gzip.open(results/'crossing_changes/dataset_v2.json.gz', 'rt') as stream:
         data_knots = {r['knot'] for r in json.load(stream)}
-    frozen = read_json(results/'greene/greene_targets_2026-09-08.json')
     sweep = Counter()
-    settled = {'OBSTRUCTED', 'PASS', 'UNDECIDED', 'NOT_APPLICABLE'}
-    with gzip.open(results/'greene/sweep_2026-09-08.jsonl.gz', 'rt') as stream:
-        for line in stream:
-            if not line.strip(): continue
-            row = json.loads(line)
-            role = 'control' if row['name'] in frozen['controls'] else 'target'
+    frozen = {'targets': {}, 'controls': {}}
+    if consolidated.get('manuscript', 'v1.3') == 'v1.3':
+        frozen, records = read_greene_sweep(results)
+        settled = {'OBSTRUCTED', 'PASS', 'UNDECIDED', 'NOT_APPLICABLE'}
+        for row in records.values():
+            role = row['role']
             sweep[role, 'settled' if row['verdict'] in settled else 'unsettled'] += 1
             if row['verdict'] == 'OBSTRUCTED': sweep[role, row['test']] += 1
     greene_exact = sum(count for (value, tag), count in by_value_method.items() if tag == 'G')
-    return {
+    u1_scan = read_json(results/'crossing_changes/u1_minimal_diagram_scan_2026-09-08.json')
+    u1_open = read_json(results/'crossing_changes/u1_open_diagram_scan_2026-09-08.json')
+    u1_with = sum(bool(r['unknotting_crossings']) for r in u1_scan.values())
+    u1_open_with = sum(bool(r['unknotting_crossings']) for r in u1_open.values())
+    if any(r['undecided'] for r in u1_scan.values()) or any(r['undecided'] for r in u1_open.values()):
+        raise ValueError('An undecided crossing change leaves the minimal-diagram scan incomplete')
+    counts = {
         'nChildren': len(scan['children']),
         'nCyclicNew': sum(cyclic_degrees.values()),
         'nCyclicThree': cyclic_degrees[3], 'nCyclicFour': cyclic_degrees[4],
         'nCyclicFive': cyclic_degrees[5], 'nDataKnots': len(data_knots),
         'nDichotomy': sum(heuristic == 0 for _, _, _, heuristic in scan['zero_candidate_knots']),
+        'nDichotomyHeuristic': sum(heuristic != 0 for _, _, _, heuristic in scan['zero_candidate_knots']),
         'nExact': totals['exact'], 'nExactLower': totals['exact_lower'],
         'nImproved': totals['improved'], 'nImprovedL': improved_methods.get('L', 0),
         'nImprovedC': improved_methods.get('c', 0), 'nMcCoyKnots': improved_methods.get('K', 0),
@@ -390,9 +476,17 @@ def manuscript_counts(consolidated, table, results=RESULTS):
         'nSweepUone': sweep['target', 'u1'], 'nSweepRankTwo': sweep['target', 'rank2'],
         'nSweepRankThree': sweep['target', 'rank3'], 'nSweepRankFour': sweep['target', 'rank4'],
         'nSweepExact': greene_exact, 'nSweepImproved': improved_methods.get('G', 0),
+        'nSweepNewExact': sum(1 for r in exact if primary_tag(r) == 'G'
+                            and 'greene/sweep_2026-09-08.jsonl.gz' in r['sources']),
+        'nUoneVerified': len(u1_scan), 'nUoneWithCrossing': u1_with,
+        'nUoneOpenScanned': len(u1_open), 'nUoneOpenWithCrossing': u1_open_with,
         'nSweepUoneTargets': sum(1 for e in frozen['targets'].values() if e['test'] == 'u1'),
         'nSweepRankTargets': sum(1 for e in frozen['targets'].values() if e['test'] != 'u1'),
     }
+
+    if consolidated.get('manuscript', 'v1.3') != 'v1.3':
+        counts = {k: v for k, v in counts.items() if not k.startswith('nSweep')}
+    return counts
 
 
 def knot_sort_key(name):
@@ -453,7 +547,7 @@ def comparison_report(consolidated, table):
     from audit_knotinfo_releases import audit
     summary, _ = audit(consolidated, table)
     deposited = read_json(RESULTS / 'comparison/baseline_comparison.json')
-    if summary != deposited:
+    if consolidated.get('manuscript', 'v1.3') == 'v1.3' and summary != deposited:
         raise ValueError('Release comparison differs from the deposited audit; '
                          'review the input provenance before updating it')
     return summary
@@ -515,7 +609,7 @@ def manuscript_tex(consolidated, table, results=RESULTS):
         before, after = (f'$[{lo},{hi}]$' for lo, hi in (record['reference'], record['new']))
         cells.append(f'{tex_entry(name, record)} & {before} & {after}')
     outputs['rows_improvements.tex'] = prefix + column_rows(cells, 2)
-    scan = read_json(Path(results)/'open23/priority_u23_final.json')
+    scan = read_json(Path(results)/PAPER_SCAN)
     names = sorted((name for name, _, _, heuristic in scan['zero_candidate_knots']
                     if heuristic == 0), key=knot_sort_key)
     outputs['rows_dichotomy.tex'] = prefix + column_rows(list(map(tex_knot, names)), 6)
@@ -553,14 +647,15 @@ def manuscript_tex(consolidated, table, results=RESULTS):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--outdir', type=Path, default=ROOT / 'generated')
+    parser.add_argument('--manuscript', choices=('v1.2', 'v1.3'), default='v1.3')
     args = parser.parse_args()
-    consolidated, table = reconstruct()
+    consolidated, table = reconstruct(manuscript=args.manuscript)
     tex = manuscript_tex(consolidated, table)
     args.outdir.mkdir(parents=True, exist_ok=True)
     for name, value in [('consolidated.json', consolidated), ('u_table.json', table),
                         ('counts.json', consolidated['counts'])]:
         (args.outdir / name).write_text(json.dumps(value, sort_keys=True, indent=2) + '\n')
-    paper_dir = args.outdir / 'paper_v1_3'
+    paper_dir = args.outdir / ('paper_' + args.manuscript.replace('.', '_'))
     paper_dir.mkdir(parents=True, exist_ok=True)
     for name, source in tex.items():
         (paper_dir / name).write_text(source)

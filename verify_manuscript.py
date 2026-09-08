@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Compare separately supplied v1.1 or v1.2 LaTeX to the frozen computations.
+"""Compare separately supplied v1.1, v1.2 or v1.3 LaTeX to its frozen computations.
 
 This checks numerical consistency and transcription, not the validity of the
 mathematical proofs. The parser expects the manuscript's current table syntax;
@@ -12,8 +12,22 @@ from fractions import Fraction
 import json
 from pathlib import Path
 import re
-from consolidate_results import (RESULTS, comparison_counts, comparison_report,
+from consolidate_results import (RESULTS, PAPER_SCAN, appendix_tag, comparison_counts, comparison_report,
                                  manuscript_counts, manuscript_tex, read_json, reconstruct)
+
+
+def manuscript_version(path):
+    """Select the authenticated release from explicit generated-input paths."""
+    path = Path(path)
+    versions = set(re.findall(r'paper_v1_([23])/', path.read_text()))
+    if len(versions) > 1:
+        raise ValueError('A manuscript mixes numerical inputs from different versions')
+    if versions:
+        return 'v1.' + versions.pop()
+    match = re.search(r'v1\.([123])', path.name)
+    if not match:
+        raise ValueError('Cannot determine the manuscript version')
+    return 'v1.' + match[1]
 
 
 def load_manuscript(path):
@@ -25,7 +39,8 @@ def load_manuscript(path):
     dynamic paths are rejected rather than silently omitting part of the paper.
     """
     path = Path(path).resolve()
-    consolidated, table = reconstruct()
+    version = manuscript_version(path)
+    consolidated, table = reconstruct(manuscript=version)
     expected = manuscript_tex(consolidated, table)
     inputs = {}
 
@@ -42,7 +57,9 @@ def load_manuscript(path):
             target = (path.parent / name).resolve()
             if not target.suffix:
                 target = target.with_suffix('.tex')
-            if target.name in expected and 'paper_v1_2' in target.parts:
+            if target.name in expected and any(re.fullmatch(r'paper_v1_[23]', p) for p in target.parts):
+                require('paper_' + version.replace('.', '_') in target.parts,
+                        f'Generated input belongs to a different manuscript version: {target}')
                 require(target.read_text() == expected[target.name],
                         f'Stale generated manuscript input: {target}')
                 inputs[target.name] = target
@@ -70,8 +87,8 @@ def names_in_table(section):
     return set(names)
 
 
-def verify(tex):
-    consolidated, table = reconstruct()
+def verify(tex, manuscript='v1.3'):
+    consolidated, table = reconstruct(manuscript=manuscript)
     counts = manuscript_counts(consolidated, table)
     changed = consolidated['changed']
     definitions = re.findall(
@@ -94,7 +111,7 @@ def verify(tex):
 
     # The improved-range appendix must match both interval ends, not just names.
     entries = {}
-    pattern = (r'(\d+[an]\d+)(?:\$\^\{\\mathrm\{[a-z]+\}\}\$)?'
+    pattern = (r'(\d+[an]\d+)(?:\$\^\{\\mathrm\{[A-Za-z]+\}\}\$)?'
                r'\s*&\s*\$\[(\d+),(\d+)\]\$\s*&\s*\$\[(\d+),(\d+)\]\$')
     for match in re.finditer(pattern, sections[4]):
         name = knotinfo_name(match[1])
@@ -104,17 +121,23 @@ def verify(tex):
                 if record['new'][0] != record['new'][1]}
     require(entries == expected, 'Appendix E: missing knots or mismatching intervals')
 
-    # Upper-case G denotes Greene's model; lower-case g remains the homology
-    # generator bound. Accept the old notation only for the standalone v1.1
-    # source, which predates the notation change and has no generated inputs.
-    if r'\mathrm{G}' in sections[3]:
-        marked = {knotinfo_name(name) for name in re.findall(
-            r'(\d+[an]\d+)\$\^\{\\mathrm\{G\}\}\$', sections[3])}
-        require(marked == {'12n_491', '13n_3370'},
-                'Appendix D: Greene superscripts do not match the two records')
+    # Upper-case G denotes Greene's model throughout A--E, including the new
+    # higher lower bounds; lower-case g remains the homology generator bound.
+    # v1.1 predates this notation. Later versions must match even if all G
+    # superscripts were accidentally deleted, rather than skipping that check.
+    if manuscript != 'v1.1':
+        for index, section in enumerate(sections[:5]):
+            marked = {knotinfo_name(name) for name in re.findall(
+                r'(\d+[an]\d+)\$\^\{\\mathrm\{G\}\}\$', section)}
+            expected_marked = {name for name, record in changed.items()
+                if appendix_tag(record) == 'G'
+                and (record['new'] == [[5, 5], [4, 4], [3, 3], [2, 2]][index]
+                     if index < 4 else record['new'][0] != record['new'][1])}
+            require(marked == expected_marked,
+                    f'Appendix {chr(65 + index)}: Greene superscripts disagree with the records')
 
     # These conditional statements must remain separate from exact values.
-    scan = read_json(RESULTS/'open23/priority_u23_final.json')
+    scan = read_json(RESULTS/PAPER_SCAN)
     rigorous = {name for name, _, _, heuristic in scan['zero_candidate_knots'] if heuristic == 0}
     require(names_in_table(sections[5]) == rigorous, 'Appendix F disagrees with the certified candidate analysis')
 
@@ -167,7 +190,7 @@ def main():
     parser.add_argument('--tex', type=Path, required=True)
     args = parser.parse_args()
     source, inputs = load_manuscript(args.tex)
-    result = verify(source)
+    result = verify(source, manuscript=manuscript_version(args.tex))
     print(f"All {result['count_macros']} count macros, {result['appendix_entries']} Appendix A--F entries/ranges, "
           f"{result['pd_certificates']} Appendix G PD certificates, and "
           f"{result['correction_term_classes']} Appendix H correction-term classes agree.")

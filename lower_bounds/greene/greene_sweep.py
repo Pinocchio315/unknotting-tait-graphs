@@ -22,7 +22,7 @@ Each knot runs in its own subprocess, so a failure or a memory spike is confined
 are appended to a JSONL file and finished knots are skipped on a rerun.
 """
 from __future__ import annotations
-import argparse, json, os, subprocess, sys, time
+import argparse, json, os, subprocess, sys, time, threading
 from concurrent.futures import ThreadPoolExecutor
 from fractions import Fraction
 from pathlib import Path
@@ -32,6 +32,43 @@ DEFAULT_TARGETS = HERE / 'data' / 'greene_targets.json'
 
 
 # --------------------------------------------------------------------------- one knot
+def validate_entry(entry):
+    """Verify the frozen hypotheses before any solitary-state grading is used.
+
+    The input builder performs these checks when it freezes the table. Repeating
+    them here prevents an edited or mismatched input file from turning the
+    conditional L-space argument into an unconditional obstruction. The PD's
+    determinant and cyclic labelling are checked independently by ``pin``.
+    """
+    from pin_dinv import khovanov_lspace_evidence
+    D, sigma = entry['determinant'], entry['signature']
+    if type(D) is not int or D < 3 or D % 2 == 0 or type(sigma) is not int:
+        raise ValueError('An odd determinant greater than one and an integer signature are required')
+    interval = entry['range']
+    if (len(interval) != 2 or any(type(x) is not int for x in interval)
+            or not 0 <= interval[0] <= interval[1]):
+        raise ValueError('The frozen range must be an ordered pair of nonnegative integers')
+    n = max(interval[0], 1)
+    if n not in (1, 2, 3, 4):
+        raise ValueError('Only tests for one through four crossing changes are implemented')
+    if ((n == 1 and abs(sigma) > 2)
+            or (n >= 2 and abs(sigma) != 2 * n)):
+        raise ValueError('The signature does not satisfy the selected surgery test hypotheses')
+    if entry['test'] != ('u1' if n == 1 else f'rank{n}'):
+        raise ValueError('The recorded test does not agree with the lower end of the range')
+    evidence = khovanov_lspace_evidence({
+        'determinant': D,
+        'khovanov_reduced_mod2_vector': entry['reduced_mod2_vector_raw'],
+    })
+    if entry.get('khovanov_rank', D) != evidence['rank']:
+        raise ValueError('The cached Khovanov rank disagrees with the actual mod-2 vector')
+    if 'known_unknotting_number' in entry and (
+            type(entry['known_unknotting_number']) is not int
+            or interval != [n, n] or entry['known_unknotting_number'] != n):
+        raise ValueError('A control must have a recorded exact value equal to the tested length')
+    return evidence
+
+
 def run_one(entry):
     """Compute the verdict for a single knot.  Imports live here so the orchestrator stays light."""
     sys.path.insert(0, str(HERE))
@@ -40,6 +77,7 @@ def run_one(entry):
     from greene_ranks import rank_test, oriented
     import itertools
 
+    validate_entry(entry)
     name, D, sigma = entry['name'], int(entry['determinant']), int(entry['signature'])
     lo = int(entry['range'][0])
     n = max(lo, 1)
@@ -154,20 +192,28 @@ def main():
 
     out = args.out or HERE / f'results_{which}_{i}_{total_shards}.jsonl'
     CONCLUSIVE = {'OBSTRUCTED', 'PASS', 'UNDECIDED', 'NOT_APPLICABLE'}
-    done, retry = set(), set()
+    done, retry, previous_bad_controls = set(), set(), set()
     if out.exists():
         for line in out.read_text().splitlines():
             try:
                 record = json.loads(line)
             except Exception:
                 continue
+            if (record.get('name') in data['controls']
+                    and record.get('verdict') == 'OBSTRUCTED'):
+                previous_bad_controls.add(record['name'])
             (done if record.get('verdict') in CONCLUSIVE else retry).add(record['name'])
+    if previous_bad_controls:
+        sys.exit('Previously recorded controls are obstructed; refusing to resume: '
+                 + ' '.join(sorted(previous_bad_controls)))
     retry -= done
     todo = [n for n in order if n not in done]
     again = len(retry & set(order))
     print(f'{which}: {len(order)} in shard {i}/{total_shards}, {len(done & set(order))} already settled, '
           f'{again} to retry after an error or timeout, {len(todo)} to run, '
           f'{args.workers} workers -> {out}', flush=True)
+
+    write_lock = threading.Lock()
 
     def work(name):
         started = time.time()
@@ -176,7 +222,7 @@ def main():
         try:
             finished = subprocess.run(command, capture_output=True, text=True, timeout=args.time_per_knot)
             lines = [l for l in finished.stdout.splitlines() if l.startswith('{')]
-            record = json.loads(lines[-1]) if lines else {
+            record = json.loads(lines[-1]) if lines and finished.returncode == 0 else {
                 'name': name, 'verdict': 'ERROR', 'stderr': finished.stderr[-800:],
                 'returncode': finished.returncode}
         except subprocess.TimeoutExpired:
@@ -185,10 +231,13 @@ def main():
             record = {'name': name, 'verdict': 'ERROR', 'error': repr(exc)[:400]}
         record.setdefault('seconds', round(time.time() - started, 1))
         record.setdefault('role', 'control' if args.controls else 'target')
-        with open(out, 'a') as handle:            # one short line per knot; O_APPEND keeps concurrent writes intact
-            handle.write(json.dumps(record, sort_keys=True) + '\n')
-            handle.flush()
-            os.fsync(handle.fileno())
+        # A record may exceed a stream buffer. Serialize whole records instead
+        # of assuming append mode makes several buffered writes atomic.
+        with write_lock:
+            with open(out, 'a') as handle:
+                handle.write(json.dumps(record, sort_keys=True) + '\n')
+                handle.flush()
+                os.fsync(handle.fileno())
         flag = ''
         if record.get('control_ok') is False:
             flag = '   *** CONTROL OBSTRUCTED: implementation error ***'
@@ -200,7 +249,8 @@ def main():
 
     from collections import Counter
     print('done ' + str(dict(sorted(Counter(r['verdict'] for r in results).items()))), flush=True)
-    bad = [r['name'] for r in results if r.get('control_ok') is False]
+    bad = [r['name'] for r in results if r.get('control_ok') is False
+           or (r['name'] in data['controls'] and r['verdict'] == 'OBSTRUCTED')]
     if bad:
         print('CONTROLS OBSTRUCTED (implementation error): ' + ' '.join(bad), flush=True)
         sys.exit(1)

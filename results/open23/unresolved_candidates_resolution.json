@@ -6,7 +6,7 @@
    "result": "composite?",
    "u_range": null,
    "status": "candidate:composite?(jones-ambiguous)",
-   "score": 0.438,
+   "score": 0.502,
    "reduced_crossings": 11,
    "det_changed": 75
   },
@@ -26,7 +26,7 @@
    "result": "composite?",
    "u_range": null,
    "status": "candidate:composite?(jones-ambiguous)",
-   "score": 0.437,
+   "score": 0.499,
    "reduced_crossings": 11,
    "det_changed": 75
   },
@@ -46,7 +46,7 @@
    "result": "composite?",
    "u_range": null,
    "status": "candidate:composite?(jones-ambiguous)",
-   "score": 0.437,
+   "score": 0.485,
    "reduced_crossings": 11,
    "det_changed": 75
   },
@@ -66,67 +66,7 @@
    "result": "composite?",
    "u_range": null,
    "status": "candidate:composite?(jones-ambiguous)",
-   "score": 0.43,
-   "reduced_crossings": 11,
-   "det_changed": 75
-  },
-  "verdict": [
-   "composite(jones)",
-   null,
-   [
-    2,
-    99
-   ]
-  ]
- },
- {
-  "knot": "13a_1184",
-  "cand": {
-   "crossing": 8,
-   "result": "composite?",
-   "u_range": null,
-   "status": "candidate:composite?(jones-ambiguous)",
-   "score": 0.418,
-   "reduced_crossings": 11,
-   "det_changed": 75
-  },
-  "verdict": [
-   "composite(jones)",
-   null,
-   [
-    2,
-    99
-   ]
-  ]
- },
- {
-  "knot": "13a_1184",
-  "cand": {
-   "crossing": 7,
-   "result": "composite?",
-   "u_range": null,
-   "status": "candidate:composite?(jones-ambiguous)",
-   "score": 0.416,
-   "reduced_crossings": 11,
-   "det_changed": 75
-  },
-  "verdict": [
-   "composite(jones)",
-   null,
-   [
-    2,
-    99
-   ]
-  ]
- },
- {
-  "knot": "13a_1154",
-  "cand": {
-   "crossing": 8,
-   "result": "composite?",
-   "u_range": null,
-   "status": "candidate:composite?(jones-ambiguous)",
-   "score": 0.398,
+   "score": 0.478,
    "reduced_crossings": 11,
    "det_changed": 75
   },
@@ -146,7 +86,67 @@
    "result": "composite?",
    "u_range": null,
    "status": "candidate:composite?(jones-ambiguous)",
-   "score": 0.398,
+   "score": 0.484,
+   "reduced_crossings": 11,
+   "det_changed": 75
+  },
+  "verdict": [
+   "composite(jones)",
+   null,
+   [
+    2,
+    99
+   ]
+  ]
+ },
+ {
+  "knot": "13a_1154",
+  "cand": {
+   "crossing": 8,
+   "result": "composite?",
+   "u_range": null,
+   "status": "candidate:composite?(jones-ambiguous)",
+   "score": 0.474,
+   "reduced_crossings": 11,
+   "det_changed": 75
+  },
+  "verdict": [
+   "composite(jones)",
+   null,
+   [
+    2,
+    99
+   ]
+  ]
+ },
+ {
+  "knot": "13a_1184",
+  "cand": {
+   "crossing": 8,
+   "result": "composite?",
+   "u_range": null,
+   "status": "candidate:composite?(jones-ambiguous)",
+   "score": 0.478,
+   "reduced_crossings": 11,
+   "det_changed": 75
+  },
+  "verdict": [
+   "composite(jones)",
+   null,
+   [
+    2,
+    99
+   ]
+  ]
+ },
+ {
+  "knot": "13a_1184",
+  "cand": {
+   "crossing": 7,
+   "result": "composite?",
+   "u_range": null,
+   "status": "candidate:composite?(jones-ambiguous)",
+   "score": 0.476,
    "reduced_crossings": 11,
    "det_changed": 75
   },
@@ -166,7 +166,7 @@
    "result": "composite?",
    "u_range": null,
    "status": "candidate:composite?(jones-ambiguous)",
-   "score": 0.211,
+   "score": 0.242,
    "reduced_crossings": 11,
    "det_changed": 75
   },
@@ -186,47 +186,7 @@
    "result": "composite?",
    "u_range": null,
    "status": "candidate:composite?(jones-ambiguous)",
-   "score": 0.197,
-   "reduced_crossings": 11,
-   "det_changed": 75
-  },
-  "verdict": [
-   "composite(jones)",
-   null,
-   [
-    2,
-    99
-   ]
-  ]
- },
- {
-  "knot": "13a_120",
-  "cand": {
-   "crossing": 3,
-   "result": "composite?",
-   "u_range": null,
-   "status": "candidate:composite?(jones-ambiguous)",
-   "score": 0.208,
-   "reduced_crossings": 11,
-   "det_changed": 75
-  },
-  "verdict": [
-   "composite(jones)",
-   null,
-   [
-    2,
-    99
-   ]
-  ]
- },
- {
-  "knot": "13a_120",
-  "cand": {
-   "crossing": 4,
-   "result": "composite?",
-   "u_range": null,
-   "status": "candidate:composite?(jones-ambiguous)",
-   "score": 0.208,
+   "score": 0.242,
    "reduced_crossings": 11,
    "det_changed": 75
   },
@@ -246,7 +206,7 @@
    "result": "composite?",
    "u_range": null,
    "status": "candidate:composite?(jones-ambiguous)",
-   "score": 0.193,
+   "score": 0.227,
    "reduced_crossings": 11,
    "det_changed": 75
   },
@@ -266,7 +226,47 @@
    "result": "composite?",
    "u_range": null,
    "status": "candidate:composite?(jones-ambiguous)",
-   "score": 0.193,
+   "score": 0.227,
+   "reduced_crossings": 11,
+   "det_changed": 75
+  },
+  "verdict": [
+   "composite(jones)",
+   null,
+   [
+    2,
+    99
+   ]
+  ]
+ },
+ {
+  "knot": "13a_120",
+  "cand": {
+   "crossing": 3,
+   "result": "composite?",
+   "u_range": null,
+   "status": "candidate:composite?(jones-ambiguous)",
+   "score": 0.221,
+   "reduced_crossings": 11,
+   "det_changed": 75
+  },
+  "verdict": [
+   "composite(jones)",
+   null,
+   [
+    2,
+    99
+   ]
+  ]
+ },
+ {
+  "knot": "13a_120",
+  "cand": {
+   "crossing": 4,
+   "result": "composite?",
+   "u_range": null,
+   "status": "candidate:composite?(jones-ambiguous)",
+   "score": 0.221,
    "reduced_crossings": 11,
    "det_changed": 75
   },
