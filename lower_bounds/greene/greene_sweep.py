@@ -62,7 +62,7 @@ def run_one(entry):
             fits = bool(outcome['fits'])
             verdicts.append({'test': 'u1', 'admits': fits, 'detail': outcome})
         else:
-            outcome = rank_test(oriented(vector, sigma), D, n)
+            outcome = rank_test(oriented(vector, sigma), D, n, pairing=pairing)
             fits = outcome['verdict'] != 'OBSTRUCTED'
             verdicts.append({'test': f'rank{n}', 'admits': fits, 'detail': outcome})
         total += 1
