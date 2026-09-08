@@ -34,6 +34,7 @@ Deposited records are in `../../results/bernhard_jablan/`.
 | `greene_sweep.py` | the sweep: one subprocess per knot, resume-safe JSONL output, per-knot time limit |
 | `slurm_greene.sh` | the array launcher, sixteen tasks by default |
 | `make_server_package.py` | collects everything the sweep needs into `greene_server/` and a tar archive |
+| `summarize_greene.py` | combines the result files of every task, checks the controls, and lists the bounds |
 
 ## The sweep
 
@@ -80,6 +81,15 @@ submission line above.
 
 Verdicts: `OBSTRUCTED` raises the lower bound, and `PASS`, `UNDECIDED`, `TIMEOUT` and `ERROR` supply no
 bound.  A time limit is not a negative mathematical result.
+
+A run split between the cluster and another machine leaves several result files.  `summarize_greene.py`
+reads any number of them, keeps one record per knot (a conclusive verdict replaces an error or a
+timeout, and two different conclusive verdicts for one knot are reported as a contradiction), states the
+coverage against the frozen list, checks that no control is obstructed, and writes the bounds:
+
+```sh
+python summarize_greene.py runs/*/*.jsonl --out ../../results/greene/sweep.json
+```
 
 ## Validation
 
