@@ -1,6 +1,18 @@
 {
   "input_sha256": "ef5789b8477984d9d8a423b392dfe8d2f84659a8c2509f600db0f49ec35e2c38",
   "raw_sha256": "60c046924a38989dc59cbe38f82ea15834f8c89e160dc215157f631e45ef378c",
+  "database_knotinfo_version": "2026.8.1",
+  "implementation_sha256": {
+    "lower_bounds/greene/greene_dinv.py": "593eb5a390cdebd954293e3839c883ed77f43138a3726ecb93c222c75047d09f",
+    "lower_bounds/greene/pin_dinv.py": "91602d7851f939c36227f0d69367a7e8644fadd521629f439183bd3ac0e26c83",
+    "lower_bounds/greene/half_integral.py": "aff7c9bae393cf93b3f281ecb9f109e7d9446c14d8d2a447d5c1b5ef66d2e143",
+    "lower_bounds/greene/greene_ranks.py": "ff9e594e0828e92b3601a9ef0140b1e8b4bf1f0aa0c94e174422b7c392f21e57",
+    "lower_bounds/greene/greene_sweep.py": "19561a0f40d99f0455d23c1dee605f2cb33cc15df733ecbd7fbb668f9a99b091",
+    "lower_bounds/owens/owens_obstruction.py": "66d19b2b358f2d1cf5dc6bae0a6fbba4cfcb09a7c0ebc48b3ed5f5f73bc7ede5",
+    "lower_bounds/owens/owens_u3.py": "d6d35766b6855f682dc5d60df9e6149a0e94fec35588ca1dc0b6ac41af1713c7",
+    "lower_bounds/owens/owens_u4.py": "b015f60376e9aa1af179bd3c71e21c5051325bc1184200e4a785dc428d15936a",
+    "lower_bounds/owens/linkform.py": "09d3a89869882dd25feea8a0c818bc89ee3d0ff35871ed81ffa48954d1b90a4d"
+  },
   "premises": {
     "targets": 1967,
     "controls": 1452
@@ -213,7 +225,7 @@
           }
         }
       ],
-      "seconds": 3.6,
+      "seconds": 3.4,
       "lower_bound": 3,
       "new_range": [
         3,
@@ -441,7 +453,7 @@
           }
         }
       ],
-      "seconds": 2.7,
+      "seconds": 2.6,
       "lower_bound": 3,
       "new_range": [
         3,
@@ -936,7 +948,7 @@
           }
         }
       ],
-      "seconds": 0.7,
+      "seconds": 0.6,
       "known_unknotting_number": 3,
       "control_ok": true,
       "d": {
@@ -992,7 +1004,7 @@
           }
         }
       ],
-      "seconds": 10.9,
+      "seconds": 10.6,
       "known_unknotting_number": 4,
       "control_ok": true,
       "d": {
@@ -6446,5 +6458,5 @@
     "9_10",
     "9_13"
   ],
-  "seconds": 27.1
+  "seconds": 26.0
 }

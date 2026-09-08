@@ -1,6 +1,6 @@
 # Lower-bound computations
 
-This directory accompanies **Computation of Unknotting Numbers: Which Knot Breaks the Bernhard–Jablan Conjecture?**, Sections 3 and 5.1. The subsections of Section 3 are unnumbered; the names below identify the corresponding arguments. Every obstruction is a necessary condition for an unknotting sequence. A passing test does not prove an upper bound, and a resource limit supplies no obstruction.
+This directory accompanies **Computation of Unknotting Numbers: Which Knot Breaks the Bernhard–Jablan Conjecture?**, version 1.3, Sections 3 and 5. The names below identify the corresponding arguments. Every obstruction is a necessary condition for an unknotting sequence. A passing test does not prove an upper bound, and a resource limit supplies no obstruction.
 
 | Script | Location in the paper | Mathematical role |
 |---|---|---|
@@ -13,9 +13,32 @@ This directory accompanies **Computation of Unknotting Numbers: Which Knot Break
 | `generator_bound_sweep.py` | Two crossing changes; Cyclic-cover bounds | The minimum number of generators of `H₁(Σ₂)`, with the three-rank checked against the Lickorish–Millett Jones evaluation. |
 | `cyclic_cover_bound.py` | Cyclic-cover bounds | Nakanishi's bound `u ≥ ceil(g_n/(n−1))`, using the tabulated homology of covers of degrees two through nine. Zero invariant factors are free summands and count toward `g_n`. |
 | `montesinos/montesinos_u1.py`, `montesinos/hf_red.py` | Montesinos knots | Negative-definite star plumbings, correction terms, the Ni–Wu half-integral surgery pattern and the reduced Floer mapping cone. See [montesinos/README.md](montesinos/README.md) for hypotheses and exact termination. |
-| `greene/qa_search.py`, `greene/greene_dinv.py`, `greene/pin_dinv.py` | Section 5.1 | Greene's Kauffman-state gradings and Spin^c structures give candidate correction terms when the double branched cover is an L-space. For `12n_491` and `13n_3370`, the reduced Khovanov homology ranks over `F_2` equal the determinants and establish this premise. The half-integral surgery test excludes unknotting number one, and the published upper bounds give `u(12n_491) = u(13n_3370) = 2`. See [greene/README.md](greene/README.md). |
+| `greene/qa_search.py`, `greene/greene_dinv.py`, `greene/pin_dinv.py` | Sections 2, 3 and 5 | Greene's Kauffman-state gradings and Spin^c structures give finite candidate sets for correction terms when the double branched cover is an L-space. Reduced Khovanov rank over `F_2` equal to the determinant certifies that premise. The half-integral surgery test excludes unknotting number one for `12n_491`, `13n_3370` and `13n_1587`; published upper bounds give value two for all three. See [greene/README.md](greene/README.md). |
+| `greene/greene_sweep.py`, `greene/greene_ranks.py` | Section 3 | Apply the same half-integral and Owens rank-two, rank-three and rank-four comparisons to the frozen nonalternating target list. Ambiguous correction terms must be handled conservatively; no timeout, incomplete form enumeration or surviving candidate produces an obstruction. |
 
 The deposited pairing list contains 815 obstructions. The HFK scan records order two for `13n_689`, `13n_1166`, `13n_2504` and `13n_2807`. The Montesinos computation excludes unknotting number one for 49 of its 50 targets: 44 have an independently recorded upper bound two and five have upper bound three. These raw records retain their original filenames in `../results/`; the aggregate table is assembled by `../consolidate_results.py`.
+
+The v1.3 Greene sweep supplies 1,707 lower-bound improvements: 1,492 additional
+exact values and 215 narrower ranges. Its exact results comprise 1,309 further
+values two, 136 values three, 43 values four, and four values five. Together
+with the two earlier Greene cases, method `G` contributes 1,494 exact values.
+Across all methods, the manuscript reports 2,719 exact values and 390 improved
+ranges; lower bounds determine 2,711 of the exact values, and eight explicit
+unknotting diagrams determine the rest.
+
+Owens's general theorem uses the signed unknotting-sequence hypothesis and
+the labelled correction terms of the branched cover; it does not require the
+knot to be alternating or Montesinos. The L-space condition is used here to
+extract correction-term candidates from solitary states. It does not guarantee
+that every candidate set becomes a singleton. Spectral-sequence differentials
+respect the Spin^c decomposition and lower the Maslov grading by one.
+
+The new neighbour lower bounds enlarge the separate **conditional** BJ result
+from 806 to 959 alternating knots. These conditional cases are not added to
+the exact-value total. Forty-six Jones-dependent cases remain excluded; 22
+other parents have 11 named possible children. Likewise, the scan of 546
+unresolved lower-end-one knots checks one tabulated minimal diagram each;
+its negative results do not supply lower bounds for nonalternating knots.
 
 ## Running fresh checks
 
@@ -33,3 +56,12 @@ python lower_bounds/montesinos/montesinos_u1.py 3_1 4_1 11n_102 12n_457 --out /t
 The 19-test regression suite checks explicit abelian groups, exact ellipsoid boundaries, lens-space correction terms, known unknotting-number-one knots, known HFK torsion orders and Lidman's reduced-Floer obstruction for `11n_102`. It also checks `12n_457` against rational correction terms computed by a separate exact calculation. Agreement with a deposited list is a reproducibility check, not the independent mathematical control.
 
 The September 2026 audit recomputed the 3,002 Seifert presentations: exactly 815 obstructions, with no undecided cases or determinant mismatches. The separate 1,516-knot Seifert control set with known unknotting number one gives no false obstruction or uncomputed case. All 12,965 cyclic-cover records were reproduced, and the four reported HFK torsion orders were recomputed as two. It also reran all 50 Montesinos targets with the exact lattice algorithm and reproduced all 49 obstructions, with no errors. The only target requiring reduced homology is `12n_457`; `12n_309` remains unexcluded. The fresh runs did not replace deposited raw files. Historical full-table logs and the bounded regression suite cover different computations; neither should be read as a rerun of every deposited result.
+
+The v1.3 audit is documented in
+[`../results/review_v1_3/greene_code_notes.md`](../results/review_v1_3/greene_code_notes.md)
+and the adjacent theory/reporting notes. In particular, the four new successful
+rank-four targets were checked against their deposited records, but their
+complete form enumerations were not freshly reproduced within the review's
+60-second bound. That timeout supplies no mathematical verdict. Reproduce
+the current aggregate with `python consolidate_results.py --manuscript v1.3`;
+use `--manuscript v1.2` for the preserved earlier input profile.

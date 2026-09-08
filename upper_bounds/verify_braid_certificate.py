@@ -15,8 +15,11 @@ The script checks, from scratch:
   5. a crossing change in the reference diagram of 10_113 gives the unknot,
      independently verified by knot Floer genus detection.
 
-Together: u(13n1587) <= 1 + u(10_113) = 2, so the interval improves from [1,3] to [1,2]
-(additivity-free, unlike the [1,2] of arXiv:2409.09032 which assumed additivity).
+Together: u(13n1587) <= 1 + u(10_113) = 2. This construction was published by
+Brittenham--Hermiller, arXiv:1705.05985v2, Section 3. The unchanged archival
+JSON's attribution to Applebaum and its unresolved [1,2] status are historical
+descriptive errors, documented in results/README.md. The new, separate Greene
+lower bound gives u(13n1587)=2; this verifier establishes only the upper bound.
 
     python upper_bounds/verify_braid_certificate.py
 """
@@ -107,7 +110,8 @@ def main() -> None:
     require(exact_det(partner) > 1, 'nontriviality check of 10_113 failed')
     print(f'5. u(10_113) = 1: reference crossing {unknotting_row} gives the unknot (HFK): OK')
 
-    print('\n=> u(13n1587) <= 1 + u(10_113) = 2; interval [1,3] -> [1,2]  (certificate verified)')
+    print('\n=> Published upper bound u(13n1587) <= 1 + u(10_113) = 2 verified. '
+          'The separately computed Greene lower bound determines u=2.')
 
 
 if __name__ == '__main__':

@@ -61,6 +61,27 @@ summary is `results/comparison/crossing_formula_verification.json`.
 
 ## Pipeline files
 
+`u1_minimal_diagram_scan.py` tests every crossing of one tabulated minimal
+diagram per knot. The archived positive cohort has 1,516 knots and the open
+cohort has 546. A negative result applies only to the chosen diagram; the
+program does not enumerate other minimal diagrams of a non-alternating knot.
+Determinant-one changes are decided by simplification or by knot Floer
+homology's Seifert-genus detection, with failures left undecided.
+
+From the repository root:
+
+```sh
+python crossing_changes/u1_minimal_diagram_scan.py 3_1 11n_116
+python crossing_changes/u1_minimal_diagram_scan.py --cohort open --out /tmp/open_diagrams.json
+```
+
+The program prints results unless an explicit `--out` path is supplied. New
+records include the PD and per-crossing evidence; the existing archives are
+not replaced by a named diagnostic run. The independent verification in
+`results/review_v1_3/u1_scanner_audit.json` checks one positive witness for
+every one of the 1,516 known knots and all 7,052 crossing changes of the 546
+chosen open-range diagrams.
+
 | File | Purpose |
 |---|---|
 | `crossing_dataset.py`, `augment.py` | Generate crossing-neighbor records and exact signature/resistance values |
@@ -72,5 +93,6 @@ summary is `results/comparison/crossing_formula_verification.json`.
 | `lickorish_electrical.py`, `residual_breakdown.py` | Evaluate the linking-pairing obstruction and organize recorded exclusions |
 | `analyze_v2.py` | Analyze the deposited data and fit the exploratory crossing-selection model |
 | `mccoy_u1_check.py` | Apply the alternating-diagram theorem with explicit undecided outcomes |
+| `u1_minimal_diagram_scan.py` | Inspect one chosen minimal diagram per knot, with explicit determinant and unknot-recognition evidence |
 
 `run_all.sh` is an exploratory rebuild that writes work files and depends on the supplied reference tables and installed database; it is not the default frozen-manuscript verification command. The retained script names reflect historical campaign sizes. The regression suite checks exact invariants, diagram moves, certificate rejection, and the distinction between verified identifications and polynomial hypotheses. It is not a fresh topological revalidation of every Appendix F entry.

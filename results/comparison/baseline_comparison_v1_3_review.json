@@ -645,7 +645,7 @@
     "results/crossing_changes/mccoy_alternating_u1_2026-09-08.json": "e7ac801a06f4f78ef8e845889efdd3c50000c7f9705569ae481d6b459e089b5f",
     "results/dkt/knotinfo_rollback_list_2026-09-07.csv": "c406637915d8c50529a03717105bc1ff7291727b4a6dc279a24ecf64e22714aa",
     "results/paper_v1_1_snapshot.json": "f9841832d9f990692b9472759dc087dc76b8d967e178ed8317551ffc1a13f909",
-    "results/paper_v1_3_manifest.json": "347af16a0bfbb04b794011e3f6b11f68dc697b898fe796d477dd463bfcd5d5eb"
+    "results/paper_v1_3_review_manifest.json": "5ca6d1f457f7e3b9c0f04b24c35ee14c818bed3076223d9851aeb5e3e2d2d6ca"
   },
   "interpretation": [
     "The 2719 count refers to exact determinations relative to the historical baseline; it is not a count of previously unpublished values.",

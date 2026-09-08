@@ -1,0 +1,14 @@
+/Users/pinocchio/.pyenv/versions/unknot-venv/lib/python3.13/site-packages/plink/gui.py:33: UserWarning: Plink failed to import tkinter, GUI will not be available
+  warnings.warn('Plink failed to import tkinter, GUI will not be available')
+5_1: det 5 sigma -4 rank 2 | Greene d == Goeritz m_G: True | this module PASS | published PASS | OK
+7_3: det 13 sigma -4 rank 2 | Greene d == Goeritz m_G: True | this module PASS | published PASS | OK
+7_5: det 17 sigma -4 rank 2 | Greene d == Goeritz m_G: True | this module PASS | published PASS | OK
+8_2: det 17 sigma -4 rank 2 | Greene d == Goeritz m_G: True | this module PASS | published PASS | OK
+9_10: det 33 sigma -4 rank 2 | Greene d == Goeritz m_G: True | this module OBSTRUCTED | published OBSTRUCTED | OK
+9_13: det 37 sigma -4 rank 2 | Greene d == Goeritz m_G: True | this module OBSTRUCTED | published OBSTRUCTED | OK
+7_1: det 7 sigma -6 rank 3 | Greene d == Goeritz m_G: True | this module PASS | published PASS | OK
+9_3: det 19 sigma -6 rank 3 | Greene d == Goeritz m_G: True | this module PASS | published PASS | OK
+9_6: det 27 sigma -6 rank 3 | Greene d == Goeritz m_G: True | this module PASS | published PASS | OK
+9_9: det 31 sigma -6 rank 3 | Greene d == Goeritz m_G: True | this module PASS | published PASS | OK
+10_2: det 23 sigma -6 rank 3 | Greene d == Goeritz m_G: True | this module PASS | published PASS | OK
+10_46: det 31 sigma -6 rank 3 | Greene d == Goeritz m_G: True | this module PASS | published PASS | OK

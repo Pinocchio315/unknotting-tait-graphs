@@ -12,18 +12,18 @@ from fractions import Fraction
 import json
 from pathlib import Path
 import re
-from consolidate_results import (RESULTS, PAPER_SCAN, appendix_tag, comparison_counts, comparison_report,
+from consolidate_results import (RESULTS, paper_scan, appendix_tag, comparison_counts, comparison_report,
                                  manuscript_counts, manuscript_tex, read_json, reconstruct)
 
 
 def manuscript_version(path):
     """Select the authenticated release from explicit generated-input paths."""
     path = Path(path)
-    versions = set(re.findall(r'paper_v1_([23])/', path.read_text()))
+    versions = set(re.findall(r'paper_v1_(2|3(?:_review)?)/', path.read_text()))
     if len(versions) > 1:
         raise ValueError('A manuscript mixes numerical inputs from different versions')
     if versions:
-        return 'v1.' + versions.pop()
+        return 'v1.' + versions.pop().replace('_', '-')
     match = re.search(r'v1\.([123])', path.name)
     if not match:
         raise ValueError('Cannot determine the manuscript version')
@@ -57,8 +57,8 @@ def load_manuscript(path):
             target = (path.parent / name).resolve()
             if not target.suffix:
                 target = target.with_suffix('.tex')
-            if target.name in expected and any(re.fullmatch(r'paper_v1_[23]', p) for p in target.parts):
-                require('paper_' + version.replace('.', '_') in target.parts,
+            if target.name in expected and any(re.fullmatch(r'paper_v1_(?:2|3(?:_review)?)', p) for p in target.parts):
+                require('paper_' + version.replace('.', '_').replace('-', '_') in target.parts,
                         f'Generated input belongs to a different manuscript version: {target}')
                 require(target.read_text() == expected[target.name],
                         f'Stale generated manuscript input: {target}')
@@ -137,7 +137,7 @@ def verify(tex, manuscript='v1.3'):
                     f'Appendix {chr(65 + index)}: Greene superscripts disagree with the records')
 
     # These conditional statements must remain separate from exact values.
-    scan = read_json(RESULTS/PAPER_SCAN)
+    scan = read_json(RESULTS/paper_scan(consolidated))
     rigorous = {name for name, _, _, heuristic in scan['zero_candidate_knots'] if heuristic == 0}
     require(names_in_table(sections[5]) == rigorous, 'Appendix F disagrees with the certified candidate analysis')
 

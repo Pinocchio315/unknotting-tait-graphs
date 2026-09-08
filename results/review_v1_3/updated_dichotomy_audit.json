@@ -1,0 +1,4993 @@
+{
+  "rows_sha256": "6a26477e1af952804faa618764675b38f6b9a508adcd5ee9eaada299654faafd",
+  "crossing_rows": 13105,
+  "parents": 1027,
+  "rigorous_parents": 959,
+  "previous_rigorous": 806,
+  "added_rigorous": 153,
+  "all_parent_crossings_present_once": true,
+  "rigorous_set_independently_reconstructed": true,
+  "changed_fields": {
+    "u_range": 238,
+    "result": 20
+  },
+  "changed_intervals": [
+    {
+      "parent": "13a_1034",
+      "crossing": 10,
+      "child": "11n_94",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1122",
+      "crossing": 0,
+      "child": "12n_772",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1122",
+      "crossing": 3,
+      "child": "12n_92",
+      "old": [
+        1,
+        3
+      ],
+      "new": [
+        2,
+        3
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1122",
+      "crossing": 6,
+      "child": "13n_914",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1122",
+      "crossing": 12,
+      "child": "12n_291",
+      "old": [
+        1,
+        3
+      ],
+      "new": [
+        2,
+        3
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1175",
+      "crossing": 0,
+      "child": "12n_525",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1175",
+      "crossing": 5,
+      "child": "11n_142",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "code"
+    },
+    {
+      "parent": "13a_1175",
+      "crossing": 12,
+      "child": "12n_359",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1255",
+      "crossing": 11,
+      "child": "12n_348",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1267",
+      "crossing": 0,
+      "child": "12n_865",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "code"
+    },
+    {
+      "parent": "13a_1304",
+      "crossing": 7,
+      "child": "12n_376",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_134",
+      "crossing": 9,
+      "child": "12n_84",
+      "old": [
+        1,
+        3
+      ],
+      "new": [
+        2,
+        3
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1361",
+      "crossing": 0,
+      "child": "12n_324",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1506",
+      "crossing": 3,
+      "child": "11n_179",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1526",
+      "crossing": 0,
+      "child": "12n_631",
+      "old": [
+        1,
+        3
+      ],
+      "new": [
+        2,
+        3
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1526",
+      "crossing": 10,
+      "child": "11n_142",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "code"
+    },
+    {
+      "parent": "13a_1534",
+      "crossing": 0,
+      "child": "12n_529",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1534",
+      "crossing": 11,
+      "child": "12n_524",
+      "old": [
+        1,
+        3
+      ],
+      "new": [
+        2,
+        3
+      ],
+      "identification": "code"
+    },
+    {
+      "parent": "13a_1534",
+      "crossing": 12,
+      "child": "12n_529",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "code"
+    },
+    {
+      "parent": "13a_1541",
+      "crossing": 0,
+      "child": "12n_698",
+      "old": [
+        2,
+        3
+      ],
+      "new": [
+        3,
+        3
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1569",
+      "crossing": 0,
+      "child": "12n_728",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1569",
+      "crossing": 7,
+      "child": "12n_312",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1569",
+      "crossing": 12,
+      "child": "11n_120",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1662",
+      "crossing": 0,
+      "child": "11n_94",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1677",
+      "crossing": 7,
+      "child": "12n_751",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1712",
+      "crossing": 0,
+      "child": "12n_539",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1712",
+      "crossing": 3,
+      "child": "13n_635",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1712",
+      "crossing": 12,
+      "child": "12n_539",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1955",
+      "crossing": 3,
+      "child": "12n_531",
+      "old": [
+        1,
+        3
+      ],
+      "new": [
+        2,
+        3
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1965",
+      "crossing": 10,
+      "child": "11n_115",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_2063",
+      "crossing": 0,
+      "child": "12n_875",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_2063",
+      "crossing": 6,
+      "child": "12n_376",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_2193",
+      "crossing": 0,
+      "child": "12n_751",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "code"
+    },
+    {
+      "parent": "13a_2275",
+      "crossing": 0,
+      "child": "12n_855",
+      "old": [
+        1,
+        3
+      ],
+      "new": [
+        2,
+        3
+      ],
+      "identification": "code"
+    },
+    {
+      "parent": "13a_232",
+      "crossing": 0,
+      "child": "12n_330",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_262",
+      "crossing": 8,
+      "child": "12n_75",
+      "old": [
+        1,
+        3
+      ],
+      "new": [
+        2,
+        3
+      ],
+      "identification": "code"
+    },
+    {
+      "parent": "13a_262",
+      "crossing": 12,
+      "child": "12n_71",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_2632",
+      "crossing": 0,
+      "child": "12n_563",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_2813",
+      "crossing": 0,
+      "child": "12n_517",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_2813",
+      "crossing": 12,
+      "child": "12n_517",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_2837",
+      "crossing": 0,
+      "child": "12n_84",
+      "old": [
+        1,
+        3
+      ],
+      "new": [
+        2,
+        3
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_2886",
+      "crossing": 0,
+      "child": "12n_216",
+      "old": [
+        1,
+        3
+      ],
+      "new": [
+        2,
+        3
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_2886",
+      "crossing": 12,
+      "child": "12n_216",
+      "old": [
+        1,
+        3
+      ],
+      "new": [
+        2,
+        3
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_3034",
+      "crossing": 0,
+      "child": "11n_94",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_3147",
+      "crossing": 7,
+      "child": "11n_94",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_34",
+      "crossing": 9,
+      "child": "12n_2",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "code"
+    },
+    {
+      "parent": "13a_3482",
+      "crossing": 7,
+      "child": "12n_9",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_3810",
+      "crossing": 7,
+      "child": "13n_4006",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_3874",
+      "crossing": 1,
+      "child": "12n_363",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_393",
+      "crossing": 0,
+      "child": "11n_129",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_4055",
+      "crossing": 0,
+      "child": "12n_678",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_4055",
+      "crossing": 7,
+      "child": "11n_129",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_4055",
+      "crossing": 8,
+      "child": "12n_627",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_4202",
+      "crossing": 9,
+      "child": "12n_541",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "code"
+    },
+    {
+      "parent": "13a_4415",
+      "crossing": 11,
+      "child": "12n_782",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_4645",
+      "crossing": 7,
+      "child": "11n_129",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_4645",
+      "crossing": 10,
+      "child": "11n_160",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_4650",
+      "crossing": 12,
+      "child": "12n_608",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_4749",
+      "crossing": 5,
+      "child": "12n_544",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_4749",
+      "crossing": 8,
+      "child": "12n_544",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_4782",
+      "crossing": 1,
+      "child": "11n_129",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_4782",
+      "crossing": 8,
+      "child": "11n_129",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_573",
+      "crossing": 9,
+      "child": "12n_21",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_618",
+      "crossing": 11,
+      "child": "12n_9",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_655",
+      "crossing": 11,
+      "child": "12n_49",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_965",
+      "crossing": 12,
+      "child": "12n_348",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "12a_553",
+      "crossing": 2,
+      "child": "11n_112",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1077",
+      "crossing": 9,
+      "child": "12n_415",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1198",
+      "crossing": 0,
+      "child": "12n_818",
+      "old": [
+        1,
+        3
+      ],
+      "new": [
+        2,
+        3
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1258",
+      "crossing": 10,
+      "child": "12n_383",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1309",
+      "crossing": 0,
+      "child": "12n_569",
+      "old": [
+        1,
+        3
+      ],
+      "new": [
+        2,
+        3
+      ],
+      "identification": "code"
+    },
+    {
+      "parent": "13a_1309",
+      "crossing": 12,
+      "child": "12n_291",
+      "old": [
+        1,
+        3
+      ],
+      "new": [
+        2,
+        3
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1343",
+      "crossing": 0,
+      "child": "12n_774",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1406",
+      "crossing": 0,
+      "child": "12n_376",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1453",
+      "crossing": 0,
+      "child": "12n_795",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1453",
+      "crossing": 11,
+      "child": "12n_359",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1503",
+      "crossing": 3,
+      "child": "11n_129",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1560",
+      "crossing": 0,
+      "child": "12n_774",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1717",
+      "crossing": 0,
+      "child": "12n_49",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1717",
+      "crossing": 12,
+      "child": "12n_49",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_2090",
+      "crossing": 0,
+      "child": "12n_825",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_2103",
+      "crossing": 0,
+      "child": "12n_529",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_2119",
+      "crossing": 7,
+      "child": "12n_383",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_218",
+      "crossing": 0,
+      "child": "12n_330",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_2210",
+      "crossing": 0,
+      "child": "12n_531",
+      "old": [
+        1,
+        3
+      ],
+      "new": [
+        2,
+        3
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_2210",
+      "crossing": 12,
+      "child": "12n_106",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_234",
+      "crossing": 5,
+      "child": "12n_86",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_2453",
+      "crossing": 12,
+      "child": "11n_129",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_2488",
+      "crossing": 0,
+      "child": "12n_821",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_2622",
+      "crossing": 0,
+      "child": "12n_180",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_2622",
+      "crossing": 10,
+      "child": "11n_177",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_2894",
+      "crossing": 11,
+      "child": "12n_867",
+      "old": [
+        2,
+        3
+      ],
+      "new": [
+        3,
+        3
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_2988",
+      "crossing": 0,
+      "child": "12n_708",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_3149",
+      "crossing": 9,
+      "child": "11n_94",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_326",
+      "crossing": 12,
+      "child": "12n_189",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_3274",
+      "crossing": 10,
+      "child": "12n_75",
+      "old": [
+        1,
+        3
+      ],
+      "new": [
+        2,
+        3
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_3495",
+      "crossing": 0,
+      "child": "11n_166",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "code"
+    },
+    {
+      "parent": "13a_3515",
+      "crossing": 4,
+      "child": "11n_129",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_3515",
+      "crossing": 12,
+      "child": "11n_160",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_3549",
+      "crossing": 12,
+      "child": "12n_768",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_3561",
+      "crossing": 0,
+      "child": "11n_161",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_3568",
+      "crossing": 12,
+      "child": "12n_774",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_365",
+      "crossing": 9,
+      "child": "13n_630",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_3727",
+      "crossing": 1,
+      "child": "11n_112",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_3727",
+      "crossing": 5,
+      "child": "12n_415",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_3789",
+      "crossing": 0,
+      "child": "11n_166",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_387",
+      "crossing": 5,
+      "child": "12n_131",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_387",
+      "crossing": 8,
+      "child": "12n_86",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_3987",
+      "crossing": 5,
+      "child": "11n_115",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_4056",
+      "crossing": 8,
+      "child": "12n_399",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_4056",
+      "crossing": 9,
+      "child": "11n_166",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "code"
+    },
+    {
+      "parent": "13a_4056",
+      "crossing": 10,
+      "child": "12n_312",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_4096",
+      "crossing": 9,
+      "child": "11n_129",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_4134",
+      "crossing": 5,
+      "child": "12n_865",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_4188",
+      "crossing": 5,
+      "child": "11n_160",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_4188",
+      "crossing": 9,
+      "child": "11n_160",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_4241",
+      "crossing": 10,
+      "child": "11n_179",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_4521",
+      "crossing": 1,
+      "child": "11n_129",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_4521",
+      "crossing": 5,
+      "child": "11n_112",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_4609",
+      "crossing": 0,
+      "child": "11n_112",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_4609",
+      "crossing": 9,
+      "child": "11n_112",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "code"
+    },
+    {
+      "parent": "13a_4633",
+      "crossing": 9,
+      "child": "12n_348",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_4633",
+      "crossing": 11,
+      "child": "12n_348",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_608",
+      "crossing": 0,
+      "child": "12n_75",
+      "old": [
+        1,
+        3
+      ],
+      "new": [
+        2,
+        3
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_608",
+      "crossing": 12,
+      "child": "12n_127",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_736",
+      "crossing": 9,
+      "child": "12n_291",
+      "old": [
+        1,
+        3
+      ],
+      "new": [
+        2,
+        3
+      ],
+      "identification": "code"
+    },
+    {
+      "parent": "13a_959",
+      "crossing": 0,
+      "child": "12n_821",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_971",
+      "crossing": 11,
+      "child": "12n_291",
+      "old": [
+        1,
+        3
+      ],
+      "new": [
+        2,
+        3
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1080",
+      "crossing": 0,
+      "child": "12n_84",
+      "old": [
+        1,
+        3
+      ],
+      "new": [
+        2,
+        3
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1259",
+      "crossing": 8,
+      "child": "12n_489",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1274",
+      "crossing": 0,
+      "child": "12n_782",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1344",
+      "crossing": 7,
+      "child": "12n_363",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1510",
+      "crossing": 0,
+      "child": "12n_833",
+      "old": [
+        1,
+        3
+      ],
+      "new": [
+        2,
+        3
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1543",
+      "crossing": 0,
+      "child": "12n_700",
+      "old": [
+        2,
+        3
+      ],
+      "new": [
+        3,
+        3
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1561",
+      "crossing": 0,
+      "child": "12n_790",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "code"
+    },
+    {
+      "parent": "13a_1675",
+      "crossing": 0,
+      "child": "12n_741",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1675",
+      "crossing": 3,
+      "child": "12n_137",
+      "old": [
+        1,
+        3
+      ],
+      "new": [
+        2,
+        3
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1675",
+      "crossing": 6,
+      "child": "12n_137",
+      "old": [
+        1,
+        3
+      ],
+      "new": [
+        2,
+        3
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1845",
+      "crossing": 3,
+      "child": "12n_216",
+      "old": [
+        1,
+        3
+      ],
+      "new": [
+        2,
+        3
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1968",
+      "crossing": 3,
+      "child": "12n_415",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_213",
+      "crossing": 10,
+      "child": "12n_9",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_2195",
+      "crossing": 0,
+      "child": "12n_784",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "code"
+    },
+    {
+      "parent": "13a_2195",
+      "crossing": 5,
+      "child": "11n_94",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "code"
+    },
+    {
+      "parent": "13a_2195",
+      "crossing": 10,
+      "child": "12n_84",
+      "old": [
+        1,
+        3
+      ],
+      "new": [
+        2,
+        3
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_2386",
+      "crossing": 0,
+      "child": "12n_324",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_2447",
+      "crossing": 0,
+      "child": "12n_796",
+      "old": [
+        2,
+        3
+      ],
+      "new": [
+        3,
+        3
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_2535",
+      "crossing": 0,
+      "child": "12n_708",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_2550",
+      "crossing": 0,
+      "child": "12n_675",
+      "old": [
+        1,
+        3
+      ],
+      "new": [
+        2,
+        3
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_2610",
+      "crossing": 3,
+      "child": "11n_112",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_2610",
+      "crossing": 7,
+      "child": "11n_112",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_269",
+      "crossing": 5,
+      "child": "12n_131",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_2897",
+      "crossing": 7,
+      "child": "12n_97",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_2991",
+      "crossing": 0,
+      "child": "12n_675",
+      "old": [
+        1,
+        3
+      ],
+      "new": [
+        2,
+        3
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_303",
+      "crossing": 12,
+      "child": "12n_71",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_3269",
+      "crossing": 12,
+      "child": "12n_454",
+      "old": [
+        1,
+        3
+      ],
+      "new": [
+        2,
+        3
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_3376",
+      "crossing": 7,
+      "child": "12n_330",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_3376",
+      "crossing": 10,
+      "child": "12n_330",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_3464",
+      "crossing": 1,
+      "child": "12n_415",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_3464",
+      "crossing": 4,
+      "child": "12n_415",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_3529",
+      "crossing": 1,
+      "child": "12n_563",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_3529",
+      "crossing": 4,
+      "child": "12n_49",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_3551",
+      "crossing": 12,
+      "child": "12n_441",
+      "old": [
+        2,
+        3
+      ],
+      "new": [
+        3,
+        3
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_3690",
+      "crossing": 7,
+      "child": "12n_330",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_3779",
+      "crossing": 5,
+      "child": "11n_160",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_3779",
+      "crossing": 12,
+      "child": "11n_160",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_382",
+      "crossing": 9,
+      "child": "12n_216",
+      "old": [
+        1,
+        3
+      ],
+      "new": [
+        2,
+        3
+      ],
+      "identification": "code"
+    },
+    {
+      "parent": "13a_3864",
+      "crossing": 1,
+      "child": "12n_9",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_3864",
+      "crossing": 9,
+      "child": "12n_9",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_3871",
+      "crossing": 1,
+      "child": "12n_84",
+      "old": [
+        1,
+        3
+      ],
+      "new": [
+        2,
+        3
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_3871",
+      "crossing": 4,
+      "child": "12n_84",
+      "old": [
+        1,
+        3
+      ],
+      "new": [
+        2,
+        3
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_3922",
+      "crossing": 4,
+      "child": "12n_792",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "code"
+    },
+    {
+      "parent": "13a_4126",
+      "crossing": 0,
+      "child": "12n_824",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_4126",
+      "crossing": 9,
+      "child": "12n_804",
+      "old": [
+        1,
+        3
+      ],
+      "new": [
+        2,
+        3
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_4193",
+      "crossing": 8,
+      "child": "12n_415",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_4193",
+      "crossing": 10,
+      "child": "11n_160",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_4231",
+      "crossing": 8,
+      "child": "11n_129",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_4345",
+      "crossing": 12,
+      "child": "12n_586",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_436",
+      "crossing": 0,
+      "child": "12n_75",
+      "old": [
+        1,
+        3
+      ],
+      "new": [
+        2,
+        3
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_436",
+      "crossing": 12,
+      "child": "12n_122",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_4449",
+      "crossing": 5,
+      "child": "11n_160",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_4634",
+      "crossing": 10,
+      "child": "11n_161",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "code"
+    },
+    {
+      "parent": "13a_4647",
+      "crossing": 5,
+      "child": "12n_137",
+      "old": [
+        1,
+        3
+      ],
+      "new": [
+        2,
+        3
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_4647",
+      "crossing": 9,
+      "child": "12n_678",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_4647",
+      "crossing": 10,
+      "child": "11n_129",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_4654",
+      "crossing": 9,
+      "child": "12n_49",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_4654",
+      "crossing": 11,
+      "child": "12n_49",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_4663",
+      "crossing": 0,
+      "child": "11n_115",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "code"
+    },
+    {
+      "parent": "13a_4663",
+      "crossing": 4,
+      "child": "12n_768",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_4817",
+      "crossing": 5,
+      "child": "11n_160",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "12a_496",
+      "crossing": 2,
+      "child": "11n_94",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "12a_985",
+      "crossing": 7,
+      "child": "11n_129",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1090",
+      "crossing": 0,
+      "child": "12n_794",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1139",
+      "crossing": 6,
+      "child": "12n_14",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1139",
+      "crossing": 7,
+      "child": "11n_128",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1139",
+      "crossing": 12,
+      "child": "12n_9",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1153",
+      "crossing": 0,
+      "child": "12n_312",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1153",
+      "crossing": 12,
+      "child": "12n_284",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1401",
+      "crossing": 0,
+      "child": "12n_359",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "code"
+    },
+    {
+      "parent": "13a_152",
+      "crossing": 11,
+      "child": "12n_106",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "code"
+    },
+    {
+      "parent": "13a_1532",
+      "crossing": 0,
+      "child": "12n_819",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1532",
+      "crossing": 3,
+      "child": "11n_129",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1567",
+      "crossing": 9,
+      "child": "12n_441",
+      "old": [
+        2,
+        3
+      ],
+      "new": [
+        3,
+        3
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1589",
+      "crossing": 0,
+      "child": "12n_708",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1656",
+      "crossing": 3,
+      "child": "13n_646",
+      "old": [
+        1,
+        3
+      ],
+      "new": [
+        2,
+        3
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1656",
+      "crossing": 6,
+      "child": "12n_106",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1656",
+      "crossing": 8,
+      "child": "12n_291",
+      "old": [
+        1,
+        3
+      ],
+      "new": [
+        2,
+        3
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1676",
+      "crossing": 3,
+      "child": "12n_84",
+      "old": [
+        1,
+        3
+      ],
+      "new": [
+        2,
+        3
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_1676",
+      "crossing": 6,
+      "child": "12n_84",
+      "old": [
+        1,
+        3
+      ],
+      "new": [
+        2,
+        3
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_2132",
+      "crossing": 9,
+      "child": "12n_441",
+      "old": [
+        2,
+        3
+      ],
+      "new": [
+        3,
+        3
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_2153",
+      "crossing": 12,
+      "child": "12n_178",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_2264",
+      "crossing": 0,
+      "child": "12n_795",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_25",
+      "crossing": 8,
+      "child": "12n_9",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_2517",
+      "crossing": 9,
+      "child": "12n_454",
+      "old": [
+        1,
+        3
+      ],
+      "new": [
+        2,
+        3
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_285",
+      "crossing": 11,
+      "child": "12n_197",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_2898",
+      "crossing": 0,
+      "child": "12n_833",
+      "old": [
+        1,
+        3
+      ],
+      "new": [
+        2,
+        3
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_302",
+      "crossing": 8,
+      "child": "12n_101",
+      "old": [
+        1,
+        3
+      ],
+      "new": [
+        2,
+        3
+      ],
+      "identification": "code"
+    },
+    {
+      "parent": "13a_3109",
+      "crossing": 10,
+      "child": "12n_330",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_338",
+      "crossing": 9,
+      "child": "13n_423",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_3511",
+      "crossing": 12,
+      "child": "12n_514",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_3667",
+      "crossing": 7,
+      "child": "13n_4136",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_374",
+      "crossing": 0,
+      "child": "11n_129",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "code"
+    },
+    {
+      "parent": "13a_3781",
+      "crossing": 0,
+      "child": "11n_120",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_3781",
+      "crossing": 12,
+      "child": "11n_120",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_3945",
+      "crossing": 1,
+      "child": "11n_166",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_3945",
+      "crossing": 8,
+      "child": "11n_172",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_398",
+      "crossing": 8,
+      "child": "12n_140",
+      "old": [
+        1,
+        3
+      ],
+      "new": [
+        2,
+        3
+      ],
+      "identification": "code"
+    },
+    {
+      "parent": "13a_3989",
+      "crossing": 5,
+      "child": "11n_142",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_401",
+      "crossing": 10,
+      "child": "12n_71",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_4098",
+      "crossing": 8,
+      "child": "12n_367",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_4098",
+      "crossing": 9,
+      "child": "12n_586",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_4127",
+      "crossing": 0,
+      "child": "12n_818",
+      "old": [
+        1,
+        3
+      ],
+      "new": [
+        2,
+        3
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_4337",
+      "crossing": 6,
+      "child": "12n_595",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_4414",
+      "crossing": 11,
+      "child": "12n_865",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_4656",
+      "crossing": 9,
+      "child": "11n_129",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_468",
+      "crossing": 5,
+      "child": "12n_176",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_593",
+      "crossing": 9,
+      "child": "12n_29",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_683",
+      "crossing": 11,
+      "child": "12n_49",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    },
+    {
+      "parent": "13a_960",
+      "crossing": 0,
+      "child": "12n_824",
+      "old": [
+        1,
+        2
+      ],
+      "new": [
+        2,
+        2
+      ],
+      "identification": "isometry-jones"
+    }
+  ],
+  "new_parent_dependencies": [
+    {
+      "parent": "12a_496",
+      "new_exclusions": [
+        {
+          "crossing": 2,
+          "child": "11n_94"
+        }
+      ]
+    },
+    {
+      "parent": "12a_553",
+      "new_exclusions": [
+        {
+          "crossing": 2,
+          "child": "11n_112"
+        }
+      ]
+    },
+    {
+      "parent": "12a_985",
+      "new_exclusions": [
+        {
+          "crossing": 7,
+          "child": "11n_129"
+        }
+      ]
+    },
+    {
+      "parent": "13a_1034",
+      "new_exclusions": [
+        {
+          "crossing": 10,
+          "child": "11n_94"
+        }
+      ]
+    },
+    {
+      "parent": "13a_1077",
+      "new_exclusions": [
+        {
+          "crossing": 9,
+          "child": "12n_415"
+        }
+      ]
+    },
+    {
+      "parent": "13a_1080",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_84"
+        }
+      ]
+    },
+    {
+      "parent": "13a_1090",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_794"
+        }
+      ]
+    },
+    {
+      "parent": "13a_1122",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_772"
+        },
+        {
+          "crossing": 3,
+          "child": "12n_92"
+        },
+        {
+          "crossing": 6,
+          "child": "13n_914"
+        },
+        {
+          "crossing": 12,
+          "child": "12n_291"
+        }
+      ]
+    },
+    {
+      "parent": "13a_1139",
+      "new_exclusions": [
+        {
+          "crossing": 6,
+          "child": "12n_14"
+        },
+        {
+          "crossing": 7,
+          "child": "11n_128"
+        },
+        {
+          "crossing": 12,
+          "child": "12n_9"
+        }
+      ]
+    },
+    {
+      "parent": "13a_1153",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_312"
+        },
+        {
+          "crossing": 12,
+          "child": "12n_284"
+        }
+      ]
+    },
+    {
+      "parent": "13a_1175",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_525"
+        },
+        {
+          "crossing": 5,
+          "child": "11n_142"
+        },
+        {
+          "crossing": 12,
+          "child": "12n_359"
+        }
+      ]
+    },
+    {
+      "parent": "13a_1198",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_818"
+        }
+      ]
+    },
+    {
+      "parent": "13a_1255",
+      "new_exclusions": [
+        {
+          "crossing": 11,
+          "child": "12n_348"
+        }
+      ]
+    },
+    {
+      "parent": "13a_1258",
+      "new_exclusions": [
+        {
+          "crossing": 10,
+          "child": "12n_383"
+        }
+      ]
+    },
+    {
+      "parent": "13a_1259",
+      "new_exclusions": [
+        {
+          "crossing": 8,
+          "child": "12n_489"
+        }
+      ]
+    },
+    {
+      "parent": "13a_1267",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_865"
+        }
+      ]
+    },
+    {
+      "parent": "13a_1274",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_782"
+        }
+      ]
+    },
+    {
+      "parent": "13a_1304",
+      "new_exclusions": [
+        {
+          "crossing": 7,
+          "child": "12n_376"
+        }
+      ]
+    },
+    {
+      "parent": "13a_1309",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_569"
+        },
+        {
+          "crossing": 12,
+          "child": "12n_291"
+        }
+      ]
+    },
+    {
+      "parent": "13a_134",
+      "new_exclusions": [
+        {
+          "crossing": 9,
+          "child": "12n_84"
+        }
+      ]
+    },
+    {
+      "parent": "13a_1344",
+      "new_exclusions": [
+        {
+          "crossing": 7,
+          "child": "12n_363"
+        }
+      ]
+    },
+    {
+      "parent": "13a_1361",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_324"
+        }
+      ]
+    },
+    {
+      "parent": "13a_1401",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_359"
+        }
+      ]
+    },
+    {
+      "parent": "13a_1406",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_376"
+        }
+      ]
+    },
+    {
+      "parent": "13a_1453",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_795"
+        },
+        {
+          "crossing": 11,
+          "child": "12n_359"
+        }
+      ]
+    },
+    {
+      "parent": "13a_1503",
+      "new_exclusions": [
+        {
+          "crossing": 3,
+          "child": "11n_129"
+        }
+      ]
+    },
+    {
+      "parent": "13a_1506",
+      "new_exclusions": [
+        {
+          "crossing": 3,
+          "child": "11n_179"
+        }
+      ]
+    },
+    {
+      "parent": "13a_1510",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_833"
+        }
+      ]
+    },
+    {
+      "parent": "13a_152",
+      "new_exclusions": [
+        {
+          "crossing": 11,
+          "child": "12n_106"
+        }
+      ]
+    },
+    {
+      "parent": "13a_1532",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_819"
+        },
+        {
+          "crossing": 3,
+          "child": "11n_129"
+        }
+      ]
+    },
+    {
+      "parent": "13a_1534",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_529"
+        },
+        {
+          "crossing": 11,
+          "child": "12n_524"
+        },
+        {
+          "crossing": 12,
+          "child": "12n_529"
+        }
+      ]
+    },
+    {
+      "parent": "13a_1560",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_774"
+        }
+      ]
+    },
+    {
+      "parent": "13a_1561",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_790"
+        }
+      ]
+    },
+    {
+      "parent": "13a_1569",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_728"
+        },
+        {
+          "crossing": 7,
+          "child": "12n_312"
+        },
+        {
+          "crossing": 12,
+          "child": "11n_120"
+        }
+      ]
+    },
+    {
+      "parent": "13a_1589",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_708"
+        }
+      ]
+    },
+    {
+      "parent": "13a_1656",
+      "new_exclusions": [
+        {
+          "crossing": 3,
+          "child": "13n_646"
+        },
+        {
+          "crossing": 6,
+          "child": "12n_106"
+        },
+        {
+          "crossing": 8,
+          "child": "12n_291"
+        }
+      ]
+    },
+    {
+      "parent": "13a_1662",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "11n_94"
+        }
+      ]
+    },
+    {
+      "parent": "13a_1675",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_741"
+        },
+        {
+          "crossing": 3,
+          "child": "12n_137"
+        },
+        {
+          "crossing": 6,
+          "child": "12n_137"
+        }
+      ]
+    },
+    {
+      "parent": "13a_1676",
+      "new_exclusions": [
+        {
+          "crossing": 3,
+          "child": "12n_84"
+        },
+        {
+          "crossing": 6,
+          "child": "12n_84"
+        }
+      ]
+    },
+    {
+      "parent": "13a_1677",
+      "new_exclusions": [
+        {
+          "crossing": 7,
+          "child": "12n_751"
+        }
+      ]
+    },
+    {
+      "parent": "13a_1712",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_539"
+        },
+        {
+          "crossing": 3,
+          "child": "13n_635"
+        },
+        {
+          "crossing": 12,
+          "child": "12n_539"
+        }
+      ]
+    },
+    {
+      "parent": "13a_1717",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_49"
+        },
+        {
+          "crossing": 12,
+          "child": "12n_49"
+        }
+      ]
+    },
+    {
+      "parent": "13a_1955",
+      "new_exclusions": [
+        {
+          "crossing": 3,
+          "child": "12n_531"
+        }
+      ]
+    },
+    {
+      "parent": "13a_1965",
+      "new_exclusions": [
+        {
+          "crossing": 10,
+          "child": "11n_115"
+        }
+      ]
+    },
+    {
+      "parent": "13a_1968",
+      "new_exclusions": [
+        {
+          "crossing": 3,
+          "child": "12n_415"
+        }
+      ]
+    },
+    {
+      "parent": "13a_2063",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_875"
+        },
+        {
+          "crossing": 6,
+          "child": "12n_376"
+        }
+      ]
+    },
+    {
+      "parent": "13a_2090",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_825"
+        }
+      ]
+    },
+    {
+      "parent": "13a_2103",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_529"
+        }
+      ]
+    },
+    {
+      "parent": "13a_2119",
+      "new_exclusions": [
+        {
+          "crossing": 7,
+          "child": "12n_383"
+        }
+      ]
+    },
+    {
+      "parent": "13a_213",
+      "new_exclusions": [
+        {
+          "crossing": 10,
+          "child": "12n_9"
+        }
+      ]
+    },
+    {
+      "parent": "13a_2153",
+      "new_exclusions": [
+        {
+          "crossing": 12,
+          "child": "12n_178"
+        }
+      ]
+    },
+    {
+      "parent": "13a_2193",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_751"
+        }
+      ]
+    },
+    {
+      "parent": "13a_2195",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_784"
+        },
+        {
+          "crossing": 5,
+          "child": "11n_94"
+        },
+        {
+          "crossing": 10,
+          "child": "12n_84"
+        }
+      ]
+    },
+    {
+      "parent": "13a_2210",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_531"
+        },
+        {
+          "crossing": 12,
+          "child": "12n_106"
+        }
+      ]
+    },
+    {
+      "parent": "13a_2264",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_795"
+        }
+      ]
+    },
+    {
+      "parent": "13a_2275",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_855"
+        }
+      ]
+    },
+    {
+      "parent": "13a_232",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_330"
+        }
+      ]
+    },
+    {
+      "parent": "13a_234",
+      "new_exclusions": [
+        {
+          "crossing": 5,
+          "child": "12n_86"
+        }
+      ]
+    },
+    {
+      "parent": "13a_2386",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_324"
+        }
+      ]
+    },
+    {
+      "parent": "13a_2453",
+      "new_exclusions": [
+        {
+          "crossing": 12,
+          "child": "11n_129"
+        }
+      ]
+    },
+    {
+      "parent": "13a_2488",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_821"
+        }
+      ]
+    },
+    {
+      "parent": "13a_25",
+      "new_exclusions": [
+        {
+          "crossing": 8,
+          "child": "12n_9"
+        }
+      ]
+    },
+    {
+      "parent": "13a_2535",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_708"
+        }
+      ]
+    },
+    {
+      "parent": "13a_2550",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_675"
+        }
+      ]
+    },
+    {
+      "parent": "13a_2610",
+      "new_exclusions": [
+        {
+          "crossing": 3,
+          "child": "11n_112"
+        },
+        {
+          "crossing": 7,
+          "child": "11n_112"
+        }
+      ]
+    },
+    {
+      "parent": "13a_262",
+      "new_exclusions": [
+        {
+          "crossing": 8,
+          "child": "12n_75"
+        },
+        {
+          "crossing": 12,
+          "child": "12n_71"
+        }
+      ]
+    },
+    {
+      "parent": "13a_2622",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_180"
+        },
+        {
+          "crossing": 10,
+          "child": "11n_177"
+        }
+      ]
+    },
+    {
+      "parent": "13a_2632",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_563"
+        }
+      ]
+    },
+    {
+      "parent": "13a_269",
+      "new_exclusions": [
+        {
+          "crossing": 5,
+          "child": "12n_131"
+        }
+      ]
+    },
+    {
+      "parent": "13a_2813",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_517"
+        },
+        {
+          "crossing": 12,
+          "child": "12n_517"
+        }
+      ]
+    },
+    {
+      "parent": "13a_2837",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_84"
+        }
+      ]
+    },
+    {
+      "parent": "13a_285",
+      "new_exclusions": [
+        {
+          "crossing": 11,
+          "child": "12n_197"
+        }
+      ]
+    },
+    {
+      "parent": "13a_2886",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_216"
+        },
+        {
+          "crossing": 12,
+          "child": "12n_216"
+        }
+      ]
+    },
+    {
+      "parent": "13a_2897",
+      "new_exclusions": [
+        {
+          "crossing": 7,
+          "child": "12n_97"
+        }
+      ]
+    },
+    {
+      "parent": "13a_2898",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_833"
+        }
+      ]
+    },
+    {
+      "parent": "13a_2988",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_708"
+        }
+      ]
+    },
+    {
+      "parent": "13a_2991",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_675"
+        }
+      ]
+    },
+    {
+      "parent": "13a_302",
+      "new_exclusions": [
+        {
+          "crossing": 8,
+          "child": "12n_101"
+        }
+      ]
+    },
+    {
+      "parent": "13a_3034",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "11n_94"
+        }
+      ]
+    },
+    {
+      "parent": "13a_3109",
+      "new_exclusions": [
+        {
+          "crossing": 10,
+          "child": "12n_330"
+        }
+      ]
+    },
+    {
+      "parent": "13a_3147",
+      "new_exclusions": [
+        {
+          "crossing": 7,
+          "child": "11n_94"
+        }
+      ]
+    },
+    {
+      "parent": "13a_3149",
+      "new_exclusions": [
+        {
+          "crossing": 9,
+          "child": "11n_94"
+        }
+      ]
+    },
+    {
+      "parent": "13a_326",
+      "new_exclusions": [
+        {
+          "crossing": 12,
+          "child": "12n_189"
+        }
+      ]
+    },
+    {
+      "parent": "13a_3269",
+      "new_exclusions": [
+        {
+          "crossing": 12,
+          "child": "12n_454"
+        }
+      ]
+    },
+    {
+      "parent": "13a_3274",
+      "new_exclusions": [
+        {
+          "crossing": 10,
+          "child": "12n_75"
+        }
+      ]
+    },
+    {
+      "parent": "13a_3376",
+      "new_exclusions": [
+        {
+          "crossing": 7,
+          "child": "12n_330"
+        },
+        {
+          "crossing": 10,
+          "child": "12n_330"
+        }
+      ]
+    },
+    {
+      "parent": "13a_338",
+      "new_exclusions": [
+        {
+          "crossing": 9,
+          "child": "13n_423"
+        }
+      ]
+    },
+    {
+      "parent": "13a_34",
+      "new_exclusions": [
+        {
+          "crossing": 9,
+          "child": "12n_2"
+        }
+      ]
+    },
+    {
+      "parent": "13a_3464",
+      "new_exclusions": [
+        {
+          "crossing": 1,
+          "child": "12n_415"
+        },
+        {
+          "crossing": 4,
+          "child": "12n_415"
+        }
+      ]
+    },
+    {
+      "parent": "13a_3482",
+      "new_exclusions": [
+        {
+          "crossing": 7,
+          "child": "12n_9"
+        }
+      ]
+    },
+    {
+      "parent": "13a_3495",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "11n_166"
+        }
+      ]
+    },
+    {
+      "parent": "13a_3511",
+      "new_exclusions": [
+        {
+          "crossing": 12,
+          "child": "12n_514"
+        }
+      ]
+    },
+    {
+      "parent": "13a_3515",
+      "new_exclusions": [
+        {
+          "crossing": 4,
+          "child": "11n_129"
+        },
+        {
+          "crossing": 12,
+          "child": "11n_160"
+        }
+      ]
+    },
+    {
+      "parent": "13a_3529",
+      "new_exclusions": [
+        {
+          "crossing": 1,
+          "child": "12n_563"
+        },
+        {
+          "crossing": 4,
+          "child": "12n_49"
+        }
+      ]
+    },
+    {
+      "parent": "13a_3549",
+      "new_exclusions": [
+        {
+          "crossing": 12,
+          "child": "12n_768"
+        }
+      ]
+    },
+    {
+      "parent": "13a_3561",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "11n_161"
+        }
+      ]
+    },
+    {
+      "parent": "13a_3568",
+      "new_exclusions": [
+        {
+          "crossing": 12,
+          "child": "12n_774"
+        }
+      ]
+    },
+    {
+      "parent": "13a_365",
+      "new_exclusions": [
+        {
+          "crossing": 9,
+          "child": "13n_630"
+        }
+      ]
+    },
+    {
+      "parent": "13a_3667",
+      "new_exclusions": [
+        {
+          "crossing": 7,
+          "child": "13n_4136"
+        }
+      ]
+    },
+    {
+      "parent": "13a_3690",
+      "new_exclusions": [
+        {
+          "crossing": 7,
+          "child": "12n_330"
+        }
+      ]
+    },
+    {
+      "parent": "13a_3727",
+      "new_exclusions": [
+        {
+          "crossing": 1,
+          "child": "11n_112"
+        },
+        {
+          "crossing": 5,
+          "child": "12n_415"
+        }
+      ]
+    },
+    {
+      "parent": "13a_374",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "11n_129"
+        }
+      ]
+    },
+    {
+      "parent": "13a_3779",
+      "new_exclusions": [
+        {
+          "crossing": 5,
+          "child": "11n_160"
+        },
+        {
+          "crossing": 12,
+          "child": "11n_160"
+        }
+      ]
+    },
+    {
+      "parent": "13a_3789",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "11n_166"
+        }
+      ]
+    },
+    {
+      "parent": "13a_382",
+      "new_exclusions": [
+        {
+          "crossing": 9,
+          "child": "12n_216"
+        }
+      ]
+    },
+    {
+      "parent": "13a_3864",
+      "new_exclusions": [
+        {
+          "crossing": 1,
+          "child": "12n_9"
+        },
+        {
+          "crossing": 9,
+          "child": "12n_9"
+        }
+      ]
+    },
+    {
+      "parent": "13a_387",
+      "new_exclusions": [
+        {
+          "crossing": 5,
+          "child": "12n_131"
+        },
+        {
+          "crossing": 8,
+          "child": "12n_86"
+        }
+      ]
+    },
+    {
+      "parent": "13a_3871",
+      "new_exclusions": [
+        {
+          "crossing": 1,
+          "child": "12n_84"
+        },
+        {
+          "crossing": 4,
+          "child": "12n_84"
+        }
+      ]
+    },
+    {
+      "parent": "13a_3874",
+      "new_exclusions": [
+        {
+          "crossing": 1,
+          "child": "12n_363"
+        }
+      ]
+    },
+    {
+      "parent": "13a_3922",
+      "new_exclusions": [
+        {
+          "crossing": 4,
+          "child": "12n_792"
+        }
+      ]
+    },
+    {
+      "parent": "13a_393",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "11n_129"
+        }
+      ]
+    },
+    {
+      "parent": "13a_3945",
+      "new_exclusions": [
+        {
+          "crossing": 1,
+          "child": "11n_166"
+        },
+        {
+          "crossing": 8,
+          "child": "11n_172"
+        }
+      ]
+    },
+    {
+      "parent": "13a_3987",
+      "new_exclusions": [
+        {
+          "crossing": 5,
+          "child": "11n_115"
+        }
+      ]
+    },
+    {
+      "parent": "13a_4055",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_678"
+        },
+        {
+          "crossing": 7,
+          "child": "11n_129"
+        },
+        {
+          "crossing": 8,
+          "child": "12n_627"
+        }
+      ]
+    },
+    {
+      "parent": "13a_4056",
+      "new_exclusions": [
+        {
+          "crossing": 8,
+          "child": "12n_399"
+        },
+        {
+          "crossing": 9,
+          "child": "11n_166"
+        },
+        {
+          "crossing": 10,
+          "child": "12n_312"
+        }
+      ]
+    },
+    {
+      "parent": "13a_4096",
+      "new_exclusions": [
+        {
+          "crossing": 9,
+          "child": "11n_129"
+        }
+      ]
+    },
+    {
+      "parent": "13a_4098",
+      "new_exclusions": [
+        {
+          "crossing": 8,
+          "child": "12n_367"
+        },
+        {
+          "crossing": 9,
+          "child": "12n_586"
+        }
+      ]
+    },
+    {
+      "parent": "13a_4126",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_824"
+        },
+        {
+          "crossing": 9,
+          "child": "12n_804"
+        }
+      ]
+    },
+    {
+      "parent": "13a_4127",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_818"
+        }
+      ]
+    },
+    {
+      "parent": "13a_4134",
+      "new_exclusions": [
+        {
+          "crossing": 5,
+          "child": "12n_865"
+        }
+      ]
+    },
+    {
+      "parent": "13a_4188",
+      "new_exclusions": [
+        {
+          "crossing": 5,
+          "child": "11n_160"
+        },
+        {
+          "crossing": 9,
+          "child": "11n_160"
+        }
+      ]
+    },
+    {
+      "parent": "13a_4193",
+      "new_exclusions": [
+        {
+          "crossing": 8,
+          "child": "12n_415"
+        },
+        {
+          "crossing": 10,
+          "child": "11n_160"
+        }
+      ]
+    },
+    {
+      "parent": "13a_4202",
+      "new_exclusions": [
+        {
+          "crossing": 9,
+          "child": "12n_541"
+        }
+      ]
+    },
+    {
+      "parent": "13a_4231",
+      "new_exclusions": [
+        {
+          "crossing": 8,
+          "child": "11n_129"
+        }
+      ]
+    },
+    {
+      "parent": "13a_4241",
+      "new_exclusions": [
+        {
+          "crossing": 10,
+          "child": "11n_179"
+        }
+      ]
+    },
+    {
+      "parent": "13a_4337",
+      "new_exclusions": [
+        {
+          "crossing": 6,
+          "child": "12n_595"
+        }
+      ]
+    },
+    {
+      "parent": "13a_4345",
+      "new_exclusions": [
+        {
+          "crossing": 12,
+          "child": "12n_586"
+        }
+      ]
+    },
+    {
+      "parent": "13a_4414",
+      "new_exclusions": [
+        {
+          "crossing": 11,
+          "child": "12n_865"
+        }
+      ]
+    },
+    {
+      "parent": "13a_4415",
+      "new_exclusions": [
+        {
+          "crossing": 11,
+          "child": "12n_782"
+        }
+      ]
+    },
+    {
+      "parent": "13a_4449",
+      "new_exclusions": [
+        {
+          "crossing": 5,
+          "child": "11n_160"
+        }
+      ]
+    },
+    {
+      "parent": "13a_4521",
+      "new_exclusions": [
+        {
+          "crossing": 1,
+          "child": "11n_129"
+        },
+        {
+          "crossing": 5,
+          "child": "11n_112"
+        }
+      ]
+    },
+    {
+      "parent": "13a_4609",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "11n_112"
+        },
+        {
+          "crossing": 9,
+          "child": "11n_112"
+        }
+      ]
+    },
+    {
+      "parent": "13a_4633",
+      "new_exclusions": [
+        {
+          "crossing": 9,
+          "child": "12n_348"
+        },
+        {
+          "crossing": 11,
+          "child": "12n_348"
+        }
+      ]
+    },
+    {
+      "parent": "13a_4645",
+      "new_exclusions": [
+        {
+          "crossing": 7,
+          "child": "11n_129"
+        },
+        {
+          "crossing": 10,
+          "child": "11n_160"
+        }
+      ]
+    },
+    {
+      "parent": "13a_4647",
+      "new_exclusions": [
+        {
+          "crossing": 5,
+          "child": "12n_137"
+        },
+        {
+          "crossing": 9,
+          "child": "12n_678"
+        },
+        {
+          "crossing": 10,
+          "child": "11n_129"
+        }
+      ]
+    },
+    {
+      "parent": "13a_4650",
+      "new_exclusions": [
+        {
+          "crossing": 12,
+          "child": "12n_608"
+        }
+      ]
+    },
+    {
+      "parent": "13a_4654",
+      "new_exclusions": [
+        {
+          "crossing": 9,
+          "child": "12n_49"
+        },
+        {
+          "crossing": 11,
+          "child": "12n_49"
+        }
+      ]
+    },
+    {
+      "parent": "13a_4656",
+      "new_exclusions": [
+        {
+          "crossing": 9,
+          "child": "11n_129"
+        }
+      ]
+    },
+    {
+      "parent": "13a_4663",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "11n_115"
+        },
+        {
+          "crossing": 4,
+          "child": "12n_768"
+        }
+      ]
+    },
+    {
+      "parent": "13a_468",
+      "new_exclusions": [
+        {
+          "crossing": 5,
+          "child": "12n_176"
+        }
+      ]
+    },
+    {
+      "parent": "13a_4749",
+      "new_exclusions": [
+        {
+          "crossing": 5,
+          "child": "12n_544"
+        },
+        {
+          "crossing": 8,
+          "child": "12n_544"
+        }
+      ]
+    },
+    {
+      "parent": "13a_4782",
+      "new_exclusions": [
+        {
+          "crossing": 1,
+          "child": "11n_129"
+        },
+        {
+          "crossing": 8,
+          "child": "11n_129"
+        }
+      ]
+    },
+    {
+      "parent": "13a_4817",
+      "new_exclusions": [
+        {
+          "crossing": 5,
+          "child": "11n_160"
+        }
+      ]
+    },
+    {
+      "parent": "13a_573",
+      "new_exclusions": [
+        {
+          "crossing": 9,
+          "child": "12n_21"
+        }
+      ]
+    },
+    {
+      "parent": "13a_593",
+      "new_exclusions": [
+        {
+          "crossing": 9,
+          "child": "12n_29"
+        }
+      ]
+    },
+    {
+      "parent": "13a_608",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_75"
+        },
+        {
+          "crossing": 12,
+          "child": "12n_127"
+        }
+      ]
+    },
+    {
+      "parent": "13a_618",
+      "new_exclusions": [
+        {
+          "crossing": 11,
+          "child": "12n_9"
+        }
+      ]
+    },
+    {
+      "parent": "13a_655",
+      "new_exclusions": [
+        {
+          "crossing": 11,
+          "child": "12n_49"
+        }
+      ]
+    },
+    {
+      "parent": "13a_683",
+      "new_exclusions": [
+        {
+          "crossing": 11,
+          "child": "12n_49"
+        }
+      ]
+    },
+    {
+      "parent": "13a_959",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_821"
+        }
+      ]
+    },
+    {
+      "parent": "13a_960",
+      "new_exclusions": [
+        {
+          "crossing": 0,
+          "child": "12n_824"
+        }
+      ]
+    },
+    {
+      "parent": "13a_965",
+      "new_exclusions": [
+        {
+          "crossing": 12,
+          "child": "12n_348"
+        }
+      ]
+    },
+    {
+      "parent": "13a_971",
+      "new_exclusions": [
+        {
+          "crossing": 11,
+          "child": "12n_291"
+        }
+      ]
+    }
+  ],
+  "new_decisive_identification_methods": {
+    "isometry-jones": 191,
+    "code": 23
+  },
+  "named_children": 11,
+  "named_child_parents": 22,
+  "candidate_parent_list": 29,
+  "jones_only_moved_parents": [
+    "13a_1154",
+    "13a_1158",
+    "13a_1184",
+    "13a_120",
+    "13a_2098",
+    "13a_320",
+    "13a_473"
+  ],
+  "jones_only_zero_candidate_parents": 39,
+  "limits": [
+    "Existing numerical SnapPy identifications are inherited evidence.",
+    "This audit verifies classification and dependence on the separately audited Greene bounds.",
+    "The seven Jones-only moved parents are not included among the 959 proved dichotomies."
+  ]
+}

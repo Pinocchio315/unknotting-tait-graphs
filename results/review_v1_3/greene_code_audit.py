@@ -14,6 +14,7 @@ from collections import Counter
 from fractions import Fraction
 import gzip
 import hashlib
+import importlib.metadata
 import itertools
 import json
 import math
@@ -171,6 +172,12 @@ def main():
         filter_checks.append(name)
     report = {'input_sha256': hashlib.sha256(inputs_path.read_bytes()).hexdigest(),
               'raw_sha256': hashlib.sha256(raw_path.read_bytes()).hexdigest(),
+              'database_knotinfo_version': importlib.metadata.version('database_knotinfo'),
+              'implementation_sha256': {str(path.relative_to(ROOT)): hashlib.sha256(path.read_bytes()).hexdigest()
+                  for path in [*(ROOT / 'lower_bounds/greene' / name for name in
+                      ('greene_dinv.py', 'pin_dinv.py', 'half_integral.py', 'greene_ranks.py', 'greene_sweep.py')),
+                      *(ROOT / 'lower_bounds/owens' / name for name in
+                      ('owens_obstruction.py', 'owens_u3.py', 'owens_u4.py', 'linkform.py'))]},
               'premises': dict(premise_counts), 'record_counts': dict(unresolved),
               'replayed': replay, 'independent_rank2': independent,
               'linking_filter_matrix_checks': filter_checks,

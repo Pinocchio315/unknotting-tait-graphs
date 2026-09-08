@@ -31,7 +31,8 @@ def pages_of(pd):
     Labels are first Chern classes in the cokernel of the Goeritz matrix.
     An odd cyclic cokernel identifies Spin^c structures with Z/D and sends
     the unique spin structure to zero. The current labelling implementation
-    requires a coordinate vector that generates the whole cokernel.
+    requires an explicit cyclic generator found by ``spinc_index``; if that
+    search fails, no page or obstruction is returned.
     """
     labels = sorted({strand for crossing in pd for strand in crossing})
     counts = Counter(strand for crossing in pd for strand in crossing)

@@ -269,7 +269,10 @@ def audit(consolidated=None, table=None):
     paths = [RESULTS / 'paper_v1_1_snapshot.json', rollback_path, mccoy_path, dataset_path,
              gp_path, gp_check_path,
              RESULTS / 'crossing_changes/mccoy_alternating_u1_2026-09-08.json',
-             OUTPUT / 'releases/manifest.json', RESULTS / 'paper_v1_1_manifest.json']
+             OUTPUT / 'releases/manifest.json', RESULTS /
+             ('paper_v1_3_review_manifest.json' if consolidated.get('manuscript') == 'v1.3-review'
+              else 'paper_v1_3_manifest.json' if consolidated.get('manuscript') == 'v1.3'
+              else 'paper_v1_1_manifest.json')]
     summary = {
         'schema_version': 1,
         'description': 'Historical research baseline and public package comparison; '
@@ -288,16 +291,18 @@ def audit(consolidated=None, table=None):
         'incomparable_intervals': [r for r in comparison_rows if r['relation'] ==
                                   'overlapping_incomparable'],
         'interpretation': [
-            'The 1227 count refers to exact determinations relative to the historical baseline; '
+            f'The {len(exact)} count refers to exact determinations relative to the historical baseline; '
             'it is not a count of previously unpublished values.',
-            'The September package has exact entries for 200 of these knots: 194 agree '
-            'and six disagree. The other 1027 entries are unresolved in that package.',
+            f'The September package has exact entries for {counts["september_exact_entries"]} of these knots: '
+            f'{counts["september_exact_agreements"]} agree and {counts["september_exact_disagreements"]} disagree. '
+            f'The other {counts["september_unresolved_exact"]} entries are unresolved in that package.',
             'The 194 agreeing exact entries coincide exactly with the knots in Theorems 1 and 2 '
             'of Gebel--Prangley; their 30 Theorem 3 ranges also agree with the reconstruction.',
-            'Seven disjoint intervals require explicit reconciliation; no contradictory '
+            f'{len(disputes)} disjoint intervals require explicit reconciliation; no contradictory '
             'release range is silently intersected with a proved lower bound.',
-            'Excluding the seven conflicts, 97 retained upper bounds exceed the September bounds: 94 intervals '
-            'are strictly weaker and three have a stronger lower bound but a weaker upper bound.',
+            f'Excluding the {len(disputes)} conflicts, {counts["retained_larger_upper_bounds"]} retained upper bounds '
+            f'exceed the September bounds: {counts["september_strictly_weaker_intervals"]} intervals are strictly '
+            f'weaker and {counts["september_incomparable_intervals"]} have a stronger lower bound but a weaker upper bound.',
             'McCoy verification is a consistency audit of deposited computations and tabulated '
             'release inputs, not a new scan of all diagrams. The crossing dataset covers 3105 '
             'of the 3627 knots and agrees on every stored unknotting-crossing list.'],

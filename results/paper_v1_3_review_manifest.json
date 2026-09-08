@@ -1,8 +1,8 @@
 {
  "base": "reference_table_2026-09-07.json",
- "description": "Frozen comparison ranges used by the manuscript. These are archived KnotInfo ranges with per-record provenance; this file is not an unmodified export of the installed database_knotinfo package. The 27 McCoy records retain their explicitly recorded input ranges so that their lower-bound contribution is counted once, as in Appendix E. Historical aggregates remain unchanged. The September 8 revision adds two Greene lower-bound computations and a sweep of nonalternating knots using the improved ranges of v1.2, together with the refreshed alternating candidate analysis. The comparison range [1,3] for 13n_3370 is retained; the upper bound two published by Brittenham and Hermiller is supplied separately when obtaining its exact value.",
+ "description": "Frozen comparison ranges used by the manuscript. These are archived KnotInfo ranges with per-record provenance; this file is not an unmodified export of the installed database_knotinfo package. The 27 McCoy records retain their explicitly recorded input ranges so that their lower-bound contribution is counted once, as in Appendix E. Historical aggregates remain unchanged. The September 8 revision adds two Greene lower-bound computations and a sweep of nonalternating knots using the improved ranges of v1.2. The comparison range [1,3] for 13n_3370 is retained; the upper bound two published by Brittenham and Hermiller is supplied separately when obtaining its exact value.",
  "expected": {
-  "dichotomy": 959,
+  "dichotomy": 806,
   "exact": 2719,
   "exact_by_u": {
    "2": 2149,
@@ -17,7 +17,13 @@
   "improved_upper": 0,
   "knots": 12965
  },
- "manuscript": "v1.3",
+ "frozen_candidate_scan": {
+  "file": "open23/priority_u23_paper_v1_3.json",
+  "original_file": "open23/priority_u23_final.json",
+  "reason": "Preserve the v1.3 manuscript under review while another task updates live candidate scans.",
+  "source_commit": "6468494"
+ },
+ "manuscript": "v1.3-review",
  "note": "The v1.1 inputs with the correction-term sweep of the L-space knots added; the expected counts are those of the manuscript version 1.3.",
  "per_record_provenance": {
   "13a_1069": {
@@ -334,6 +340,7 @@
    "upper_bound": 2
   }
  },
+ "review_source_commit": "6468494",
  "sha256": {
   "13n_1587_u_le_2_braid_certificate.json": "5bf2173f7771514746dac5c9aec5a58ba96d1b8926bb3ad42f537e978f1e393e",
   "bernhard_jablan/brittenham_hermiller_upper_bounds.json": "139c24512afc1710b070ce75ea19174c570975bd3038b7146b16d55d1b2a3946",
@@ -344,8 +351,6 @@
   "comparison/gebel_prangley_2026.json": "7fec51b02e7d46116a6df91d3dce81e6e9778cdaa463b3c22b08e8f0a13c32a2",
   "crossing_changes/dataset_v2.json.gz": "f1406df00e2aadd09d9dd81542893e830fc3d020045ceb035f0ed2df8454a694",
   "crossing_changes/mccoy_alternating_u1_2026-09-08.json": "e7ac801a06f4f78ef8e845889efdd3c50000c7f9705569ae481d6b459e089b5f",
-  "crossing_changes/u1_minimal_diagram_scan_2026-09-08.json": "d4619cd8bf914a40b151e96b0c74a034e42bfd890392aaa03c50fb5f1be37cd4",
-  "crossing_changes/u1_open_diagram_scan_2026-09-08.json": "a461c1200c72a0f98203d71fa99218d5176a227de55cfa9e5216fbe403a87d5f",
   "cyclic_cover/cyclic_cover_bound_2026-09-07.json": "301b33339778569bf069667280fe40a331764273c1d981c68da8666e6ce1a066",
   "generator_bound_2026-08-24.json": "b1b95c34050104a12819d3a64d673953c3a96ad7ad54aab8fc261c95d8087bd0",
   "greene/greene_targets_2026-09-08.json": "ef5789b8477984d9d8a423b392dfe8d2f84659a8c2509f600db0f49ec35e2c38",
@@ -353,7 +358,7 @@
   "greene/sweep_2026-09-08.jsonl.gz": "60c046924a38989dc59cbe38f82ea15834f8c89e160dc215157f631e45ef378c",
   "lickorish_cw_obstructed_815_knotinfo2026.8.1.json": "95656226ca1d72a47570327ae4b29fcd4a2c079ff7c3f1e343aa3bcef52af7f4",
   "montesinos/montesinos_u1_2026-09-07.json": "1cd2293645e1988ff04fcff22196301a5a761f4d955e0fc3b1bb26cd4e84e254",
-  "open23/priority_u23_final.json": "c4a345f0e322d91b7084c6b51fa4e5554ac36594d15b958e846f0bd3ed79b5de",
+  "open23/priority_u23_paper_v1_3.json": "32e5bb086c4e534dc9d1fc7ff452bb376493c0fa5c3d3cbd69792e60f14521d8",
   "owens_rank2/owens_verdicts_sigma4_alternating_2026-09-07.json": "7589f8263d9cfa8c33606c78e3ce7a5900a7a556a6f3ca14b79b709c4de10f97",
   "owens_rank3/results_u3_2026-09-07.json": "8ef3a36f84c721234bda38ddb57098bfac61181686529c43ca2dfdc53e0fa089",
   "owens_rank4/results_u4_local_2026-09-07_snapshot.jsonl": "435eddab202d4308b050b050e7f03b0b510e867f7a6c829a0aa13acdfd1ef78e",

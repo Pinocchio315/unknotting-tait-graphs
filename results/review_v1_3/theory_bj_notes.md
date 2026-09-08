@@ -132,9 +132,17 @@ named table and changes each of its 14 crossings. The resulting set is:
 
 All named identities were reproduced by SnapPy. Except for 12a684, the
 Reidemeister-simplified prime factors also have exactly the same Regina
-canonical diagram signature as the independent named reference. For
-12a684 the identification is numerical SnapPy, not an exact diagram-signature
-match. All changed PD codes and identifications are in
+canonical diagram signature as the independent named reference. The remaining
+12a684 identification was then certified by exact diagram moves: for both
+source crossings (zero-based rows 0 and 5), two pass moves reduce the changed
+diagram from 14 to 12 crossings, and one flype gives full canonical signed
+planar-map equality with the independent named 12a684 reference, up to mirror
+and turning over. The deterministic search took 0.238 seconds and visited
+12 diagrams for each row. `exact_12a684_identification.py` and
+`12a684_exact_identification.json` preserve the input and endpoint PD codes,
+all pass/flype parameters, and the matching full canonical codes. Thus none
+of the fourteen neighbour identifications depends solely on a numerical
+isometry. All changed PD codes and initial identifications are in
 `bjset14a2539_replay.json`. The finite replay does not itself prove
 completeness over all minimal diagrams; the flyping lemma supplies that
 separate mathematical step.
