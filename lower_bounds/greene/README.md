@@ -48,17 +48,27 @@ the Ni–Wu test for `u = 1`, and a range `[n, b]` with `|σ| = 2n` gives the ra
 A control has a known unknotting number equal to `n`, so the obstruction must not fire on it; the sweep
 reports an obstructed control as an implementation error and exits nonzero.
 
-Copy this directory to the server and submit
+Copy this directory to the server and submit one job:
 
 ```sh
-sbatch slurm_greene.sh                                   # the open targets, sixteen tasks
-sbatch --export=ALL,SET=controls slurm_greene.sh         # the validation set
-sbatch --export=ALL,TEST=rank4,ARRAY_SIZE=4 --array=0-3 slurm_greene.sh
-bash slurm_greene.sh --dry-run                           # print the resolved command
+sbatch slurm_greene.sh
 ```
 
-Each task writes `runs/<set>/results_<set>_<task>_<size>.jsonl`, one line per knot, and skips the knots
-already recorded there, so an interrupted task is resumed by resubmitting it.  The interpreter needs
+Sixteen array tasks each take one sixteenth of the work.  A task sweeps its share of the controls first
+and goes on to the targets only if none of them is obstructed, so an implementation error stops the job
+before any target is computed.  Resubmitting the same command resumes: a knot already recorded in the
+output file is skipped, so a wall-clock limit costs only the unfinished knots.
+
+The rank-four enumeration is much slower than the rest.  To keep it out of the main job and run it
+separately:
+
+```sh
+sbatch --export=ALL,SKIP=rank4 slurm_greene.sh
+sbatch --export=ALL,TEST=rank4,ARRAY_SIZE=4 --array=0-3 slurm_greene.sh
+```
+
+`bash slurm_greene.sh --dry-run` prints the resolved commands without running them.  Each task writes
+`runs/<set>/results_<set>_<task>_<size>.jsonl`, one line per knot.  The interpreter needs
 `numpy`, `sympy` and the standard library; the frozen input file removes the need for `database_knotinfo`
 on the server.  Typical cost is a few seconds per knot for the `u1` and `rank2` tests; the rank-four
 enumeration is much slower and has its own submission line above.
