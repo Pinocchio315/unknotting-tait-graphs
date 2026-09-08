@@ -11,7 +11,7 @@ space, the boundary of a negative-definite star-shaped plumbing with at most one
 terms are computed exactly from the plumbing form (Ozsvath-Szabo).  The test enumerates every affine
 identification of Spin^c(Sigma_2) = Z/D with the labels of the surgery formula; if no identification and no
 orientation admits a valid sequence V, then u(K) >= 2.  This is the obstruction in Section 3, "Montesinos knots", of
-How to Compute the Unknotting Number: Theory and Computations.
+How to Compute the Unknotting Number: Theory and Computation.
 The correction-term calculation uses ../owens. Passing a test only means that
 these necessary conditions do not exclude unknotting number one.
 

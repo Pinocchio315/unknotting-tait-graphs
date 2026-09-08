@@ -1,29 +1,115 @@
-# lower_bounds/greene — correction terms of the double branched cover from a knot diagram
+# Correction terms from Greene's spanning-tree model
 
-These scripts decide the question "is `u(K) = 1`?" for a Khovanov-thin knot `K` whose double branched
-cover is hyperbolic, where none of the lower-bound methods of the paper applies.  They were written for
-`12n491`, the last undecided knot in the Bernhard–Jablan counterexample of Brittenham and Hermiller
-(arXiv:1705.05985): `u(13n3370) ≤ 2`, and by their Theorem 1.3 the conjecture fails for `13n3370` if
-`u(12n288) = u(12n491) = u(12n501) = 2`, and for one of these three knots otherwise.  The Montesinos
-obstruction of §3.7 gives `u(12n288) = u(12n501) = 2`; the scripts here give `u(12n491) = 2`.
+These scripts support Section 5.1 of **How to Compute the Unknotting Number:
+Theory and Computation**. They apply the half-integral surgery obstruction to
+the double branched covers of `12n_491` and `13n_3370`. Both covers are L-spaces,
+as follows from their reduced Khovanov homology ranks over `F_2`.
+A completed obstruction excludes unknotting number one. A result
+`NOT_OBSTRUCTED` (called `PASS` in the other obstruction scripts) means only
+that this necessary condition does not exclude it.
 
-| script | what it does |
-|---|---|
-| `qa_search.py` | quasi-alternating certificate by resolving crossings (`det(L) = det(L_0) + det(L_1)`), with spherogram simplification of every resolved link; a certificate proves that `Σ₂(K)` is an L-space |
-| `greene_dinv.py` | Greene's spanning-tree model (arXiv:0805.1381): Kauffman states of a marked diagram, their absolute gradings (Theorem 4.1), Spin^c structures (§4.5) and the solitary states that generate the `E_1` page (Theorem 6.8); the surgery test of §3.7 (`u1_admissible`) on the resulting correction terms |
-| `pin_dinv.py` | intersects the solitary-state pages of all markings and colourings of the diagram: the correction term `d(t)` is one of the gradings of the solitary states in the class `t` for every marking, the classes of two markings are matched by the unique automorphism of `H² = Z/D` that preserves the self-linking of `c₁`, and `d(t) = d(-t)` |
+The calculations give **`u(12n_491) = u(13n_3370) = 2`** after combining the
+new lower bounds with the published upper bounds. Together with the Montesinos
+obstructions giving `u(12n_288) = u(12n_501) = 2`, this identifies
+**`13n_3370` as a counterexample to the Bernhard–Jablan conjecture**.
+[Brittenham–Hermiller, Theorem 1.3](https://arxiv.org/abs/1705.05985v2)
+then gives strong Bernhard–Jablan unknotting number three, while its ordinary
+unknotting number is two. The upper bounds and the exhaustive minimal-diagram
+analysis are due to Brittenham–Hermiller.
 
-Validation: on alternating knots the gradings reproduce the Ozsváth–Szabó formula exactly (every
-marking, both colourings); on the Montesinos knots 8_20, 9_43, 9_44 the pinned correction terms
-coincide with those of the star plumbing (`lower_bounds/montesinos`), and the surgery test passes for
-the knots with `u = 1` (3_1, 4_1, 5_2, 8_20, 9_44) and obstructs 5_1, 7_4, 9_43 (`u = 2`).
+## Mathematical premises
 
-Result for `12n491` (`results/bernhard_jablan/`): reduced Khovanov homology thin of rank 69 = det,
-quasi-alternating (certificate deposited), all 69 correction terms pinned from 47 of the 48 markings
-(the same multiset from the independent census diagram `K12n491`), `d(spin) = 0 = -σ/4`, and the
-surgery test is obstructed for both orientations and both signs of the linking-form pairing.  Hence
-`u(12n491) = 2`, and `13n3370` is a counterexample to the Bernhard–Jablan conjecture.
+The spectral sequence of Ozsváth–Szabó starts at reduced Khovanov homology of
+the mirror over `F_2` and converges to the hat version of Heegaard Floer homology
+of the double branched cover. The total ranks in the deposited KnotInfo data
+are 69 and 33, respectively, equal to the determinants. Since determinant is
+also a lower bound for the Heegaard Floer rank, equality proves the L-space
+premise. The coefficient field matters: rational thinness alone is not the
+premise used here. See
+[Ozsváth–Szabó, Theorem 1.1 and Corollary 1.2](https://arxiv.org/abs/math/0309170).
 
-    python qa_search.py 12n_491
-    python greene_dinv.py 3_1 5_1 8_20
-    python pin_dinv.py 8_20 9_43 9_44 12n_491
+The frozen input file
+[`khovanov_inputs_2026-09-08.json`](../../results/bernhard_jablan/khovanov_inputs_2026-09-08.json)
+contains the diagrams, the original mod-two vectors, their ranks, and source
+metadata. These are tabulated KnotInfo inputs; this audit did not independently
+recompute the Khovanov chain complexes. An independently replayed
+quasi-alternating resolution tree supplies an additional L-space certificate
+for `12n_491`; the mod-two rank equality suffices for both reported obstructions.
+
+For each marked checkerboard diagram, Greene's Theorem 4.1 assigns an absolute
+grading to every Kauffman state, and Section 4.5 identifies its first Chern
+class in the cokernel of the Goeritz matrix. His Theorem 6.8 states that the
+`E_1` page of a spectral sequence to Heegaard Floer homology is generated by
+the solitary states. This is a different spectral sequence from the Khovanov
+spectral sequence used to prove the L-space premise. In an L-space, the unique
+hat Floer generator in each Spin^c structure has grading equal to the correction
+term. Consequently, the correction term lies among that class's solitary-state
+gradings for **every** marking. See
+[Greene, Sections 4.1, 4.5, 6.4, and 7.1](https://arxiv.org/abs/0805.1381).
+
+The implementation enumerates every cyclic-group automorphism preserving the
+linking pairing and retains those compatible with the current candidates in
+every class. For each marking it takes the union over these possible alignments
+before intersecting with the current candidate sets; it repeats this process
+until the sets stop changing. Preserving the linking pairing alone does not
+make an alignment unique. Conjugation imposes `d(t) = d(-t)`; the unique spin
+structure is the zero class because the determinant is odd.
+
+The remaining candidate vectors are tested against the necessary correction-term
+pattern for half-integral surgery. This is the same Ni–Wu obstruction used in
+the Montesinos calculations, with both orientations and all required affine
+identifications considered. No choice of a compatible surgery structure means
+that unknotting number one is excluded. The surgery formula is
+[Ni–Wu, Proposition 1.6](https://arxiv.org/abs/1009.4720).
+
+## Scripts and deposited results
+
+| Script | Role |
+| --- | --- |
+| `greene_dinv.py` | Kauffman states, solitary states, absolute gradings, and Spin^c labels for a marked checkerboard diagram |
+| `pin_dinv.py` | Compatible intersections over all markings, colourings, and possible alignments, conjugation symmetry, and exhaustive testing of the remaining candidate correction-term vectors |
+| `half_integral.py` | An exact Ni–Wu test over both orientations and every affine identification, without a linking-form filter |
+| `qa_search.py` | Search for and replay a quasi-alternating resolution tree using exact PD resolutions and determinant additivity |
+
+For `12n_491`, all 69 correction terms are determined, and the surgery test is
+obstructed. The spin correction term is zero. For `13n_3370`, 29 classes are
+pinned and four classes remain in two conjugate pairs, with three choices per
+pair. All nine candidate vectors are obstructed, so the exact four unresolved
+correction terms are not needed to prove its unknotting number.
+
+The result records, frozen Khovanov inputs, additional quasi-alternating
+certificate, and published upper-bound constructions are in
+[`results/bernhard_jablan/`](../../results/bernhard_jablan/).
+They enter the paper's consolidation under lower-bound method tag `G`.
+The upper bound two for `13n_3370` is explicitly imported from
+Brittenham–Hermiller; the archived comparison range `[1,3]` is left intact.
+
+## Verification
+
+Alternating controls reproduce the Ozsváth–Szabó correction terms for every
+marking and colouring. The Montesinos controls `8_20`, `9_43`, and `9_44`
+agree with correction terms computed from their star plumbings. The surgery
+test passes for the known unknotting-number-one knots `3_1`, `4_1`, `5_2`,
+`8_20`, and `9_44`, and obstructs `5_1`, `7_4`, and `9_43`, whose unknotting
+numbers are two. These mathematical controls are separate from simply
+reproducing the target output files.
+
+Run from the repository root in the topology environment described in its README:
+
+```sh
+python lower_bounds/greene/pin_dinv.py 12n_491 13n_3370
+python lower_bounds/greene/pin_dinv.py 12n_491 --out /tmp/greene_12n491.json
+python lower_bounds/greene/pin_dinv.py 13n_3370 --out /tmp/greene_13n3370.json
+python -m unittest discover -s tests -p test_greene.py -v
+python lower_bounds/greene/qa_search.py --verify results/bernhard_jablan/qa_certificate_12n_491_2026-09-08.json
+```
+
+`pin_dinv.py` prints results unless `--out` names an explicit destination.
+For the two target knots it defaults to the deposited PD and mod-two Khovanov
+input file; `--inputs` selects another explicit source. Computation on other
+knots uses the installed KnotInfo row and records that provenance. The
+separate quasi-alternating verifier replays the resolution tree, including
+the recorded simplifications and any unknot components created by a resolution.
+The deposited tree has nine resolution nodes and ten terminal nodes; its first
+determinant identity is `69 = 48 + 21`. This is an auxiliary verification,
+not an additional contribution to the exact-value count.

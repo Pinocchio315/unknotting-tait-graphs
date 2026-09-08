@@ -9,6 +9,7 @@ No manuscript file is written.
 from __future__ import annotations
 import argparse
 from collections import Counter
+from fractions import Fraction
 import gzip
 import json
 from pathlib import Path
@@ -46,6 +47,7 @@ def manuscript_counts(consolidated, table):
         'nSigFourOpen': sum(snapshot[r['name']] == [2, 3] for r in sig4),
         'nUtwo': totals['exact_by_u']['2'], 'nUtwoL': by_value_method[2, 'L'],
         'nUtwoM': by_value_method[2, 'M'], 'nUtwoC': by_value_method[2, 'c'],
+        'nUtwoG': by_value_method[2, 'G'],
         'nUthree': totals['exact_by_u']['3'], 'nUthreeC': by_value_method[3, 'c'],
         'nUthreeOwens': sum(by_value_method[3, tag] for tag in ('O2', 'a', 'OT', 'g')),
         'nUfour': totals['exact_by_u']['4'], 'nUfive': totals['exact_by_u']['5'],
@@ -80,7 +82,7 @@ def verify(tex):
     require(macros == counts, f'Manuscript count macros disagree: '
             f'{[(k, macros.get(k), counts.get(k)) for k in macros.keys() | counts.keys() if macros.get(k) != counts.get(k)]}')
     sections = re.split(r'\\section\{', tex[tex.index(r'\appendix'):])[1:]
-    require(len(sections) == 7, 'Expected Appendices A--G')
+    require(len(sections) == 8, 'Expected Appendices A--H')
     for u, section in zip((5, 4, 3, 2), sections[:4]):
         names = names_in_table(section)
         expected = {name for name, record in changed.items() if record['new'] == [u, u]}
@@ -120,8 +122,31 @@ def verify(tex):
         require(len(pd) == int(label[3]), f'Wrong crossing count: {name}')
         seen.add(name)
     require(seen == set(certificates), f'Missing PD certificates: {set(certificates)-seen}')
+
+    # Appendix H prints one class from each conjugate pair. Compare its exact
+    # rational values and unresolved candidate sets, not only the row labels.
+    floer_tables = re.findall(r'\\begin\{longtable\}.*?\\end\{longtable\}',
+                             sections[7], flags=re.S)
+    require(len(floer_tables) == 2, 'Expected two correction-term tables in Appendix H')
+    representative_classes = 0
+    for name, section in zip(('12n_491', '13n_3370'), floer_tables):
+        record = read_json(RESULTS/f'bernhard_jablan/greene_d_{name}_2026-09-08.json')
+        values = record.get('d', record.get('pinned', {}))
+        expected = {int(k): {Fraction(v)} for k, v in values.items()}
+        expected.update({int(k): set(map(Fraction, v))
+                         for k, v in record.get('ambiguous', {}).items()})
+        expected = {k: v for k, v in expected.items() if k <= (record['det'] - 1)//2}
+        body = section[section.index(r'\endlastfoot') + len(r'\endlastfoot'):]
+        printed = {}
+        for label, cell in re.findall(r'(\d+)\s*&\s*\$([^$]+)\$', body):
+            k = int(label)
+            require(k not in printed, f'Appendix H: repeated class {k} for {name}')
+            cell = cell.replace(r'\{', '').replace(r'\}', '').replace(r'\,', '')
+            printed[k] = set(map(Fraction, cell.split(',')))
+        require(printed == expected, f'Appendix H: incorrect correction terms for {name}')
+        representative_classes += len(printed)
     return {'count_macros': len(counts), 'appendix_entries': len(changed)+len(rigorous),
-            'pd_certificates': len(seen)}
+            'pd_certificates': len(seen), 'correction_term_classes': representative_classes}
 
 
 def main():
@@ -130,7 +155,8 @@ def main():
     args = parser.parse_args()
     result = verify(args.tex.read_text())
     print(f"All {result['count_macros']} count macros, {result['appendix_entries']} Appendix A--F entries/ranges, "
-          f"and {result['pd_certificates']} Appendix G PD certificates agree.")
+          f"{result['pd_certificates']} Appendix G PD certificates, and "
+          f"{result['correction_term_classes']} Appendix H correction-term classes agree.")
 
 
 if __name__ == '__main__':

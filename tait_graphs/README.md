@@ -1,6 +1,6 @@
 # Embedded Tait graphs
 
-The shared `tait/` package supports the diagrammatic constructions in Sections 2–4 of *How to Compute the Unknotting Number: Theory and Computations*. A diagram is represented by a signed plane multigraph with a rotation system. Changing one crossing reverses one edge sign; isotopies must preserve the embedded graph's diagrammatic information.
+The shared `tait/` package supports the diagrammatic constructions in Sections 2–4 of *How to Compute the Unknotting Number: Theory and Computation*. A diagram is represented by a signed plane multigraph with a rotation system. Changing one crossing reverses one edge sign; isotopies must preserve the embedded graph's diagrammatic information.
 
 | Module | Purpose |
 |---|---|

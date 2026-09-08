@@ -1,0 +1,29 @@
+{
+  "evidence_kind": "published_construction",
+  "citation": {
+    "authors": ["Mark Brittenham", "Susan Hermiller"],
+    "title": "A counterexample to the Bernhard-Jablan Unknotting Conjecture",
+    "arxiv": "1705.05985v2",
+    "url": "https://arxiv.org/abs/1705.05985v2"
+  },
+  "records": {
+    "12n_491": {
+      "upper_bound": 2,
+      "source_location": "Theorem 1.3(b), construction in Section 2.4",
+      "dt_code": [6, -12, 20, 18, 24, 16, -4, 22, 8, 2, 14, 10],
+      "change_entry_0based": 0,
+      "child": "6_3",
+      "child_upper_bound": 1
+    },
+    "13n_3370": {
+      "upper_bound": 2,
+      "source_location": "Theorem 1.3(a), Lemma 2.5",
+      "braid_word": [1, 1, -3, 4, -3, -5, 5, -6, -6, 4, -5, 2, 4, -6, 3, 4, -1, 3, 5, 2],
+      "dt_code": [-14, -10, -22, 20, 34, -36, 40, -24, -8, 6, -18, -32, 2, 38, 26, -12, -16, 4, -30, 28],
+      "change_entry_0based": 6,
+      "child": "11n_21",
+      "child_upper_bound": 1
+    }
+  },
+  "note": "These upper bounds are due to Brittenham and Hermiller; they are not new upper-bound computations of the present paper. A crossing change negates the indicated entry in the DT code. The frozen comparison snapshot retains [1,3] for 13n_3370, so its published upper bound must be included explicitly when combining it with a new lower bound."
+}

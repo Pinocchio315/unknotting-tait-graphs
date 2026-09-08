@@ -7,7 +7,7 @@ explicit upper-bound certificates, and exploratory data.
 The current aggregation entry point is `../consolidate_results.py`. It reads
 deposited inputs and writes only to `../generated/`; it does not replace the
 historical aggregates in this directory.
-The rebuilt counts are 1,225 exact values and 176 further improved ranges.
+The rebuilt counts are 1,227 exact values and 176 further improved ranges.
 
 ## Frozen comparison ranges
 
@@ -26,6 +26,14 @@ The frozen comparison is not a claim about what a live KnotInfo page records
 today. The manifest is also not a proof of the mathematics: its checksums detect
 changes to the input files used to assemble the paper's tables.
 
+The snapshot retains `[1,3]` for `13n_3370`. The published bound `u <= 2` from
+Brittenham–Hermiller, Theorem 1.3(a) and Lemma 2.5, is therefore supplied as a
+separate input in `bernhard_jablan/brittenham_hermiller_upper_bounds.json`.
+This file also records their upper-bound construction for `12n_491`.
+The two new Greene lower bounds, combined with these existing upper bounds,
+increase the exact-value count by two. In particular, the former construction
+is not treated as a new upper-bound result of this paper.
+
 ## Lower bounds — Section 3
 
 | Files | Interpretation |
@@ -38,7 +46,6 @@ changes to the input files used to assemble the paper's tables.
 | `owens_rank4/` | Explicitly frozen partial output and two JSONL snapshots; completed exclusions give all 21 values with `u=5`, including the six added results |
 | `cyclic_cover/` | Nakanishi's generator bounds from cyclic branched-cover homology |
 | `montesinos/` | Correction terms and reduced Floer homology of Montesinos plumbings; 44 exact values and five further improved ranges as the primary method |
-| `bernhard_jablan/` | Correction terms of the double branched covers of `12n491` and `13n3370` from Greene's spanning-tree model (`greene_d_*_2026-09-08.json`) and the quasi-alternating certificate of `12n491`; the surgery test excludes `u = 1` for both, so `u(12n491) = u(13n3370) = 2`, and with `u(12n288) = u(12n501) = 2` from `montesinos/` and Theorem 1.3 of Brittenham–Hermiller (arXiv:1705.05985) the knot `13n3370` is a counterexample to the Bernhard–Jablan conjecture; scripts in `../lower_bounds/greene/` |
 | `crossing_changes/mccoy_alternating_u1_2026-09-08.json` | 27 alternating knots, their original input ranges, and the completed McCoy obstruction |
 | `comparison/gebel_prangley_2026.json` | Theorem lists used in the comparison with concurrent work in the conclusion |
 
@@ -47,7 +54,7 @@ supply lower bounds. Duplicate records from resumed jobs are deduplicated;
 conflicting completed results are an error. The uncompleted rank-four targets
 `13a_4770`, `13a_4787`, and `13a_4801` retain their input ranges.
 
-## Upper bounds and minimal diagrams — Section 4
+## Upper bounds — Section 4
 
 | Files | Interpretation |
 | --- | --- |
@@ -55,9 +62,28 @@ conflicting completed results are an error. The uncompleted rank-four targets
 | `witness_chains/` | Replayable search certificates; the presentation verifier checks the eight final paper diagrams separately |
 | `13n_1587_u_le_2_braid_certificate.json` | Braid crossing-change certificate following Brittenham–Hermiller |
 | `cluster_runs/` | Archived search runs; an unsuccessful run establishes no lower bound |
+
+## Bernhard–Jablan conjecture — Section 5
+
+| Files | Interpretation |
+| --- | --- |
+| `bernhard_jablan/khovanov_inputs_2026-09-08.json` | Frozen reduced Khovanov homology data over `F_2` and input PD codes for `12n_491` and `13n_3370`; ranks 69 and 33 equal the corresponding determinants and imply that their double branched covers are L-spaces |
+| `bernhard_jablan/greene_d_12n_491_2026-09-08.json` | All 69 correction terms, obtained by intersecting solitary-state grading candidates over marked diagrams; the surgery test excludes unknotting number one |
+| `bernhard_jablan/greene_d_13n_3370_2026-09-08.json` | 29 pinned correction terms and four unresolved conjugate classes; all nine remaining candidate vectors fail the surgery test, without requiring a choice among them |
+| `bernhard_jablan/qa_certificate_12n_491_2026-09-08.json` | Independently replayed quasi-alternating resolution tree for `12n_491`, with nine resolutions and ten terminal nodes; an auxiliary L-space certificate |
+| `bernhard_jablan/brittenham_hermiller_upper_bounds.json` | Published upper bounds two for `12n_491` and `13n_3370`, with DT codes, changed entries, and source locations |
 | `crossing_changes/dataset_v2.json.gz` and accompanying analyses | Single crossing changes in the reference alternating diagrams, identified children, signatures, determinants, and crossing features |
 | `open23/priority_u23_final.json` | Source of Appendix F: 806 knots without candidate crossings after excluding records that rely on heuristic identifications |
 | Other files in `open23/` | Flype checks, child-knot data, and supplementary exploratory classifications |
+
+The Greene records give `u(12n_491) = u(13n_3370) = 2` and contribute two
+exact values under method tag `G`. Together with `u(12n_288) = u(12n_501) = 2`
+from `montesinos/`, they identify `13n_3370` as a counterexample to the
+Bernhard–Jablan conjecture by
+[Brittenham–Hermiller, Theorem 1.3](https://arxiv.org/abs/1705.05985v2).
+Appendix H prints the exact correction terms for `12n_491` and the remaining
+candidate sets for `13n_3370`, using one representative of each conjugate pair.
+`verify_manuscript.py` compares all 52 printed representatives with these records.
 
 The Appendix F conclusion is conditional on the Bernhard–Jablan property; its
 806 knots are not part of the unconditional exact-value count. Historical

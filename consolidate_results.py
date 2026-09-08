@@ -4,7 +4,8 @@
 This is bookkeeping, not a rerun of the mathematical obstructions.  A completed
 OBSTRUCTED verdict supplies a lower bound; PASS only means that this obstruction
 is silent.  In particular, PASS, a missing record, or a timeout never proves an
-upper bound.  Upper bounds come from separately verifiable diagram certificates.
+upper bound. Upper bounds come from separately verifiable diagram certificates
+or explicitly cited published constructions.
 
 Run from any directory: python consolidate_results.py --outdir generated
 Historical results are read-only. No installed KnotInfo table or live worker log
@@ -15,13 +16,15 @@ from __future__ import annotations
 import argparse
 from collections import Counter, defaultdict
 from dataclasses import dataclass
+from fractions import Fraction
 import hashlib
 import json
+import math
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 RESULTS = ROOT / 'results'
-PRIORITY = ('L', 't', 'a', 'OT', 'O2', 'g', 'c', 'M', 'K', 'O3', 'O4', 'w', 'b')
+PRIORITY = ('L', 't', 'a', 'OT', 'O2', 'g', 'c', 'M', 'G', 'K', 'O3', 'O4', 'w', 'b', 'BH')
 COMPLETED = {'PASS', 'OBSTRUCTED'}
 RANK4_LOGS = ('owens_rank4/results_u4_local_2026-09-07_snapshot.jsonl',
               'owens_rank4/results_u4_local_2026-09-08_snapshot.jsonl')
@@ -69,6 +72,46 @@ def completed_rank4(records):
             raise ValueError(f'Conflicting completed rank-4 verdicts for {name}')
         completed[name] = verdict
     return completed
+
+
+def greene_obstructed(record):
+    """Read a completed surgery test, rejecting empty or partial candidate data.
+
+    A pinned correction-term vector and a finite set of candidate vectors are
+    different kinds of output. In the second case *every* conjugation-symmetric
+    candidate must have been tested. Zero tested candidates is not an obstruction.
+    These checks authenticate the shape of the deposited computation, not its
+    mathematical hypotheses or the implementation of Greene's model.
+    """
+    order = record['det']
+    if type(order) is not int or order <= 0 or order % 2 == 0:
+        raise ValueError('Greene records require positive odd determinant')
+    if 'd' in record:
+        choices = {int(k): {Fraction(v)} for k, v in record['d'].items()}
+        fits = record['u1_fits']
+        if not isinstance(fits, list):
+            raise ValueError('Missing completed surgery-test fits')
+        obstructed = not fits
+    else:
+        pinned, ambiguous = record['pinned'], record['ambiguous']
+        if pinned.keys() & ambiguous.keys():
+            raise ValueError('A Greene class cannot be both pinned and ambiguous')
+        choices = {int(k): {Fraction(v)} for k, v in pinned.items()}
+        choices.update({int(k): set(map(Fraction, values))
+                        for k, values in ambiguous.items()})
+        # One choice for each pair t,-t determines a conjugation-symmetric vector.
+        tested = record['candidate_vectors']
+        admitting = record['admitting_u1']
+        expected = math.prod(len(values) for k, values in choices.items()
+                             if k <= (-k) % order)
+        if (type(tested) is not int or tested <= 0 or tested != expected
+                or type(admitting) is not int or not 0 <= admitting <= tested):
+            raise ValueError('Incomplete Greene candidate-vector enumeration')
+        obstructed = admitting == 0
+    if (set(choices) != set(range(order)) or not all(choices.values())
+            or any(values != choices[(-k) % order] for k, values in choices.items())):
+        raise ValueError('Incomplete or inconsistent Greene Spin^c classes')
+    return obstructed
 
 
 def collect_bounds(results=RESULTS):
@@ -122,6 +165,47 @@ def collect_bounds(results=RESULTS):
     for key in ('validate', 'apply'):
         for name, row in mont[key].items():
             if row['verdict'] in {'OBSTRUCTED', 'OBSTRUCTED_HF'}: add(name, 2, 'M', source)
+    # The L-space premise is an explicit deposited input, not a consequence of
+    # the surgery-test output. These are tabulated F_2 ranks, not a fresh
+    # Khovanov chain-complex computation performed by this reporting script.
+    kh = data('bernhard_jablan/khovanov_inputs_2026-09-08.json')
+    if kh['coefficient_field'] != 'F_2':
+        raise ValueError('The L-space rank bound requires the deposited F_2 data')
+    for name in ('12n_491', '13n_3370'):
+        source = f'bernhard_jablan/greene_d_{name}_2026-09-08.json'
+        row = data(source)
+        if row.get('schema_version') != 2 or row['name'] != name:
+            raise ValueError(f'Mismatched Greene knot label: {source}')
+        premise = kh['knots'][name]
+        if (premise['determinant'] != row['det']
+                or premise['reduced_mod2_rank'] != row['det']
+                or premise['l_space_rank_equality'] is not True
+                or row['pd'] != premise['pd']
+                or row['lspace_evidence']['vector'] != premise['reduced_mod2_vector']):
+            raise ValueError(f'Missing L-space rank-equality premise: {name}')
+        obstructed = greene_obstructed(row)
+        tests = row['candidate_tests']
+        if (type(row['candidate_vectors']) is not int or row['candidate_vectors'] <= 0
+                or ('d' in row and row['candidate_vectors'] != 1)
+                or len(tests) != row['candidate_vectors']
+                or sum(bool(test['surgery_test']['fits']) for test in tests)
+                    != row['admitting_u1']
+                or (row['verdict'] == 'OBSTRUCTED') != obstructed
+                or (obstructed and row.get('lower_bound') != 2)):
+            raise ValueError(f'Inconsistent completed Greene verdict: {name}')
+        if obstructed: add(name, 2, 'G', source)
+
+    # The archived comparison has upper bound three for 13n_3370. Its sharper
+    # upper bound is already in Brittenham--Hermiller, Theorem 1.3(a), and is
+    # supplied separately rather than relabelled as a new diagram construction.
+    source = 'bernhard_jablan/brittenham_hermiller_upper_bounds.json'
+    published = data(source)
+    if published['evidence_kind'] != 'published_construction':
+        raise ValueError('Missing published upper-bound provenance')
+    for name, row in published['records'].items():
+        if row['upper_bound'] != row['child_upper_bound'] + 1:
+            raise ValueError(f'Inconsistent published crossing-change bound: {name}')
+        add(name, row['upper_bound'], 'BH', source, 'hi')
     source = 'crossing_changes/mccoy_alternating_u1_2026-09-08.json'
     for name, row in data(source).items():
         if row['verdict'] == 'u >= 2 (McCoy)': add(name, 2, 'K', source)

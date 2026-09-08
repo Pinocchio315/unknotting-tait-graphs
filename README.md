@@ -1,7 +1,7 @@
-# How to Compute the Unknotting Number: Theory and Computations
+# How to Compute the Unknotting Number: Theory and Computation
 
 Companion code and deposited computational records for the manuscript by
-Seong-Jin Lee and Pavel Putrov, version 1.1 (September 2026).
+Seong-Jin Lee, version 1.1 (September 2026).
 
 The paper explains how topological obstructions and explicit crossing changes
 work together. An obstruction raises a lower bound for `u(K)`; an unknotting
@@ -10,21 +10,30 @@ The code follows this distinction: an unsuccessful search supplies no lower
 bound, and a correction-term verdict `PASS` supplies no upper bound.
 
 Relative to the archived comparison ranges used in the manuscript, the deposited
-computations give **1,225 exact values** and **176 further improved ranges** for
+computations give **1,227 exact values** and **176 further improved ranges** for
 prime knots with at most 13 crossings:
 
 | Unknotting number | Exact values |
 | --- | ---: |
-| 2 | 838 |
+| 2 | 840 |
 | 3 | 237 |
 | 4 | 129 |
 | 5 | 21 |
 
-Lower bounds account for 1,217 exact values and 175 further improvements. Eight
+Lower bounds account for 1,219 exact values and 175 further improvements. Eight
 unknotting diagrams account for the remaining exact values. A braid certificate
 for `13n_1587`, following Brittenham–Hermiller, improves one further upper bound.
 These counts include independently recovered results, as explained in the paper;
 they are not a claim that every listed value first appears here.
+
+The new correction-term computations give **`u(12n_491) = u(13n_3370) = 2`**.
+Together with the Montesinos obstructions for `12n_288` and `12n_501`, they
+identify **`13n_3370` as a counterexample to the Bernhard–Jablan conjecture**:
+its strong Bernhard–Jablan unknotting number is three. The passage from the
+three 12-crossing knots to this conclusion is
+[Brittenham–Hermiller, Theorem 1.3](https://arxiv.org/abs/1705.05985v2).
+Their published upper bound for `13n_3370` is combined with our lower bound;
+it is not counted as a new upper-bound construction.
 
 ## Relation to the paper
 
@@ -35,10 +44,11 @@ they are not a claim that every listed value first appears here.
 | Sections 2–3 | Owens's correction-term obstruction, Traczyk's criterion | [`lower_bounds/owens/`](lower_bounds/owens/README.md), for sequences of two, three, or four crossing changes |
 | Sections 2–3 | Homology of cyclic branched covers | `lower_bounds/cyclic_cover_bound.py` |
 | Sections 2–3 | Montesinos plumbings and reduced Heegaard Floer homology | [`lower_bounds/montesinos/`](lower_bounds/montesinos/README.md) |
-| Sections 3–4 | McCoy's theorem and minimal alternating diagrams | [`crossing_changes/`](crossing_changes/README.md) |
+| Sections 2 and 5.1 | Greene's spanning-tree model, L-space correction terms, and the half-integral surgery obstruction | [`lower_bounds/greene/`](lower_bounds/greene/README.md) |
+| Sections 3 and 5.2 | McCoy's theorem and minimal alternating diagrams | [`crossing_changes/`](crossing_changes/README.md) |
 | Section 4 | Unknotting diagrams and crossing-change certificates | [`upper_bounds/`](upper_bounds/README.md) |
 | Section 4 | Tait graphs, diagram moves, determinant and signature formulas | [`tait_graphs/`](tait_graphs/README.md) |
-| Appendices A–G | Exact values, improved ranges, conditional results, PD codes | `consolidate_results.py`, deposited records in [`results/`](results/README.md) |
+| Appendices A–H | Exact values, improved ranges, conditional results, PD codes, and correction terms | `consolidate_results.py`, deposited records in [`results/`](results/README.md) |
 
 The torsion contributions in the result table use **knot Floer homology**. Other
 torsion theories reviewed in Section 2 are not counted as additional computational
@@ -47,7 +57,7 @@ theorem. Their comments explain its signature and sign-pattern hypotheses.
 
 For the **806 knots in Appendix F**, the conclusion is conditional: each has
 `u = 3` unless it violates the Bernhard–Jablan property. These are not added to
-the 1,225 exact values. The deposited rank-four computation contains completed
+the 1,227 exact values. The deposited rank-four computation contains completed
 records for 21 of 24 targets; an unfinished target is not treated as obstructed.
 
 ## Inputs and provenance
@@ -64,6 +74,13 @@ to `[2,b]` are counted once, as in Appendix E. An older deposited aggregate had
 already incorporated these lower bounds and therefore counted only 149 further
 improvements. Historical aggregates remain intact; use the v1.1 pipeline below
 for the current paper.
+
+The comparison snapshot retains `[1,3]` for `13n_3370`. Its independently
+published upper bound two is recorded in
+[`brittenham_hermiller_upper_bounds.json`](results/bernhard_jablan/brittenham_hermiller_upper_bounds.json),
+with the original DT code and the crossing change to `11n_21`. Consolidation
+keeps this source distinct from the new Greene lower bounds. Both new exact
+values use method tag `G`; Appendix D marks them with superscript `g`.
 
 The computational scripts use the `database_knotinfo==2026.8.1` snapshot for
 knot diagrams and invariants. Reporting reads only the frozen deposited inputs;
@@ -101,7 +118,7 @@ and `generated/counts.json`, including all 21 values with `u = 5`.
 Neither manuscript version nor a deposited result file is overwritten.
 
 If the LaTeX manuscript is available separately, its actual entries and marked
-PD codes can also be compared with the deposited data:
+PD codes and correction-term tables can also be compared with the deposited data:
 
 ```bash
 python verify_manuscript.py --tex /path/to/main_v1.1.tex
@@ -119,6 +136,7 @@ python -m unittest discover -s tests -v
 python upper_bounds/selftest.py
 python upper_bounds/verify_presentation_diagrams.py
 python upper_bounds/verify_braid_certificate.py
+python upper_bounds/verify_bj_upper_bounds.py
 python lower_bounds/owens/validate.py
 python lower_bounds/owens/crosscheck.py 11a_63 13a_16 9_10 8_5
 ```
@@ -126,7 +144,12 @@ python lower_bounds/owens/crosscheck.py 11a_63 13a_16 9_10 8_5
 The presentation verifier requires all eight paper diagrams, authenticates their
 knot identifications, checks two distinct marked crossings in each, and verifies
 the unknot endpoints. The braid verifier checks the intermediate knot and its
-unknotting crossing. For a search campaign with replayable certificates:
+unknotting crossing. The Bernhard–Jablan upper-bound verifier replays the
+published constructions for `12n_491` and `13n_3370` and independently checks
+the partners' unknotting crossings. The new lower-bound computations can be
+repeated with `python lower_bounds/greene/pin_dinv.py 12n_491 13n_3370`; they
+read the frozen diagram and mod-two Khovanov inputs and print their results.
+For a search campaign with replayable certificates:
 
 ```bash
 python upper_bounds/verify_certificates.py results/witness_chains --paper --out generated/verified
@@ -146,9 +169,9 @@ updating the frozen inputs and manuscript counts.
 ## Citation
 
 ```bibtex
-@misc{LeePutrov2026,
-  author = {Lee, Seong-Jin and Putrov, Pavel},
-  title = {How to Compute the Unknotting Number: Theory and Computations},
+@misc{Lee2026,
+  author = {Lee, Seong-Jin},
+  title = {How to Compute the Unknotting Number: Theory and Computation},
   year = {2026},
   note = {Manuscript, version 1.1; accompanying code and computational data},
   url = {https://github.com/Pinocchio315/unknotting-tait-graphs}

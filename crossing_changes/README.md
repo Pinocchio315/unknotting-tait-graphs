@@ -1,6 +1,6 @@
 # Crossing changes in alternating diagrams
 
-This directory supports Sections 3–4 of *How to Compute the Unknotting Number: Theory and Computations*. It studies the knots obtained by changing each crossing of an alternating diagram, and it supplies McCoy tests and the conditional Bernhard–Jablan analysis.
+This directory supports Sections 3–5 of *How to Compute the Unknotting Number: Theory and Computation*. It studies the knots obtained by changing each crossing of an alternating diagram, and it supplies McCoy tests and the conditional Bernhard–Jablan analysis in Section 5.2.
 
 The electrical description in Section 4 uses a positive-definite Goeritz matrix `G`. Changing an edge with incidence vector `x` gives `G - 2xxᵀ`; effective resistance is `xᵀG⁻¹x`. Determinant and linking-pairing updates are evaluated exactly. `sig.py` implements the Gordon–Litherland formula with exact rational inertia, including its type-II correction, so a floating-point eigenvalue tolerance cannot change a signature bound.
 

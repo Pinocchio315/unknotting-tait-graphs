@@ -19,11 +19,11 @@ the incidence graph of regions and crossings has no cycle.  When every Spin^c cl
 state, Sigma_2(K) is an L-space (Corollary 6.9) and d(Sigma_2(K), t) = gr(x_t).
 
     python greene_dinv.py 12n_491            # correction terms, both colourings and several marked strands
-    python greene_dinv.py --validate         # alternating and Montesinos controls
+    python greene_dinv.py 3_1 4_1 5_2 8_20 9_44 5_1 7_4 9_43  # small controls
 """
 import ast, sys, os, itertools, math
 from fractions import Fraction
-import numpy as np, sympy
+import sympy
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(HERE, '..', 'montesinos'))
 
@@ -92,8 +92,17 @@ class Diagram:
             if w1 in self.widx and w2 in self.widx:
                 G[self.widx[w1]][self.widx[w2]] += self.mu[i]; G[self.widx[w2]][self.widx[w1]] += self.mu[i]
         self.G = sympy.Matrix(G); self.det = int(self.G.det()); self.D = abs(self.det)
-        self.adj = self.G.adjugate(); ev = np.linalg.eigvalsh(np.array(G, dtype=float))
-        assert all(abs(e) > 1e-9 for e in ev); self.sigma = int(sum(1 for e in ev if e > 0) - sum(1 for e in ev if e < 0))
+        self.adj = self.G.adjugate()
+        # Inertia enters the absolute grading, so no floating eigenvalue
+        # threshold is permitted. Sturm root counts of the characteristic
+        # polynomial give its positive and negative eigenvalues exactly.
+        if self.det == 0:
+            raise ValueError('The reduced Goeritz matrix is singular')
+        characteristic = self.G.charpoly().as_poly()
+        self.sigma = sum(int(multiplicity) * int(
+            factor.count_roots(0, sympy.oo)
+            - factor.count_roots(-sympy.oo, 0))
+            for factor, multiplicity in characteristic.sqf_list()[1])
 
     def side(self, j):
         """side of the over-strand (positions 1, 3) containing corner j: corners 3, 0 are on the side of end a"""
@@ -174,26 +183,8 @@ def correction_terms(pd, black=0, mark=1, verbose=False):
     return d, multi, lam, info
 
 
-# ---------------------------------------------------------------- the surgery test (as in montesinos_u1.u1_admissible)
-def u1_admissible(d, lam, D):
-    from montesinos_u1 import lens_d
-    dL = [lens_d(D, 2, i) for i in range(D)]; idx = [min(i // 2, (D + 1 - i) // 2) for i in range(D)]
-    fits = []
-    for eps in (1, -1):
-        units = [a for a in range(D) if math.gcd(a, D) == 1 and (a * a * lam) % 1 == Fraction(eps * 2, D) % 1]
-        dY = [eps * d[k] for k in range(D)]
-        for a in units:
-            for b in range(D):
-                V, ok = {}, True
-                for i in range(D):
-                    w = dL[i] - dY[(a * i + b) % D]
-                    if w < 0 or w.denominator != 1 or w.numerator % 2: ok = False; break
-                    j = idx[i]; val = w.numerator // 2
-                    if V.setdefault(j, val) != val: ok = False; break
-                if not ok: continue
-                seq = [V[j] for j in sorted(V)]
-                if all(0 <= seq[j] - seq[j + 1] <= 1 for j in range(len(seq) - 1)): fits.append((eps, a, b, seq))
-    return fits
+# All affine identifications are tested; no linking-sign convention is needed.
+from half_integral import u1_admissible, surgery_test
 
 
 def run(name, pd, marks=(1, 2, 3), verbose=True):

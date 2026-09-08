@@ -1,23 +1,23 @@
 {
   "base": "reference_table_2026-09-07.json",
-  "description": "Frozen comparison ranges used by the manuscript. These are archived KnotInfo ranges with per-record provenance; this file is not an unmodified export of the installed database_knotinfo package. The 27 McCoy records retain their explicitly recorded input ranges so that their lower-bound contribution is counted once, as in Appendix E. Historical aggregates remain unchanged.",
+  "description": "Frozen comparison ranges used by the manuscript. These are archived KnotInfo ranges with per-record provenance; this file is not an unmodified export of the installed database_knotinfo package. The 27 McCoy records retain their explicitly recorded input ranges so that their lower-bound contribution is counted once, as in Appendix E. Historical aggregates remain unchanged. The September 8 revision adds two Greene lower-bound computations. The comparison range [1,3] for 13n_3370 is retained; the upper bound two published by Brittenham and Hermiller is supplied separately when obtaining its exact value.",
   "expected": {
     "dichotomy": 806,
-    "exact": 1225,
+    "exact": 1227,
     "exact_by_u": {
-      "2": 838,
+      "2": 840,
       "3": 237,
       "4": 129,
       "5": 21
     },
-    "exact_lower": 1217,
+    "exact_lower": 1219,
     "exact_upper": 8,
     "improved": 176,
     "improved_lower": 175,
     "improved_upper": 1,
     "knots": 12965
   },
-  "manuscript": "How to Compute the Unknotting Number: Theory and Computations",
+  "manuscript": "How to Compute the Unknotting Number: Theory and Computation",
   "per_record_provenance": {
     "13a_1069": {
       "archived_aggregate_range": [
@@ -317,8 +317,29 @@
       "source": "crossing_changes/mccoy_alternating_u1_2026-09-08.json"
     }
   },
+  "published_upper_bounds": {
+    "12n_491": {
+      "source": "bernhard_jablan/brittenham_hermiller_upper_bounds.json",
+      "source_location": "Theorem 1.3(b), Section 2.4",
+      "upper_bound": 2
+    },
+    "13n_3370": {
+      "source": "bernhard_jablan/brittenham_hermiller_upper_bounds.json",
+      "source_location": "Theorem 1.3(a), Lemma 2.5",
+      "unchanged_comparison_range": [
+        1,
+        3
+      ],
+      "upper_bound": 2
+    }
+  },
   "sha256": {
     "13n_1587_u_le_2_braid_certificate.json": "5bf2173f7771514746dac5c9aec5a58ba96d1b8926bb3ad42f537e978f1e393e",
+    "bernhard_jablan/brittenham_hermiller_upper_bounds.json": "139c24512afc1710b070ce75ea19174c570975bd3038b7146b16d55d1b2a3946",
+    "bernhard_jablan/greene_d_12n_491_2026-09-08.json": "2a9b499100255c3a5010f4b4069f18f6dac40f5829cc9ad5a0514eb625bf4107",
+    "bernhard_jablan/greene_d_13n_3370_2026-09-08.json": "d82ed34038ad625c8b61a61aa2177734ef1bea3ade3e9d90754456cdfaf4a959",
+    "bernhard_jablan/khovanov_inputs_2026-09-08.json": "831939486af4969a3a9ece5a55d4f8f2c6dd4723b4a652a282f6446720c3057c",
+    "bernhard_jablan/qa_certificate_12n_491_2026-09-08.json": "66a153c38f5bd7b5faaead9b211bccb87384a4ede59a6aadc6e249d5d105c95e",
     "comparison/gebel_prangley_2026.json": "7fec51b02e7d46116a6df91d3dce81e6e9778cdaa463b3c22b08e8f0a13c32a2",
     "crossing_changes/dataset_v2.json.gz": "f1406df00e2aadd09d9dd81542893e830fc3d020045ceb035f0ed2df8454a694",
     "crossing_changes/mccoy_alternating_u1_2026-09-08.json": "e7ac801a06f4f78ef8e845889efdd3c50000c7f9705569ae481d6b459e089b5f",

@@ -1,8 +1,8 @@
 # Lower-bound computations
 
-This directory accompanies **How to Compute the Unknotting Number: Theory and Computations**, Section 3. The subsections of that section are unnumbered; the names below identify the corresponding arguments. Every obstruction is a necessary condition for an unknotting sequence. A passing test does not prove an upper bound, and a resource limit supplies no obstruction.
+This directory accompanies **How to Compute the Unknotting Number: Theory and Computation**, Sections 3 and 5.1. The subsections of Section 3 are unnumbered; the names below identify the corresponding arguments. Every obstruction is a necessary condition for an unknotting sequence. A passing test does not prove an upper bound, and a resource limit supplies no obstruction.
 
-| Script | Section 3 subsection | Mathematical role |
+| Script | Location in the paper | Mathematical role |
 |---|---|---|
 | `scan_lower_bounds.py` | Linking pairings | Lickorish's cyclicity and self-linking conditions from a Goeritz presentation. Casson–Walker quantities remain auxiliary diagnostic output; signs from the two conventions are not intersected without an orientation identification. |
 | `seifert_linking_check.py` | Linking pairings | The same pairing from `V + Vᵀ`, where `V` is a Seifert matrix. This gives a different presentation of the cover's homology and pairing. |
@@ -13,7 +13,7 @@ This directory accompanies **How to Compute the Unknotting Number: Theory and Co
 | `generator_bound_sweep.py` | Two crossing changes; Cyclic-cover bounds | The minimum number of generators of `H₁(Σ₂)`, with the three-rank checked against the Lickorish–Millett Jones evaluation. |
 | `cyclic_cover_bound.py` | Cyclic-cover bounds | Nakanishi's bound `u ≥ ceil(g_n/(n−1))`, using the tabulated homology of covers of degrees two through nine. Zero invariant factors are free summands and count toward `g_n`. |
 | `montesinos/montesinos_u1.py`, `montesinos/hf_red.py` | Montesinos knots | Negative-definite star plumbings, correction terms, the Ni–Wu half-integral surgery pattern and the reduced Floer mapping cone. See [montesinos/README.md](montesinos/README.md) for hypotheses and exact termination. |
-| `greene/qa_search.py`, `greene/greene_dinv.py`, `greene/pin_dinv.py` | Khovanov-thin knots | Correction terms of the double branched cover of a Khovanov-thin knot (an L-space) from Greene's spanning-tree model of a diagram: the absolute gradings and Spin^c structures of the Kauffman states, the solitary states of every marking, and the intersection of the resulting candidate sets; then the same half-integral surgery pattern as for Montesinos knots. Proves `u(12n491) = u(13n3370) = 2`, which identifies `13n3370` as the Bernhard–Jablan counterexample. See [greene/README.md](greene/README.md). |
+| `greene/qa_search.py`, `greene/greene_dinv.py`, `greene/pin_dinv.py` | Section 5.1 | Greene's Kauffman-state gradings and Spin^c structures give candidate correction terms when the double branched cover is an L-space. For `12n_491` and `13n_3370`, the reduced Khovanov homology ranks over `F_2` equal the determinants and establish this premise. The half-integral surgery test excludes unknotting number one, and the published upper bounds give `u(12n_491) = u(13n_3370) = 2`. See [greene/README.md](greene/README.md). |
 
 The deposited pairing list contains 815 obstructions. The HFK scan records order two for `13n_689`, `13n_1166`, `13n_2504` and `13n_2807`. The Montesinos computation excludes unknotting number one for 49 of its 50 targets: 44 have an independently recorded upper bound two and five have upper bound three. These raw records retain their original filenames in `../results/`; the aggregate table is assembled by `../consolidate_results.py`.
 
