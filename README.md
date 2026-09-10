@@ -1,10 +1,10 @@
-# [Computation of Unknotting Numbers: Which Knot Breaks the Bernhard-Jablan Conjecture?][paper]
+# [Computation of unknotting numbers: which knot breaks the Bernhard-Jablan Conjecture][paper]
 
 This repository contains the code, input data, and computational results for
 all calculations reported in the paper by **Seong-Jin Lee**. It includes
 lower-bound obstructions, searches for crossing-change constructions,
 verification of the resulting diagrams, and the analysis of minimal diagrams.
-The paper's arXiv link will be added after announcement.
+The preprint is available as [arXiv:2609.09861][paper] ([PDF](https://arxiv.org/pdf/2609.09861)).
 
 ## Results
 
@@ -185,17 +185,20 @@ obstruction or the full search campaigns.
 
 ## Paper and citation
 
-The arXiv identifier will be inserted after announcement. The title above
-uses the reference link below so that its destination can be updated once.
+Seong-Jin Lee, *Computation of unknotting numbers: which knot breaks the
+Bernhard-Jablan Conjecture*, arXiv:2609.09861 [math.GT] (2026).
+[arXiv page][paper] | [PDF](https://arxiv.org/pdf/2609.09861)
 
 ```bibtex
 @misc{Lee2026,
   author = {Lee, Seong-Jin},
-  title = {Computation of Unknotting Numbers: Which Knot Breaks the Bernhard--Jablan Conjecture?},
+  title = {Computation of unknotting numbers: which knot breaks the {Bernhard-Jablan} Conjecture},
   year = {2026},
-  note = {Accompanying code and computational data},
-  url = {https://github.com/Pinocchio315/unknotting-tait-graphs}
+  eprint = {2609.09861},
+  archivePrefix = {arXiv},
+  primaryClass = {math.GT},
+  url = {https://arxiv.org/abs/2609.09861}
 }
 ```
 
-[paper]: #paper-and-citation
+[paper]: https://arxiv.org/abs/2609.09861
