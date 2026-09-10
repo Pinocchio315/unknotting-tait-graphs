@@ -138,7 +138,7 @@ def main() -> None:
     ap.add_argument('--out', default='verified', help='directory for verified witness files')
     ap.add_argument('--known-bounds', default=os.path.join(HERE, '..', 'results', 'paper_v1_1_snapshot.json'),
                     help='independent name -> [lo,hi] or upper-bound JSON')
-    ap.add_argument('--paper', action='store_true', help='require exactly the eight main_v1.1 constructions; skip separate archived certificates')
+    ap.add_argument('--paper', action='store_true', help='require exactly the eight manuscript constructions (retained in v1.6); skip separate archived certificates')
     args = ap.parse_args()
     with open(args.known_bounds) as handle:
         known_bounds = json.load(handle)

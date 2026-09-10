@@ -246,6 +246,17 @@ class CertificateTests(unittest.TestCase):
 
 
 class CandidateTests(unittest.TestCase):
+    def test_historical_bj_scan_retains_possible_two_for_composite(self):
+        from bj_scan import composite_unknotting_range
+
+        # A neighbour with factor values one and two is still a possible
+        # u=2 neighbour of a u=3 parent. Scharlemann alone must not eliminate
+        # it and thereby manufacture a Bernhard--Jablan counterexample.
+        self.assertEqual(composite_unknotting_range(1, 2), (2, 3))
+        self.assertEqual(composite_unknotting_range(2, 1), (2, 3))
+        self.assertEqual(composite_unknotting_range(1, 1), (2, 2))
+        self.assertEqual(composite_unknotting_range(3, 3), (2, 6))
+
     def test_jones_hypotheses_do_not_become_witnesses(self):
         self.assertNotEqual(candidate_status('K', 'sum-jones', [1, 1], 0), 'WITNESS')
         self.assertEqual(candidate_status('K', 'sum-jones', [2, 3], 0), 'excluded:u>=2(jones)')

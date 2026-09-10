@@ -1,0 +1,12 @@
+{
+  "retrieved_utc": "2026-09-09T05:31:22.645247+00:00",
+  "asset_commit": "af93634464d96875cb033d9a5885183dc64e89a3",
+  "pinned_download_url": "https://raw.githubusercontent.com/knotinfo-org/assets/af93634464d96875cb033d9a5885183dc64e89a3/knotinfo_data_complete.xls.zip",
+  "official_download_page": "https://knotinfo.org/homelinks/database_download.php",
+  "xls_member": "knotinfo_data_complete.xls",
+  "xls_sha256": "0f172ba776f954402010aa9f2aa50f1d96d7144c9308c52d1c529c7b4a56ac12",
+  "description": "Unknotting-number ranges for the 12,965 study knots, extracted from the dated official KnotInfo capture.",
+  "sha256": "578bd17a87e624f881eefd4655e3d7feabdeabb6d6e3b1b792103fe144a9c031",
+  "original_extracted_record_sha256": "2613f0b1f7ed757b43ee3b1041f565d320c3531941db91e2a4a3061f2e187584",
+  "rows": 12965
+}

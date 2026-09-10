@@ -1,6 +1,6 @@
 # Crossing changes in alternating diagrams
 
-This directory supports Sections 3–5 of *Computation of Unknotting Numbers: Which Knot Breaks the Bernhard–Jablan Conjecture?*. It studies the knots obtained by changing each crossing of an alternating diagram, and it supplies McCoy tests and the conditional Bernhard–Jablan analysis in Section 5.2.
+This directory supports Sections 3–5 of *Computation of Unknotting Numbers: Which Knot Breaks the Bernhard–Jablan Conjecture?*, manuscript v1.7. It studies the knots obtained by changing each crossing of an alternating diagram, and it supplies McCoy tests and the minimal-diagram analysis in Section 5.2. The current manuscript retains the frozen computational profile `v1.3`; the [repository README](../README.md) explains its input manifests and the separate current KnotInfo comparison.
 
 The electrical description in Section 4 uses a positive-definite Goeritz matrix `G`. Changing an edge with incidence vector `x` gives `G - 2xxᵀ`; effective resistance is `xᵀG⁻¹x`. Determinant and linking-pairing updates are evaluated exactly. `sig.py` implements the Gordon–Litherland formula with exact rational inertia, including its type-II correction, so a floating-point eigenvalue tolerance cannot change a signature bound.
 
@@ -8,18 +8,19 @@ The electrical description in Section 4 uses a positive-definite Goeritz matrix 
 
 Canonical diagram codes, numerical SnapPy isometries against named KnotInfo diagrams, and identified factors in a diagrammatic connected-sum decomposition provide separate identification routes. Matching a determinant and a Jones polynomial is only a hypothesis. `candidates.py` keeps that hypothesis in a separate classification and prevents it from becoming a verified upper-bound witness. Likewise, a decomposition with only one nontrivial factor does not justify the lower bound for a nontrivial connected sum.
 
-The Appendix F candidate classification is conditional on the Bernhard–Jablan conjecture and the recorded identification and bound premises. It does not establish `u = 3` unconditionally. A failure to find an unknotting crossing in a general diagram does not supply a lower bound. The special alternating case is treated separately by McCoy's theorem.
+For the 959 alternating knots in Appendix F, the recorded invariant tests and
+verified identifications exclude a neighbour of unknotting number one after
+every crossing change in a minimal diagram. Thus `u_BJ^s >= 3`, and any of
+these knots with `u = 2` would fail the strong Bernhard–Jablan equality. Their
+unknotting numbers remain in `[2,3]`; the analysis does not establish an
+alternating counterexample. The 1,027 open alternating parents divide into
+these 959 cases, 22 parents with 11 named possible children, and 46 parents
+whose exclusions depend on unverified identifications. The latter 46 are
+excluded from Appendix F.
 
-The published `11a_14` figure can be checked with
-`python audit_11a14_figure.py` from the repository root. This read-only
-command replays three numerical exterior comparisons from deposited PD
-codes: the left diagram represents `11a_14`, its boxed crossing change
-leads to `8_8`, and the right diagram represents `10_129`, allowing mirrors.
-SnapPy uses floating-point canonical isometries, not interval certification.
-A separate exact Jones state sum on the small reference diagrams verifies
-`V_8_8(t^-1) = V_10_129(t)`; it is not used for identification. The dated
-reference values and the scope of this single-figure diagnostic are stored
-in `results/comparison/11a14_figure_verification.json`.
+A failure to find an unknotting crossing in a general diagram does not supply
+a lower bound. McCoy's theorem supplies the additional conclusion for a
+reduced alternating diagram.
 
 ## McCoy verification
 
@@ -41,12 +42,9 @@ bounds relative to June. The separate crossing dataset covers 3,105 knots
 in the cohort and agrees with every stored unknotting-crossing list in
 that overlap; the other 522 rely on the deposited full McCoy computation.
 
-`python audit_knotinfo_releases.py --verify` checks this comparison from
-frozen public range extracts and deposited records, without restarting a
-search. The optional `--all` command above instead reruns the computation
-from the named April wheel. Choose names actually present among the frozen
-targets for a bounded subset. New McCoy output goes to `generated/` unless
-an output path is explicitly supplied.
+The optional `--all` command reruns the computation from the named April wheel.
+Choose names from the frozen targets for a bounded subset. New output goes to
+`generated/` unless an explicit output path is supplied.
 
 ## Crossing-formula audit
 
@@ -61,30 +59,6 @@ summary is `results/comparison/crossing_formula_verification.json`.
 
 ## Pipeline files
 
-The following scan is retained as ancillary review work and is not a claim or
-numerical input of the revised v1.3 manuscript.
-
-`u1_minimal_diagram_scan.py` tests every crossing of one tabulated minimal
-diagram per knot. The archived positive cohort has 1,516 knots and the open
-cohort has 546. A negative result applies only to the chosen diagram; the
-program does not enumerate other minimal diagrams of a non-alternating knot.
-Determinant-one changes are decided by simplification or by knot Floer
-homology's Seifert-genus detection, with failures left undecided.
-
-From the repository root:
-
-```sh
-python crossing_changes/u1_minimal_diagram_scan.py 3_1 11n_116
-python crossing_changes/u1_minimal_diagram_scan.py --cohort open --out /tmp/open_diagrams.json
-```
-
-The program prints results unless an explicit `--out` path is supplied. New
-records include the PD and per-crossing evidence; the existing archives are
-not replaced by a named diagnostic run. The independent verification in
-`results/review_v1_3/u1_scanner_audit.json` checks one positive witness for
-every one of the 1,516 known knots and all 7,052 crossing changes of the 546
-chosen open-range diagrams.
-
 | File | Purpose |
 |---|---|
 | `crossing_dataset.py`, `augment.py` | Generate crossing-neighbor records and exact signature/resistance values |
@@ -94,8 +68,13 @@ chosen open-range diagrams.
 | `flype727.py` | Examine the flype orbit for the minimal-diagram analysis |
 | `merge_tiers.py`, `resolve_unres.py` | Assemble conditional candidate tiers and revisit unresolved records |
 | `lickorish_electrical.py`, `residual_breakdown.py` | Evaluate the linking-pairing obstruction and organize recorded exclusions |
-| `analyze_v2.py` | Analyze the deposited data and fit the exploratory crossing-selection model |
 | `mccoy_u1_check.py` | Apply the alternating-diagram theorem with explicit undecided outcomes |
-| `u1_minimal_diagram_scan.py` | Inspect one chosen minimal diagram per knot, with explicit determinant and unknot-recognition evidence |
 
-`run_all.sh` is an exploratory rebuild that writes work files and depends on the supplied reference tables and installed database; it is not the default frozen-manuscript verification command. The retained script names reflect historical campaign sizes. The regression suite checks exact invariants, diagram moves, certificate rejection, and the distinction between verified identifications and polynomial hypotheses. It is not a fresh topological revalidation of every Appendix F entry.
+`run_all.sh` and `run_open23.sh` are exploratory rebuilds that overwrite files
+under the deposited data paths and depend on historical reference tables and
+the installed database. Run them only in a separate copy intended for new
+computations; they are not frozen-manuscript verification commands. The retained
+script names reflect historical campaign sizes. The regression suite checks
+exact invariants, diagram moves, certificate rejection, and the distinction
+between verified identifications and polynomial hypotheses. It is not a fresh
+topological revalidation of every Appendix F entry.

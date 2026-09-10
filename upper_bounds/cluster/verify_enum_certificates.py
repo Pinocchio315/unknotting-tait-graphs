@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Verify enumeration certificates for Section 4 of main_v1.1.tex.
+"""Verify enumeration certificates for the upper-bound searches (v1.6 Section 4).
 
 Replay authenticates the isotopy path and the exact crossing-row correspondence.
 Unknot endpoints use genus detection; named partners use exterior isometry checks

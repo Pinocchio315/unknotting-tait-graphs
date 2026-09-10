@@ -2,17 +2,21 @@
 """Owens's obstruction to n crossing changes, driven by correction terms supplied from outside.
 
 The published rank-n tests read the correction terms of the double branched cover off the sharp
-positive-definite Goeritz form of an alternating diagram.  When the cover is an L-space, Greene's
-spanning-tree model supplies the same correction terms for a knot that need not be alternating, and the
-enumeration of definite forms is unchanged.  This module contains only the comparison; the forms come
+positive-definite Goeritz form of an alternating diagram. When the cover is an L-space, Greene's
+spanning-tree model supplies finite candidate sets for a knot that need not be alternating. The sweep
+tests every remaining vector against the same definite forms. This module contains only one such
+comparison; the forms come
 from `owens_obstruction` (rank two), `owens_u3` and `owens_u4`.
 
 Conventions. The signed signature fixes the orientation in Owens's same-sign
 crossing-change hypothesis, so the vector is negated when sigma < 0. The unique
-spin structure is the origin of the odd-order discriminant group. As an
-additional conservative restriction this implementation requires
-d(spin) = -|sigma|/4; a mismatch returns ERROR and supplies no obstruction.
-That equality is not asserted for arbitrary knots with L-space branched covers.
+spin structure is the origin of the odd-order discriminant group. For an L-space
+double branched cover of a knot, d(spin) = -sigma/4 follows from Lin--Ruberman--Saveliev,
+Theorem A and Remark 1.1 (arXiv:1802.07704); hence the mirrored vector has spin
+entry -|sigma|/4. This identity does not select the orientation. The implementation
+conservatively returns ERROR on any candidate vector with a different spin entry,
+and the sweep then supplies no obstruction for the knot. Such a candidate is an
+element of the surviving superset, not necessarily the actual correction-term vector.
 
     python greene_ranks.py --validate 5_1 7_3 9_10 9_13     # alternating controls against the published test
 """
@@ -128,8 +132,10 @@ def candidate_forms(D, n):
 def rank_test(d, D, n, pairing=None):
     """Exclude an unknotting sequence of n crossing changes, all negative, from the correction terms.
 
-    `d` maps Z/D to the correction terms in the orientation with d(0) = -|sigma|/4 = -n/2; a verdict of
-    OBSTRUCTED proves u >= n + 1.
+    ``d`` maps Z/D to one candidate correction-term vector, already oriented
+    using sigma = 2n. The spin entry must then be -n/2. OBSTRUCTED excludes this
+    vector; the caller must exclude every surviving vector before asserting
+    u >= n + 1. PASS supplies a compatible form, not an unknotting sequence.
     """
     if type(D) is not int or D < 3 or D % 2 == 0 or n not in (2, 3, 4):
         raise ValueError('The rank test requires odd determinant greater than one and rank 2, 3 or 4')
@@ -147,6 +153,9 @@ def rank_test(d, D, n, pairing=None):
         if pairing.denominator != D:
             raise ValueError('The supplied self-pairing must belong to a cyclic generator')
     spin = Fraction(-n, 2)
+    # Keep the historical conservative handling: do not silently discard a
+    # candidate that fails the L-space spin identity. The sweep treats ERROR
+    # as inconclusive, so a failure here cannot create an obstruction.
     if d.get(0) != spin:
         return {'verdict': 'ERROR', 'reason': f'd(spin) = {d.get(0)} is not -|sigma|/4 = {spin}'}
     forms = candidate_forms(D, n)
@@ -154,9 +163,10 @@ def rank_test(d, D, n, pairing=None):
         return {'verdict': 'OBSTRUCTED', 'candidates': 0, 'reason': 'no form of this rank and determinant'}
     # The published rank-three and rank-four tests reject a form whose boundary linking form cannot match
     # before computing its m-function, which is what makes those ranks affordable.  Both fillings are
-    # positive definite and bound the same manifold, so the discriminant forms agree; the orientation of
-    # the Greene labelling is not pinned down here, so both signs are allowed, which only weakens the
-    # filter.  Rank two keeps the whole list, as in the published test.
+    # positive definite and bound the same manifold, so the discriminant forms agree. For this filter
+    # we conservatively allow both conventions for the sign of the linking pairing. This only weakens
+    # the filter; it does not change the already oriented correction-term vector. Rank two keeps the
+    # whole list, as in the published test.
     filtered = forms
     if n >= 3:
         from linkform import linking_invariants, compatible
@@ -180,7 +190,10 @@ def rank_test(d, D, n, pairing=None):
 
 
 def oriented(d, sigma):
-    """Put a Greene correction-term vector in the orientation used by the published tests."""
+    """Mirror when sigma < 0, using d(-Y, t) = -d(Y, t), so Owens's test has sigma = 2n.
+
+    The signature fixes this choice independently of the later spin-entry check.
+    """
     return {k: -v for k, v in d.items()} if int(sigma) < 0 else dict(d)
 
 

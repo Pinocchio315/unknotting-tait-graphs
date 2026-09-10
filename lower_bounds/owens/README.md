@@ -1,7 +1,7 @@
 # Correction-term obstructions for alternating knots
 
 This directory accompanies **Computation of Unknotting Numbers: Which Knot Breaks the
-Bernhard–Jablan Conjecture?**. It implements the definite surgery obstruction reviewed in
+Bernhard–Jablan Conjecture?**, manuscript v1.7. It implements the definite surgery obstruction reviewed in
 Section 2.4 and applied in Section 3. The signed Jones-polynomial test
 also uses Section 2.6. These programs compute necessary conditions for an
 unknotting sequence; finding an admissible surgery form does not construct one.
@@ -10,6 +10,25 @@ The principal source is Brendan Owens, [*Unknotting information from Heegaard
 Floer homology*](https://arxiv.org/abs/math/0506485), *Advances in Mathematics*
 217 (2008), 2353–2376, Theorems 1 and 5. The cases of three and four crossing
 changes apply the existing general theorem, rather than a new extension of it.
+
+## Results in the paper
+
+The following counts reproduce Table 1, relative to the historical research
+baseline. The rows assign each knot to one method and therefore need not equal
+the number of raw `OBSTRUCTED` records in a sweep.
+
+| Comparison | Exact values | Further improved ranges |
+| --- | ---: | ---: |
+| Two crossing changes, combined with Traczyk's criterion and the homology bound | 226 | 36 |
+| Three crossing changes | 129 | 12 |
+| Four crossing changes, completed cases | 21 | 0 |
+
+The rank-three and rank-four rows use alternating Goeritz correction terms.
+The nonalternating applications of the same surgery theorem belong to the
+separate [Greene computation](../greene/README.md) and its result row. The
+current manuscript retains the frozen computational profile `v1.3`; its
+comparison with the official KnotInfo snapshot of 9 September 2026 is described
+in the [repository README](../../README.md).
 
 ## Mathematical conventions
 
@@ -159,6 +178,13 @@ python lower_bounds/owens/run_sweep.py --out /tmp/owens_signed.jsonl --sigma 2 -
 python lower_bounds/owens/run_u3_sweep.py apply /tmp/apply_u3.jsonl
 python lower_bounds/owens/run_u4_local.py --targets-only --out /tmp/owens_rank4.jsonl --workers 3
 ```
+
+The rank-four driver skips knots in its archived partial-result file even when
+`--out` is new. It is a continuation command. To replay a particular deposited
+case, pass its name directly to `owens_u4.py`; the per-knot entry point does not
+apply that skip list. The rank-three driver also resumes records matching
+`apply_u3*.jsonl` in the output directory, so use a new directory for a fresh
+sweep.
 
 The sweep drivers select targets using the installed `database_knotinfo` version;
 a changed database can change that selection. The paper's counts instead refer

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Rebuild everything in results/crossing_changes and results/open23 from the reference table
-# (results/u_table_2026-09-07.json, written by consolidate_results.py).  About 40 minutes on 8 cores.
+# (generated/u_table.json, written by consolidate_results.py).  About 40 minutes on 8 cores.
 set -euo pipefail
 cd "$(dirname "$0")"
 PY="${PY:-python3}"; N="${N:-8}"
@@ -11,7 +11,6 @@ for i in $(seq 0 $((N-1))); do "$PY" crossing_dataset.py "$W/rows_$i.jsonl" "$i/
 for i in $(seq 0 $((N-1))); do "$PY" augment.py "$i/$N" & done; wait          # signatures, effective resistances
 "$PY" identify_rest.py > "$W/identify_rest.log"                                # composites and remaining identifications
 "$PY" relabel.py > ../results/crossing_changes/relabel.txt                     # -> dataset_v2.json, bj_diagram_check.json
-"$PY" analyze_v2.py > ../results/crossing_changes/analyze_v2.txt               # the signature criterion and the predictor
 gzip -f ../results/crossing_changes/dataset_v2.json
 # 2. the open alternating [2,3] knots: candidate crossings, child knots, flype-orbit validation
 for i in $(seq 0 $((N-1))); do "$PY" apply833.py "$i/$N" & done; wait

@@ -1,6 +1,8 @@
 # Lower-bound computations
 
-This directory accompanies **Computation of Unknotting Numbers: Which Knot Breaks the Bernhard–Jablan Conjecture?**, version 1.3, Sections 3 and 5. The names below identify the corresponding arguments. Every obstruction is a necessary condition for an unknotting sequence. A passing test does not prove an upper bound, and a resource limit supplies no obstruction.
+This directory contains the lower-bound computations in Sections 3 and 5 of **Computation of Unknotting Numbers: Which Knot Breaks the Bernhard–Jablan Conjecture?**, manuscript v1.7. The computations use the frozen `v1.3` input profile; this name identifies the deposited inputs and is unchanged by later editorial revisions. See the [repository README](../README.md) for installation and the comparison with the official KnotInfo snapshot retrieved on 9 September 2026.
+
+Each method tests a necessary condition for an unknotting sequence. An obstruction raises the lower bound; an independently established upper bound is needed to obtain an exact value. A passing test or a resource limit supplies no new bound.
 
 | Script | Location in the paper | Mathematical role |
 |---|---|---|
@@ -18,13 +20,18 @@ This directory accompanies **Computation of Unknotting Numbers: Which Knot Break
 
 The deposited pairing list contains 815 obstructions. The HFK scan records order two for `13n_689`, `13n_1166`, `13n_2504` and `13n_2807`. The Montesinos computation excludes unknotting number one for 49 of its 50 targets: 44 have an independently recorded upper bound two and five have upper bound three. These raw records retain their original filenames in `../results/`; the aggregate table is assembled by `../consolidate_results.py`.
 
-The v1.3 Greene sweep supplies 1,707 lower-bound improvements: 1,492 additional
+The frozen Greene sweep supplies 1,707 lower-bound improvements: 1,492 additional
 exact values and 215 narrower ranges. Its exact results comprise 1,309 further
 values two, 136 values three, 43 values four, and four values five. Together
 with the two earlier Greene cases, method `G` contributes 1,494 exact values.
 Across all methods, the manuscript reports 2,719 exact values and 390 improved
 ranges; lower bounds determine 2,711 of the exact values, and eight explicit
-unknotting diagrams determine the rest.
+unknotting diagrams determine the rest. These are changes from the historical
+research baseline, with each knot assigned to one method. In the official
+9 September snapshot, 2,525 of the 2,719 exact values remain undetermined and
+194 already agree; 333 of the 390 ranges are strictly narrower and 57 already
+agree. Reproduce this separate comparison with
+`python compare_knotinfo.py` from the repository root.
 
 Owens's general theorem uses the signed unknotting-sequence hypothesis and
 the labelled correction terms of the branched cover; it does not require the
@@ -33,35 +40,46 @@ extract correction-term candidates from solitary states. It does not guarantee
 that every candidate set becomes a singleton. Spectral-sequence differentials
 respect the Spin^c decomposition and lower the Maslov grading by one.
 
-The new neighbour lower bounds enlarge the separate **conditional** BJ result
-from 806 to 959 alternating knots. These conditional cases are not added to
-the exact-value total. Forty-six Jones-dependent cases remain excluded; 22
-other parents have 11 named possible children. Likewise, the scan of 546
-unresolved lower-end-one knots checks one tabulated minimal diagram each;
+The reduced mod-2 Khovanov rank equality and cyclic-homology filters select
+4,264 of the 6,236 nonalternating
+prime knots with at most 13 crossings: 31.6% lie outside this implementation
+on these grounds alone. The input ranges and signatures then select 1,967
+undetermined targets for the half-integral and rank-two through rank-four tests.
+For a rank-`n` obstruction, the spin correction term must be determined to be
+`-n/2`, and every remaining candidate vector must fail every admissible form.
+
+For the 959 alternating knots in Appendix F, the recorded neighbour bounds
+exclude unknotting number one after every crossing change in a minimal diagram.
+Their values remain in `[2,3]`; if any has value two, it fails the strong
+Bernhard–Jablan equality. These knots are not added to the exact-value total.
+Forty-six further cases require unverified identifications and remain outside
+that list; 22 other parents have 11 named possible children. The ancillary scan
+of 546 unresolved lower-end-one knots checks one tabulated minimal diagram each;
 its negative results do not supply lower bounds for nonalternating knots.
 
 ## Running fresh checks
 
-Run these commands from the repository root with the project's Python environment. Explicit destinations keep fresh computations separate from deposited results.
+Run these commands from the repository root with the project's Python environment.
+Start with the bounded regression suite and a few named Montesinos examples:
 
 ```sh
 python -m unittest discover -s tests -p test_lower_bounds.py -v
+python lower_bounds/montesinos/montesinos_u1.py 3_1 4_1 11n_102 12n_457 --out /tmp/montesinos_controls.json
+```
+
+The following commands perform larger computations. Their explicit destinations
+keep fresh output separate from the deposited results:
+
+```sh
 python lower_bounds/seifert_linking_check.py --workers 4 --out /tmp/seifert_check.json
 python lower_bounds/regina_linking_check.py --workers 4 --out /tmp/regina_check.json
 python lower_bounds/cyclic_cover_bound.py --out /tmp/cyclic_cover_bound.json
 python lower_bounds/montesinos/montesinos_u1.py --apply --workers 3 --out /tmp/montesinos_apply.json
-python lower_bounds/montesinos/montesinos_u1.py 3_1 4_1 11n_102 12n_457 --out /tmp/montesinos_controls.json
 ```
 
 The 19-test regression suite checks explicit abelian groups, exact ellipsoid boundaries, lens-space correction terms, known unknotting-number-one knots, known HFK torsion orders and Lidman's reduced-Floer obstruction for `11n_102`. It also checks `12n_457` against rational correction terms computed by a separate exact calculation. Agreement with a deposited list is a reproducibility check, not the independent mathematical control.
 
 The September 2026 audit recomputed the 3,002 Seifert presentations: exactly 815 obstructions, with no undecided cases or determinant mismatches. The separate 1,516-knot Seifert control set with known unknotting number one gives no false obstruction or uncomputed case. All 12,965 cyclic-cover records were reproduced, and the four reported HFK torsion orders were recomputed as two. It also reran all 50 Montesinos targets with the exact lattice algorithm and reproduced all 49 obstructions, with no errors. The only target requiring reduced homology is `12n_457`; `12n_309` remains unexcluded. The fresh runs did not replace deposited raw files. Historical full-table logs and the bounded regression suite cover different computations; neither should be read as a rerun of every deposited result.
 
-The v1.3 audit is documented in
-[`../results/review_v1_3/greene_code_notes.md`](../results/review_v1_3/greene_code_notes.md)
-and the adjacent theory/reporting notes. In particular, the four new successful
-rank-four targets were checked against their deposited records, but their
-complete form enumerations were not freshly reproduced within the review's
-60-second bound. That timeout supplies no mathematical verdict. Reproduce
-the current aggregate with `python consolidate_results.py --manuscript v1.3`;
-use `--manuscript v1.2` for the preserved earlier input profile.
+Reconstruct the full result table with `python consolidate_results.py`; use
+`--profile pre-sweep` for the ranges used to select the enlarged Greene cohort.

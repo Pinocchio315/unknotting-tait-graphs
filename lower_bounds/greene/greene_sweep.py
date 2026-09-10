@@ -2,21 +2,23 @@
 """Sweep the correction-term obstructions over knots whose double branched cover is an L-space.
 
 Every knot in `data/greene_targets.json` has reduced Khovanov homology over F_2 of rank equal to its
-determinant, so its double branched cover is an L-space and Greene's spanning-tree model determines the
-correction terms from a diagram.  The recorded range then selects the test:
+determinant, so its double branched cover is an L-space and Greene's spanning-tree model gives finite
+sets containing the correction terms. Every vector remaining after comparing the marked diagrams is
+tested. The recorded input range, frozen before this sweep, then selects the test:
 
     range [1, b]   the half-integral surgery pattern of Ni and Wu excludes u = 1
     range [n, b]   with |sigma| = 2n and n in {2, 3, 4}: every definite form of rank n is compared with
                    the correction terms, which excludes u = n
 
 A verdict of OBSTRUCTED raises the lower bound to n + 1; PASS, UNDECIDED, TIMEOUT and ERROR supply no
-bound.  Controls have a known unknotting number equal to n, so OBSTRUCTED on a control is an
+bound. PASS only means that a necessary surgery comparison admits a candidate, not that an unknotting
+sequence exists. Controls have a known unknotting number equal to n, so OBSTRUCTED on a control is an
 implementation error and is reported as such.
 
     python greene_sweep.py --shard 0/16                      # one shard of the target list
     python greene_sweep.py --workers 16                      # one node, 16 concurrent knots
     python greene_sweep.py --controls --workers 16           # the validation set
-    python greene_sweep.py --one 12n_491                     # a single knot, one JSON line on stdout
+    python greene_sweep.py --one 13n_111                     # a single target, one JSON line on stdout
 
 Each knot runs in its own subprocess, so a failure or a memory spike is confined to that knot.  Results
 are appended to a JSONL file and finished knots are skipped on a rerun.
@@ -89,6 +91,9 @@ def run_one(entry):
     free = sorted(k for k in ambiguous if k <= -k % D)
 
     admitted, total, verdicts = 0, 0, []
+    # One free entry for each conjugate pair, including the spin class when
+    # ambiguous. There is no vector-count cap or early stop: the full Cartesian
+    # product is tested. A process time limit supplies no mathematical verdict.
     for choice in itertools.product(*(ambiguous[k] for k in free)):
         vector = dict(pinned)
         for k, value in zip(free, choice):
@@ -100,6 +105,8 @@ def run_one(entry):
             fits = bool(outcome['fits'])
             verdicts.append({'test': 'u1', 'admits': fits, 'detail': outcome})
         else:
+            # The signature fixes the cover's orientation; rank_test applies
+            # its spin-entry guard only after this choice has been made.
             outcome = rank_test(oriented(vector, sigma), D, n, pairing=pairing)
             fits = outcome['verdict'] != 'OBSTRUCTED'
             verdicts.append({'test': f'rank{n}', 'admits': fits, 'detail': outcome})
@@ -108,6 +115,8 @@ def run_one(entry):
     if total == 0:
         raise ValueError('no complete candidate vector was tested')
 
+    # In particular, a candidate failing the spin-entry guard remains
+    # inconclusive. Excluding only the other candidates cannot establish a bound.
     inconclusive = [v for v in verdicts if v['admits'] and v['detail'].get('verdict') in ('UNDECIDED', 'ERROR')]
     verdict = ('OBSTRUCTED' if admitted == 0 else
                'UNDECIDED' if inconclusive else 'PASS')

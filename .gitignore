@@ -1,5 +1,6 @@
 __pycache__/
 *.pyc
+.venv/
 .DS_Store
 figures/
 logs/
@@ -17,11 +18,5 @@ results/*/work/
 lower_bounds/owens/run_u4_local.log
 lower_bounds/owens/results_u4_local_*.jsonl
 
-# Reproducible reports. Commit only the small TeX inputs consumed by v1.2;
-# large JSON aggregates and local verification output remain disposable.
-generated/*
-!generated/paper_v1_2/
-!generated/paper_v1_3/
-!generated/paper_v1_2/
-generated/paper_v1_2/*
-!generated/paper_v1_2/*.tex
+# Local computation outputs; deposited input and result records live in results/.
+generated/

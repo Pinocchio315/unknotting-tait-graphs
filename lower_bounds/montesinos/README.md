@@ -1,8 +1,50 @@
 # Montesinos knots
 
-These programs implement Section 3, **Montesinos knots**, of *Computation of Unknotting Numbers: Which Knot Breaks the Bernhard–Jablan Conjecture?*.
+These programs implement Section 3.7, **Montesinos knots**, of *Computation of Unknotting Numbers: Which Knot Breaks the Bernhard–Jablan Conjecture?*, manuscript v1.7. The frozen `v1.3` computational profile retains the 50 targets and deposited results used in this calculation.
 
 A Montesinos knot is the numerator closure of a sum of rational tangles. Its double branched cover is a Seifert fibred space. The code normalizes its rational Seifert invariants and reverses orientation when necessary to obtain a negative-definite star-shaped plumbing. Each noncentral vertex has weight at most minus its valence, so at most the central vertex is bad. The graph hypotheses are checked before applying the plumbing formula.
+
+The computation excludes unknotting number one for 49 targets. With the
+independently known upper bounds, 44 have exact value two and five retain the
+improved range `[2,3]`. Correction terms alone exclude 48 targets; reduced
+Heegaard Floer homology supplies the remaining obstruction for `12n_457`.
+The values for `12n_288` and `12n_501` are also used in the Bernhard–Jablan
+argument in Section 5.1.
+
+## Files and usage
+
+| File | Purpose |
+| --- | --- |
+| `montesinos_u1.py` | Parse rational tangles, construct and check a plumbing, compute correction terms, and test the half-integral surgery constraints |
+| `hf_red.py` | Compute reduced Floer ranks from the graded root and test the reduced-homology mapping cone |
+
+From the repository root, after installing the dependencies described in the
+[main README](../../README.md), run named examples without replacing the deposit:
+
+```sh
+python lower_bounds/montesinos/montesinos_u1.py 3_1 4_1 12n_288 12n_501 --out /tmp/montesinos_examples.json
+python lower_bounds/montesinos/montesinos_u1.py 11n_102 12n_457 --out /tmp/montesinos_reduced_examples.json
+```
+
+The JSON report separates named results, target results (`apply`), and controls
+(`validate`). Successful correction-term computations record the plumbing rank,
+the number of classes, and a verdict; reduced ranks are included when computed.
+`PASS` means the obstruction leaves unknotting number one possible.
+`OBSTRUCTED` excludes it by correction terms or the preliminary cyclicity test,
+and `OBSTRUCTED_HF` excludes it using reduced homology.
+
+To rerun the target list or the larger control calculation, use:
+
+```sh
+python lower_bounds/montesinos/montesinos_u1.py --apply --workers 3 --out /tmp/montesinos_targets.json
+python lower_bounds/montesinos/montesinos_u1.py --validate --workers 3 --out /tmp/montesinos_validation.json
+```
+
+Both batch modes require `--out`. Target ranges come from the frozen
+`results/reference_table_2026-09-07.json`; Montesinos notation and diagrams
+come from the installed `database_knotinfo` package. Keep the pinned package
+when reproducing the paper. New runs do not update the aggregate manuscript
+tables automatically.
 
 ## Correction terms and labels
 

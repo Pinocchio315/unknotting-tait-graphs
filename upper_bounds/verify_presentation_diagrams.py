@@ -1,5 +1,7 @@
 #!/usr/bin/env python
-"""Verify the eight marked diagrams in Section 4 of main_v1.1.tex.
+"""Verify the eight marked diagrams in Section 4 and Appendix G of manuscript v1.6.
+
+These are the same eight deposited constructions retained from earlier versions.
 
 Each required file must identify the prescribed knot, have two distinct valid
 marked rows, and pass both the exterior-isometry and unknot-recognition checks.

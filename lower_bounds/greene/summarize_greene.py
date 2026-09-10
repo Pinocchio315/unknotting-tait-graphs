@@ -9,8 +9,13 @@ A knot may appear in more than one file, for instance when a shard was recompute
 conclusive verdict replaces an error or a timeout; two different conclusive verdicts for the same knot
 are a contradiction and are reported rather than silently resolved.
 
-    python summarize_greene.py runs/targets/*.jsonl runs/controls/*.jsonl
-    python summarize_greene.py *.jsonl --out ../../results/greene/sweep_2026-09-08.json
+The reader accepts plain JSONL; decompress archived .jsonl.gz inputs first.
+For a paper replay, explicitly select the deposited pre-sweep cohort instead
+of relying on the local data/greene_targets.json default. From this directory:
+
+    python summarize_greene.py runs/targets/*.jsonl runs/controls/*.jsonl \
+        --targets ../../results/greene/greene_targets_2026-09-08.json \
+        --out /tmp/greene-summary.json
 """
 from __future__ import annotations
 import argparse, json, sys

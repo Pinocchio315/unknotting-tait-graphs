@@ -36,8 +36,8 @@ for _x in allk:
 # targets: every alternating knot whose range in the reference table (with our bounds) is [2,3]
 targets = sorted(nm for nm, v in RANGE.items() if v == [2, 3] and nm in rows and str(rows[nm].get('alternating', '')).upper().startswith('Y'))
 import os as _os
-P3 = {x['name']: x['P_u3'] for x in json.load(open(RANKING))} if _os.path.exists(RANKING) else {}   # optional ML ranking (experiments/ml)
-P3 = {nm: P3.get(nm, 0.0) for nm in targets}
+# Retain the historical output field; no predictor is used to infer bounds.
+P3 = {nm: 0.0 for nm in targets}
 targets = targets[si::sn]
 def turn(g):
     h = g.copy()

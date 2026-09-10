@@ -1,15 +1,13 @@
 #!/usr/bin/env python3
-"""Reconstruct the manuscript result tables from explicitly frozen, deposited inputs.
+"""Combine completed obstruction records and independently justified upper bounds.
 
-This is bookkeeping, not a rerun of the mathematical obstructions.  A completed
-OBSTRUCTED verdict supplies a lower bound; PASS only means that this obstruction
-is silent.  In particular, PASS, a missing record, or a timeout never proves an
-upper bound. Upper bounds come from separately verifiable diagram certificates
-or explicitly cited published constructions.
+Only a completed OBSTRUCTED verdict raises a lower bound. PASS, missing output,
+or a timeout supplies no upper bound. Conflicting intervals stop the run.
+Input checksums and source records are checked before JSON output is written.
 
-Run from any directory: python consolidate_results.py --outdir generated
-Historical results are read-only. No installed KnotInfo table or live worker log
-is consulted, and conflicting bounds stop the run before any output is written.
+Run ``python consolidate_results.py`` to write generated/u_table.json,
+generated/consolidated.json and generated/counts.json. The pre-sweep profile
+reconstructs the ranges used to select the enlarged Greene cohort.
 """
 from __future__ import annotations
 
@@ -35,7 +33,7 @@ RANK4_LOGS = ('owens_rank4/results_u4_local_2026-09-07_snapshot.jsonl',
 
 
 def paper_scan(consolidated):
-    """Keep the reviewed and historical appendices independent of live searches."""
+    """Select the frozen candidate cohort, independently of live searches."""
     return ('open23/priority_u23_final.json' if consolidated.get('manuscript') == 'v1.3'
             else PAPER_SCAN)
 
@@ -48,9 +46,9 @@ def read_json(path):
 def verify_manifest(results=RESULTS, manuscript="v1.3"):
     """Reject missing or altered deposited inputs rather than silently recounting."""
     results = Path(results)
-    if manuscript not in {'v1.1', 'v1.2', 'v1.3', 'v1.3-review'}:
+    if manuscript not in {'v1.2', 'v1.3'}:
         raise ValueError(f'Unsupported manuscript version: {manuscript}')
-    version = '1_3_review' if manuscript == 'v1.3-review' else ('1_3' if manuscript == 'v1.3' else '1_1')
+    version = '1_3' if manuscript == 'v1.3' else '1_1'
     manifest = read_json(results / f'paper_v{version}_manifest.json')
     for name, expected in manifest['sha256'].items():
         if hashlib.sha256((results / name).read_bytes()).hexdigest() != expected:
@@ -231,7 +229,7 @@ def read_greene_sweep(results=RESULTS):
 def collect_bounds(results=RESULTS, include_sweep=True):
     """Translate each deposited theorem application to a bound with provenance.
 
-    Tags select the primary explanation in the appendices; they do not count a
+    Tags identify the primary method in the result summary; they do not count a
     knot twice when several independent methods establish the same inequality.
     """
     results = Path(results)
@@ -428,262 +426,21 @@ def reconstruct(results=RESULTS, manuscript="v1.3"):
 
 
 
-def manuscript_counts(consolidated, table, results=RESULTS):
-    """Read the manuscript's numerical premises without generating LaTeX files."""
-    results = Path(results)
-    changed = consolidated['changed']
-    totals = consolidated['counts']
-    exact = [r for r in changed.values() if r['new'][0] == r['new'][1]]
-    by_value_method = Counter((r['new'][0], primary_tag(r)) for r in exact)
-    improved_methods = totals['improved_by_primary_method']
-    scan = read_json(results/paper_scan(consolidated))
-    moved = set(scan.get('moved_to_tierB_after_resolution', []))
-    zero_names = {name for name, _, _, _ in scan['zero_candidate_knots']}
-    candidate_names = set(scan['knots_with_candidates'])
-    if (moved & zero_names or not moved <= candidate_names
-            or len(candidate_names) != len(scan['knots_with_candidates'])
-            or len(zero_names) != len(scan['zero_candidate_knots'])):
-        raise ValueError('Candidate scan categories overlap or contain duplicate knots')
-    cyclic = read_json(results/'cyclic_cover/cyclic_cover_bound_2026-09-07.json')
-    cyclic_degrees = Counter(cyclic[name]['n'] for name, r in changed.items() if primary_tag(r) == 'c')
-    snapshot = read_json(results/'paper_v1_1_snapshot.json')
-    sig4 = read_json(results/'owens_rank2/owens_verdicts_sigma4_alternating_2026-09-07.json')
-    with gzip.open(results/'crossing_changes/dataset_v2.json.gz', 'rt') as stream:
-        data_knots = {r['knot'] for r in json.load(stream)}
-    sweep = Counter()
-    frozen = {'targets': {}, 'controls': {}}
-    if consolidated.get('manuscript', 'v1.3').startswith('v1.3'):
-        frozen, records = read_greene_sweep(results)
-        settled = {'OBSTRUCTED', 'PASS', 'UNDECIDED', 'NOT_APPLICABLE'}
-        for row in records.values():
-            role = row['role']
-            sweep[role, 'settled' if row['verdict'] in settled else 'unsettled'] += 1
-            sweep[role, 'verdict_' + row['verdict']] += 1
-            if row['verdict'] == 'OBSTRUCTED': sweep[role, row['test']] += 1
-    greene_exact = sum(count for (value, tag), count in by_value_method.items() if tag == 'G')
-    counts = {
-        'nChildren': len(scan['children']),
-        'nCyclicNew': sum(cyclic_degrees.values()),
-        'nCyclicThree': cyclic_degrees[3], 'nCyclicFour': cyclic_degrees[4],
-        'nCyclicFive': cyclic_degrees[5], 'nDataKnots': len(data_knots),
-        'nDichotomy': sum(heuristic == 0 for _, _, _, heuristic in scan['zero_candidate_knots']),
-        # The seven Jones-only composite identifications moved out of the
-        # candidate list remain heuristic; they never join the theorem list.
-        # Thus the latest cohort is 959 certified + (39 + 7) heuristic + 22.
-        'nDichotomyHeuristic': sum(heuristic != 0 for _, _, _, heuristic in scan['zero_candidate_knots']) + len(moved),
-        'nExact': totals['exact'], 'nExactLower': totals['exact_lower'],
-        'nImproved': totals['improved'], 'nImprovedL': improved_methods.get('L', 0),
-        'nImprovedC': improved_methods.get('c', 0), 'nMcCoyKnots': improved_methods.get('K', 0),
-        'nOpenTwoThreeAlt': len(scan['zero_candidate_knots']) + len(scan['knots_with_candidates']),
-        'nRefKnots': len(table),
-        'nSigFourImproved': sum(snapshot[r['name']] == [2, 4] and r['verdict'] == 'OBSTRUCTED' for r in sig4),
-        'nSigFourObstructed': sum(snapshot[r['name']] == [2, 3] and r['verdict'] == 'OBSTRUCTED' for r in sig4),
-        'nSigFourOpen': sum(snapshot[r['name']] == [2, 3] for r in sig4),
-        'nUtwo': totals['exact_by_u']['2'], 'nUtwoL': by_value_method[2, 'L'],
-        'nUtwoM': by_value_method[2, 'M'], 'nUtwoC': by_value_method[2, 'c'],
-        'nUtwoG': by_value_method[2, 'G'],
-        'nUthree': totals['exact_by_u']['3'], 'nUthreeC': by_value_method[3, 'c'],
-        'nUthreeOwens': sum(by_value_method[3, tag] for tag in ('O2', 'a', 'OT', 'g')),
-        'nUfour': totals['exact_by_u']['4'], 'nUfive': totals['exact_by_u']['5'],
-        'nWithCandidates': len(candidate_names - moved),
-        'nSweepTargets': len(frozen['targets']), 'nSweepControls': len(frozen['controls']),
-        'nSweepTargetsSettled': sweep['target', 'settled'],
-        'nSweepControlsSettled': sweep['control', 'settled'],
-        'nSweepControlsPass': sweep['control', 'verdict_PASS'],
-        'nSweepControlsUndecided': sweep['control', 'verdict_UNDECIDED'],
-        'nSweepControlsUnfinished': len(frozen['controls']) - sweep['control', 'settled'],
-        'nSweepObstructed': sum(count for (role, key), count in sweep.items()
-                                if role == 'target' and key.startswith(('u1', 'rank'))),
-        'nSweepUone': sweep['target', 'u1'], 'nSweepRankTwo': sweep['target', 'rank2'],
-        'nSweepRankThree': sweep['target', 'rank3'], 'nSweepRankFour': sweep['target', 'rank4'],
-        'nSweepExact': greene_exact, 'nSweepImproved': improved_methods.get('G', 0),
-        'nSweepNewExact': sum(1 for r in exact if primary_tag(r) == 'G'
-                            and 'greene/sweep_2026-09-08.jsonl.gz' in r['sources']),
-        'nSweepUoneTargets': sum(1 for e in frozen['targets'].values() if e['test'] == 'u1'),
-        'nSweepRankTargets': sum(1 for e in frozen['targets'].values() if e['test'] != 'u1'),
-    }
-
-    if consolidated.get('manuscript') != 'v1.3':
-        counts = {k: v for k, v in counts.items()
-                  if k != 'nDichotomyHeuristic'}
-    if not consolidated.get('manuscript', 'v1.3').startswith('v1.3'):
-        counts = {k: v for k, v in counts.items() if not k.startswith('nSweep')}
-    return counts
-
-
-def knot_sort_key(name):
-    """Use table order: crossing number, alternating type, then knot index."""
-    match = re.fullmatch(r'(\d+)([an]?)_(\d+)', name)
-    if not match:
-        raise ValueError(f'Unrecognized knot label: {name}')
-    return int(match[1]), match[2], int(match[3])
-
-
-def tex_knot(name):
-    knot_sort_key(name)  # Do not let an arbitrary input string become TeX code.
-    left, right = name.split('_')
-    return f'{left}{right}' if left[-1] in 'an' else f'${left}_{{{right}}}$'
-
-
-def appendix_tag(record):
-    """Preserve the manuscript's method notation, with distinct G and g.
-
-    For lower bound three, if both the elementary generator bound and a
-    correction-term obstruction apply, the appendix highlights the generator
-    bound. At lower bound two the linking-pairing method keeps its unmarked
-    notation even when a generator bound also applies. The lower-bound summary
-    uses the fixed primary-method priority to avoid double counting throughout.
-    """
-    tag = ('g' if record['new'][0] == 3 and 'g' in record['lower_tags']
-           else primary_tag(record))
-    if record['new'][0] == record['new'][1]:
-        symbols = {'L': '', 't': 't', 'a': 'a', 'OT': 't', 'O2': '',
-                   'g': 'g', 'c': 'c', 'M': 'm', 'G': 'G', 'O3': '',
-                   'O4': '', 'w': 'w'}
-    else:
-        symbols = {'L': '', 't': 't', 'g': 'g', 'c': 'c', 'M': 'm',
-                   'O2': 'o', 'O3': 'h', 'K': 'k', 'b': 'b', 'G': 'G'}
-    if tag not in symbols:
-        raise ValueError(f'No appendix notation for method {tag}')
-    return symbols[tag]
-
-
-def tex_entry(name, record):
-    tag = appendix_tag(record)
-    return tex_knot(name) + (rf'$^{{\mathrm{{{tag}}}}}$' if tag else '')
-
-
-def column_rows(cells, columns):
-    """Read down columns and keep the last three rows with the final legend."""
-    height = math.ceil(len(cells)/columns)
-    rows = []
-    for row in range(height):
-        entries = [cells[row + column*height] if row + column*height < len(cells)
-                   else '' for column in range(columns)]
-        rows.append(' & '.join(entries) + (r' \\*' if row >= height-3 else r' \\'))
-    return '\n'.join(rows) + '\n'
-
-
-def comparison_report(consolidated, table):
-    """Recompute release comparisons and require their deposited provenance."""
-    from audit_knotinfo_releases import audit
-    summary, _ = audit(consolidated, table)
-    filename = ('baseline_comparison_v1_3_review.json'
-                if consolidated.get('manuscript') == 'v1.3-review' else 'baseline_comparison.json')
-    deposited = read_json(RESULTS / 'comparison' / filename)
-    if consolidated.get('manuscript', 'v1.3').startswith('v1.3') and summary != deposited:
-        raise ValueError('Release comparison differs from the deposited audit; '
-                         'review the input provenance before updating it')
-    return summary
-
-
-def comparison_counts(summary):
-    keys = {
-        'nBaselineOverrides': 'modified_entries',
-        'nBaselineLowerRestored': 'restored_lower_entries',
-        'nAprilDifferences': 'baseline_differences_2026_4_1',
-        'nJuneDifferences': 'baseline_differences_2026_6_1',
-        'nAugustDifferences': 'baseline_differences_2026_8_1',
-        'nSeptemberDifferences': 'baseline_differences_2026_9_1',
-        'nSeptemberExactEntries': 'september_exact_entries',
-        'nSeptemberExactAgreements': 'september_exact_agreements',
-        'nSeptemberExactDisagreements': 'september_exact_disagreements',
-        'nSeptemberUnresolvedExact': 'september_unresolved_exact',
-        'nReleaseConflicts': 'september_disjoint_intervals',
-        'nRetainedLargerUpperBounds': 'retained_larger_upper_bounds',
-        'nStrictlyWeakerRanges': 'september_strictly_weaker_intervals',
-        'nIncomparableRanges': 'september_incomparable_intervals',
-        'nMcCoyVerified': 'mccoy_total',
-        'nMcCoyUnknotting': 'mccoy_u1',
-        'nMcCoyExcluded': 'mccoy_excluded',
-        'nMcCoyDatasetCovered': 'mccoy_dataset_overlap',
-        'nMcCoyDatasetMissing': 'mccoy_dataset_missing',
-        'nGPExact': 'gebel_prangley_exact_agreements',
-        'nGPImproved': 'gebel_prangley_range_agreements',
-    }
-    return {macro: summary['counts'][key] for macro, key in keys.items()}
-
-
-def tex_count_macros(counts):
-    return '\n'.join(rf'\newcommand{{\{name}}}{{{value:,}}}'.replace(',', '{,}')
-                     for name, value in sorted(counts.items())) + '\n'
-
-
-def manuscript_tex(consolidated, table, results=RESULTS):
-    """Return generated numerical inputs; all layout and prose stay in LaTeX.
-
-    These are regenerated from authenticated records, never extracted from an
-    existing manuscript or a historical generated table. Thus the Greene cases
-    cannot disappear from a stale appendix while remaining in the headline count.
-    """
-    changed = consolidated['changed']
-    prefix = '% Generated by consolidate_results.py; do not edit by hand.\n'
-    counts = manuscript_counts(consolidated, table, results)
-    outputs = {'counts.tex': prefix + tex_count_macros(counts)}
-    for u in (5, 4, 3, 2):
-        names = sorted((name for name, record in changed.items()
-                        if record['new'] == [u, u]), key=knot_sort_key)
-        outputs[f'rows_u{u}.tex'] = prefix + column_rows(
-            [tex_entry(name, changed[name]) for name in names], 7)
-    names = sorted((name for name, record in changed.items()
-                    if record['new'][0] != record['new'][1]), key=knot_sort_key)
-    cells = []
-    for name in names:
-        record = changed[name]
-        before, after = (f'$[{lo},{hi}]$' for lo, hi in (record['reference'], record['new']))
-        cells.append(f'{tex_entry(name, record)} & {before} & {after}')
-    outputs['rows_improvements.tex'] = prefix + column_rows(cells, 2)
-    scan = read_json(Path(results)/paper_scan(consolidated))
-    names = sorted((name for name, _, _, heuristic in scan['zero_candidate_knots']
-                    if heuristic == 0), key=knot_sort_key)
-    outputs['rows_dichotomy.tex'] = prefix + column_rows(list(map(tex_knot, names)), 6)
-    totals = consolidated['counts']
-    methods = (
-        ('Linking pairing', ('L',)),
-        ('Homological torsion', ('t',)),
-        ("Correction terms, Traczyk's criterion, and homology", ('O2', 'OT', 'a', 'g')),
-        ('Obstruction to three crossing changes', ('O3',)),
-        ('Obstruction to four crossing changes (completed cases)', ('O4',)),
-        ('Higher cyclic covers', ('c',)),
-        ('Branched covers of Montesinos knots', ('M',)),
-        ("Greene's model for branched covers", ('G',)),
-        ("McCoy's criterion for alternating diagrams", ('K',)),
-    )
-    method_rows = []
-    for title, tags in methods:
-        exact = sum(totals['exact_by_primary_method'].get(tag, 0) for tag in tags)
-        improved = sum(totals['improved_by_primary_method'].get(tag, 0) for tag in tags)
-        method_rows.append(f'{title} & {exact} & {improved}' + r' \\')
-    outputs['rows_lower_summary.tex'] = prefix + '\n'.join(method_rows) + '\n'
-    comparison = comparison_report(consolidated, table)
-    outputs['comparison_counts.tex'] = prefix + tex_count_macros(comparison_counts(comparison))
-    conflicts = []
-    for row in sorted(comparison['disputes'], key=lambda row: knot_sort_key(row['knot'])):
-        lo, hi = row['paper']
-        paper_range = f'${lo}$' if lo == hi else f'$[{lo},{hi}]$'
-        lo, hi = row['september']
-        current_range = f'${lo}$' if lo == hi else f'$[{lo},{hi}]$'
-        conflicts.append(f"{tex_knot(row['knot'])} & {paper_range} & {current_range}" + r' \\')
-    outputs['rows_release_conflicts.tex'] = prefix + '\n'.join(conflicts) + '\n'
-    return outputs
+PROFILE_VERSIONS = {'full': 'v1.3', 'pre-sweep': 'v1.2'}
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--profile', choices=PROFILE_VERSIONS, default='full',
+                        help='full results, or inputs before the enlarged Greene sweep')
     parser.add_argument('--outdir', type=Path, default=ROOT / 'generated')
-    parser.add_argument('--manuscript', choices=('v1.2', 'v1.3', 'v1.3-review'), default='v1.3')
     args = parser.parse_args()
-    consolidated, table = reconstruct(manuscript=args.manuscript)
-    tex = manuscript_tex(consolidated, table)
+    consolidated, table = reconstruct(manuscript=PROFILE_VERSIONS[args.profile])
     args.outdir.mkdir(parents=True, exist_ok=True)
-    for name, value in [('consolidated.json', consolidated), ('u_table.json', table),
-                        ('counts.json', consolidated['counts'])]:
-        (args.outdir / name).write_text(json.dumps(value, sort_keys=True, indent=2) + '\n')
-    paper_dir = args.outdir / ('paper_' + args.manuscript.replace('.', '_').replace('-', '_'))
-    paper_dir.mkdir(parents=True, exist_ok=True)
-    for name, source in tex.items():
-        (paper_dir / name).write_text(source)
-    print(json.dumps(consolidated['counts'], indent=2))
+    for name, value in (('u_table.json', table), ('consolidated.json', consolidated),
+                        ('counts.json', consolidated['counts'])):
+        (args.outdir / name).write_text(json.dumps(value, indent=2, sort_keys=True) + '\n')
+    print(json.dumps(consolidated['counts'], indent=2, sort_keys=True))
 
 
 if __name__ == '__main__':

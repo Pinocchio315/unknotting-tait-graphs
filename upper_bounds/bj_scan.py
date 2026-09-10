@@ -1,17 +1,23 @@
 #!/usr/bin/env python
-"""Bernhard-Jablan test for prime alternating knots with known u (run LOCALLY, unknot-venv).
+"""Historical Bernhard-Jablan exploration for prime alternating knots with known u.
+
+This script reads earlier selected u=2/u=3 lists and the archived diagram-data
+bounds. It does not select the current v1.6 cohort from the consolidated table.
+The frozen Appendix F results are reproduced by consolidate_results.py.
 
 For each given knot K (alternating, u known): enumerate ALL minimal diagrams (the complete
 flype orbit on both checkerboard graphs --- Tait/KMT + Menasco-Thistlethwaite), apply every
-single crossing change, identify each changed knot rigorously, and decide whether some change
+single crossing change, attempt to identify each changed knot, and decide whether some change
 realises u(K) - 1.  (Flypes commute with crossing changes, so every minimal diagram gives the
 same multiset of changed knots; the orbit is enumerated anyway as a consistency check.)
 
 Identification ladder: canonical-code match against every KnotInfo diagram (+mirrors);
-SnapPy census + explicit isometry confirmation; connected-sum hypothesis (factor pairs from
+SnapPy reference knots + numerical isometry comparison; connected-sum hypothesis (factor pairs from
 KnotInfo filtered by det multiplicativity, confirmed by Jones product AND canonical-code
-membership in the flype orbit of an explicit sum diagram).  u of a confirmed sum: >= 2
-always, and = 2 iff both factors have u = 1 (Scharlemann); u <= sum of factor u's.
+membership in the flype orbit of an explicit sum diagram). A nontrivial connected sum has
+u >= 2 by Scharlemann; if both factors have u = 1, subadditivity gives equality.
+In general, u <= the sum of the factor upper bounds. Numerical isometry results
+are computational identifications, not interval-certified homeomorphism proofs.
 
 Verdicts per knot:
   COUNTEREXAMPLE  every changed knot has decided u != u(K)-1
@@ -66,6 +72,17 @@ def isometric(pd_a, pd_b, tries=8):
         Ea.randomize()
         Eb.randomize()
     return False
+
+
+def composite_unknotting_range(u_a, u_b):
+    """Bounds for two identified nontrivial summands with known exact values.
+
+    Scharlemann excludes unknotting number one, and concatenating the two
+    unknotting sequences gives the upper bound. Neither theorem raises the
+    lower bound to three when one summand has unknotting number greater than
+    one; in particular, values one and two leave the sum in [2, 3].
+    """
+    return 2, u_a + u_b
 
 
 def main() -> None:
@@ -205,8 +222,7 @@ def main() -> None:
                 if uA is None or uB is None:
                     undecided.append(f'{A}#{B}')
                 else:
-                    lo_s = 2 if (uA == 1 and uB == 1) else 3   # Scharlemann
-                    hi_s = uA + uB                             # subadditivity
+                    lo_s, hi_s = composite_unknotting_range(uA, uB)
                     if lo_s == hi_s == t:
                         found_down.append(f'{A}#{B}')
                     elif lo_s <= t <= hi_s:

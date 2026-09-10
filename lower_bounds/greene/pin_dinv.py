@@ -6,6 +6,9 @@ that structure's solitary-state gradings on every marked diagram. Intersect
 these necessary candidate sets over both colourings and all marked strands.
 No identification of Spin^c structures is chosen arbitrarily: all compatible
 linking-form isometries are retained, including conjugation.
+The candidate sets can be larger than the actual correction-term data. A surgery
+obstruction requires failure for every remaining vector; a fitting candidate
+does not prove that the knot has an unknotting sequence of the tested length.
 
 The command line verifies the L-space hypothesis from the archived reduced
 Khovanov homology over F_2 before reporting a surgery obstruction. It prints

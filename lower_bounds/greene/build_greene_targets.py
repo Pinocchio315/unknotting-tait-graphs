@@ -1,18 +1,24 @@
 #!/usr/bin/env python
 """Freeze the input data for the correction-term sweep over knots whose double branched cover is an L-space.
 
-The sweep applies the obstructions of Section 3 to a knot that need not be alternating.  Its only extra
-hypothesis is that the reduced Khovanov homology over F_2 has rank equal to the determinant, which forces
-the double branched cover to be an L-space; Greene's spanning-tree model then supplies the correction
-terms that the alternating case reads off a Goeritz form.
+The sweep applies the obstructions of Section 3 to non-alternating knots. Reduced Khovanov homology
+over F_2 must have rank equal to the determinant, which forces the double branched cover to be an
+L-space. Greene's spanning-tree model then supplies finite sets containing the correction terms.
+The present implementation also requires cyclic first homology and the signature conditions below.
 
 A target is a knot whose recorded range is still open and whose signature matches the shortest sequence
-allowed by that range: for a range [n, b] with b > n and |sigma| = 2n, excluding n crossing changes raises
-the lower bound to n + 1.  For n = 1 the test is the half-integral surgery pattern of Ni and Wu; for
-n = 2, 3, 4 it is the enumeration of definite forms of that rank.
+allowed by that range. For n = 1 and |sigma| <= 2 the test is the half-integral surgery pattern of Ni
+and Wu. For n = 2, 3, 4 with |sigma| = 2n it is the enumeration of definite forms of that rank.
+Excluding the tested length raises the lower bound to n + 1.
 
 A control is a knot with the same hypotheses whose unknotting number is already known and equals n.  The
 obstruction must not fire on a control; an OBSTRUCTED control is an implementation error.
+
+To reproduce the deposited cohort, pass --table with a separately reconstructed v1.2 table, which
+includes the two earlier Greene results but precedes the sweep. The default generated/u_table.json
+may already contain the sweep's conclusions and is unsuitable for reproducing its input selection.
+See README.md for the reconstruction command. Replay workers can instead read the deposited frozen
+greene_targets_2026-09-08.json directly, without rebuilding the cohort.
 
     python build_greene_targets.py                       # writes data/greene_targets.json
     python build_greene_targets.py --max-det 400         # restrict to smaller discriminant groups
