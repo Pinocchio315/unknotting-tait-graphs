@@ -42,8 +42,10 @@ from flipdet import FlipDet, det_pairs, P  # noqa: E402
 from expand import expand_diagrams, jsonable_path  # noqa: E402
 
 
-def load_data():
-    targets = json.load(open(os.path.join(HERE, 'data', 'targets.json')))
+def load_data(targets_path=None):
+    # An explicit frozen list permits replaying a later cohort without replacing
+    # the historical inputs. Diagram generation and subset selection are unchanged.
+    targets = json.load(open(targets_path or os.path.join(HERE, 'data', 'targets.json')))
     known = json.load(open(os.path.join(HERE, 'data', 'known_u.json')))
     return targets, known
 
@@ -216,6 +218,7 @@ def scan_knot(job):
 
 def main() -> None:
     ap = argparse.ArgumentParser()
+    ap.add_argument('--targets', help='frozen target JSON; defaults to data/targets.json')
     ap.add_argument('--shard', default='0/1', help='i/n split of the target list')
     ap.add_argument('--control', action='store_true',
                     help='scan the five SETTLED minimal-witness knots instead of the targets; '
@@ -248,7 +251,7 @@ def main() -> None:
     ap.add_argument('--out-dir', default=os.environ.get('XUP_OUT', 'xup_runs'))
     args = ap.parse_args()
 
-    targets, known = load_data()
+    targets, known = load_data(args.targets)
     if args.control:
         targets = json.load(open(os.path.join(HERE, 'data', 'controls.json')))
     if args.k_class != 'all':

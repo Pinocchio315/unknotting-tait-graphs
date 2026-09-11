@@ -10,8 +10,9 @@ marks, flypes, mark-respecting R3, temporary R2+), but the endpoint check is gen
 
 Input: a certificate JSON (SUCCESS_/CHAIN_ schema: witness_pd + change_rows).
 
-    ~/.pyenv/versions/unknot-venv/bin/python minimize_witness.py xup_runs/SUCCESS_13a_647.json \
-        --endpoint 13a_650 --time-limit 600 --out reduced_13a_647.json
+    python upper_bounds/minimize_witness.py \
+        results/extensions_2026-09-10/runs190/SUCCESS_13n_221.json \
+        --endpoint unknot --time-limit 600 --out /tmp/reduced_13n_221.json
 """
 from __future__ import annotations
 
@@ -45,7 +46,7 @@ def endpoint_ok(g, marks, endpoint):
     Eb = Link(knotinfo.pd_code(endpoint)).exterior()
     for _ in range(10):
         try:
-            if Ea.is_isometric_to(Eb):
+            if any(f.extends_to_link() for f in Ea.is_isometric_to(Eb, return_isometries=True)):
                 return True
         except RuntimeError:
             pass

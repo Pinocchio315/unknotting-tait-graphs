@@ -2,7 +2,7 @@
 """Historical Bernhard-Jablan exploration for prime alternating knots with known u.
 
 This script reads earlier selected u=2/u=3 lists and the archived diagram-data
-bounds. It does not select the current v1.6 cohort from the consolidated table.
+bounds. It does not select the current v1.8 cohort from the consolidated table.
 The frozen Appendix F results are reproduced by consolidate_results.py.
 
 For each given knot K (alternating, u known): enumerate ALL minimal diagrams (the complete

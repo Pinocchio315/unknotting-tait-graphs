@@ -1,8 +1,11 @@
 # lower_bounds/greene — correction terms of the double branched cover from a knot diagram
 
-This guide covers Sections 2.5, 3.8, and 5.1 of manuscript **v1.7**. The
-deposited computations retain the numerical profile `v1.3`; the later
-manuscript versions and the current KnotInfo comparison do not change these inputs.
+This guide covers the Greene calculations in manuscript **v1.8**. The frozen
+`v1.3` sweep below is preserved. Its
+[four extensions](../../results/extensions_2026-09-10/lower/README.md) raise
+the sweep totals to 1,711 lower-bound improvements: 1,496 additional exact
+values and 215 ranges. With the two original BJ computations the lower-stage
+exact count is 1,498. Ten remaining ranges are settled by new upper bounds.
 
 The obstructions of Section 3 compare the correction terms of `Σ₂(K)` with the definite forms allowed by
 an unknotting sequence.  For an alternating knot the correction terms come from the sharp Goeritz form.
@@ -15,7 +18,7 @@ definite forms therefore applies to these non-alternating knots.
 
 The method was written to decide `u(12n491)`, the knot left open by Brittenham and Hermiller's
 counterexample to the Bernhard–Jablan conjecture ([arXiv:1705.05985](https://arxiv.org/abs/1705.05985)).
-The subsequent sweep supplies 1,707 improved lower bounds, including 1,492 additional exact values.
+The original frozen sweep supplies 1,707 improved lower bounds, including 1,492 additional exact values.
 Together with `12n491` and `13n3370`, it accounts for 1,494 exact values in the paper's historical
 comparison. An exact value always combines the obstruction with a separately established upper bound.
 

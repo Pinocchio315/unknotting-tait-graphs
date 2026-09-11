@@ -1,6 +1,6 @@
 # Crossing changes in alternating diagrams
 
-This directory supports Sections 3–5 of *Computation of Unknotting Numbers: Which Knot Breaks the Bernhard–Jablan Conjecture?*, manuscript v1.7. It studies the knots obtained by changing each crossing of an alternating diagram, and it supplies McCoy tests and the minimal-diagram analysis in Section 5.2. The current manuscript retains the frozen computational profile `v1.3`; the [repository README](../README.md) explains its input manifests and the separate current KnotInfo comparison.
+This directory supports Sections 3–5 of *Computation of Unknotting Numbers: Which Knot Breaks the Bernhard–Jablan Conjecture?*, manuscript v1.8. It studies the knots obtained by changing each crossing of an alternating diagram, and it supplies McCoy tests and the minimal-diagram analysis in Section 5.2. These crossing-change calculations retain their frozen `v1.3` inputs; the [repository README](../README.md) explains its input manifests and the separate current KnotInfo comparison.
 
 The electrical description in Section 4 uses a positive-definite Goeritz matrix `G`. Changing an edge with incidence vector `x` gives `G - 2xxᵀ`; effective resistance is `xᵀG⁻¹x`. Determinant and linking-pairing updates are evaluated exactly. `sig.py` implements the Gordon–Litherland formula with exact rational inertia, including its type-II correction, so a floating-point eigenvalue tolerance cannot change a signature bound.
 

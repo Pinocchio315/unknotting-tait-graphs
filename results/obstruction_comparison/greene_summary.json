@@ -1,0 +1,36 @@
+{
+  "by_role": {
+    "control": 574,
+    "target": 1523
+  },
+  "candidate_extra_rejection_knots": [
+    "12n_275",
+    "12n_340",
+    "13n_1465",
+    "13n_1598",
+    "13n_2822"
+  ],
+  "candidate_extra_rejections": 5,
+  "candidates": 4595,
+  "input_sha256": {
+    "results/bernhard_jablan/greene_d_12n_491_2026-09-08.json": "2a9b499100255c3a5010f4b4069f18f6dac40f5829cc9ad5a0514eb625bf4107",
+    "results/bernhard_jablan/greene_d_13n_3370_2026-09-08.json": "d82ed34038ad625c8b61a61aa2177734ef1bea3ade3e9d90754456cdfaf4a959",
+    "results/extensions_2026-09-10/lower/13n_1619_certificate.json": "f4ec9a9db018f911644caecb93fa18cb6f31c41bfc0a63e1418bdf42e05b31b5",
+    "results/greene/sweep_2026-09-08.jsonl.gz": "60c046924a38989dc59cbe38f82ea15834f8c89e160dc215157f631e45ef378c"
+  },
+  "obstructed": {
+    "PE": 104,
+    "PEM": 1523,
+    "PES": 1523,
+    "PESM": 1523,
+    "PESMB": 1523
+  },
+  "records": 2097,
+  "script_sha256": "c6ce0ef025ba1e6708adea5b783afffc33d77d9375254643fa2877d4257ac476",
+  "seconds": 13.126588959014043,
+  "skipped_noncyclic": [],
+  "spin_affine_outcome_differences": [],
+  "strict_improvements": [],
+  "symmetry_vs_monotonicity_differences": [],
+  "tested_cyclic": 2097
+}

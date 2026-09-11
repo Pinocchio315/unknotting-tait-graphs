@@ -20,3 +20,7 @@ lower_bounds/owens/results_u4_local_*.jsonl
 
 # Local computation outputs; deposited input and result records live in results/.
 generated/
+
+# Replays preserve frozen certificates and create these local summaries.
+results/extensions_2026-09-10/lower/rank4_summary.json
+results/extensions_2026-09-10/lower/independent_half_integral_replay.json

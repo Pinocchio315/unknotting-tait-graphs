@@ -13,3 +13,6 @@ networkx
 
 # Only if the Python build lacks the stdlib _sqlite3 module (some cluster installs)
 # pysqlite3-binary
+
+# Optional: draw the marked PD certificates.
+matplotlib

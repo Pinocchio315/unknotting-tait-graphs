@@ -1,0 +1,29 @@
+[
+  {
+    "name": "13n_4876",
+    "url": "https://knotinfo.org/results.php?searchmode=singleknot&singleknot=13n_4876&submittype=singleknot",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T13:19:59.477694+00:00",
+    "sha256": "fbdc70b359f765dcc7a7e6f611485626f0d95e7720b9df41d13d807ac8709e05",
+    "bytes": 22907,
+    "unknotting_number": "[4,5]"
+  },
+  {
+    "name": "13n_4973",
+    "url": "https://knotinfo.org/results.php?searchmode=singleknot&singleknot=13n_4973&submittype=singleknot",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T13:19:59.569986+00:00",
+    "sha256": "bd1e496a21d4790c686b9d454afb95e60a1e06b6ded99383eef9f4154dd28ece",
+    "bytes": 23681,
+    "unknotting_number": "[4,5]"
+  },
+  {
+    "name": "13n_5102",
+    "url": "https://knotinfo.org/results.php?searchmode=singleknot&singleknot=13n_5102&submittype=singleknot",
+    "status": 200,
+    "retrieved_utc": "2026-09-10T13:19:59.569799+00:00",
+    "sha256": "4e6655155b324304cafc1f4b07804f5a6f2a57236bf44e62087bceb8ea65dea9",
+    "bytes": 23719,
+    "unknotting_number": "[4,5]"
+  }
+]

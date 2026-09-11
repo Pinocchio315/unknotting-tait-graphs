@@ -46,20 +46,20 @@ class EvidenceTests(unittest.TestCase):
 class FrozenComputationTests(unittest.TestCase):
     def test_completed_sweep_recovers_deposited_values_and_snapshot_partition(self):
         result, table = reconstruct()
-        self.assertEqual(result['counts']['exact'], 2719)
-        self.assertEqual(result['counts']['improved'], 390)
+        self.assertEqual(result['counts']['exact'], 2734)
+        self.assertEqual(result['counts']['improved'], 380)
         for name in ('12n_288', '12n_491', '12n_501', '13n_3370', '13n_1587'):
             self.assertEqual(table[name], [2, 2], name)
         counts = compare(result, table, load_snapshot())['counts']
-        self.assertEqual(counts['unresolved_exact'], 2525)
+        self.assertEqual(counts['unresolved_exact'], 2540)
         self.assertEqual(counts['exact_agreements'], 194)
-        self.assertEqual(counts['range_improvements'], 333)
+        self.assertEqual(counts['range_improvements'], 323)
         self.assertEqual(counts['range_agreements'], 57)
         self.assertEqual(counts['disjoint_intervals'], 0)
 
     def test_pre_sweep_profile_does_not_use_the_enlarged_sweep_bounds(self):
         before, _ = reconstruct(manuscript='v1.2')
-        after, _ = reconstruct()
+        after, _ = reconstruct(manuscript='v1.3')
         self.assertEqual(before['counts']['exact'], 1227)
         self.assertEqual(after['counts']['exact'] - before['counts']['exact'], 1492)
 

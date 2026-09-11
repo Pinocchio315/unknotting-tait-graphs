@@ -13,9 +13,10 @@ from pathlib import Path
 from consolidate_results import RESULTS, read_json, reconstruct, validate_interval
 
 
-def load_snapshot():
-    path = RESULTS / 'knotinfo_2026-09-09.json'
-    manifest = read_json(RESULTS / 'knotinfo_2026-09-09_manifest.json')
+def load_snapshot(results=RESULTS):
+    results = Path(results)
+    path = results / 'knotinfo_2026-09-09.json'
+    manifest = read_json(results / 'knotinfo_2026-09-09_manifest.json')
     if hashlib.sha256(path.read_bytes()).hexdigest() != manifest['sha256']:
         raise ValueError('The frozen KnotInfo ranges have changed')
     rows = read_json(path)

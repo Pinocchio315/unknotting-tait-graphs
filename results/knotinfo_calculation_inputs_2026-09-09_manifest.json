@@ -1,0 +1,20 @@
+{
+  "retrieved_utc": "2026-09-09T05:31:22.645247+00:00",
+  "asset_commit": "af93634464d96875cb033d9a5885183dc64e89a3",
+  "pinned_download_url": "https://raw.githubusercontent.com/knotinfo-org/assets/af93634464d96875cb033d9a5885183dc64e89a3/knotinfo_data_complete.xls.zip",
+  "xls_member": "knotinfo_data_complete.xls",
+  "xls_sha256": "0f172ba776f954402010aa9f2aa50f1d96d7144c9308c52d1c529c7b4a56ac12",
+  "rows": 4110,
+  "fields": [
+    "name",
+    "determinant",
+    "signature",
+    "jones_polynomial",
+    "pd_notation",
+    "khovanov_reduced_mod2_vector",
+    "montesinos_notation"
+  ],
+  "sha256": "67ecc1993a0f1536acff1e15087740a6b638194761de7075d32a4ec2306b2672",
+  "selection": "Union of the frozen Greene sweep and Montesinos cohorts, including five small controls.",
+  "description": "Unaltered selected spreadsheet cells; the whole spreadsheet and download-page captures are not needed."
+}

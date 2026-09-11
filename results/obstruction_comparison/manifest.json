@@ -1,0 +1,22 @@
+{
+  "description": "Frozen outputs for the Section 3.9 obstruction comparison in v1.8. Candidate-level records and cache can be regenerated locally.",
+  "expected_extra_exclusions": 0,
+  "expected_unique_knots": 2776,
+  "input_sha256": {
+    "lower_bounds/obstruction_comparison/compare.py": "c6ce0ef025ba1e6708adea5b783afffc33d77d9375254643fa2877d4257ac476",
+    "lower_bounds/obstruction_comparison/report.py": "f14b462377c40cee395e2ff3a887eb479fccd23db9c162d40d50f294ebf789a5",
+    "lower_bounds/obstruction_comparison/verify.py": "c2258158acee6689764a24d099773d8f0193dd3212365259e66acfb436bd9b30",
+    "results/bernhard_jablan/greene_d_12n_491_2026-09-08.json": "2a9b499100255c3a5010f4b4069f18f6dac40f5829cc9ad5a0514eb625bf4107",
+    "results/bernhard_jablan/greene_d_13n_3370_2026-09-08.json": "d82ed34038ad625c8b61a61aa2177734ef1bea3ade3e9d90754456cdfaf4a959",
+    "results/extensions_2026-09-10/lower/13n_1619_certificate.json": "f4ec9a9db018f911644caecb93fa18cb6f31c41bfc0a63e1418bdf42e05b31b5",
+    "results/greene/sweep_2026-09-08.jsonl.gz": "60c046924a38989dc59cbe38f82ea15834f8c89e160dc215157f631e45ef378c",
+    "results/knotinfo_calculation_inputs_2026-09-09.json.gz": "67ecc1993a0f1536acff1e15087740a6b638194761de7075d32a4ec2306b2672",
+    "results/montesinos/montesinos_u1_2026-09-07.json": "1cd2293645e1988ff04fcff22196301a5a761f4d955e0fc3b1bb26cd4e84e254"
+  },
+  "output_sha256": {
+    "greene_summary.json": "6ecc15fd0833ab75e9602d40584612c44fbdbdee5022ed2d4be3aabecab8ee67",
+    "knots.csv": "4d33f2fbd0ad3f88844d523dada2f07659e443d278c1455c7e34afa748de1cdb",
+    "montesinos_summary.json": "32f7d09b90cdf3930d7b10bb1b3640e75839445dd990bc34d6a7c293625a989e",
+    "summary.json": "4279f5d8d9a958309c46e918be833cf04cccb8f684cb2c167571642376a035f4"
+  }
+}

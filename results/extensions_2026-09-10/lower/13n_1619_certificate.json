@@ -1,0 +1,930 @@
+{
+  "Greene_diagnostics": {
+    "alignment_units": {
+      "0,1": [
+        1,
+        10,
+        23,
+        32
+      ],
+      "0,10": [
+        1,
+        10,
+        23,
+        32
+      ],
+      "0,11": [
+        1,
+        10,
+        23,
+        32
+      ],
+      "0,12": [
+        1,
+        10,
+        23,
+        32
+      ],
+      "0,13": [
+        1,
+        10,
+        23,
+        32
+      ],
+      "0,14": [
+        5,
+        16,
+        17,
+        28
+      ],
+      "0,15": [
+        1,
+        10,
+        23,
+        32
+      ],
+      "0,16": [
+        5,
+        16,
+        17,
+        28
+      ],
+      "0,17": [
+        1,
+        10,
+        23,
+        32
+      ],
+      "0,18": [
+        5,
+        16,
+        17,
+        28
+      ],
+      "0,19": [
+        1,
+        10,
+        23,
+        32
+      ],
+      "0,2": [
+        1,
+        10,
+        23,
+        32
+      ],
+      "0,20": [
+        1,
+        10,
+        23,
+        32
+      ],
+      "0,21": [
+        1,
+        10,
+        23,
+        32
+      ],
+      "0,22": [
+        5,
+        16,
+        17,
+        28
+      ],
+      "0,23": [
+        1,
+        10,
+        23,
+        32
+      ],
+      "0,24": [
+        5,
+        16,
+        17,
+        28
+      ],
+      "0,25": [
+        1,
+        10,
+        23,
+        32
+      ],
+      "0,26": [
+        5,
+        16,
+        17,
+        28
+      ],
+      "0,3": [
+        5,
+        16,
+        17,
+        28
+      ],
+      "0,4": [
+        1,
+        10,
+        23,
+        32
+      ],
+      "0,5": [
+        1,
+        10,
+        23,
+        32
+      ],
+      "0,6": [
+        1,
+        10,
+        23,
+        32
+      ],
+      "0,7": [
+        5,
+        16,
+        17,
+        28
+      ],
+      "0,8": [
+        1,
+        10,
+        23,
+        32
+      ],
+      "0,9": [
+        5,
+        16,
+        17,
+        28
+      ],
+      "1,1": [
+        1,
+        10,
+        23,
+        32
+      ],
+      "1,10": [
+        1,
+        10,
+        23,
+        32
+      ],
+      "1,11": [
+        1,
+        10,
+        23,
+        32
+      ],
+      "1,12": [
+        1,
+        10,
+        23,
+        32
+      ],
+      "1,13": [
+        1,
+        10,
+        23,
+        32
+      ],
+      "1,14": [
+        8,
+        14,
+        19,
+        25
+      ],
+      "1,15": [
+        8,
+        14,
+        19,
+        25
+      ],
+      "1,16": [
+        1,
+        10,
+        23,
+        32
+      ],
+      "1,17": [
+        1,
+        10,
+        23,
+        32
+      ],
+      "1,18": [
+        1,
+        10,
+        23,
+        32
+      ],
+      "1,19": [
+        1,
+        10,
+        23,
+        32
+      ],
+      "1,2": [
+        1,
+        10,
+        23,
+        32
+      ],
+      "1,20": [
+        1,
+        10,
+        23,
+        32
+      ],
+      "1,21": [
+        1,
+        10,
+        23,
+        32
+      ],
+      "1,22": [
+        1,
+        10,
+        23,
+        32
+      ],
+      "1,23": [
+        8,
+        14,
+        19,
+        25
+      ],
+      "1,24": [
+        8,
+        14,
+        19,
+        25
+      ],
+      "1,25": [
+        1,
+        10,
+        23,
+        32
+      ],
+      "1,26": [
+        1,
+        10,
+        23,
+        32
+      ],
+      "1,3": [
+        1,
+        10,
+        23,
+        32
+      ],
+      "1,4": [
+        1,
+        10,
+        23,
+        32
+      ],
+      "1,5": [
+        1,
+        10,
+        23,
+        32
+      ],
+      "1,6": [
+        1,
+        10,
+        23,
+        32
+      ],
+      "1,7": [
+        1,
+        10,
+        23,
+        32
+      ],
+      "1,8": [
+        1,
+        10,
+        23,
+        32
+      ],
+      "1,9": [
+        1,
+        10,
+        23,
+        32
+      ]
+    },
+    "initial_ambiguous_classes": 33,
+    "intersection_passes": 2,
+    "pages": 52,
+    "unresolved_classes": 15
+  },
+  "Jones_and_Casson_Walker": {
+    "V_at_minus_one": "33",
+    "V_derivative_at_minus_one": "-80",
+    "coefficients_t": {
+      "-1": "-2",
+      "-2": "1",
+      "0": "4",
+      "1": "-5",
+      "2": "5",
+      "3": "-5",
+      "4": "5",
+      "5": "-3",
+      "6": "2",
+      "7": "-1"
+    },
+    "lambda_Casson_normalization": "20/99",
+    "required_sum_d": "-40/3"
+  },
+  "after_spin_and_sum_constraints": 1,
+  "after_spin_constraint": 2187,
+  "candidate_sets": {
+    "0": [
+      "0",
+      "1",
+      "2"
+    ],
+    "1": [
+      "-8/33"
+    ],
+    "10": [
+      "-8/33"
+    ],
+    "11": [
+      "2/3"
+    ],
+    "12": [
+      "-10/11",
+      "1/11",
+      "12/11"
+    ],
+    "13": [
+      "-32/33",
+      "1/33",
+      "34/33"
+    ],
+    "14": [
+      "-50/33",
+      "-17/33",
+      "16/33"
+    ],
+    "15": [
+      "-6/11",
+      "5/11",
+      "16/11"
+    ],
+    "16": [
+      "-2/33"
+    ],
+    "17": [
+      "-2/33"
+    ],
+    "18": [
+      "-6/11",
+      "5/11",
+      "16/11"
+    ],
+    "19": [
+      "-50/33",
+      "-17/33",
+      "16/33"
+    ],
+    "2": [
+      "-32/33",
+      "1/33",
+      "34/33"
+    ],
+    "20": [
+      "-32/33",
+      "1/33",
+      "34/33"
+    ],
+    "21": [
+      "-10/11",
+      "1/11",
+      "12/11"
+    ],
+    "22": [
+      "2/3"
+    ],
+    "23": [
+      "-8/33"
+    ],
+    "24": [
+      "4/11"
+    ],
+    "25": [
+      "-50/33",
+      "-17/33",
+      "16/33"
+    ],
+    "26": [
+      "4/33"
+    ],
+    "27": [
+      "-8/11",
+      "3/11",
+      "14/11"
+    ],
+    "28": [
+      "-2/33"
+    ],
+    "29": [
+      "4/33"
+    ],
+    "3": [
+      "-2/11"
+    ],
+    "30": [
+      "-2/11"
+    ],
+    "31": [
+      "-32/33",
+      "1/33",
+      "34/33"
+    ],
+    "32": [
+      "-8/33"
+    ],
+    "4": [
+      "4/33"
+    ],
+    "5": [
+      "-2/33"
+    ],
+    "6": [
+      "-8/11",
+      "3/11",
+      "14/11"
+    ],
+    "7": [
+      "4/33"
+    ],
+    "8": [
+      "-50/33",
+      "-17/33",
+      "16/33"
+    ],
+    "9": [
+      "4/11"
+    ]
+  },
+  "d": {
+    "0": "0",
+    "1": "-8/33",
+    "10": "-8/33",
+    "11": "2/3",
+    "12": "-10/11",
+    "13": "-32/33",
+    "14": "-50/33",
+    "15": "-6/11",
+    "16": "-2/33",
+    "17": "-2/33",
+    "18": "-6/11",
+    "19": "-50/33",
+    "2": "-32/33",
+    "20": "-32/33",
+    "21": "-10/11",
+    "22": "2/3",
+    "23": "-8/33",
+    "24": "4/11",
+    "25": "-50/33",
+    "26": "4/33",
+    "27": "-8/11",
+    "28": "-2/33",
+    "29": "4/33",
+    "3": "-2/11",
+    "30": "-2/11",
+    "31": "-32/33",
+    "32": "-8/33",
+    "4": "4/33",
+    "5": "-2/33",
+    "6": "-8/11",
+    "7": "4/33",
+    "8": "-50/33",
+    "9": "4/11"
+  },
+  "frozen_vector_index": 0,
+  "input": {
+    "crossing_number": 13,
+    "determinant": 33,
+    "diagonals_q_minus_2h": [
+      0
+    ],
+    "khovanov_rank": 33,
+    "name": "13n_1619",
+    "pd": [
+      [
+        3,
+        1,
+        4,
+        26
+      ],
+      [
+        1,
+        10,
+        2,
+        11
+      ],
+      [
+        9,
+        2,
+        10,
+        3
+      ],
+      [
+        11,
+        5,
+        12,
+        4
+      ],
+      [
+        20,
+        5,
+        21,
+        6
+      ],
+      [
+        6,
+        21,
+        7,
+        22
+      ],
+      [
+        16,
+        7,
+        17,
+        8
+      ],
+      [
+        8,
+        17,
+        9,
+        18
+      ],
+      [
+        12,
+        20,
+        13,
+        19
+      ],
+      [
+        22,
+        14,
+        23,
+        13
+      ],
+      [
+        14,
+        24,
+        15,
+        23
+      ],
+      [
+        24,
+        16,
+        25,
+        15
+      ],
+      [
+        18,
+        26,
+        19,
+        25
+      ]
+    ],
+    "range": [
+      1,
+      2
+    ],
+    "reduced_mod2_vector_raw": "[[2, 1, -2, -4], [2, 2, -1, -2], [2, 4, 0, 0], [2, 5, 1, 2], [2, 5, 2, 4], [2, 5, 3, 6], [2, 5, 4, 8], [2, 3, 5, 10], [2, 2, 6, 12], [2, 1, 7, 14]]",
+    "signature": 0,
+    "test": "u1"
+  },
+  "input_and_code_sha256": {
+    "audits/additional_unknotting_2026-09-10/verify_casson_walker.py": "a75324fdefa8f577f7040c95bb8780cbfa0f9641722ece4fde98a872daea8f25",
+    "code/consolidate_results.py": "576115508ed6f5ac23050cfe3493d016f844f2dbc0b864917fbd9a9b2c073919",
+    "code/lower_bounds/greene/greene_dinv.py": "ebdc4a03777be1bdcaa524a6e3776152cca4ec5b97eb037d6ffdee610f92679c",
+    "code/lower_bounds/greene/greene_ranks.py": "6cc1d5469d2a13fc508cbfd8b286eb2021251485518ee1e2fd3a97c04b21e2c5",
+    "code/lower_bounds/greene/greene_sweep.py": "8965d102a250e7fffc1079a8dcfab589f91ac49c4a3c9c04ecf45c26630b32ca",
+    "code/lower_bounds/greene/half_integral.py": "aff7c9bae393cf93b3f281ecb9f109e7d9446c14d8d2a447d5c1b5ef66d2e143",
+    "code/lower_bounds/greene/pin_dinv.py": "7167fb1e19f636422e881d3d806189426137b477aded96eeff38e0f5cd25365f",
+    "code/lower_bounds/owens/_compat.py": "26c23f8bd6ab3d84992792228ab36daaf1aae3cbfeff1b9a1d87f20f2e2b2c51",
+    "code/lower_bounds/owens/crosscheck.py": "ccbc50904f09eae6d71f70601f5258576e00eefe824a8f18d185d1d604f63884",
+    "code/lower_bounds/owens/kinfo.py": "e13fdfda1cfc022cf0b939890800ea9e70dce7a5cdf79b5270ad37dc32998c8a",
+    "code/lower_bounds/owens/linkform.py": "09d3a89869882dd25feea8a0c818bc89ee3d0ff35871ed81ffa48954d1b90a4d",
+    "code/lower_bounds/owens/make_targets.py": "e6b904790b8a2334428a7cb4eb6d0d34b579edffae9f30c410dc184e13344d4f",
+    "code/lower_bounds/owens/owens_label_scan.py": "9f9c05eeaf3be3d9acaf934a5236bdbb885b9f06997052900913103592366063",
+    "code/lower_bounds/owens/owens_obstruction.py": "66d19b2b358f2d1cf5dc6bae0a6fbba4cfcb09a7c0ebc48b3ed5f5f73bc7ede5",
+    "code/lower_bounds/owens/owens_u3.py": "d6d35766b6855f682dc5d60df9e6149a0e94fec35588ca1dc0b6ac41af1713c7",
+    "code/lower_bounds/owens/owens_u4.py": "b015f60376e9aa1af179bd3c71e21c5051325bc1184200e4a785dc428d15936a",
+    "code/lower_bounds/owens/run_sweep.py": "af914bcf95fb20dbbd6c3863968bfcaf77e12b11a71066e934e37705c463c0fa",
+    "code/lower_bounds/owens/run_u3_sweep.py": "d0df694bdd2dccab5d4fb84dfce609dac021715a580bf31a6e061446343a6f75",
+    "code/lower_bounds/owens/run_u4_local.py": "58be0d15666c3e150a31626c56f7b79534bebcf87d6571d0dee5884bcafcaa6a",
+    "code/lower_bounds/owens/taitgraph.py": "c012c7b6926c21afb55827f9363000bf820d4344a24d2d3608fa5c7d5d33727f",
+    "code/lower_bounds/owens/traczyk.py": "bb278d7818eff1408a5d764a9647dee75e4922c95b0c0e00d92231010a02f3f9",
+    "code/lower_bounds/owens/validate.py": "0e324f34408eec5b5cbea89a3ce5659bd31f2cbe4b14ab9a21c63250ce2863a9",
+    "code/results/comparison/official_2026-09-09/official_complete_zip.zip": "e054075a0d895ea68d081976388f6b8d8177a2c9e167e42f9b91c7880f1a0dcc",
+    "code/results/greene/greene_targets_2026-09-08.json": "ef5789b8477984d9d8a423b392dfe8d2f84659a8c2509f600db0f49ec35e2c38",
+    "code/results/greene/sweep_2026-09-08.jsonl.gz": "60c046924a38989dc59cbe38f82ea15834f8c89e160dc215157f631e45ef378c"
+  },
+  "lower_bound": 2,
+  "lspace_evidence": {
+    "determinant": 33,
+    "diagonals_q_minus_2h": [
+      0
+    ],
+    "method": "reduced Khovanov homology over F_2 and branched-cover spectral sequence",
+    "rank": 33,
+    "source_field": "khovanov_reduced_mod2_vector",
+    "vector": [
+      [
+        2,
+        1,
+        -2,
+        -4
+      ],
+      [
+        2,
+        2,
+        -1,
+        -2
+      ],
+      [
+        2,
+        4,
+        0,
+        0
+      ],
+      [
+        2,
+        5,
+        1,
+        2
+      ],
+      [
+        2,
+        5,
+        2,
+        4
+      ],
+      [
+        2,
+        5,
+        3,
+        6
+      ],
+      [
+        2,
+        5,
+        4,
+        8
+      ],
+      [
+        2,
+        3,
+        5,
+        10
+      ],
+      [
+        2,
+        2,
+        6,
+        12
+      ],
+      [
+        2,
+        1,
+        7,
+        14
+      ]
+    ]
+  },
+  "maximum_candidate_sum": "50/3",
+  "minimum_candidate_sum": "-40/3",
+  "name": "13n_1619",
+  "new_relative_to_paper": true,
+  "old_candidate_vectors": 6561,
+  "pairing": "1/33",
+  "reference_marking": [
+    0,
+    1
+  ],
+  "sources": {
+    "Greene": "https://arxiv.org/abs/0805.1381",
+    "Mullins_formula_in_Greene_Watson_Theorem_13": "https://arxiv.org/abs/1106.5559",
+    "Ni_Wu_Proposition_1_6": "https://arxiv.org/abs/1009.4720",
+    "Ozsvath_Szabo_branched_cover_spectral_sequence": "https://arxiv.org/abs/math/0309170",
+    "Rustamov_Theorem_3_3": "https://arxiv.org/abs/math/0409294",
+    "spin_identity_Lin_Ruberman_Saveliev": "https://arxiv.org/abs/1802.07704"
+  },
+  "surgery_test": {
+    "det": 33,
+    "fits": [],
+    "identifications": "all_affine_bijections",
+    "linking_filter": false,
+    "orientations": {
+      "-1": {
+        "inconsistent_V": 4,
+        "invalid_gap": 656,
+        "invalid_successive_difference": 0,
+        "surviving": 0,
+        "tested": 660
+      },
+      "1": {
+        "inconsistent_V": 0,
+        "invalid_gap": 660,
+        "invalid_successive_difference": 0,
+        "surviving": 0,
+        "tested": 660
+      }
+    }
+  },
+  "uniqueness_proof": "componentwise minima attain the Casson--Walker sum",
+  "unknotting_number": 2,
+  "upper_bound_verification": {
+    "method": "Regina simplify: Reidemeister I/II/III",
+    "upper_bound": 2,
+    "witnesses": [
+      {
+        "attempt": 1,
+        "changed_pd": [
+          [
+            1,
+            10,
+            2,
+            11
+          ],
+          [
+            6,
+            21,
+            7,
+            22
+          ],
+          [
+            8,
+            17,
+            9,
+            18
+          ],
+          [
+            9,
+            2,
+            10,
+            3
+          ],
+          [
+            11,
+            5,
+            12,
+            4
+          ],
+          [
+            14,
+            24,
+            15,
+            23
+          ],
+          [
+            16,
+            7,
+            17,
+            8
+          ],
+          [
+            18,
+            26,
+            19,
+            25
+          ],
+          [
+            19,
+            12,
+            20,
+            13
+          ],
+          [
+            20,
+            5,
+            21,
+            6
+          ],
+          [
+            22,
+            14,
+            23,
+            13
+          ],
+          [
+            24,
+            16,
+            25,
+            15
+          ],
+          [
+            26,
+            3,
+            1,
+            4
+          ]
+        ],
+        "crossing_indices_zero_based": [
+          0,
+          8
+        ],
+        "final_components": 1,
+        "final_crossings": 0
+      },
+      {
+        "attempt": 1,
+        "changed_pd": [
+          [
+            1,
+            10,
+            2,
+            11
+          ],
+          [
+            6,
+            21,
+            7,
+            22
+          ],
+          [
+            8,
+            17,
+            9,
+            18
+          ],
+          [
+            9,
+            2,
+            10,
+            3
+          ],
+          [
+            11,
+            5,
+            12,
+            4
+          ],
+          [
+            12,
+            20,
+            13,
+            19
+          ],
+          [
+            14,
+            24,
+            15,
+            23
+          ],
+          [
+            16,
+            7,
+            17,
+            8
+          ],
+          [
+            20,
+            5,
+            21,
+            6
+          ],
+          [
+            22,
+            14,
+            23,
+            13
+          ],
+          [
+            24,
+            16,
+            25,
+            15
+          ],
+          [
+            25,
+            18,
+            26,
+            19
+          ],
+          [
+            26,
+            3,
+            1,
+            4
+          ]
+        ],
+        "crossing_indices_zero_based": [
+          0,
+          12
+        ],
+        "final_components": 1,
+        "final_crossings": 0
+      }
+    ]
+  }
+}

@@ -34,9 +34,9 @@ python consolidate_results.py
 python compare_knotinfo.py --out /tmp/knotinfo_comparison.json
 ```
 
-The default full profile gives 2,719 exact values and 390 narrower ranges
-relative to the historical starting table. Of these, 2,525 exact values and
-333 range improvements remain improvements over the dated official snapshot;
+The default v1.8 profile gives 2,734 exact values and 380 narrower ranges
+relative to the historical starting table. Of these, 2,540 exact values and
+323 range improvements remain improvements over the dated official snapshot;
 194 exact values and 57 ranges are already recorded there. Computed intervals
 and per-knot sources are written to `generated/` as JSON.
 
@@ -74,7 +74,7 @@ The Greene worker and summary code also check that controls are not obstructed.
 
 | Location | Contents |
 | --- | --- |
-| `summary.json`, `best/` | The eight displayed diagrams, with marked crossing rows and PD codes |
+| `summary.json`, `best/` | The eight earlier displayed diagrams, with marked crossing rows and PD codes |
 | `witness_chains/` | Replayable diagram-move and crossing-change certificates |
 | `13n_1587_u_le_2_braid_certificate.json` | The published braid construction with upper bound two |
 | `bernhard_jablan/brittenham_hermiller_upper_bounds.json` | Published upper bounds for `12n_491` and `13n_3370`, with diagram data and source locations |
@@ -89,7 +89,7 @@ retains its original descriptive fields and checksum. Its construction is
 from Brittenham-Hermiller Section 3; the Applebaum attribution in that archival
 file is not the original source. The later Greene lower bound gives value two.
 
-Use `upper_bounds/verify_presentation_diagrams.py` for the eight displayed
+Use `upper_bounds/verify_presentation_diagrams.py` for all nineteen displayed
 diagrams and the certificate-verification commands in the
 [upper-bound guide](../upper_bounds/README.md) for move sequences. A stored
 verification flag is not a substitute for replaying the certificate.
@@ -117,3 +117,25 @@ verification flag is not a substitute for replaying the certificate.
 A Jones-polynomial match alone does not identify a knot. The candidate code
 keeps such hypotheses separate from bounds justified by identification or
 invariants. The 959 conditional cases are not counted as exact determinations.
+
+## v1.8 additions
+
+`paper_v1_8_manifest.json` authenticates the new proof records and replay
+code. [extensions_2026-09-10/README.md](extensions_2026-09-10/README.md)
+lists the four lower-bound and eleven upper-bound additions, with full PDs,
+marks, search certificates, covectors, and reproduction commands. These
+increase the exact count by fifteen and resolve ten previously narrowed ranges.
+
+`knotinfo_calculation_inputs_2026-09-09.json.gz` contains seven unaltered
+spreadsheet columns for the 4,110 knots needed by the Greene/Montesinos
+calculations, including the small controls. Its manifest gives the selected
+fields, upstream commit, retrieval date, spreadsheet checksum, and extract
+checksum. `knotinfo_inputs.py` authenticates the extract before loading it.
+The complete spreadsheet and the old database-review web captures are omitted.
+
+`obstruction_comparison/` contains the per-knot comparison and summary for
+Section 3.9: 2,776 distinct knots, with no additional exclusion by the full
+conditions over positive even symmetric matching. The code in
+`../lower_bounds/obstruction_comparison/` regenerates all candidate-level
+outputs from the original correction-term records and selected KnotInfo cells.
+The generated cache and execution logs are not part of the distribution.

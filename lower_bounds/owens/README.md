@@ -1,7 +1,7 @@
 # Correction-term obstructions for alternating knots
 
 This directory accompanies **Computation of Unknotting Numbers: Which Knot Breaks the
-Bernhard–Jablan Conjecture?**, manuscript v1.7. It implements the definite surgery obstruction reviewed in
+Bernhard–Jablan Conjecture?**, manuscript v1.8. It implements the definite surgery obstruction reviewed in
 Section 2.4 and applied in Section 3. The signed Jones-polynomial test
 also uses Section 2.6. These programs compute necessary conditions for an
 unknotting sequence; finding an admissible surgery form does not construct one.

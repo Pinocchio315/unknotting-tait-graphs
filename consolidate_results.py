@@ -34,7 +34,7 @@ RANK4_LOGS = ('owens_rank4/results_u4_local_2026-09-07_snapshot.jsonl',
 
 def paper_scan(consolidated):
     """Select the frozen candidate cohort, independently of live searches."""
-    return ('open23/priority_u23_final.json' if consolidated.get('manuscript') == 'v1.3'
+    return ('open23/priority_u23_final.json' if consolidated.get('manuscript') in {'v1.3', 'v1.8'}
             else PAPER_SCAN)
 
 
@@ -404,9 +404,12 @@ def summarize(table, changed):
         'improved_by_primary_method': dict(sorted(Counter(map(primary_tag, improved)).items()))}
 
 
-def reconstruct(results=RESULTS, manuscript="v1.3"):
+def reconstruct(results=RESULTS, manuscript="v1.8"):
     """Validate all inputs and counts in memory before the caller writes outputs."""
     results = Path(results)
+    if manuscript == 'v1.8':
+        from v18_results import reconstruct as reconstruct_v18
+        return reconstruct_v18(results)
     manifest = verify_manifest(results, manuscript)
     bounds, rank4 = collect_bounds(results, include_sweep=manuscript.startswith("v1.3"))
     table, changed = merge_bounds(read_json(results / 'paper_v1_1_snapshot.json'), bounds)
@@ -426,19 +429,108 @@ def reconstruct(results=RESULTS, manuscript="v1.3"):
 
 
 
-PROFILE_VERSIONS = {'full': 'v1.3', 'pre-sweep': 'v1.2'}
+def computation_counts(consolidated, table, results=RESULTS):
+    """Count method contributions and frozen computation cohorts."""
+    if consolidated.get('manuscript') == 'v1.8':
+        from v18_results import counts as counts_v18
+        return counts_v18(consolidated, table, results)
+    results = Path(results)
+    changed = consolidated['changed']
+    totals = consolidated['counts']
+    exact = [r for r in changed.values() if r['new'][0] == r['new'][1]]
+    by_value_method = Counter((r['new'][0], primary_tag(r)) for r in exact)
+    improved_methods = totals['improved_by_primary_method']
+    scan = read_json(results/paper_scan(consolidated))
+    moved = set(scan.get('moved_to_tierB_after_resolution', []))
+    zero_names = {name for name, _, _, _ in scan['zero_candidate_knots']}
+    candidate_names = set(scan['knots_with_candidates'])
+    if (moved & zero_names or not moved <= candidate_names
+            or len(candidate_names) != len(scan['knots_with_candidates'])
+            or len(zero_names) != len(scan['zero_candidate_knots'])):
+        raise ValueError('Candidate scan categories overlap or contain duplicate knots')
+    cyclic = read_json(results/'cyclic_cover/cyclic_cover_bound_2026-09-07.json')
+    cyclic_degrees = Counter(cyclic[name]['n'] for name, r in changed.items() if primary_tag(r) == 'c')
+    snapshot = read_json(results/'paper_v1_1_snapshot.json')
+    sig4 = read_json(results/'owens_rank2/owens_verdicts_sigma4_alternating_2026-09-07.json')
+    with gzip.open(results/'crossing_changes/dataset_v2.json.gz', 'rt') as stream:
+        data_knots = {r['knot'] for r in json.load(stream)}
+    sweep = Counter()
+    frozen = {'targets': {}, 'controls': {}}
+    if consolidated.get('manuscript', 'v1.3').startswith('v1.3'):
+        frozen, records = read_greene_sweep(results)
+        settled = {'OBSTRUCTED', 'PASS', 'UNDECIDED', 'NOT_APPLICABLE'}
+        for row in records.values():
+            role = row['role']
+            sweep[role, 'settled' if row['verdict'] in settled else 'unsettled'] += 1
+            sweep[role, 'verdict_' + row['verdict']] += 1
+            if row['verdict'] == 'OBSTRUCTED': sweep[role, row['test']] += 1
+    greene_exact = sum(count for (value, tag), count in by_value_method.items() if tag == 'G')
+    counts = {
+        'nChildren': len(scan['children']),
+        'nCyclicNew': sum(cyclic_degrees.values()),
+        'nCyclicThree': cyclic_degrees[3], 'nCyclicFour': cyclic_degrees[4],
+        'nCyclicFive': cyclic_degrees[5], 'nDataKnots': len(data_knots),
+        'nDichotomy': sum(heuristic == 0 for _, _, _, heuristic in scan['zero_candidate_knots']),
+        # The seven Jones-only composite identifications moved out of the
+        # candidate list remain heuristic; they never join the theorem list.
+        # Thus the latest cohort is 959 certified + (39 + 7) heuristic + 22.
+        'nDichotomyHeuristic': sum(heuristic != 0 for _, _, _, heuristic in scan['zero_candidate_knots']) + len(moved),
+        'nExact': totals['exact'], 'nExactLower': totals['exact_lower'],
+        'nImproved': totals['improved'], 'nImprovedL': improved_methods.get('L', 0),
+        'nImprovedC': improved_methods.get('c', 0), 'nMcCoyKnots': improved_methods.get('K', 0),
+        'nOpenTwoThreeAlt': len(scan['zero_candidate_knots']) + len(scan['knots_with_candidates']),
+        'nRefKnots': len(table),
+        'nSigFourImproved': sum(snapshot[r['name']] == [2, 4] and r['verdict'] == 'OBSTRUCTED' for r in sig4),
+        'nSigFourObstructed': sum(snapshot[r['name']] == [2, 3] and r['verdict'] == 'OBSTRUCTED' for r in sig4),
+        'nSigFourOpen': sum(snapshot[r['name']] == [2, 3] for r in sig4),
+        'nUtwo': totals['exact_by_u']['2'], 'nUtwoL': by_value_method[2, 'L'],
+        'nUtwoM': by_value_method[2, 'M'], 'nUtwoC': by_value_method[2, 'c'],
+        'nUtwoG': by_value_method[2, 'G'],
+        'nUthree': totals['exact_by_u']['3'], 'nUthreeC': by_value_method[3, 'c'],
+        'nUthreeOwens': sum(by_value_method[3, tag] for tag in ('O2', 'a', 'OT', 'g')),
+        'nUfour': totals['exact_by_u']['4'], 'nUfive': totals['exact_by_u']['5'],
+        'nWithCandidates': len(candidate_names - moved),
+        'nSweepTargets': len(frozen['targets']), 'nSweepControls': len(frozen['controls']),
+        'nSweepTargetsSettled': sweep['target', 'settled'],
+        'nSweepControlsSettled': sweep['control', 'settled'],
+        'nSweepControlsPass': sweep['control', 'verdict_PASS'],
+        'nSweepControlsUndecided': sweep['control', 'verdict_UNDECIDED'],
+        'nSweepControlsUnfinished': len(frozen['controls']) - sweep['control', 'settled'],
+        'nSweepObstructed': sum(count for (role, key), count in sweep.items()
+                                if role == 'target' and key.startswith(('u1', 'rank'))),
+        'nSweepUone': sweep['target', 'u1'], 'nSweepRankTwo': sweep['target', 'rank2'],
+        'nSweepRankThree': sweep['target', 'rank3'], 'nSweepRankFour': sweep['target', 'rank4'],
+        'nSweepExact': greene_exact, 'nSweepImproved': improved_methods.get('G', 0),
+        'nSweepNewExact': sum(1 for r in exact if primary_tag(r) == 'G'
+                            and 'greene/sweep_2026-09-08.jsonl.gz' in r['sources']),
+        'nSweepUoneTargets': sum(1 for e in frozen['targets'].values() if e['test'] == 'u1'),
+        'nSweepRankTargets': sum(1 for e in frozen['targets'].values() if e['test'] != 'u1'),
+    }
+
+    if consolidated.get('manuscript') != 'v1.3':
+        counts = {k: v for k, v in counts.items()
+                  if k != 'nDichotomyHeuristic'}
+    if not consolidated.get('manuscript', 'v1.3').startswith('v1.3'):
+        counts = {k: v for k, v in counts.items() if not k.startswith('nSweep')}
+    return counts
+
+
+PROFILE_VERSIONS = {'full': 'v1.8', 'previous': 'v1.3', 'pre-sweep': 'v1.2'}
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--profile', choices=PROFILE_VERSIONS, default='full',
-                        help='full results, or inputs before the enlarged Greene sweep')
+                        help='v1.8 results, previous results, or inputs before the enlarged Greene sweep')
     parser.add_argument('--outdir', type=Path, default=ROOT / 'generated')
+    parser.add_argument('--manuscript', choices=('v1.2', 'v1.3', 'v1.8'),
+                        help=argparse.SUPPRESS)  # Compatibility with earlier replay commands.
     args = parser.parse_args()
-    consolidated, table = reconstruct(manuscript=PROFILE_VERSIONS[args.profile])
+    consolidated, table = reconstruct(manuscript=args.manuscript or PROFILE_VERSIONS[args.profile])
     args.outdir.mkdir(parents=True, exist_ok=True)
     for name, value in (('u_table.json', table), ('consolidated.json', consolidated),
-                        ('counts.json', consolidated['counts'])):
+                        ('counts.json', consolidated['counts']),
+                        ('method_counts.json', computation_counts(consolidated, table))):
         (args.outdir / name).write_text(json.dumps(value, indent=2, sort_keys=True) + '\n')
     print(json.dumps(consolidated['counts'], indent=2, sort_keys=True))
 

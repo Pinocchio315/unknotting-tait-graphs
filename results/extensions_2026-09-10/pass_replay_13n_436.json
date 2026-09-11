@@ -1,0 +1,121 @@
+{
+  "verified": true,
+  "steps": [
+    {
+      "move": [
+        "flype",
+        [
+          8,
+          0
+        ]
+      ],
+      "before_crossings": 14,
+      "after_crossings": 14,
+      "marked_rows": [
+        3,
+        4
+      ]
+    },
+    {
+      "move": [
+        "pass",
+        [
+          3,
+          [
+            [
+              5,
+              1
+            ],
+            [
+              2,
+              0
+            ]
+          ]
+        ]
+      ],
+      "before_crossings": 14,
+      "after_crossings": 14,
+      "marked_rows": [
+        3,
+        4
+      ]
+    },
+    {
+      "move": [
+        "pass",
+        [
+          18,
+          [
+            [
+              5,
+              0
+            ],
+            [
+              7,
+              0
+            ]
+          ]
+        ]
+      ],
+      "before_crossings": 14,
+      "after_crossings": 14,
+      "marked_rows": [
+        3,
+        4
+      ]
+    },
+    {
+      "move": [
+        "pass",
+        [
+          14,
+          [
+            [
+              21,
+              1
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              8,
+              0
+            ]
+          ]
+        ]
+      ],
+      "before_crossings": 14,
+      "after_crossings": 14,
+      "marked_rows": [
+        3,
+        4
+      ]
+    },
+    {
+      "move": [
+        "pass",
+        [
+          21,
+          [
+            [
+              15,
+              1
+            ],
+            [
+              22,
+              1
+            ]
+          ]
+        ]
+      ],
+      "before_crossings": 14,
+      "after_crossings": 13,
+      "marked_rows": [
+        3,
+        4
+      ]
+    }
+  ],
+  "final_crossings": 13
+}

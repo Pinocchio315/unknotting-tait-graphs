@@ -1,0 +1,6 @@
+{
+  "knot": "13n_447",
+  "scope": "Only this supplied 13-crossing PD; not all minimal diagrams",
+  "pairs_tested": 78,
+  "determinant_one_candidates": []
+}

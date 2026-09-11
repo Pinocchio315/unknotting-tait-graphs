@@ -1,8 +1,8 @@
-"""Shared paths for the crossing-change analysis (v1.6 Sections 4.4 and 5.2).
+"""Shared paths for the crossing-change analysis (v1.8 Sections 4.4 and 5.2).
 
 The deposited directory contains successive historical cohorts. Current paper
 membership comes from the v1.3 computational profile in consolidate_results.py;
-a path to this directory alone does not select the v1.6 analysis.
+a path to this directory alone does not select the v1.8 analysis.
 """
 import os, sys
 HERE = os.path.dirname(os.path.abspath(__file__))

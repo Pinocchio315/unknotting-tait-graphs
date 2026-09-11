@@ -1,6 +1,6 @@
 # Lower-bound computations
 
-This directory contains the lower-bound computations in Sections 3 and 5 of **Computation of Unknotting Numbers: Which Knot Breaks the Bernhard–Jablan Conjecture?**, manuscript v1.7. The computations use the frozen `v1.3` input profile; this name identifies the deposited inputs and is unchanged by later editorial revisions. See the [repository README](../README.md) for installation and the comparison with the official KnotInfo snapshot retrieved on 9 September 2026.
+This directory contains the lower-bound computations in Sections 3 and 5 of **Computation of Unknotting Numbers: Which Knot Breaks the Bernhard–Jablan Conjecture?**, manuscript v1.8. The original `v1.3` input profile is preserved; four later lower-bound determinations are supplied by the v1.8 extension certificates. See the [repository README](../README.md) for installation and the comparison with the official KnotInfo snapshot retrieved on 9 September 2026.
 
 Each method tests a necessary condition for an unknotting sequence. An obstruction raises the lower bound; an independently established upper bound is needed to obtain an exact value. A passing test or a resource limit supplies no new bound.
 
@@ -20,18 +20,23 @@ Each method tests a necessary condition for an unknotting sequence. An obstructi
 
 The deposited pairing list contains 815 obstructions. The HFK scan records order two for `13n_689`, `13n_1166`, `13n_2504` and `13n_2807`. The Montesinos computation excludes unknotting number one for 49 of its 50 targets: 44 have an independently recorded upper bound two and five have upper bound three. These raw records retain their original filenames in `../results/`; the aggregate table is assembled by `../consolidate_results.py`.
 
-The frozen Greene sweep supplies 1,707 lower-bound improvements: 1,492 additional
-exact values and 215 narrower ranges. Its exact results comprise 1,309 further
-values two, 136 values three, 43 values four, and four values five. Together
-with the two earlier Greene cases, method `G` contributes 1,494 exact values.
-Across all methods, the manuscript reports 2,719 exact values and 390 improved
-ranges; lower bounds determine 2,711 of the exact values, and eight explicit
-unknotting diagrams determine the rest. These are changes from the historical
-research baseline, with each knot assigned to one method. In the official
-9 September snapshot, 2,525 of the 2,719 exact values remain undetermined and
-194 already agree; 333 of the 390 ranges are strictly narrower and 57 already
-agree. Reproduce this separate comparison with
-`python compare_knotinfo.py` from the repository root.
+With the v1.8 extensions, the Greene sweep supplies 1,711 lower-bound
+improvements: 1,496 additional exact values and 215 narrower ranges. The
+exact values comprise 1,310 values two, 136 values three, 43 values four,
+and seven values five. Including the two original BJ calculations, Greene's
+model contributes 1,498 exact values before the new upper bounds are applied.
+
+Across all methods, lower bounds determine 2,715 exact values and narrow 390
+ranges. Nineteen explicit constructions then give 2,734 exact values and 380
+remaining ranges; ten need both the lower-bound improvement and the new
+construction. Against the official 9 September snapshot, 2,540 exact values
+and 323 range improvements are new to that snapshot; 194 exact values and
+57 ranges already agree. Run `python compare_knotinfo.py` for this comparison.
+
+See the [four new lower-bound calculations](../results/extensions_2026-09-10/lower/README.md)
+for the Casson--Walker constraint, rank-four covectors, and replay commands.
+The [obstruction comparison](obstruction_comparison/README.md) reproduces
+Section 3.9's comparison of symmetry and full surgery conditions on 2,776 knots.
 
 Owens's general theorem uses the signed unknotting-sequence hypothesis and
 the labelled correction terms of the branched cover; it does not require the
@@ -53,9 +58,7 @@ exclude unknotting number one after every crossing change in a minimal diagram.
 Their values remain in `[2,3]`; if any has value two, it fails the strong
 Bernhard–Jablan equality. These knots are not added to the exact-value total.
 Forty-six further cases require unverified identifications and remain outside
-that list; 22 other parents have 11 named possible children. The ancillary scan
-of 546 unresolved lower-end-one knots checks one tabulated minimal diagram each;
-its negative results do not supply lower bounds for nonalternating knots.
+that list; 22 other parents have 11 named possible children.
 
 ## Running fresh checks
 

@@ -1,6 +1,6 @@
 # Embedded Tait graphs
 
-The shared `tait/` package supports the diagrammatic constructions in Sections 2–4 of *Computation of Unknotting Numbers: Which Knot Breaks the Bernhard–Jablan Conjecture?*, manuscript v1.7. A diagram is represented by a signed plane multigraph with a rotation system. Changing one crossing reverses one edge sign; isotopies must preserve the embedded graph's diagrammatic information. See the [repository README](../README.md) for installation and the frozen `v1.3` computational profile used by the current manuscript.
+The shared `tait/` package supports the diagrammatic constructions in Sections 2–4 of *Computation of Unknotting Numbers: Which Knot Breaks the Bernhard–Jablan Conjecture?*, manuscript v1.8. A diagram is represented by a signed plane multigraph with a rotation system. Changing one crossing reverses one edge sign; isotopies must preserve the embedded graph's diagrammatic information. See the [repository README](../README.md) for installation and the input profiles used by the current manuscript.
 
 | Module | Purpose |
 |---|---|
